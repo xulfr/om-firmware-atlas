@@ -10,6 +10,12 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [db firmware v0.4.1 release](db.release041.md) | Release-centred feature claims and named limitations, not an independent camera audit. |
 | [db firmware v0.4.2 beta](db.release042.md) | Hybrid Shutter and OM-5 port changes reported by the maintainer. |
 | [db firmware releases](db.releases.md) | Beta release notes through v0.4.2, in Korean and English. |
+| [Author's note on project status](em1m3.author-note.md) | The author asks that the Atlas record the project as inactive but open to continue, functional, with one known preview issue. |
+| [E-M1 III mod builder guide](em1m3.builder.md) | What the builder does, the mod list with the owner's camera status per mod, install steps and credits. |
+| [E-M1 III firmware findings](em1m3.findings.md) | Research notes behind the mods, including Multiple Exposure frame counts tried on the camera. |
+| [E-M1 III mod pack](em1m3.mods.md) | The builder's 19 mods with descriptions and camera notes, and the SHA-256 it requires of stock 1.6. |
+| [E-M1 III repository status note](em1m3.readme.md) | The author states the project is no longer active, works as is without major bugs, and others may continue it. |
+| [E-M1 III Mod Builder releases](em1m3.releases.md) | Mac and Windows builds of the mod builder, mod-builder-1.12 to 1.17; all share the same notes. |
 | [AF subject, face and eye detection](em5n.af-detect.md) | Subject detection across bodies and why it needs OM-1-class hardware. |
 | [E-M5 III boot and section loading](em5n.boot.md) | Load base, always-ready range, section order, ready bits and boot guards. |
 | [Body comparison](em5n.comparison.md) | Chip generation, memory, blocks and built-in features of seven bodies side by side. |

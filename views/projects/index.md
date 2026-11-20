@@ -75,6 +75,20 @@ Latest: dbv0.4.2, 20 Nov 2026
 
 <div class="project-card" markdown="1">
 
+[E-M1 Mark III Mod Builder](em1-iii-mod-builder.md){ .card-title }
+
+Pick firmware mods for the E-M1 Mark III and build your own update file. No longer active.
+
+Panorama 65:24 · Multiple Exposure with 3 and 4 frames · Focus stacking with any lens
+{ .card-features }
+
+Latest: mod-builder-1.17, 18 Nov 2026
+{ .card-meta }
+
+</div>
+
+<div class="project-card" markdown="1">
+
 [OM-3 downstream experiments](camera-stuff.md){ .card-title }
 
 A downstream OM-3 fork for trying fixes before sending them upstream.

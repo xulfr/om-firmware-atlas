@@ -35,6 +35,11 @@
       "bytes": 1566,
       "method": "ceil(utf8-bytes/4)"
     },
+    "records/cameras/em1-iii.yaml": {
+      "approx_tokens": 116,
+      "bytes": 462,
+      "method": "ceil(utf8-bytes/4)"
+    },
     "records/cameras/em10-iv.yaml": {
       "approx_tokens": 119,
       "bytes": 476,
@@ -175,6 +180,11 @@
       "bytes": 1441,
       "method": "ceil(utf8-bytes/4)"
     },
+    "records/firmware/em1-iii/em1-iii-1600.yaml": {
+      "approx_tokens": 160,
+      "bytes": 640,
+      "method": "ceil(utf8-bytes/4)"
+    },
     "records/firmware/em5-iii/em5-iii-1700.yaml": {
       "approx_tokens": 171,
       "bytes": 682,
@@ -235,6 +245,11 @@
       "bytes": 6874,
       "method": "ceil(utf8-bytes/4)"
     },
+    "records/projects/em1-iii-mod-builder.yaml": {
+      "approx_tokens": 2291,
+      "bytes": 9162,
+      "method": "ceil(utf8-bytes/4)"
+    },
     "records/projects/em5-iii-notes.yaml": {
       "approx_tokens": 1268,
       "bytes": 5071,
@@ -263,6 +278,11 @@
     "records/sources/db.yaml": {
       "approx_tokens": 547,
       "bytes": 2185,
+      "method": "ceil(utf8-bytes/4)"
+    },
+    "records/sources/em1-iii-mod-builder.yaml": {
+      "approx_tokens": 1044,
+      "bytes": 4174,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/em5-iii-notes.yaml": {

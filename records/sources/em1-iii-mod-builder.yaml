@@ -1,0 +1,99 @@
+schema_version: 1
+records:
+- type: source
+  id: source.em1m3.readme
+  title: E-M1 III repository status note
+  summary: The author states the project is no longer active, works as is without major bugs, and others may continue it.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-20'
+  url: https://github.com/dfeldt91-blip/E-M1-Miii/blob/4e36a6ed170c5b25d7205137f20b5e0d9f4b4c76/README.md
+  source_kind: github-file
+  upstream_repo: dfeldt91-blip/E-M1-Miii
+  revision: 4e36a6ed170c5b25d7205137f20b5e0d9f4b4c76
+  locator: README.md
+  retrieved_on: '2026-11-20'
+  last_checked: '2026-11-20'
+  publication: public
+  reuse_note: Linked and summarised; upstream material retains its own terms.
+- type: source
+  id: source.em1m3.builder
+  title: E-M1 III mod builder guide
+  summary: What the builder does, the mod list with the owner's camera status per mod, install steps and credits.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-20'
+  url: https://github.com/dfeldt91-blip/E-M1-Miii/blob/4e36a6ed170c5b25d7205137f20b5e0d9f4b4c76/builder/README.md
+  source_kind: github-file
+  upstream_repo: dfeldt91-blip/E-M1-Miii
+  revision: 4e36a6ed170c5b25d7205137f20b5e0d9f4b4c76
+  locator: builder/README.md
+  retrieved_on: '2026-11-20'
+  last_checked: '2026-11-20'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.em1m3.mods
+  title: E-M1 III mod pack
+  summary: The builder's 19 mods with descriptions and camera notes, and the SHA-256 it requires of stock 1.6.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-20'
+  url: https://github.com/dfeldt91-blip/E-M1-Miii/blob/4e36a6ed170c5b25d7205137f20b5e0d9f4b4c76/builder/mods.json
+  source_kind: github-file
+  upstream_repo: dfeldt91-blip/E-M1-Miii
+  revision: 4e36a6ed170c5b25d7205137f20b5e0d9f4b4c76
+  locator: 'builder/mods.json: firmware and each mod''s title, description and camera fields'
+  retrieved_on: '2026-11-20'
+  last_checked: '2026-11-20'
+  publication: public
+  reuse_note: Summarised metadata only; no edit lists, code or firmware imported.
+- type: source
+  id: source.em1m3.findings
+  title: E-M1 III firmware findings
+  summary: Research notes behind the mods, including Multiple Exposure frame counts tried on the camera.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-20'
+  url: https://github.com/dfeldt91-blip/E-M1-Miii/blob/4e36a6ed170c5b25d7205137f20b5e0d9f4b4c76/docs/FINDINGS.md
+  source_kind: github-file
+  upstream_repo: dfeldt91-blip/E-M1-Miii
+  revision: 4e36a6ed170c5b25d7205137f20b5e0d9f4b4c76
+  locator: 'docs/FINDINGS.md: Multiple Exposure frames'
+  retrieved_on: '2026-11-20'
+  last_checked: '2026-11-20'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.em1m3.releases
+  title: E-M1 III Mod Builder releases
+  summary: Mac and Windows builds of the mod builder, mod-builder-1.12 to 1.17; all share the same notes.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-20'
+  url: https://github.com/dfeldt91-blip/E-M1-Miii/releases
+  source_kind: github-release
+  upstream_repo: dfeldt91-blip/E-M1-Miii
+  revision: mod-builder-1.17
+  locator: Releases page; release mod-builder-1.17
+  retrieved_on: '2026-11-20'
+  last_checked: '2026-11-20'
+  published_on: '2026-11-18'
+  publication: public
+  reuse_note: Attributed summary of mutable release notes; no code, firmware or executables imported.
+- type: source
+  id: source.em1m3.author-note
+  title: Author's note on project status
+  summary: The author asks that the Atlas record the project as inactive but open to continue, functional, with one known preview issue.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-20'
+  url: https://github.com/dfeldt91-blip/E-M1-Miii
+  source_kind: web-page
+  upstream_repo: dfeldt91-blip/E-M1-Miii
+  revision: null
+  locator: Statement from the author to the Atlas maintainer, 2026-11-20, asking for this note to be published
+  retrieved_on: '2026-11-20'
+  last_checked: '2026-11-20'
+  publication: authorised-summary
+  reuse_note: Summarised at the author's request; no other private material published.

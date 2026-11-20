@@ -58,6 +58,20 @@ E148: v0.2.0-alpha1 has an overall positive owner report; original OM-5 work is 
 
 <div class="camera-card" markdown="1">
 
+[OM-D E-M1 Mark III](em1-iii.md){ .card-title }
+
+E139
+{ .model-code }
+
+E139: one inactive mod builder for firmware 1.6; owner camera reports per mod, no Atlas evidence imported.
+
+1 project · 0 features catalogued · discovery only
+{ .card-meta }
+
+</div>
+
+<div class="camera-card" markdown="1">
+
 [OM-D E-M10 Mark IV](em10-iv.md){ .card-title }
 
 E140
