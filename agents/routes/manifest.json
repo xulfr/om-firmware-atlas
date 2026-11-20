@@ -196,8 +196,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/caduceus-om5.yaml": {
-      "approx_tokens": 1488,
-      "bytes": 5951,
+      "approx_tokens": 1595,
+      "bytes": 6377,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/camera-stuff.yaml": {

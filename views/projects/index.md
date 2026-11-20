@@ -10,6 +10,23 @@ Independent projects by members of the community, each with its own home, mainta
 
 <div class="project-card" markdown="1">
 
+![The OM-5 Mark II Picture Mode screen showing Color Profile 2 with the look Portra 160](../../docs/assets/projects/caduceus-om5/picture-mode-look.png)
+{ .card-image }
+
+[Caduceus for OM-5](caduceus-om5.md){ .card-title }
+
+Looks and a full colour editor for the OM-5 Mark II. Experimental.
+
+Color Profiles 1–3 and Monochrome Profiles 1–3 · Custom looks · Colour editor
+{ .card-features }
+
+Latest: v0.2.0-alpha1, 20 Nov 2026
+{ .card-meta }
+
+</div>
+
+<div class="project-card" markdown="1">
+
 ![A Paris street scene at night with warm, soft colour](../../docs/assets/projects/caduceus-om3/film-portra-400.jpg)
 { .card-image }
 
@@ -21,23 +38,6 @@ Your films in Picture Mode · 20 film simulations · Colour editor on the camera
 { .card-features }
 
 Latest: v0.40.2, 20 Nov 2026
-{ .card-meta }
-
-</div>
-
-<div class="project-card" markdown="1">
-
-![The OM-5 Mark II Picture Mode screen showing Color Profile 2 with the look Portra 160](../../docs/assets/projects/caduceus-om5/picture-mode-look.png)
-{ .card-image }
-
-[Caduceus for OM-5](caduceus-om5.md){ .card-title }
-
-Looks and a full colour editor for the OM-5 Mark II. Experimental.
-
-Color Profiles 1–3 and Monochrome Profiles 1–3 · Custom looks · Colour editor
-{ .card-features }
-
-Latest: v0.1.0-alpha12, 16 Nov 2026
 { .card-meta }
 
 </div>

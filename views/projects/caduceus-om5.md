@@ -15,7 +15,7 @@ Looks and a full colour editor for the OM-5 Mark II. Experimental.
 
 </div>
 
-**Type:** mod · **Latest release:** [v0.1.0-alpha12](https://github.com/xulfr/caduceus-om5/releases/tag/v0.1.0-alpha12), 16 Nov 2026 · **Maintained by** [xulfr](https://github.com/xulfr)
+**Type:** mod · **Latest release:** [v0.2.0-alpha1](https://github.com/xulfr/caduceus-om5/releases/tag/v0.2.0-alpha1), 20 Nov 2026 · **Maintained by** [xulfr](https://github.com/xulfr)
 { .facts }
 
 ![The OM-5 Mark II Picture Mode screen showing Color Profile 2 with the look Portra 160](../../docs/assets/projects/caduceus-om5/picture-mode-look.png)
@@ -175,6 +175,18 @@ The hue page of the colour editor. *Caduceus for OM-5 website.*
 
 <div class="release-item" markdown="1">
 
+**[Caduceus OM-5 Mark II v0.2.0-alpha1](https://github.com/xulfr/caduceus-om5/releases/tag/v0.2.0-alpha1)** <span class="pill pill-alpha">Pre-release</span> · 20 Nov 2026
+{ .release-head }
+
+- Black and White points, split-tone controls and live-view updates.
+
+For E148 firmware 1.1. Verify the file on the card against the checksum in the release notes.
+{ .release-warning }
+
+</div>
+
+<div class="release-item" markdown="1">
+
 **[Caduceus OM-5 Mark II v0.1.0-alpha12](https://github.com/xulfr/caduceus-om5/releases/tag/v0.1.0-alpha12)** <span class="pill pill-alpha">Pre-release</span> · 16 Nov 2026
 { .release-head }
 
@@ -201,7 +213,7 @@ Experimental. The installer keeps its experimental-build acknowledgement; instal
 
 ## Research notes
 
-Alpha12 remains the published Mark II build. The project reports emulator checks for the unreleased v0.2.0-dev build.
+The owner reports overall success with v0.2.0-alpha1 on the Mark II running stock firmware 1.1.
 
 ## Sources and record
 
