@@ -9,6 +9,6 @@ E-P7 modifications and shared-panel/port research.
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
 | [caduceus-ep7.yaml](../../../records/projects/caduceus-ep7.yaml) | Project scope, related work and contribution destination | 11,683 | ~2,921 |
-| [ep7.yaml](../../../records/sources/ep7.yaml) | Find the relevant source/observation ID; use bounded reads | 4,410 | ~1,103 |
+| [ep7.yaml](../../../records/sources/ep7.yaml) | Find the relevant source/observation ID; use bounded reads | 5,143 | ~1,286 |
 
 Follow only relevant camera/topic routes. Upstream policies apply to work there; Atlas does not assign ownership across projects.

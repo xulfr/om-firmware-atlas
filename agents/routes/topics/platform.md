@@ -6,7 +6,7 @@ Containers, exact inputs, components, addressing and startup.
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [models.md](../../../knowledge/comparisons/models.md) | Use shared code as a research lead while retaining model, build and method boundaries. Load when: planning a port; comparing firmware families | 1,370 | ~343 |
+| [models.md](../../../knowledge/comparisons/models.md) | Use shared code as a research lead while retaining model, build and method boundaries. Load when: planning a port; comparing firmware families | 2,478 | ~620 |
 | [identity.md](../../../knowledge/platform/identity.md) | Separate model/version labels, byte identity and component/runtime mappings. Load when: identifying firmware; decoding containers; interpreting addresses | 1,721 | ~431 |
 
 Load declared guide dependencies first; at most three guides along a dependency path. A scoped upstream claim is not a community-wide rule.

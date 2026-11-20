@@ -79,7 +79,7 @@ E137
 
 E137: firmware 1.7 studied in depth; focus stacking with any lens, a Live ND port and the card-file debug shell tested on one camera.
 
-3 projects · 5 features catalogued
+3 projects · 7 features catalogued
 { .card-meta }
 
 </div>

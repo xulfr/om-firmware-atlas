@@ -9,6 +9,8 @@ Scoped feature claims: one camera, firmware, project and build each. Availabilit
 | [E-M5 III 1.7 focus stacking with any lens](em5-iii-focus-stacking-any-lens.md) | A published two-byte patch removes the per-lens focus-stacking flag check. |
 | [E-M5 III 1.7 Live ND photo (OM-5 port)](em5-iii-live-nd.md) | Test builds take a full Live ND shot from one press; not released. |
 | [E-M5 III 1.7 Live ND live-view simulation (OM-5 port)](em5-iii-live-nd-preview.md) | Test builds show the Live ND blur in live view, averaged by image-engine job 12. |
+| [E-M5 III 1.7 Color / Monochrome Profile with an on-camera wheel editor](em5-iii-profile-editor.md) | Test builds make the hidden Color and Monochrome Profile modes selectable and editable on the camera; edits show in live view and photos. |
+| [E-M5 III 1.7 native menu rows with mod settings kept across power-off](em5-iii-saved-settings-menu-rows.md) | Added rows and a page behave like stock menus; their values live in the settings image tail and survive power-off. |
 | [E-M5 III 1.7 USB webcam (partial port)](em5-iii-uvc-webcam.md) | Test builds enumerate as a UVC webcam and stream a picture; live view over USB does not work. |
 | [Card-file debug Wi-Fi shell on stock E-M5 III 1.7](em5-iii-wifi-debug-shell.md) | The card-file debug shell documented by Olympus firmware research also works on a stock E-M5 III. |
 | [E-P7 HSLFX](ep7-hsl.md) | The README describes HSLFX with feature-specific states and caveats. |

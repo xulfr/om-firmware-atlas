@@ -6,6 +6,6 @@ HSL, profiles, image effects and persistence research.
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [colour.md](../../../knowledge/subsystems/colour.md) | Find existing colour work and separate preview, saved output and settings persistence. Load when: investigating HSL or film looks; choosing a colour-research home | 1,603 | ~401 |
+| [colour.md](../../../knowledge/subsystems/colour.md) | Find existing colour work and separate preview, saved output and settings persistence. Load when: investigating HSL or film looks; choosing a colour-research home | 2,658 | ~665 |
 
 Load declared guide dependencies first; at most three guides along a dependency path. A scoped upstream claim is not a community-wide rule.

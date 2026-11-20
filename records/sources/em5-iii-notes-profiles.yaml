@@ -1,0 +1,18 @@
+schema_version: 1
+records:
+- type: source
+  id: source.em5n.profiles
+  title: Color and Monochrome Profile on the E-M5 III
+  summary: The hidden Color/Monochrome Profile back end on the E-M5 III, and an on-camera wheel editor added by test builds; camera results.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-20'
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00/docs/features/pen-f-profiles.md
+  source_kind: github-file
+  upstream_repo: nsud-dev/olympus-firmware-notes
+  revision: 3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00
+  locator: docs/features/pen-f-profiles.md
+  retrieved_on: '2026-11-20'
+  last_checked: '2026-11-20'
+  publication: public
+  reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.

@@ -33,11 +33,11 @@ records:
   - source.em5n.live-nd
   topics:
   - capture
-  last_reviewed: '2026-11-18'
+  last_reviewed: '2026-11-20'
   camera_id: camera.em5-iii
   firmware_id: firmware.em5-iii-1700
   project_id: project.em5-iii-notes
-  mod_build: unpublished test builds (to 2026-11-17)
+  mod_build: unpublished test builds (to 2026-11-19)
   feature_id: feature.capture.nd
   assertion: A port of the OM-5 1.2 Live ND shooting states and image-engine job 11 merges N frames at the set shutter
     speed into one photo, ND2 to ND16, from one press.
@@ -48,8 +48,8 @@ records:
   contradicting_refs: []
   limitations:
   - Test builds only; none is published.
-  - 'No dark-frame pass yet: keep Noise Reduction off.'
-  - No menu yet; set through a hidden settings page or a request file.
+  - Noise Reduction's dark-frame pass works at ISO 200 (2026-11-19); at ISO 3200 it reset the camera, and the fix is not tested yet.
+  - Rows in the camera's own menu exist and keep their values (see the saved-settings capability); letting them drive Live ND is not tested yet.
 - type: capability
   id: capability.em5-iii-live-nd-preview
   title: E-M5 III 1.7 Live ND live-view simulation (OM-5 port)

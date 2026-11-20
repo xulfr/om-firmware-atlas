@@ -17,6 +17,7 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [Focus stacking lens check patch](em5n.focus-patch.md) | Function, patched bytes and camera result. |
 | [Focus stacking](em5n.focus-stacking.md) | Lens check patch background and the shot-count setting. |
 | [Gotchas](em5n.gotchas.md) | Mistakes that hung, reset or delayed work on the camera, and the rule since. |
+| [E-M5 III settings and menus guide](em5n.guide-settings.md) | How a setting gets from a menu row to the saved settings, and how native rows were added. |
 | [E-M5 Mark III firmware guides](em5n.guides.md) | Process guides for E-M5 Mark III 1.7, including boot, shooting, live view and memory. |
 | [Handheld High Res Shot](em5n.hhhr.md) | How the OM-5 does HHHR and what the E-M5 III already has. |
 | [E-M5 III image engine](em5n.image-engine.md) | Where job programs live, jobs per body, the parameter window, job records and safe submission. |
@@ -25,10 +26,12 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [E-M5 III memory map](em5n.memory-map.md) | RAM per body, flash layout, frame pools and spare space used by patches. |
 | [MN103 CPU on the E-M5 III](em5n.mn103.md) | Call frames, compiler, instruction limits and a table of useful routines. |
 | [What the E-M5 III project has looked into](em5n.overview.md) | Tour of every area studied with a tagged result per feature. |
-| [Patching techniques](em5n.patching.md) | Patch methods proven on the camera and the rules behind them. |
+| [Modifying the firmware](em5n.patching.md) | Twenty modification techniques, each with method, pitfalls and a per-camera checked-on table. |
 | [Live ND port layers](em5n.port-layers.md) | Layers of the Live ND port and where ported and native code join. |
+| [Color and Monochrome Profile on the E-M5 III](em5n.profiles.md) | The hidden Color/Monochrome Profile back end on the E-M5 III, and an on-camera wheel editor added by test builds; camera results. |
 | [E-M5 III notes overview](em5n.readme.md) | Scope, tag meanings, address convention, tools. |
 | [E-M5 III recovery](em5n.recovery.md) | Power-on checks, flash map, write guard, card updater and recoverable failures. |
+| [Saved mod settings and native menu rows on the E-M5 III](em5n.saved-settings.md) | Native menu rows and mod settings kept in the unused tail of the user-settings image; camera result. |
 | [E-M5 III sensor](em5n.sensor.md) | Raw frame layout, calibration entries and sensor mode requests. |
 | [E-M5 III shooting sequencer](em5n.sequencer.md) | State table, path choice, burst streaming, exposure record and sensor requests. |
 | [Starry Sky AF](em5n.starry-af.md) | Starry Sky AF on the OM-5 and E-M1 III; absent on the E-M5 III. |
@@ -43,6 +46,7 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [OM-Emu overview (current)](emu.readme-current.md) | What the browser player runs today, Caduceus checks and the body ports. |
 | [Caduceus body survey](ep7.bodies.md) | Related projects and method-specific signature comparisons. |
 | [E-P7 firmware guide](ep7.guide.md) | Containers, mapping, loaders and patching lessons. |
+| [E-P7 looks kept in the camera's own memory](ep7.internal-storage.md) | Research on keeping mod data in the unused tail of the user-settings image, saved by the camera's own settings save. |
 | [E-P7 look-format additions](ep7.look-v4.md) | Curve/matrix fields and older-consumer behaviour. |
 | [Shared Control Panel direction](ep7.panel.md) | Maintainer proposal for common settings and camera exporters. |
 | [E-P7 Ghidra/REA profile](ep7.rea.md) | A specific locally patched setup and decompiler limitations. |

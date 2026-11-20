@@ -1,0 +1,18 @@
+schema_version: 1
+records:
+- type: source
+  id: source.em5n.saved-settings
+  title: Saved mod settings and native menu rows on the E-M5 III
+  summary: Native menu rows and mod settings kept in the unused tail of the user-settings image; camera result.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-20'
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00/docs/features/saved-settings-and-menu-rows.md
+  source_kind: github-file
+  upstream_repo: nsud-dev/olympus-firmware-notes
+  revision: 3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00
+  locator: docs/features/saved-settings-and-menu-rows.md
+  retrieved_on: '2026-11-20'
+  last_checked: '2026-11-20'
+  publication: public
+  reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.

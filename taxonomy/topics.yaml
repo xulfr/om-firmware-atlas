@@ -29,11 +29,13 @@ features:
   feature.recovery: {title: Recovery from a specified failure, topic: patching}
   feature.colour.hsl: {title: Per-colour Hue/Saturation/Lightness, topic: colour}
   feature.looks: {title: Card-loaded film looks, topic: interfaces}
+  feature.colour.profile-editor: {title: Color / Monochrome Profile modes and wheel editor, topic: colour}
   feature.capture.nd: {title: Live ND, topic: capture}
   feature.capture.focus-stacking-any-lens: {title: Focus stacking with any lens, topic: capture}
   feature.capture.nd-preview: {title: Live ND live-view simulation, topic: capture}
   feature.connectivity.uvc-webcam: {title: USB webcam (UVC), topic: capture}
   feature.tooling.debug-shell: {title: Debug shell and network, topic: tooling}
+  feature.settings.native-rows-saved: {title: Native menu rows with saved mod settings, topic: patching}
   feature.controls.aperture-ring: {title: Panasonic lens aperture ring, topic: capture}
   feature.capture.live-gnd: {title: Live GND, topic: capture}
   feature.capture.hhhr: {title: Handheld High Res Shot, topic: capture}

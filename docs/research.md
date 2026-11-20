@@ -18,6 +18,7 @@ The detailed research stays with the projects. [Olympus firmware research](../vi
 |---|---|
 | Identify or unpack firmware | [Firmware identity and address spaces](../knowledge/platform/identity.md) |
 | Understand patch construction | [Patching and scoped validation](../knowledge/methods/patching.md) |
+| Learn how one camera's firmware works, step by step | [E-M5 III firmware guides](../views/sources/em5n.guides.md) |
 | Trace or decompile code | [Analysis tool profiles](../knowledge/tooling/analysis.md) |
 | Exercise firmware outside a camera | [Emulation coverage](../knowledge/emulation/coverage.md) |
 | Work on colour, profiles or settings | [Colour and settings research](../knowledge/subsystems/colour.md) |

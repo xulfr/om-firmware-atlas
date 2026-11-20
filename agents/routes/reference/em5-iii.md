@@ -49,27 +49,32 @@ Exact-build facts only: never apply an address to another build or body. Status:
 | Section ready test | runtime-cached | `0x60045d92` | function | single-source | [d15] |
 | Take a lock with timeout | runtime-cached | `0x60051679` | function | single-source | [d14] |
 | Convert an address for the image engine | runtime-cached | `0x600590c9` | function | single-source | [d14] |
+| Settings store save | runtime-cached | `0x6005aaaf` | function | single-source | [d16] |
 | Enter a critical section | runtime-cached | `0x60069e11` | function | single-source | [d14] |
 | Create a timer | runtime-cached | `0x6006be97` | function | camera-confirmed | [d14] |
-| Flash write guard | runtime-cached | `0x600c4680` | function | single-source | [d16] |
+| Flash write guard | runtime-cached | `0x600c4680` | function | single-source | [d17] |
 | Gap before section 1 | runtime-cached | `0x600d0800..0x600de000` | free-space | single-source | [d15] |
-| Simulated key press | runtime-cached | `0x60120327` | function | single-source | [d17] |
-| User shell command table | runtime-cached | `0x601fbe38` | table | camera-confirmed | [d18] |
-| Sensor mode request sender | runtime-cached | `0x601fce30` | function | camera-confirmed | [d19] |
-| Image-engine job setter table | runtime-cached | `0x60257b88` | table | camera-confirmed | [d20] |
+| Simulated key press | runtime-cached | `0x60120327` | function | single-source | [d18] |
+| User shell command table | runtime-cached | `0x601fbe38` | table | camera-confirmed | [d19] |
+| Sensor mode request sender | runtime-cached | `0x601fce30` | function | camera-confirmed | [d20] |
+| Image-engine job setter table | runtime-cached | `0x60257b88` | table | camera-confirmed | [d21] |
 | Shooting-state event dispatcher | runtime-cached | `0x602a0f90` | function | camera-confirmed | [d6] |
 | No-op state event handler | runtime-cached | `0x602a14bb` | function | camera-confirmed | [d6] |
-| Setting getter | runtime-cached | `0x602e69f9` | function | single-source | [d21] |
+| Setting getter | runtime-cached | `0x602e69f9` | function | single-source | [d22] |
+| Menu setting getter | runtime-cached | `0x602e6a02` | hook-site | camera-confirmed | [d23] |
 | Submit an image-engine job | runtime-cached | `0x603185eb` | function | camera-confirmed | [d3] |
-| Shooting state table | runtime-cached | `0x6044f9e4` | table | camera-confirmed | [d22] |
+| Shooting state table | runtime-cached | `0x6044f9e4` | table | camera-confirmed | [d24] |
+| Section 3 slack | runtime-cached | `0x605d4000..0x605da800` | free-space | camera-confirmed | [d25] |
 | fopen (card file) | runtime-cached | `0x60631f63` | function | single-source | [d14] |
 | fclose (card file) | runtime-cached | `0x60631f6c` | function | single-source | [d14] |
 | fwrite (card file) | runtime-cached | `0x60631fe8` | function | camera-confirmed | [d14] |
 | fread (card file) | runtime-cached | `0x606320f2` | function | camera-confirmed | [d14] |
-| Focus stacking per-lens flag branch | runtime-cached | `0x6065e5ec` | hook-site | camera-confirmed | [d23] |
-| Section 4 slack | runtime-cached | `0x6079d800..0x607b6800` | free-space | camera-confirmed | [d24] |
-| Start the debug Wi-Fi network | runtime-cached | `0x6122e9f6` | function | camera-confirmed | [d25] |
-| Space after section 10 | runtime-cached | `0x61478000..0x61480000` | free-space | camera-confirmed | [d24] |
+| Focus stacking per-lens flag branch | runtime-cached | `0x6065e5ec` | hook-site | camera-confirmed | [d26] |
+| Section 4 slack | runtime-cached | `0x6079d800..0x607b6800` | free-space | camera-confirmed | [d27] |
+| GUI string lookup | runtime-cached | `0x60c9350c` | hook-site | camera-confirmed | [d23] |
+| Start the debug Wi-Fi network | runtime-cached | `0x6122e9f6` | function | camera-confirmed | [d28] |
+| Space after section 10 | runtime-cached | `0x61478000..0x61480000` | free-space | camera-confirmed | [d27] |
+| User settings image (store 50) | runtime-cached | `0x623d1000..0x62411000` | data | camera-confirmed | [d16] |
 | Section ready bits | runtime-uncached | `0xa26565c0` | data | camera-confirmed | [d15] |
 
 [d1]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/reference/gotchas.md#wrong-beliefs-we-corrected
@@ -87,15 +92,18 @@ Exact-build facts only: never apply an address to another build or body. Status:
 [d13]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/firmware/boot-and-sections.md#addresses
 [d14]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/hardware/mn103-cpu.md#useful-firmware-routines-e-m5-iii-17
 [d15]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/firmware/boot-and-sections.md#sections-load-in-the-background
-[d16]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/firmware/recovery.md#flash-map-and-what-an-update-writes
-[d17]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/features/wifi-debug-shell.md#simulated-button-presses
-[d18]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/features/wifi-debug-shell.md#first-camera-test-2026-11-12-shell-works
-[d19]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/hardware/sensor.md#sensor-mode-requests
-[d20]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/hardware/image-engine.md#the-parameter-window-at-0x9d000000
-[d21]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/features/focus-stacking.md#test-build-shot-count-3-8-2026-11-05-not-flashed
-[d22]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/firmware/shooting-sequencer.md#the-state-table
-[d23]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/patches/focus-stacking-any-lens.md#the-patch
-[d24]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/hardware/memory-map.md#spare-space-for-our-code
-[d25]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/features/wifi-debug-shell.md#how-it-works-e-m5-iii-17
+[d16]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00/docs/features/saved-settings-and-menu-rows.md#where-the-values-live
+[d17]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/firmware/recovery.md#flash-map-and-what-an-update-writes
+[d18]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/features/wifi-debug-shell.md#simulated-button-presses
+[d19]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/features/wifi-debug-shell.md#first-camera-test-2026-11-12-shell-works
+[d20]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/hardware/sensor.md#sensor-mode-requests
+[d21]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/hardware/image-engine.md#the-parameter-window-at-0x9d000000
+[d22]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/features/focus-stacking.md#test-build-shot-count-3-8-2026-11-05-not-flashed
+[d23]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00/docs/features/saved-settings-and-menu-rows.md#how-the-menu-rows-are-added
+[d24]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/firmware/shooting-sequencer.md#the-state-table
+[d25]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00/docs/features/saved-settings-and-menu-rows.md#where-the-code-goes-the-boot-lesson
+[d26]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/patches/focus-stacking-any-lens.md#the-patch
+[d27]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/hardware/memory-map.md#spare-space-for-our-code
+[d28]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/features/wifi-debug-shell.md#how-it-works-e-m5-iii-17
 
-Records: [em5-iii-1700-boot.yaml](../../../records/reference/em5-iii-1700-boot.yaml), [em5-iii-1700-capture.yaml](../../../records/reference/em5-iii-1700-capture.yaml), [em5-iii-1700-platform.yaml](../../../records/reference/em5-iii-1700-platform.yaml), [em5-iii-1700-routines.yaml](../../../records/reference/em5-iii-1700-routines.yaml), [hazards-em5-iii.yaml](../../../records/reference/hazards-em5-iii.yaml), [hazards.yaml](../../../records/reference/hazards.yaml).
+Records: [em5-iii-1700-boot.yaml](../../../records/reference/em5-iii-1700-boot.yaml), [em5-iii-1700-capture.yaml](../../../records/reference/em5-iii-1700-capture.yaml), [em5-iii-1700-platform.yaml](../../../records/reference/em5-iii-1700-platform.yaml), [em5-iii-1700-routines.yaml](../../../records/reference/em5-iii-1700-routines.yaml), [em5-iii-1700-settings.yaml](../../../records/reference/em5-iii-1700-settings.yaml), [hazards-em5-iii.yaml](../../../records/reference/hazards-em5-iii.yaml), [hazards.yaml](../../../records/reference/hazards.yaml).

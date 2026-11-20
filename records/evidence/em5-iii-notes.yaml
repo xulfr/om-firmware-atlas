@@ -38,11 +38,11 @@ records:
   - source.em5n.live-nd
   topics:
   - capture
-  last_reviewed: '2026-11-18'
+  last_reviewed: '2026-11-20'
   camera_id: camera.em5-iii
   firmware_id: firmware.em5-iii-1700
   project_id: project.em5-iii-notes
-  mod_build: unpublished test builds (to 2026-11-17)
+  mod_build: unpublished test builds (to 2026-11-19)
   method: physical-camera
   provenance: firsthand-tester-report
   identity_level: not-applicable
@@ -50,7 +50,7 @@ records:
   expected_package_sha256: null
   outcome: reported-pass
   quality: partial
-  reported_on: '2026-11-17'
+  reported_on: '2026-11-19'
   tested_on: null
   procedure: Test builds flashed from the SD card; Live ND shots in S/M at 1/8 s and 1/125 s, several presses in
     a row; brightness and file sizes compared with single shots.
@@ -59,6 +59,8 @@ records:
   - Frames follow the set shutter time (125 ms apart at 1/8 s).
   - A tripod ND8 matches a single 1/8 s shot within 0.03 EV.
   - 16 frames at 1/125 s arrive without loss; job 11 takes about 142 ms for 16 frames.
+  - With Noise Reduction on at ISO 200, the same number of dark frames is merged after the light frames and a normal photo is saved (ND4, ND16).
+  - At ISO 3200, Noise Reduction off works; Noise Reduction on reset the camera at the save.
   limitations:
   - Test builds are not published.
   - One camera, one owner; full Live ND shots since 2026-11-12.

@@ -65,6 +65,22 @@ records:
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
+  id: source.ep7.internal-storage
+  title: E-P7 looks kept in the camera's own memory
+  summary: Research on keeping mod data in the unused tail of the user-settings image, saved by the camera's own settings save.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-19'
+  url: https://github.com/cakelesscoder/caduceus-ep7/blob/0cb1dbcc50595cd87f56648810762ffbbb8e17f3/docs/INTERNAL_STORAGE.md
+  source_kind: github-file
+  upstream_repo: cakelesscoder/caduceus-ep7
+  revision: 0cb1dbcc50595cd87f56648810762ffbbb8e17f3
+  locator: docs/INTERNAL_STORAGE.md
+  retrieved_on: '2026-11-19'
+  last_checked: '2026-11-19'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
   id: source.ep7.panel
   title: Shared Control Panel direction
   summary: Maintainer proposal for common settings and camera exporters.

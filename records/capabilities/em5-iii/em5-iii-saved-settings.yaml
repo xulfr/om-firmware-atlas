@@ -1,0 +1,31 @@
+schema_version: 1
+records:
+- type: capability
+  id: capability.em5-iii-saved-settings-menu-rows
+  title: E-M5 III 1.7 native menu rows with mod settings kept across power-off
+  summary: Added rows and a page behave like stock menus; their values live in the settings image tail and survive power-off.
+  source_refs:
+  - source.em5n.saved-settings
+  - source.ep7.internal-storage
+  topics:
+  - patching
+  - colour
+  last_reviewed: '2026-11-19'
+  camera_id: camera.em5-iii
+  firmware_id: firmware.em5-iii-1700
+  project_id: project.em5-iii-notes
+  mod_build: unpublished test build (2026-11-19)
+  feature_id: feature.settings.native-rows-saved
+  assertion: A Live ND Shooting row after High Res Shot in Shooting Menu 2 opens a native page (on/off, ND2-ND16,
+    LV Simulation); setting ids 16000-16002 read and write bytes at RAM 0x6240af00 (store-50 image +0x39f00), which
+    the camera's own power-off save keeps.
+  availability: experimental-branch
+  implementation: reported
+  evidence_refs:
+  - evidence.em5-iii-saved-settings-camera
+  contradicting_refs: []
+  limitations:
+  - The settings-tail idea comes from the Caduceus E-P7 internal-storage research (which follows the Caduceus OM-3 port).
+  - Test build only; none is published.
+  - A battery pull loses changes since the last save; a settings reset does not clear the block (marker and range checks cover it).
+  - RC Mode moves to the end of Shooting Menu 1 because a tab page holds at most 7 rows.

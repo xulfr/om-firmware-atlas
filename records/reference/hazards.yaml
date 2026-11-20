@@ -74,6 +74,7 @@ records:
   - source.ep7.guide
   - source.om3.devnotes
   - source.em5n.boot
+  - source.em5n.saved-settings
   topics:
   - patching
   - platform
@@ -89,7 +90,9 @@ records:
   - firmware.em5-iii-1700
   note: 'Put code a hook calls in the hook''s own section or one loaded earlier, or guard the jump with the
     section''s ready bit. Load order differs by body: the E-P7 guide gives 1, 7, 2, 3, 4, 5, 6, 8, 9; the
-    OM-3 notes give 1 to 10 in order; the E-M5 III notes give 1, 7, 2, 3, 4, 5, 6, 8, 9, 10.'
+    OM-3 notes give 1 to 10 in order; the E-M5 III notes give 1, 7, 2, 3, 4, 5, 6, 8, 9, 10.
+    On the E-M5 III sections become ready in number order whatever the read order, and an access monitor
+    covers sections not yet ready; check the ready order, not the read order.'
   consequence: A bootloop reported once on the OM-3 port; intermittent dead-at-power-on and reset loops on
     E-M5 III test builds.
   observations:
@@ -112,6 +115,11 @@ records:
     project_id: project.em5-iii-notes
     summary: E-M5 III test builds with an early hook into a later section failed to boot intermittently;
       guarding the jump on the ready bit gave 10 good boots out of 10.
+  - method: physical-camera
+    source_ref: source.em5n.saved-settings
+    project_id: project.em5-iii-notes
+    summary: Boot-time menu hooks in section 2 jumping into the space after section 7 (read early, ready
+      last) boot-looped; the same code after section 3 behind a ready-bit guard boots.
   conflicts: []
   upstream_detail: https://github.com/cakelesscoder/caduceus-ep7/blob/0cb1dbcc50595cd87f56648810762ffbbb8e17f3/docs/FIRMWARE_GUIDE.md
 - type: reference

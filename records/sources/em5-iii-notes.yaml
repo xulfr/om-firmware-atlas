@@ -70,14 +70,14 @@ records:
   summary: OM-5 Live ND port, stage results and open problems.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-18'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/features/live-nd.md
+  last_reviewed: '2026-11-20'
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00/docs/features/live-nd.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22
+  revision: 3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00
   locator: docs/features/live-nd.md
-  retrieved_on: '2026-11-18'
-  last_checked: '2026-11-18'
+  retrieved_on: '2026-11-20'
+  last_checked: '2026-11-20'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
@@ -274,18 +274,18 @@ records:
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
   id: source.em5n.patching
-  title: Patching techniques
-  summary: Patch methods proven on the camera and the rules behind them.
+  title: Modifying the firmware
+  summary: Twenty modification techniques, each with method, pitfalls and a per-camera checked-on table.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-18'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/firmware/patching-techniques.md
+  last_reviewed: '2026-11-20'
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00/docs/firmware/patching-techniques.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22
+  revision: 3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00
   locator: docs/firmware/patching-techniques.md
-  retrieved_on: '2026-11-18'
-  last_checked: '2026-11-18'
+  retrieved_on: '2026-11-20'
+  last_checked: '2026-11-20'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
@@ -310,14 +310,14 @@ records:
   summary: Chip generation, memory, blocks and built-in features of seven bodies side by side.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-18'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/bodies/comparison.md
+  last_reviewed: '2026-11-20'
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00/docs/bodies/comparison.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22
+  revision: 3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00
   locator: docs/bodies/comparison.md
-  retrieved_on: '2026-11-18'
-  last_checked: '2026-11-18'
+  retrieved_on: '2026-11-20'
+  last_checked: '2026-11-20'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
@@ -408,13 +408,29 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-20'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/a67ab954757f3aa7439bab887f0e8690bf33ee7a/docs/guides/README.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00/docs/guides/README.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: a67ab954757f3aa7439bab887f0e8690bf33ee7a
+  revision: 3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00
   locator: docs/guides/README.md
   retrieved_on: '2026-11-20'
   last_checked: '2026-11-20'
   published_on: null
   publication: public
   reuse_note: Attributed synthesis of upstream documentation.
+- type: source
+  id: source.em5n.guide-settings
+  title: E-M5 III settings and menus guide
+  summary: How a setting gets from a menu row to the saved settings, and how native rows were added.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-20'
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00/docs/guides/settings-and-menus.md
+  source_kind: github-file
+  upstream_repo: nsud-dev/olympus-firmware-notes
+  revision: 3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00
+  locator: docs/guides/settings-and-menus.md
+  retrieved_on: '2026-11-20'
+  last_checked: '2026-11-20'
+  publication: public
+  reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.

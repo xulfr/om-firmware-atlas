@@ -8,9 +8,9 @@ Merged Live ND photos at ND2 to ND16, measured on the camera.
 
 **Camera:** [Olympus OM-D E-M5 Mark III](../cameras/em5-iii.md) · **Project:** [Olympus firmware notes (E-M5 Mark III)](../projects/em5-iii-notes.md)
 
-**Firmware:** [E-M5 Mark III firmware 1.7, build 1700](../firmware/em5-iii-1700.md) · **Mod build:** unpublished test builds (to 2026-11-17)
+**Firmware:** [E-M5 Mark III firmware 1.7, build 1700](../firmware/em5-iii-1700.md) · **Mod build:** unpublished test builds (to 2026-11-19)
 
-**Provenance:** firsthand tester report. **Reported:** 2026-11-17. **Test date:** Not explicitly recorded.
+**Provenance:** firsthand tester report. **Reported:** 2026-11-19. **Test date:** Not explicitly recorded.
 
 **Reported/observed package SHA-256:** not recorded.
 
@@ -22,6 +22,8 @@ Test builds flashed from the SD card; Live ND shots in S/M at 1/8 s and 1/125 s,
 - Frames follow the set shutter time (125 ms apart at 1/8 s).
 - A tripod ND8 matches a single 1/8 s shot within 0.03 EV.
 - 16 frames at 1/125 s arrive without loss; job 11 takes about 142 ms for 16 frames.
+- With Noise Reduction on at ISO 200, the same number of dark frames is merged after the light frames and a normal photo is saved (ND4, ND16).
+- At ISO 3200, Noise Reduction off works; Noise Reduction on reset the camera at the save.
 
 ## Limits and assumptions
 
@@ -32,4 +34,4 @@ Test builds flashed from the SD card; Live ND shots in S/M at 1/8 s and 1/125 s,
 
 - [Live ND on the E-M5 III](../sources/em5n.live-nd.md)
 
-[Canonical record](../../records/evidence/em5-iii-notes.yaml) · Substantively reviewed: 2026-11-18.
+[Canonical record](../../records/evidence/em5-iii-notes.yaml) · Substantively reviewed: 2026-11-20.

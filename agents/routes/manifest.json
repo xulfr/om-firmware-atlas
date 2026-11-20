@@ -1,8 +1,8 @@
 {
   "files": {
     "knowledge/comparisons/models.md": {
-      "approx_tokens": 343,
-      "bytes": 1370,
+      "approx_tokens": 620,
+      "bytes": 2478,
       "method": "ceil(utf8-bytes/4)"
     },
     "knowledge/emulation/coverage.md": {
@@ -16,8 +16,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "knowledge/methods/patching.md": {
-      "approx_tokens": 405,
-      "bytes": 1618,
+      "approx_tokens": 518,
+      "bytes": 2070,
       "method": "ceil(utf8-bytes/4)"
     },
     "knowledge/platform/identity.md": {
@@ -26,8 +26,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "knowledge/subsystems/colour.md": {
-      "approx_tokens": 401,
-      "bytes": 1603,
+      "approx_tokens": 665,
+      "bytes": 2658,
       "method": "ceil(utf8-bytes/4)"
     },
     "knowledge/tooling/analysis.md": {
@@ -71,8 +71,18 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/capabilities/em5-iii/em5-iii-features.yaml": {
-      "approx_tokens": 1244,
-      "bytes": 4973,
+      "approx_tokens": 1281,
+      "bytes": 5124,
+      "method": "ceil(utf8-bytes/4)"
+    },
+    "records/capabilities/em5-iii/em5-iii-profile-editor.yaml": {
+      "approx_tokens": 388,
+      "bytes": 1552,
+      "method": "ceil(utf8-bytes/4)"
+    },
+    "records/capabilities/em5-iii/em5-iii-saved-settings.yaml": {
+      "approx_tokens": 366,
+      "bytes": 1461,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/capabilities/ep7/ep7-hsl.yaml": {
@@ -131,8 +141,18 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/evidence/em5-iii-notes.yaml": {
-      "approx_tokens": 1752,
-      "bytes": 7008,
+      "approx_tokens": 1812,
+      "bytes": 7246,
+      "method": "ceil(utf8-bytes/4)"
+    },
+    "records/evidence/em5-iii-profile-editor.yaml": {
+      "approx_tokens": 381,
+      "bytes": 1521,
+      "method": "ceil(utf8-bytes/4)"
+    },
+    "records/evidence/em5-iii-saved-settings.yaml": {
+      "approx_tokens": 361,
+      "bytes": 1441,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/firmware/em5-iii/em5-iii-1700.yaml": {
@@ -191,8 +211,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/em5-iii-notes.yaml": {
-      "approx_tokens": 1065,
-      "bytes": 4259,
+      "approx_tokens": 1261,
+      "bytes": 5041,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/ghidra-mn103.yaml": {
@@ -221,8 +241,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/em5-iii-notes.yaml": {
-      "approx_tokens": 4346,
-      "bytes": 17384,
+      "approx_tokens": 4535,
+      "bytes": 18140,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/emu.yaml": {
@@ -231,8 +251,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/ep7.yaml": {
-      "approx_tokens": 1103,
-      "bytes": 4410,
+      "approx_tokens": 1286,
+      "bytes": 5143,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/fishcu.yaml": {

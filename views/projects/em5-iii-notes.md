@@ -8,7 +8,7 @@ How the E-M5 Mark III firmware works, and bringing OM-5 features to it.
 
 [Project home](https://github.com/nsud-dev/olympus-firmware-notes){ .btn .btn-primary }
 [Ask or report issues](https://github.com/nsud-dev/olympus-firmware-notes/issues){ .btn .btn-ghost }
-[Firmware guides](https://github.com/nsud-dev/olympus-firmware-notes/blob/a67ab954757f3aa7439bab887f0e8690bf33ee7a/docs/guides/README.md){ .btn .btn-ghost }
+[Firmware guides](https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00/docs/guides/README.md){ .btn .btn-ghost }
 [Overview of everything studied](https://github.com/nsud-dev/olympus-firmware-notes/blob/main/docs/overview.md){ .btn .btn-ghost }
 [Gotchas](https://github.com/nsud-dev/olympus-firmware-notes/blob/main/docs/reference/gotchas.md){ .btn .btn-ghost }
 
@@ -48,7 +48,7 @@ A two-byte change to the lens check lets any lens that passes the lens-type chec
 **Live ND (port from the OM-5)** <span class="pill pill-research">Research</span>
 { .feature-head }
 
-A full Live ND shot from one press, ND2 to ND16, merged by the OM-5's image-engine job 11, in test builds on one camera. Builds are not published.
+A full Live ND shot from one press, ND2 to ND16, merged by the OM-5's image-engine job 11, with a Noise Reduction dark pass at low ISO, in test builds on one camera. Builds are not published.
 
 [OM-D E-M5 Mark III](../cameras/em5-iii.md) · [Evidence](../capabilities/em5-iii-live-nd.md)
 { .card-meta }
@@ -63,6 +63,18 @@ A full Live ND shot from one press, ND2 to ND16, merged by the OM-5's image-engi
 Live view shows the Live ND blur, averaged over up to 240 frames by the OM-5's job 12, with restarts on shutter changes and movement, in test builds.
 
 [OM-D E-M5 Mark III](../cameras/em5-iii.md) · [Evidence](../capabilities/em5-iii-live-nd-preview.md)
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
+**Color / Monochrome Profile editor** <span class="pill pill-research">Research</span>
+{ .feature-head }
+
+The hidden Color and Monochrome Profile modes made selectable, with an on-camera wheel editor (E-M1 III wheel routines relocated) whose edits show in live view and photos, in test builds.
+
+[OM-D E-M5 Mark III](../cameras/em5-iii.md) · [Evidence](../capabilities/em5-iii-profile-editor.md)
 { .card-meta }
 
 </div>
@@ -85,6 +97,18 @@ Test builds enumerate as a UVC webcam and stream a generated picture; live view 
 { .feature-head }
 
 Tagged, dated pages on the container, boot, recovery, CPU, memory map, image engine, ARM side, display, stabiliser, settings and menus.
+
+[OM-D E-M5 Mark III](../cameras/em5-iii.md)
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
+**Firmware modification techniques** <span class="pill pill-research">Research</span>
+{ .feature-head }
+
+Twenty techniques from the E-M5 III 1.7 work, each with its method, pitfalls and a per-camera checked-on table that credits other projects' results.
 
 [OM-D E-M5 Mark III](../cameras/em5-iii.md)
 { .card-meta }

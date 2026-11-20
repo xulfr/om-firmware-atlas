@@ -66,6 +66,7 @@ Hardware and layout facts per stock firmware build.
 | [Section ready test](em5-iii-1700.section-ready-test.md) | `0x60045d92` | function | Single source |
 | [Take a lock with timeout](em5-iii-1700.lock-take.md) | `0x60051679` | function | Single source |
 | [Convert an address for the image engine](em5-iii-1700.engine-address.md) | `0x600590c9` | function | Single source |
+| [Settings store save](em5-iii-1700.settings-save.md) | `0x6005aaaf` | function | Single source |
 | [Enter a critical section](em5-iii-1700.critical-enter.md) | `0x60069e11` | function | Single source |
 | [Create a timer](em5-iii-1700.timer-create.md) | `0x6006be97` | function | Camera-confirmed |
 | [Flash write guard](em5-iii-1700.flash-write-guard.md) | `0x600c4680` | function | Single source |
@@ -77,16 +78,20 @@ Hardware and layout facts per stock firmware build.
 | [Shooting-state event dispatcher](em5-iii-1700.state-dispatcher.md) | `0x602a0f90` | function | Camera-confirmed |
 | [No-op state event handler](em5-iii-1700.state-noop-handler.md) | `0x602a14bb` | function | Camera-confirmed |
 | [Setting getter](em5-iii-1700.setting-getter.md) | `0x602e69f9` | function | Single source |
+| [Menu setting getter](em5-iii-1700.menu-setting-getter.md) | `0x602e6a02` | hook site | Camera-confirmed |
 | [Submit an image-engine job](em5-iii-1700.engine-job-submit.md) | `0x603185eb` | function | Camera-confirmed |
 | [Shooting state table](em5-iii-1700.state-table.md) | `0x6044f9e4` | table | Camera-confirmed |
+| [Section 3 slack](em5-iii-1700.section-3-slack.md) | `0x605d4000` | free space | Camera-confirmed |
 | [fopen (card file)](em5-iii-1700.fopen.md) | `0x60631f63` | function | Single source |
 | [fclose (card file)](em5-iii-1700.fclose.md) | `0x60631f6c` | function | Single source |
 | [fwrite (card file)](em5-iii-1700.fwrite.md) | `0x60631fe8` | function | Camera-confirmed |
 | [fread (card file)](em5-iii-1700.fread.md) | `0x606320f2` | function | Camera-confirmed |
 | [Focus stacking per-lens flag branch](em5-iii-1700.focus-stacking-lens-check.md) | `0x6065e5ec` | hook site | Camera-confirmed |
 | [Section 4 slack](em5-iii-1700.section-4-slack.md) | `0x6079d800` | free space | Camera-confirmed |
+| [GUI string lookup](em5-iii-1700.menu-string-lookup.md) | `0x60c9350c` | hook site | Camera-confirmed |
 | [Start the debug Wi-Fi network](em5-iii-1700.debug-wifi-start.md) | `0x6122e9f6` | function | Camera-confirmed |
 | [Space after section 10](em5-iii-1700.after-section-10.md) | `0x61478000` | free space | Camera-confirmed |
+| [User settings image (store 50)](em5-iii-1700.settings-image.md) | `0x623d1000` | data | Camera-confirmed |
 | [Section ready bits](em5-iii-1700.section-ready-bits.md) | `0xa26565c0` | data | Camera-confirmed |
 
 ## Olympus PEN E-P7, ep7 firmware 1.1, build 1100

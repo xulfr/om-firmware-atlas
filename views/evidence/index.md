@@ -9,6 +9,8 @@ Individual observations from physical cameras, emulators and code inspection, wi
 | [E-M5 III 1.7: focus stacking with a non-listed lens](em5-iii-focus-stacking-camera.md) | The notes' author flashed the lens-check patch and reports focus stacking working. |
 | [E-M5 III 1.7: Live ND photos from test builds](em5-iii-live-nd-photo.md) | Merged Live ND photos at ND2 to ND16, measured on the camera. |
 | [E-M5 III 1.7: Live ND live-view preview from test builds](em5-iii-live-nd-preview.md) | Live-view averaging with job 12 checked step by step on the camera. |
+| [E-M5 III 1.7: Color / Monochrome Profile editor on the camera](em5-iii-profile-editor-camera.md) | Modes selectable, wheels drawn, edits seen in live view and photos, over a series of test builds. |
+| [E-M5 III 1.7: native Live ND menu rows, values after power-off](em5-iii-saved-settings-camera.md) | The rows appear in place, the page opens, and set values are still there after a restart. |
 | [E-M5 III 1.7: UVC webcam enumerates and streams](em5-iii-uvc-enumerate-stream.md) | Test builds enumerate as UVC and stream the camera's own picture. |
 | [E-M5 III 1.7: live view over UVC failed](em5-iii-uvc-live-view-fail.md) | Streaming the native movie output over UVC failed. |
 | [E-M5 III 1.7: card-file debug shell tested](em5-iii-wifi-shell-camera.md) | The E-M5 III firmware notes report the method working on a stock E-M5 III, with a live sequencer trace. |

@@ -1,0 +1,36 @@
+schema_version: 1
+records:
+- type: evidence
+  id: evidence.em5-iii-profile-editor-camera
+  title: 'E-M5 III 1.7: Color / Monochrome Profile editor on the camera'
+  summary: Modes selectable, wheels drawn, edits seen in live view and photos, over a series of test builds.
+  source_refs:
+  - source.em5n.profiles
+  topics:
+  - colour
+  last_reviewed: '2026-11-20'
+  camera_id: camera.em5-iii
+  firmware_id: firmware.em5-iii-1700
+  project_id: project.em5-iii-notes
+  mod_build: unpublished test builds (2026-11-19 to 2026-11-20)
+  method: physical-camera
+  provenance: firsthand-tester-report
+  identity_level: not-applicable
+  package_sha256: null
+  expected_package_sha256: null
+  outcome: reported-pass
+  quality: partial
+  reported_on: '2026-11-20'
+  tested_on: '2026-11-20'
+  procedure: Test builds flashed from the SD card, one change at a time; each run checked the editor screen, live
+    view and a photo, and when the screen stayed empty the camera's debug shell was used to dump the drawing buffers
+    and display state.
+  coverage:
+  - Profile entries and slot survive power-off.
+  - Colour and mono wheels drawn; labels, hold-OK reset and the colour box follow the edits.
+  - Colour and mono edits seen in live view and in photos.
+  - Per-slot sharpness and contrast from the Super Control Panel; side-bar rows and sliders work.
+  limitations:
+  - One camera, one owner; a series of test builds, not one package.
+  - The last builds of the series were still being run when this was written.
+  assumptions: []

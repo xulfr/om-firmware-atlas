@@ -1,0 +1,34 @@
+schema_version: 1
+records:
+- type: evidence
+  id: evidence.em5-iii-saved-settings-camera
+  title: 'E-M5 III 1.7: native Live ND menu rows, values after power-off'
+  summary: The rows appear in place, the page opens, and set values are still there after a restart.
+  source_refs:
+  - source.em5n.saved-settings
+  topics:
+  - patching
+  last_reviewed: '2026-11-19'
+  camera_id: camera.em5-iii
+  firmware_id: firmware.em5-iii-1700
+  project_id: project.em5-iii-notes
+  mod_build: unpublished test build (2026-11-19)
+  method: physical-camera
+  provenance: firsthand-tester-report
+  identity_level: not-applicable
+  package_sha256: null
+  expected_package_sha256: null
+  outcome: reported-pass
+  quality: partial
+  reported_on: '2026-11-19'
+  tested_on: '2026-11-19'
+  procedure: Test build flashed from the SD card; checked boot, RC Mode at the end of Shooting Menu 1, Live ND
+    Shooting after High Res Shot, the page's three rows; set values, powered off and on, checked them again.
+  coverage:
+  - Boots normally with code in the space after section 3 and ready-bit guards on the boot-time hooks.
+  - Rows and page appear where planned; values survive power-off.
+  - An earlier placement after section 7 boot-looped and was recovered from the card (see the section-load-order hazard).
+  limitations:
+  - One camera, one owner report, one session.
+  - Other settings after restart and a battery-pull case are not reported.
+  assumptions: []

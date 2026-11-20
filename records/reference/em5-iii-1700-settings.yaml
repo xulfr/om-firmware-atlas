@@ -1,0 +1,137 @@
+schema_version: 1
+records:
+- type: reference
+  id: reference.em5-iii-1700.settings-image
+  title: User settings image (store 50)
+  summary: 256 KB RAM image of the user settings, loaded whole at boot and saved whole at power-off.
+  source_refs:
+  - source.em5n.saved-settings
+  topics:
+  - colour
+  - patching
+  last_reviewed: '2026-11-19'
+  category: data
+  camera_ids:
+  - camera.em5-iii
+  firmware_ids:
+  - firmware.em5-iii-1700
+  address:
+    space: runtime-cached
+    value: '0x623d1000'
+    end: '0x62411000'
+  note: Stock records end well before the end; bytes in the unused tail are saved and restored too, and stock code
+    never reads them. A block at +0x39f00 (0x6240af00) holds mod settings behind a 4-byte marker.
+  observations:
+  - method: static-analysis
+    source_ref: source.em5n.saved-settings
+    project_id: project.em5-iii-notes
+    summary: Boot load and save compare read from the store code.
+  - method: physical-camera
+    source_ref: source.em5n.saved-settings
+    project_id: project.em5-iii-notes
+    summary: Values written in the tail survive power-off.
+  conflicts: []
+  upstream_detail: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00/docs/features/saved-settings-and-menu-rows.md#where-the-values-live
+- type: reference
+  id: reference.em5-iii-1700.settings-save
+  title: Settings store save
+  summary: Writes a settings store to flash only when the live image differs from the saved bank.
+  source_refs:
+  - source.em5n.saved-settings
+  topics:
+  - colour
+  last_reviewed: '2026-11-19'
+  category: function
+  camera_ids:
+  - camera.em5-iii
+  firmware_ids:
+  - firmware.em5-iii-1700
+  address:
+    space: runtime-cached
+    value: '0x6005aaaf'
+  note: Compares the whole image, updates counter and 16-bit sum, writes flash. Called from the power-down path.
+  observations:
+  - method: static-analysis
+    source_ref: source.em5n.saved-settings
+    project_id: project.em5-iii-notes
+    summary: Read from the store code and its callers.
+  conflicts: []
+  upstream_detail: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00/docs/features/saved-settings-and-menu-rows.md#where-the-values-live
+- type: reference
+  id: reference.em5-iii-1700.menu-setting-getter
+  title: Menu setting getter
+  summary: Returns a setting's value by setting id; already called during boot.
+  source_refs:
+  - source.em5n.saved-settings
+  topics:
+  - colour
+  - patching
+  last_reviewed: '2026-11-19'
+  category: hook-site
+  camera_ids:
+  - camera.em5-iii
+  firmware_ids:
+  - firmware.em5-iii-1700
+  address:
+    space: runtime-cached
+    value: '0x602e6a02'
+  note: In section 2. A hook here that serves new ids must not reach a section that is not ready yet; the setter
+    is at 0x602e6f11.
+  observations:
+  - method: physical-camera
+    source_ref: source.em5n.saved-settings
+    project_id: project.em5-iii-notes
+    summary: Hooked for ids 16000-16002 behind a ready-bit guard; boots and serves the new rows.
+  conflicts: []
+  upstream_detail: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00/docs/features/saved-settings-and-menu-rows.md#how-the-menu-rows-are-added
+- type: reference
+  id: reference.em5-iii-1700.menu-string-lookup
+  title: GUI string lookup
+  summary: Looks up on-screen text by string id; a hook can answer new ids from an added table.
+  source_refs:
+  - source.em5n.saved-settings
+  topics:
+  - interfaces
+  last_reviewed: '2026-11-19'
+  category: hook-site
+  camera_ids:
+  - camera.em5-iii
+  firmware_ids:
+  - firmware.em5-iii-1700
+  address:
+    space: runtime-cached
+    value: '0x60c9350c'
+  note: In section 6. New string ids 4000-4015 served by a hook; other ids go to stock code.
+  observations:
+  - method: physical-camera
+    source_ref: source.em5n.saved-settings
+    project_id: project.em5-iii-notes
+    summary: New row titles and help text shown on the camera.
+  conflicts: []
+  upstream_detail: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00/docs/features/saved-settings-and-menu-rows.md#how-the-menu-rows-are-added
+- type: reference
+  id: reference.em5-iii-1700.section-3-slack
+  title: Section 3 slack
+  summary: About 26 KB of 0xFF after section 3, usable once the section end is raised.
+  source_refs:
+  - source.em5n.saved-settings
+  topics:
+  - patching
+  last_reviewed: '2026-11-19'
+  category: free-space
+  camera_ids:
+  - camera.em5-iii
+  firmware_ids:
+  - firmware.em5-iii-1700
+  address:
+    space: runtime-cached
+    value: '0x605d4000'
+    end: '0x605da800'
+  note: Raise the section 3 end constant at 0x60045e1d (0x605da000 tested). Section 4 starts at 0x605da800.
+  observations:
+  - method: physical-camera
+    source_ref: source.em5n.saved-settings
+    project_id: project.em5-iii-notes
+    summary: End raised to 0x605da000 for menu code and tables; loads and runs on the camera.
+  conflicts: []
+  upstream_detail: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00/docs/features/saved-settings-and-menu-rows.md#where-the-code-goes-the-boot-lesson

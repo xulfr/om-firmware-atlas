@@ -42,7 +42,7 @@ records:
     url: https://github.com/nsud-dev
   links:
   - label: Firmware guides
-    url: https://github.com/nsud-dev/olympus-firmware-notes/blob/a67ab954757f3aa7439bab887f0e8690bf33ee7a/docs/guides/README.md
+    url: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00/docs/guides/README.md
   - label: Overview of everything studied
     url: https://github.com/nsud-dev/olympus-firmware-notes/blob/main/docs/overview.md
   - label: Gotchas
@@ -58,8 +58,8 @@ records:
     source_ref: source.em5n.focus-patch
     capability_id: capability.em5-iii-focus-stacking-any-lens
   - name: Live ND (port from the OM-5)
-    summary: A full Live ND shot from one press, ND2 to ND16, merged by the OM-5's image-engine job 11, in test builds
-      on one camera. Builds are not published.
+    summary: A full Live ND shot from one press, ND2 to ND16, merged by the OM-5's image-engine job 11, with a
+      Noise Reduction dark pass at low ISO, in test builds on one camera. Builds are not published.
     camera_ids:
     - camera.em5-iii
     status: research
@@ -75,6 +75,15 @@ records:
     since: null
     source_ref: source.em5n.live-nd
     capability_id: capability.em5-iii-live-nd-preview
+  - name: Color / Monochrome Profile editor
+    summary: The hidden Color and Monochrome Profile modes made selectable, with an on-camera wheel editor (E-M1 III
+      wheel routines relocated) whose edits show in live view and photos, in test builds.
+    camera_ids:
+    - camera.em5-iii
+    status: research
+    since: null
+    source_ref: source.em5n.profiles
+    capability_id: capability.em5-iii-profile-editor
   - name: USB webcam (parked)
     summary: Test builds enumerate as a UVC webcam and stream a generated picture; live view over USB failed, so the
       work is parked.
@@ -92,6 +101,14 @@ records:
     status: research
     since: null
     source_ref: source.em5n.overview
+  - name: Firmware modification techniques
+    summary: Twenty techniques from the E-M5 III 1.7 work, each with its method, pitfalls and a per-camera
+      checked-on table that credits other projects' results.
+    camera_ids:
+    - camera.em5-iii
+    status: research
+    since: null
+    source_ref: source.em5n.patching
   - name: Firmware process guides
     summary: Walk through E-M5 III 1.7 boot, button input, shooting, live view, updates and frame pools,
       with links into the reference notes.
