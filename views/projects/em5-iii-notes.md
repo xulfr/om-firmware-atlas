@@ -8,7 +8,7 @@ How the E-M5 Mark III firmware works, and bringing OM-5 features to it.
 
 [Project home](https://github.com/nsud-dev/olympus-firmware-notes){ .btn .btn-primary }
 [Ask or report issues](https://github.com/nsud-dev/olympus-firmware-notes/issues){ .btn .btn-ghost }
-[Firmware guides](https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00/docs/guides/README.md){ .btn .btn-ghost }
+[Firmware guides](https://github.com/nsud-dev/olympus-firmware-notes/blob/b6823403a48709da06a6a7d5ef7510be3d8143f8/docs/guides/README.md){ .btn .btn-ghost }
 [Overview of everything studied](https://github.com/nsud-dev/olympus-firmware-notes/blob/main/docs/overview.md){ .btn .btn-ghost }
 [Gotchas](https://github.com/nsud-dev/olympus-firmware-notes/blob/main/docs/reference/gotchas.md){ .btn .btn-ghost }
 
@@ -149,5 +149,6 @@ Notes and tools only; no firmware or builds are published. Every claim is tagged
 - [Focus stacking lens check patch](../sources/em5n.focus-patch.md)
 - [USB webcam](../sources/em5n.webcam.md)
 - [E-M5 Mark III firmware guides](../sources/em5n.guides.md)
+- [E-M5 III drawing to the screen guide](../sources/em5n.guide-drawing.md)
 
 [Canonical record](../../records/projects/em5-iii-notes.yaml) · Substantively reviewed: 2026-11-20.

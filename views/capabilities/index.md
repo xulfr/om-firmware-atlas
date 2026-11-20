@@ -19,6 +19,8 @@ Scoped feature claims: one camera, firmware, project and build each. Availabilit
 | [Mark II alpha12 HSL](om5-ii-alpha12-hsl.md) | The project describes per-colour Hue, Saturation and Lightness. |
 | [Mark II alpha12 ND32/ND64](om5-ii-alpha12-nd.md) | The project describes ND32 and ND64 additions. |
 | [Mark II alpha12 overall report](om5-ii-alpha12-overall.md) | The release note records an overall positive owner report. |
+| [Mark II v0.2.0-alpha1 overall report](om5-ii-v020-alpha1-overall.md) | The release note records an overall positive owner report. |
+| [Mark II v0.2.0-alpha1 Black/White and split toning](om5-ii-v020-alpha1-tone.md) | The project describes Black and White on the tone page and Shadow, Midtone and Highlight Tint on the colour wheel of Color Profiles 1–3. |
 | [Restoration after pre-alpha 1](om5-prealpha1-recovery.md) | A tester reports stock restoration after this named failed experiment. |
 | [Original OM-5 pre-alpha 1 startup](om5-prealpha1-start.md) | One tester reports this package failed to reach a usable interface. |
 | [PEN-F HSL release](pen-f-hsl.md) | The research README links a PEN-F HSL release and source build. |

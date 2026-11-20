@@ -11,6 +11,7 @@ records:
   - source.em5n.focus-patch
   - source.em5n.webcam
   - source.em5n.guides
+  - source.em5n.guide-drawing
   topics:
   - platform
   - patching
@@ -42,7 +43,7 @@ records:
     url: https://github.com/nsud-dev
   links:
   - label: Firmware guides
-    url: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00/docs/guides/README.md
+    url: https://github.com/nsud-dev/olympus-firmware-notes/blob/b6823403a48709da06a6a7d5ef7510be3d8143f8/docs/guides/README.md
   - label: Overview of everything studied
     url: https://github.com/nsud-dev/olympus-firmware-notes/blob/main/docs/overview.md
   - label: Gotchas

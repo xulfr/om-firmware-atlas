@@ -2,7 +2,7 @@
 
 # OM SYSTEM OM-5 Mark II
 
-E148: alpha12 has an incomplete positive owner report; original OM-5 work is separate.
+E148: v0.2.0-alpha1 has an overall positive owner report; original OM-5 work is separate.
 
 **Model code:** E148 · **Also known as:** OM-5 II, OM5, OM5II · **Catalogue depth:** initial review
 { .facts }
@@ -87,34 +87,34 @@ Two stronger Live ND settings after ND16.
 
 <div class="feature-card" markdown="1">
 
-**Film Grain for Color Profiles** <span class="pill pill-testing">Testing</span>
+**Black and White tone controls** <span class="pill pill-alpha">Alpha</span>
 { .feature-head }
 
-Off, Low, Std and High on Color Profiles 1–3. The project checked the controls in the emulator. Grain in a camera JPEG still needs testing.
+Per-profile Black and White (−7..+7) on the tone-curve page of Color Profiles 1–3; INFO steps Hi/Sh, Black/White and Mid. Live view updates without a half-press. Covered by the overall owner report.
 
-[Caduceus for OM-5](../projects/caduceus-om5.md) · since v0.2.0-dev
+[Caduceus for OM-5](../projects/caduceus-om5.md) · since v0.2.0-alpha1
 { .card-meta }
 
 </div>
 
 <div class="feature-card" markdown="1">
 
-**Black and White tone controls** <span class="pill pill-testing">Testing</span>
+**Split toning on the colour wheel** <span class="pill pill-alpha">Alpha</span>
 { .feature-head }
 
-Per-profile Black and White adjustments on the tone-curve page. Checked in the emulator. Camera JPEG output is unverified.
+Shadow, Midtone and Highlight Tint for Color Profiles 1–3, each one of 12 colours; INFO switches the wheel between HSL and Tint. Covered by the overall owner report.
 
-[Caduceus for OM-5](../projects/caduceus-om5.md) · since v0.2.0-dev
+[Caduceus for OM-5](../projects/caduceus-om5.md) · since v0.2.0-alpha1
 { .card-meta }
 
 </div>
 
 <div class="feature-card" markdown="1">
 
-**Split toning on the colour wheel** <span class="pill pill-testing">Testing</span>
+**Film Grain for Color Profiles** <span class="pill pill-research">Research</span>
 { .feature-head }
 
-Shadow, midtone and highlight tint controls for Color Profiles 1–3. Checked in the emulator. Camera output is unverified.
+Removed before v0.2.0-alpha1. A development build showed no grain on the camera at any level; the stock grain pass is monochrome-only, so colour grain needs image-pipeline work on an experiment branch.
 
 [Caduceus for OM-5](../projects/caduceus-om5.md) · since v0.2.0-dev
 { .card-meta }
@@ -218,6 +218,8 @@ Installing modified firmware is at your own risk. Follow the project's own guide
 | [Mark II alpha12 HSL](../capabilities/om5-ii-alpha12-hsl.md) | [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.1.0-alpha12 | published release | Upstream description; no separate test observation catalogued |
 | [Mark II alpha12 ND32/ND64](../capabilities/om5-ii-alpha12-nd.md) | [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.1.0-alpha12 | published release | Upstream description; no separate test observation catalogued |
 | [Mark II alpha12 overall report](../capabilities/om5-ii-alpha12-overall.md) | [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.1.0-alpha12 | published release | physical camera; reported pass; partial report; release label only |
+| [Mark II v0.2.0-alpha1 overall report](../capabilities/om5-ii-v020-alpha1-overall.md) | [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.2.0-alpha1 | published release | physical camera; reported pass; partial report; release label only |
+| [Mark II v0.2.0-alpha1 Black/White and split toning](../capabilities/om5-ii-v020-alpha1-tone.md) | [Caduceus for OM-5](../projects/caduceus-om5.md) / v0.2.0-alpha1 | published release | physical camera; reported pass; partial report; release label only |
 
 Results belong to the named project and package. Emulator output does not establish physical-camera behaviour.
 
@@ -254,5 +256,6 @@ What the stock firmware itself contains, separate from what projects add. Follow
 
 - [Caduceus OM-5 overview](../sources/om5.readme.md)
 - [Mark II alpha12 report](../sources/om5.alpha12.md)
+- [Mark II v0.2.0-alpha1 release notes](../sources/om5.v020-alpha1.md)
 
-[Canonical record](../../records/cameras/om5-ii.yaml) · Substantively reviewed: 2026-11-17.
+[Canonical record](../../records/cameras/om5-ii.yaml) · Substantively reviewed: 2026-11-20.

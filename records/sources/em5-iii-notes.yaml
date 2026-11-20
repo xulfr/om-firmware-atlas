@@ -404,14 +404,14 @@ records:
 - type: source
   id: source.em5n.guides
   title: E-M5 Mark III firmware guides
-  summary: Process guides for E-M5 Mark III 1.7, including boot, shooting, live view and memory.
+  summary: Process guides for E-M5 Mark III 1.7, including boot, shooting, live view, memory and drawing to the screen.
   source_refs: []
   topics: []
   last_reviewed: '2026-11-20'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00/docs/guides/README.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/b6823403a48709da06a6a7d5ef7510be3d8143f8/docs/guides/README.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00
+  revision: b6823403a48709da06a6a7d5ef7510be3d8143f8
   locator: docs/guides/README.md
   retrieved_on: '2026-11-20'
   last_checked: '2026-11-20'
@@ -434,3 +434,20 @@ records:
   last_checked: '2026-11-20'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
+- type: source
+  id: source.em5n.guide-drawing
+  title: E-M5 III drawing to the screen guide
+  summary: The GUI layers, the 2D draw engine, and the OpenVG vector GPU (c3d) used by the colour-wheel editors.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-20'
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/b6823403a48709da06a6a7d5ef7510be3d8143f8/docs/guides/drawing-to-the-screen.md
+  source_kind: github-file
+  upstream_repo: nsud-dev/olympus-firmware-notes
+  revision: b6823403a48709da06a6a7d5ef7510be3d8143f8
+  locator: docs/guides/drawing-to-the-screen.md
+  retrieved_on: '2026-11-20'
+  last_checked: '2026-11-20'
+  published_on: null
+  publication: public
+  reuse_note: Attributed synthesis of upstream documentation.

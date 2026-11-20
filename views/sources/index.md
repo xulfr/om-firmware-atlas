@@ -17,8 +17,9 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [Focus stacking lens check patch](em5n.focus-patch.md) | Function, patched bytes and camera result. |
 | [Focus stacking](em5n.focus-stacking.md) | Lens check patch background and the shot-count setting. |
 | [Gotchas](em5n.gotchas.md) | Mistakes that hung, reset or delayed work on the camera, and the rule since. |
+| [E-M5 III drawing to the screen guide](em5n.guide-drawing.md) | The GUI layers, the 2D draw engine, and the OpenVG vector GPU (c3d) used by the colour-wheel editors. |
 | [E-M5 III settings and menus guide](em5n.guide-settings.md) | How a setting gets from a menu row to the saved settings, and how native rows were added. |
-| [E-M5 Mark III firmware guides](em5n.guides.md) | Process guides for E-M5 Mark III 1.7, including boot, shooting, live view and memory. |
+| [E-M5 Mark III firmware guides](em5n.guides.md) | Process guides for E-M5 Mark III 1.7, including boot, shooting, live view, memory and drawing to the screen. |
 | [Handheld High Res Shot](em5n.hhhr.md) | How the OM-5 does HHHR and what the E-M5 III already has. |
 | [E-M5 III image engine](em5n.image-engine.md) | Where job programs live, jobs per body, the parameter window, job records and safe submission. |
 | [Live GND](em5n.live-gnd.md) | Which bodies have a real Live GND and which only carry its UI. |
@@ -85,12 +86,15 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [Mark II alpha12 report](om5.alpha12.md) | Expected digest and an explicitly incomplete owner report. |
 | [OM-5 Mark II brick-risk review](om5.brick-risk.md) | E148 1.1 recovery route, hook map and incident record for the HSL/WB build. |
 | [OM-5 strict builder](om5.builder.md) | Declarative patch scope, bounds and recorded hashes. |
+| [Color Profile grain note](om5.cp-grain.md) | Why Film Grain for Color Profiles was removed after showing no grain on the camera. |
+| [Mark II dev package 0565540a camera report](om5.dev0565.md) | A failed unchecked flash, a working checked flash, a later intermittent boot loop and the startup comparison behind v0.2.0-alpha1. |
 | [OM-5 Mark II card format](om5.formats.md) | OM5F wrapper, names and supported record fields. |
 | [Image-store fault investigation](om5.image-store.md) | Offline observations, emulator revision and remaining physical uncertainty. |
 | [Original OM-5 tester comment](om5.prealpha1.md) | One named-package startup failure and restoration report. |
-| [Caduceus OM-5 overview](om5.readme.md) | Separate model status, features and project lineage. |
-| [Caduceus OM-5 releases](om5.releases.md) | The single published pre-release for the OM-5 Mark II. |
-| [Caduceus OM-5 roadmap](om5.roadmap.md) | Implemented, planned and open work for the OM-5 Mark II and original OM-5. |
+| [Caduceus OM-5 overview](om5.readme.md) | Separate model status, features and project lineage; names v0.2.0-alpha1 the current experimental build. |
+| [Caduceus OM-5 releases](om5.releases.md) | Published pre-releases for the OM-5 Mark II; v0.2.0-alpha1 is the newest. |
+| [Caduceus OM-5 roadmap](om5.roadmap.md) | Implemented, planned, deferred and open work for the OM-5 Mark II and original OM-5, with the v0.2.0 priorities. |
 | [OM-5 Mark II stock section 7](om5.section7.md) | E148 1.1 compressed sections 6 and 7 and where the card updater lives. |
 | [OM-5 Mark II startup readiness correction](om5.startup-fix.md) | E148 section-ready words, the section 5 loaded extent and an overlay defect. |
+| [Mark II v0.2.0-alpha1 release notes](om5.v020-alpha1.md) | Owner's overall result, new tone and tint controls, and the expected on-card checksum. |
 | [OM-5 Mark II v0.2.0 development handover](om5.v020-dev.md) | Emulator regressions and pending camera checks for grain, Black/White and split tone. |

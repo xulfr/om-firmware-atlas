@@ -4,11 +4,11 @@
 
 Expected digest and an explicitly incomplete owner report.
 
-**[Open original source](https://github.com/xulfr/caduceus-om5/blob/a72851a4ada5eab8eed02f7a06afd7f9297bbe81/releases/v0.1.0-alpha12/README.md)**
+**[Open original source](https://github.com/xulfr/caduceus-om5/blob/7c3bf521f4a92580a7cafa3fab82ad2003f10657/releases/v0.1.0-alpha12/README.md)**
 
 **Kind:** github file. **Locator:** releases/v0.1.0-alpha12/README.md.
 
-**Revision / release:** `a72851a4ada5eab8eed02f7a06afd7f9297bbe81`. **Retrieved:** 2026-11-17. **Last source check:** 2026-11-17.
+**Revision / release:** `7c3bf521f4a92580a7cafa3fab82ad2003f10657`. **Retrieved:** 2026-11-20. **Last source check:** 2026-11-20.
 
 **Publication:** public. Linked and synthesised; upstream material retains its own terms.
 

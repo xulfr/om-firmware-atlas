@@ -6,6 +6,6 @@ Emulator profiles, assumptions and the limits of modeled hardware.
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [coverage.md](../../../knowledge/emulation/coverage.md) | Record the lab, revision, model, scenario and stand-ins; distinguish physical results. Load when: using emulator evidence; selecting a test harness | 1,448 | ~362 |
+| [coverage.md](../../../knowledge/emulation/coverage.md) | Record the lab, revision, model, scenario and stand-ins; distinguish physical results. Load when: using emulator evidence; selecting a test harness | 1,932 | ~483 |
 
 Load declared guide dependencies first; at most three guides along a dependency path. A scoped upstream claim is not a community-wide rule.

@@ -43,9 +43,9 @@ Original E144: several projects have distinct experiments. Mark II results do no
 E148
 { .model-code }
 
-E148: alpha12 has an incomplete positive owner report; original OM-5 work is separate.
+E148: v0.2.0-alpha1 has an overall positive owner report; original OM-5 work is separate.
 
-4 projects · 3 features catalogued
+4 projects · 5 features catalogued
 { .card-meta }
 
 </div>

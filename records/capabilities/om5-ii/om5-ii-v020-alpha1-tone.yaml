@@ -1,0 +1,27 @@
+schema_version: 1
+records:
+- type: capability
+  id: capability.om5-ii-v020-alpha1-tone
+  title: Mark II v0.2.0-alpha1 Black/White and split toning
+  summary: The project describes Black and White on the tone page and Shadow, Midtone and Highlight Tint on the
+    colour wheel of Color Profiles 1–3.
+  source_refs:
+  - source.om5.v020-alpha1
+  topics:
+  - colour
+  last_reviewed: '2026-11-20'
+  camera_id: camera.om5-ii
+  firmware_id: firmware.om5-ii-1100
+  project_id: project.caduceus-om5
+  mod_build: v0.2.0-alpha1
+  feature_id: feature.colour.profile-editor
+  assertion: The project describes Black and White on the tone page and Shadow, Midtone and Highlight Tint on the
+    colour wheel of Color Profiles 1–3, with live-view updates without a half-press.
+  availability: published-release
+  implementation: reported
+  evidence_refs:
+  - evidence.om5-ii-v020-alpha1-owner
+  contradicting_refs: []
+  limitations:
+  - Covered only by the overall owner report for this release. Earlier development packages showed Highlight Tint
+    with no visible effect; the release changed the zone placement and has no separate per-tint camera report.

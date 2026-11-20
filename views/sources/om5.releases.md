@@ -2,16 +2,16 @@
 
 # Caduceus OM-5 releases
 
-The single published pre-release for the OM-5 Mark II.
+Published pre-releases for the OM-5 Mark II; v0.2.0-alpha1 is the newest.
 
 **[Open original source](https://github.com/xulfr/caduceus-om5/releases)**
 
-**Kind:** github release. **Locator:** Releases page; release v0.1.0-alpha12.
+**Kind:** github release. **Locator:** Releases page; release v0.2.0-alpha1.
 
-**Revision / release:** `v0.1.0-alpha12`. **Retrieved:** 2026-11-17. **Last source check:** 2026-11-17.
+**Revision / release:** `v0.2.0-alpha1`. **Retrieved:** 2026-11-20. **Last source check:** 2026-11-20.
 
 **Publication:** public. Attributed summary of mutable release notes; no code, firmware or executables imported.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/om5.yaml) · Substantively reviewed: 2026-11-17.
+[Canonical record](../../records/sources/om5.yaml) · Substantively reviewed: 2026-11-20.

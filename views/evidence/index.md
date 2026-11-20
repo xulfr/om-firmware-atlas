@@ -15,6 +15,8 @@ Individual observations from physical cameras, emulators and code inspection, wi
 | [E-M5 III 1.7: live view over UVC failed](em5-iii-uvc-live-view-fail.md) | Streaming the native movie output over UVC failed. |
 | [E-M5 III 1.7: card-file debug shell tested](em5-iii-wifi-shell-camera.md) | The E-M5 III firmware notes report the method working on a stock E-M5 III, with a live sequencer trace. |
 | [Mark II alpha12: overall owner report](om5-ii-alpha12-owner.md) | A positive overall report with explicitly missing details. |
+| [Mark II dev package 0565540a: flash failure, then intermittent boot loop](om5-ii-dev0565-boot.md) | A pre-release development package first failed to flash, then worked, then boot-looped intermittently. |
 | [Mark II image-store probe](om5-ii-image-store-probe.md) | Upstream GUI tracing reports no patch writes into the watched image after correction. |
+| [Mark II v0.2.0-alpha1: overall owner report](om5-ii-v020-alpha1-owner.md) | The owner reports that the release candidate "works perfectly", without per-step details. |
 | [Original OM-5 pre-alpha 1: startup failure](om5-prealpha1-boot.md) | One tester identifies a package and reports a dark, unusable start. |
 | [Original OM-5: restoration after that failure](om5-prealpha1-restore.md) | The tester reports stock 1.2 restoration after the failed experiment. |

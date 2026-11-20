@@ -123,3 +123,72 @@ records:
     model: E148
     stand_ins:
     - Loader completion flags supplied by the harness
+- type: evidence
+  id: evidence.om5-ii-v020-alpha1-owner
+  title: 'Mark II v0.2.0-alpha1: overall owner report'
+  summary: The owner reports that the release candidate "works perfectly", without per-step details.
+  source_refs:
+  - source.om5.v020-alpha1
+  - source.om5.readme
+  topics:
+  - patching
+  - colour
+  last_reviewed: '2026-11-20'
+  camera_id: camera.om5-ii
+  firmware_id: firmware.om5-ii-1100
+  project_id: project.caduceus-om5
+  mod_build: v0.2.0-alpha1
+  method: physical-camera
+  provenance: maintainer-summary
+  identity_level: release-label-only
+  package_sha256: null
+  expected_package_sha256: 2b3fd53ce24433edb662036a29e1f4ea3988c61f9a15d681f0998ebe7b4a21e6
+  outcome: reported-pass
+  quality: partial
+  reported_on: '2026-11-20'
+  tested_on: null
+  procedure: null
+  coverage:
+  - Owner's overall statement that the candidate from commit c3bc45c works perfectly on stock 1.1.
+  limitations:
+  - The release notes say the number of starts and the on-card checksum were not separately reported.
+  - No feature-by-feature record; Reset, custom modes, power-off persistence and the 30-second timeout are not
+    separately reported.
+  - The installer keeps its experimental acknowledgement.
+  assumptions: []
+- type: evidence
+  id: evidence.om5-ii-dev0565-boot
+  title: 'Mark II dev package 0565540a: flash failure, then intermittent boot loop'
+  summary: A pre-release development package first failed to flash, then worked, then boot-looped intermittently.
+  source_refs:
+  - source.om5.dev0565
+  topics:
+  - patching
+  last_reviewed: '2026-11-20'
+  camera_id: camera.om5-ii
+  firmware_id: firmware.om5-ii-1100
+  project_id: project.caduceus-om5
+  mod_build: dev-0565540a
+  method: physical-camera
+  provenance: maintainer-summary
+  identity_level: reported-hash
+  package_sha256: 0565540a52e09e483573bf59e1d4a62946db944a6364a9a605c4ee8b4a94de73
+  expected_package_sha256: null
+  outcome: reported-fail
+  quality: partial
+  reported_on: '2026-11-20'
+  tested_on: null
+  procedure: First flash with an unchecked card copy failed. The owner checked the card file's SHA-256 (match),
+    flashed again and used the camera. The same day the camera boot-looped intermittently; power off and on
+    recovered it.
+  coverage:
+  - Startup reliability of this development package; boot and general use were reported working between loops.
+  - Highlight Tint had no visible effect; the colour wheel swatch changed only every second colour; the Bl/Wh hint
+    overlapped OM's text.
+  limitations:
+  - The boot loop was not reproduced on demand and its cause is unknown. Upstream's emulator comparison found an
+    early dependency on section 8 in the gamma hook of this package; whether that ran on the camera is unknown.
+  - The first failed flash is suspected, not confirmed, to be card-copy corruption.
+  - This is a development package, not v0.2.0-alpha1 (2b3fd53c…), which changed the hook; do not carry the result
+    to the release.
+  assumptions: []
