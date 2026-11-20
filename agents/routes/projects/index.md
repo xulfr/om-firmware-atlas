@@ -12,6 +12,7 @@ Open only the matching route.
 | [Caduceus port for the original OM-5 (tadejs)](caduceus-om5-tadejs.md) | Original OM-5 1.2 port work on a Caduceus E-P7 fork; camera safety ladder passed, no features released. |
 | [OM-3 downstream experiments](camera-stuff.md) | Downstream experiments intended to send fixes upstream. |
 | [db firmware / om-c-firmware](db-firmware.md) | Release-centred controls, localisation and other modifications. |
+| [E-M1 Mark III Mod Builder](em1-iii-mod-builder.md) | Inactive mod builder for E-M1 III firmware 1.6; the author reports it functional and invites others to continue it. |
 | [Olympus firmware notes (E-M5 Mark III)](em5-iii-notes.md) | Tagged technical notes on E-M5 III 1.7 firmware and hardware, with OM-5 donor feature ports. |
 | [Ghidra MN103 processor module](ghidra-mn103.md) | Ghidra disassembly and decompiler support for MN10300, AM33 and AM33-2. |
 | [Historical manual update research](manual-update.md) | Historical SD update procedure and model naming. |

@@ -1,0 +1,20 @@
+schema_version: 1
+records:
+- type: camera
+  id: camera.em1-iii
+  title: Olympus OM-D E-M1 Mark III
+  summary: 'E139: one inactive mod builder for firmware 1.6; owner camera reports per mod, no Atlas evidence imported.'
+  source_refs:
+  - source.em1m3.builder
+  topics: []
+  last_reviewed: '2026-11-20'
+  aliases:
+  - E-M1 III
+  - E-M1 Mark III
+  - EM1III
+  - E139
+  model_codes:
+  - E139
+  project_ids:
+  - project.em1-iii-mod-builder
+  coverage: discovery-only

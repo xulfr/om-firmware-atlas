@@ -6,6 +6,7 @@ Open only the matching route.
 
 | Route | Scope |
 |---|---|
+| [Olympus OM-D E-M1 Mark III](em1-iii.md) | E139: one inactive mod builder for firmware 1.6; owner camera reports per mod, no Atlas evidence imported. |
 | [Olympus OM-D E-M10 Mark IV](em10-iv.md) | E140: port/signature research and emulator coverage; no physical feature report imported. |
 | [Olympus OM-D E-M5 Mark III](em5-iii.md) | E137: firmware 1.7 studied in depth; focus stacking with any lens, a Live ND port and the card-file debug shell tested on one camera. |
 | [Olympus PEN E-P7](ep7.md) | E142: original Caduceus project and a documented Ghidra/REA setup. |
