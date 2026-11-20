@@ -28,14 +28,14 @@ A look's name on the Picture Mode screen. *Caduceus for OM-5 website.*
 
 Caduceus for OM-5 brings back the three Color Profile and three Monochrome Profile slots that the OM-5 Mark II's firmware hides, and gives them custom looks and a colour editor in the style of the other Caduceus projects.
 
-Looks are made in a browser LookLab and copied to the card as one file. In Picture Mode the trash button steps through them, and the chosen look is then kept in the camera. Each Color Profile gets hue, saturation and lightness for 12 colours, a tone curve and its own white balance. Live ND32 and ND64 join the camera's Live ND settings.
+Looks are made in a browser LookLab and copied to the card as one file. In Picture Mode the trash button steps through them, and the chosen look is then kept in the camera. Each Color Profile gets hue, saturation and lightness for 12 colours, a tone curve with Black and White, split toning (a Shadow, Midtone and Highlight Tint) and its own white balance. Live ND32 and ND64 join the camera's Live ND settings.
 
-This is the most experimental project here. Alpha12 runs on the owner's camera, with a partial owner report; five earlier builds failed on that camera and were restored. There is no working version for the original OM-5. Read the project's safety page before anything else.
+This is the most experimental project here. v0.2.0-alpha1 runs on the owner's camera, with an overall owner report that leaves out start counts and the on-card checksum. Five earlier builds failed on that camera and were restored, and a v0.2.0 development package boot-looped intermittently before the release. There is no working version for the original OM-5. Read the project's safety page before anything else.
 
 ### What it's working towards
 
 - A documented camera check of every feature on the OM-5 Mark II, including per-profile white balance, persistence and recovery.
-- Check colour grain and tone controls on a Mark II camera, then continue Glow and Halation work.
+- Clarity next; colour grain needs image-pipeline work on an experiment branch, before Glow and Halation.
 - A second stage for the original OM-5, which has no working build yet.
 
 > **Before you install:** Installing modified firmware is at your own risk. Follow the project's own guide for your exact camera and firmware, and read its safety notes first.
@@ -120,34 +120,34 @@ Two stronger Live ND settings after ND16.
 
 <div class="feature-card" markdown="1">
 
-**Film Grain for Color Profiles** <span class="pill pill-testing">Testing</span>
+**Black and White tone controls** <span class="pill pill-alpha">Alpha</span>
 { .feature-head }
 
-Off, Low, Std and High on Color Profiles 1–3. The project checked the controls in the emulator. Grain in a camera JPEG still needs testing.
+Per-profile Black and White (−7..+7) on the tone-curve page of Color Profiles 1–3; INFO steps Hi/Sh, Black/White and Mid. Live view updates without a half-press. Covered by the overall owner report.
 
-[OM-5 Mark II](../cameras/om5-ii.md) · since v0.2.0-dev
+[OM-5 Mark II](../cameras/om5-ii.md) · since v0.2.0-alpha1 · [Evidence](../capabilities/om5-ii-v020-alpha1-tone.md)
 { .card-meta }
 
 </div>
 
 <div class="feature-card" markdown="1">
 
-**Black and White tone controls** <span class="pill pill-testing">Testing</span>
+**Split toning on the colour wheel** <span class="pill pill-alpha">Alpha</span>
 { .feature-head }
 
-Per-profile Black and White adjustments on the tone-curve page. Checked in the emulator. Camera JPEG output is unverified.
+Shadow, Midtone and Highlight Tint for Color Profiles 1–3, each one of 12 colours; INFO switches the wheel between HSL and Tint. Covered by the overall owner report.
 
-[OM-5 Mark II](../cameras/om5-ii.md) · since v0.2.0-dev
+[OM-5 Mark II](../cameras/om5-ii.md) · since v0.2.0-alpha1 · [Evidence](../capabilities/om5-ii-v020-alpha1-tone.md)
 { .card-meta }
 
 </div>
 
 <div class="feature-card" markdown="1">
 
-**Split toning on the colour wheel** <span class="pill pill-testing">Testing</span>
+**Film Grain for Color Profiles** <span class="pill pill-research">Research</span>
 { .feature-head }
 
-Shadow, midtone and highlight tint controls for Color Profiles 1–3. Checked in the emulator. Camera output is unverified.
+Removed before v0.2.0-alpha1. A development build showed no grain on the camera at any level; the stock grain pass is monochrome-only, so colour grain needs image-pipeline work on an experiment branch.
 
 [OM-5 Mark II](../cameras/om5-ii.md) · since v0.2.0-dev
 { .card-meta }
@@ -178,7 +178,9 @@ The hue page of the colour editor. *Caduceus for OM-5 website.*
 **[Caduceus OM-5 Mark II v0.2.0-alpha1](https://github.com/xulfr/caduceus-om5/releases/tag/v0.2.0-alpha1)** <span class="pill pill-alpha">Pre-release</span> · 20 Nov 2026
 { .release-head }
 
-- Black and White points, split-tone controls and live-view updates.
+- Black and White points, split-tone controls and live-view updates without a half-press.
+- Picture Mode stays open 30 seconds; startup guard on the gamma hook after an intermittent boot loop on a development build.
+- The owner reports that the candidate works perfectly; start counts and the on-card checksum were not reported.
 
 For E148 firmware 1.1. Verify the file on the card against the checksum in the release notes.
 { .release-warning }
@@ -222,5 +224,8 @@ The owner reports overall success with v0.2.0-alpha1 on the Mark II running stoc
 - [Caduceus OM-5 roadmap](../sources/om5.roadmap.md)
 - [Caduceus OM-5 releases](../sources/om5.releases.md)
 - [OM-5 Mark II v0.2.0 development handover](../sources/om5.v020-dev.md)
+- [Mark II v0.2.0-alpha1 release notes](../sources/om5.v020-alpha1.md)
+- [Mark II dev package 0565540a camera report](../sources/om5.dev0565.md)
+- [Color Profile grain note](../sources/om5.cp-grain.md)
 
 [Canonical record](../../records/projects/caduceus-om5.yaml) · Substantively reviewed: 2026-11-20.

@@ -2,13 +2,13 @@
 
 # OM SYSTEM OM-5 Mark II
 
-E148: alpha12 has an incomplete positive owner report; original OM-5 work is separate.
+E148: v0.2.0-alpha1 has an overall positive owner report; original OM-5 work is separate.
 
 Exact ID: `camera.om5-ii`. Codes: E148. [Human status view](../../../views/cameras/om5-ii.md).
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [om5-ii.yaml](../../../records/cameras/om5-ii.yaml) | Identity and aliases | 506 | ~127 |
+| [om5-ii.yaml](../../../records/cameras/om5-ii.yaml) | Identity and aliases | 536 | ~134 |
 | [om5-ii-1100.yaml](../../../records/firmware/om5-ii/om5-ii-1100.yaml) | om5-ii firmware 1.1, build 1100 | 489 | ~123 |
 
 ## Existing project homes
@@ -23,6 +23,8 @@ Exact ID: `camera.om5-ii`. Codes: E148. [Human status view](../../../views/camer
 | [om5-ii-alpha12-hsl.yaml](../../../records/capabilities/om5-ii/om5-ii-alpha12-hsl.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 696 | ~174 |
 | [om5-ii-alpha12-nd.yaml](../../../records/capabilities/om5-ii/om5-ii-alpha12-nd.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 655 | ~164 |
 | [om5-ii-alpha12-overall.yaml](../../../records/capabilities/om5-ii/om5-ii-alpha12-overall.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 747 | ~187 |
+| [om5-ii-v020-alpha1-overall.yaml](../../../records/capabilities/om5-ii/om5-ii-v020-alpha1-overall.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 1,009 | ~253 |
+| [om5-ii-v020-alpha1-tone.yaml](../../../records/capabilities/om5-ii/om5-ii-v020-alpha1-tone.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 1,145 | ~287 |
 
 Compact technical reference for this camera: [reference shard](../reference/om5-ii.md).
 

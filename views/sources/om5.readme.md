@@ -2,16 +2,16 @@
 
 # Caduceus OM-5 overview
 
-Separate model status, features and project lineage.
+Separate model status, features and project lineage; names v0.2.0-alpha1 the current experimental build.
 
-**[Open original source](https://github.com/xulfr/caduceus-om5/blob/a72851a4ada5eab8eed02f7a06afd7f9297bbe81/README.md)**
+**[Open original source](https://github.com/xulfr/caduceus-om5/blob/7c3bf521f4a92580a7cafa3fab82ad2003f10657/README.md)**
 
 **Kind:** github file. **Locator:** README.md.
 
-**Revision / release:** `a72851a4ada5eab8eed02f7a06afd7f9297bbe81`. **Retrieved:** 2026-11-17. **Last source check:** 2026-11-17.
+**Revision / release:** `7c3bf521f4a92580a7cafa3fab82ad2003f10657`. **Retrieved:** 2026-11-20. **Last source check:** 2026-11-20.
 
 **Publication:** public. Linked and synthesised; upstream material retains its own terms.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/om5.yaml) · Substantively reviewed: 2026-11-17.
+[Canonical record](../../records/sources/om5.yaml) · Substantively reviewed: 2026-11-20.

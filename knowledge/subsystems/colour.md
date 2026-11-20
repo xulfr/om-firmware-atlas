@@ -8,7 +8,7 @@ topics: [colour, capture]
 camera_ids: []
 project_ids: [project.caduceus-ep7, project.caduceus-om3, project.caduceus-om5, project.oly-fw-analysis, project.em5-iii-notes]
 depends_on: []
-source_refs: [source.ep7.readme, source.om3.readme, source.om5.readme, source.fishcu.readme, source.db.release041, source.em5n.guide-settings, source.em5n.profiles]
+source_refs: [source.ep7.readme, source.om3.readme, source.om5.readme, source.fishcu.readme, source.db.release041, source.em5n.guide-settings, source.em5n.profiles, source.om5.v020-alpha1, source.em5n.guide-drawing]
 last_reviewed: '2026-11-20'
 ---
 # Several layers of colour work
@@ -25,5 +25,5 @@ On the E-M5 III 1.7, a [settings and menus guide](../../views/sources/em5n.guide
 
 # Hidden profile modes on bodies without the dial
 
-Some bodies without the PEN-F / E-P7 creative dial still carry the Color Profile and Monochrome Profile settings and processing. The Caduceus OM-5 II port restored the hidden slots on that body. On the E-M5 III 1.7, [test builds](../../views/sources/em5n.profiles.md) made both modes selectable and added an on-camera wheel editor using the E-M1 III's own wheel routines; the notes separate what was seen in live view, in photos and after power-off. A body's own wheel routines may be stubs even when the settings are complete, so check the drawing code, not only the settings.
+Some bodies without the PEN-F / E-P7 creative dial still carry the Color Profile and Monochrome Profile settings and processing. The Caduceus OM-5 II port restored the hidden slots on that body; [v0.2.0-alpha1](../../views/sources/om5.v020-alpha1.md) adds Black / White and split toning to its Color Profiles. On the E-M5 III 1.7, [test builds](../../views/sources/em5n.profiles.md) made both modes selectable and added an on-camera wheel editor using the E-M1 III's own wheel routines; the notes separate what was seen in live view, in photos and after power-off. A body's own wheel routines may be stubs even when the settings are complete, so check the drawing code, not only the settings. The E-M5 III [drawing guide](../../views/sources/em5n.guide-drawing.md) explains how those wheels are drawn: a vector GPU through an OpenVG library, separate from the GUI layers.
 

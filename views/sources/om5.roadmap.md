@@ -2,16 +2,16 @@
 
 # Caduceus OM-5 roadmap
 
-Implemented, planned and open work for the OM-5 Mark II and original OM-5.
+Implemented, planned, deferred and open work for the OM-5 Mark II and original OM-5, with the v0.2.0 priorities.
 
-**[Open original source](https://github.com/xulfr/caduceus-om5/blob/a72851a4ada5eab8eed02f7a06afd7f9297bbe81/ROADMAP.md)**
+**[Open original source](https://github.com/xulfr/caduceus-om5/blob/7c3bf521f4a92580a7cafa3fab82ad2003f10657/ROADMAP.md)**
 
 **Kind:** github file. **Locator:** ROADMAP.md: first priority and second stage.
 
-**Revision / release:** `a72851a4ada5eab8eed02f7a06afd7f9297bbe81`. **Retrieved:** 2026-11-17. **Last source check:** 2026-11-17.
+**Revision / release:** `7c3bf521f4a92580a7cafa3fab82ad2003f10657`. **Retrieved:** 2026-11-20. **Last source check:** 2026-11-20.
 
 **Publication:** public. Attributed summary; statuses are the owner's own.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/om5.yaml) · Substantively reviewed: 2026-11-17.
+[Canonical record](../../records/sources/om5.yaml) · Substantively reviewed: 2026-11-20.

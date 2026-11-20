@@ -2,13 +2,13 @@
 
 # E-M5 Mark III firmware guides
 
-Process guides for E-M5 Mark III 1.7, including boot, shooting, live view and memory.
+Process guides for E-M5 Mark III 1.7, including boot, shooting, live view, memory and drawing to the screen.
 
-**[Open original source](https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00/docs/guides/README.md)**
+**[Open original source](https://github.com/nsud-dev/olympus-firmware-notes/blob/b6823403a48709da06a6a7d5ef7510be3d8143f8/docs/guides/README.md)**
 
 **Kind:** github file. **Locator:** docs/guides/README.md.
 
-**Revision / release:** `3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00`. **Retrieved:** 2026-11-20. **Last source check:** 2026-11-20.
+**Revision / release:** `b6823403a48709da06a6a7d5ef7510be3d8143f8`. **Retrieved:** 2026-11-20. **Last source check:** 2026-11-20.
 
 **Publication:** public. Attributed synthesis of upstream documentation.
 

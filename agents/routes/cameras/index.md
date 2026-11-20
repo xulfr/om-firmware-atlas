@@ -11,7 +11,7 @@ Open only the matching route.
 | [Olympus PEN E-P7](ep7.md) | E142: original Caduceus project and a documented Ghidra/REA setup. |
 | [OM SYSTEM OM-3](om3.md) | E147: advanced Caduceus work, other modifications and an established research notebook. |
 | [OM SYSTEM OM-5](om5.md) | Original E144: several projects have distinct experiments. Mark II results do not apply. |
-| [OM SYSTEM OM-5 Mark II](om5-ii.md) | E148: alpha12 has an incomplete positive owner report; original OM-5 work is separate. |
+| [OM SYSTEM OM-5 Mark II](om5-ii.md) | E148: v0.2.0-alpha1 has an overall positive owner report; original OM-5 work is separate. |
 | [Olympus PEN-F](pen-f.md) | E122: foundational HSL research; exact internal build identity matters. |
 
 If the model/generation is ambiguous, ask before applying target-specific information. An absent listing means a catalogue gap.

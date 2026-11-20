@@ -8,8 +8,8 @@ Tagged technical notes on E-M5 III 1.7 firmware and hardware, with OM-5 donor fe
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [em5-iii-notes.yaml](../../../records/projects/em5-iii-notes.yaml) | Project scope, related work and contribution destination | 5,041 | ~1,261 |
-| [em5-iii-notes.yaml](../../../records/sources/em5-iii-notes.yaml) | Find the relevant source/observation ID; use bounded reads | 18,140 | ~4,535 |
+| [em5-iii-notes.yaml](../../../records/projects/em5-iii-notes.yaml) | Project scope, related work and contribution destination | 5,071 | ~1,268 |
+| [em5-iii-notes.yaml](../../../records/sources/em5-iii-notes.yaml) | Find the relevant source/observation ID; use bounded reads | 18,911 | ~4,728 |
 | [em5-iii-notes.yaml](../../../records/evidence/em5-iii-notes.yaml) | Find the relevant source/observation ID; use bounded reads | 7,246 | ~1,812 |
 | [em5-iii-profile-editor.yaml](../../../records/evidence/em5-iii-profile-editor.yaml) | Find the relevant source/observation ID; use bounded reads | 1,521 | ~381 |
 | [em5-iii-saved-settings.yaml](../../../records/evidence/em5-iii-saved-settings.yaml) | Find the relevant source/observation ID; use bounded reads | 1,441 | ~361 |

@@ -6,8 +6,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "knowledge/emulation/coverage.md": {
-      "approx_tokens": 362,
-      "bytes": 1448,
+      "approx_tokens": 483,
+      "bytes": 1932,
       "method": "ceil(utf8-bytes/4)"
     },
     "knowledge/interfaces/looks.md": {
@@ -26,8 +26,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "knowledge/subsystems/colour.md": {
-      "approx_tokens": 665,
-      "bytes": 2658,
+      "approx_tokens": 751,
+      "bytes": 3003,
       "method": "ceil(utf8-bytes/4)"
     },
     "knowledge/tooling/analysis.md": {
@@ -56,8 +56,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/cameras/om5-ii.yaml": {
-      "approx_tokens": 127,
-      "bytes": 506,
+      "approx_tokens": 134,
+      "bytes": 536,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/cameras/om5.yaml": {
@@ -110,6 +110,16 @@
       "bytes": 747,
       "method": "ceil(utf8-bytes/4)"
     },
+    "records/capabilities/om5-ii/om5-ii-v020-alpha1-overall.yaml": {
+      "approx_tokens": 253,
+      "bytes": 1009,
+      "method": "ceil(utf8-bytes/4)"
+    },
+    "records/capabilities/om5-ii/om5-ii-v020-alpha1-tone.yaml": {
+      "approx_tokens": 287,
+      "bytes": 1145,
+      "method": "ceil(utf8-bytes/4)"
+    },
     "records/capabilities/om5/om5-db-aperture.yaml": {
       "approx_tokens": 201,
       "bytes": 802,
@@ -136,8 +146,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/evidence/caduceus-om5.yaml": {
-      "approx_tokens": 1094,
-      "bytes": 4373,
+      "approx_tokens": 1835,
+      "bytes": 7339,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/evidence/em5-iii-notes.yaml": {
@@ -196,8 +206,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/caduceus-om5.yaml": {
-      "approx_tokens": 1595,
-      "bytes": 6377,
+      "approx_tokens": 1815,
+      "bytes": 7257,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/camera-stuff.yaml": {
@@ -211,8 +221,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/em5-iii-notes.yaml": {
-      "approx_tokens": 1261,
-      "bytes": 5041,
+      "approx_tokens": 1268,
+      "bytes": 5071,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/ghidra-mn103.yaml": {
@@ -241,8 +251,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/em5-iii-notes.yaml": {
-      "approx_tokens": 4535,
-      "bytes": 18140,
+      "approx_tokens": 4728,
+      "bytes": 18911,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/emu.yaml": {
@@ -276,8 +286,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/om5.yaml": {
-      "approx_tokens": 1785,
-      "bytes": 7138,
+      "approx_tokens": 2351,
+      "bytes": 9404,
       "method": "ceil(utf8-bytes/4)"
     }
   },

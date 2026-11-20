@@ -127,9 +127,10 @@ class AtlasTests(unittest.TestCase):
 
     def test_repo_advance_is_not_claim_promotion(self):
         source = self.catalogue.records["source.om5.readme"]
+        reviewed = source["last_reviewed"]
         result = inspect_remote(source, lambda *args, **kwargs: [{"sha": "f" * 40}])
         self.assertEqual(result["state"], "upstream-advanced")
-        self.assertEqual(source["last_reviewed"], "2026-11-17")
+        self.assertEqual(source["last_reviewed"], reviewed)
 
     def test_source_schema_rejects_unknown_fields(self):
         schema = json.loads((ROOT / "schemas/records.schema.json").read_text())
@@ -140,9 +141,10 @@ class AtlasTests(unittest.TestCase):
 
     def test_publication_age_does_not_renew_sources(self):
         row = self.catalogue.records["camera.om5-ii"]
+        checked = self.catalogue.records["source.om5.readme"]["last_checked"]
         notice = review_notice(self.catalogue, row, dt.date(2027, 1, 1))
         self.assertIn("Source review due", notice)
-        self.assertEqual(self.catalogue.records["source.om5.readme"]["last_checked"], "2026-11-17")
+        self.assertEqual(self.catalogue.records["source.om5.readme"]["last_checked"], checked)
 
     def test_community_directory_has_direct_venue_links(self):
         output = render(self.catalogue)["views/community/index.md"]

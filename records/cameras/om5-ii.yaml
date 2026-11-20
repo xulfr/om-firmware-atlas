@@ -3,12 +3,13 @@ records:
 - type: camera
   id: camera.om5-ii
   title: OM SYSTEM OM-5 Mark II
-  summary: 'E148: alpha12 has an incomplete positive owner report; original OM-5 work is separate.'
+  summary: 'E148: v0.2.0-alpha1 has an overall positive owner report; original OM-5 work is separate.'
   source_refs:
   - source.om5.readme
   - source.om5.alpha12
+  - source.om5.v020-alpha1
   topics: []
-  last_reviewed: '2026-11-17'
+  last_reviewed: '2026-11-20'
   aliases:
   - OM-5 II
   - OM5
