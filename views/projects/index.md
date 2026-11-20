@@ -75,6 +75,20 @@ Latest: dbv0.4.2, 20 Nov 2026
 
 <div class="project-card" markdown="1">
 
+[EPM2Mod](epm2mod.md){ .card-title }
+
+Film simulations, interval shooting, focus peaking and a level gauge for the PEN E-PM2.
+
+Film simulations · Interval shooting · Level gauge
+{ .card-features }
+
+Latest: v2026.11.20-rc.1, 20 Nov 2026
+{ .card-meta }
+
+</div>
+
+<div class="project-card" markdown="1">
+
 [E-M1 Mark III Mod Builder](em1-iii-mod-builder.md){ .card-title }
 
 Pick firmware mods for the E-M1 Mark III and build your own update file. No longer active.

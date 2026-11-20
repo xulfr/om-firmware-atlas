@@ -9,6 +9,7 @@ Stock firmware versions that catalogued work starts from. A version number alone
 | [E-M1 Mark III firmware 1.6, build 1600](em1-iii-1600.md) | Stock update file OLY_E_139_1600_0000_0000.BIN, the input the E-M1 III mod builder downloads and checks. |
 | [E-M5 Mark III firmware 1.7, build 1700](em5-iii-1700.md) | Stock update file OLY_E_137_1700_0000_0000.BIN; the notes' addresses refer to its MN103 main program. |
 | [ep7 firmware 1.1, build 1100](ep7-1100.md) | The guide separates container and runtime mappings; full digest is not imported. |
+| [E-PM2 firmware 1.6, build 1600](epm2-1600.md) | Stock update file OLY_E_101_1600_0000_0000.BIN, 43,319,360 bytes; the input EPM2Mod patches. |
 | [om3 firmware 1.1, build 1100](om3-1100.md) | Several official filenames appear upstream; advertised version alone is not byte identity. |
 | [om5 firmware 1.2, build 1200](om5-1200.md) | Version/build scope only; exact stock-container digest is not imported. |
 | [om5-ii firmware 1.1, build 1100](om5-ii-1100.md) | Add a full digest from a pinned manifest before byte-exact input work. |

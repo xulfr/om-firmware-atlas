@@ -1,0 +1,176 @@
+schema_version: 1
+records:
+- type: reference
+  id: reference.epm2-1600.main-cpu-base
+  title: Main CPU base, E-PM2 1.6
+  summary: Runtime address = block 0 offset + 0x7E421020; no edit lines up with the E-P7's 0x60020020 base.
+  source_refs:
+  - source.epm2.format
+  - source.epm2.feasibility
+  topics:
+  - platform
+  last_reviewed: '2026-11-20'
+  category: layout
+  camera_ids:
+  - camera.epm2
+  firmware_ids:
+  - firmware.epm2-1600
+  address:
+    space: runtime-cached
+    value: '0x7e421020'
+  note: Block 0 is 14,155,712 bytes of MN103 code under uITRON, not compressed. The base differs per TruePic VI body.
+  observations:
+  - method: static-analysis
+    source_ref: source.epm2.format
+    project_id: project.epm2mod
+    summary: Base verified by disassembly of block 0.
+  - method: physical-camera
+    source_ref: source.epm2.feasibility
+    project_id: project.epm2mod
+    summary: Nine patch specs with new code placed with this base passed camera tests in the pinned build.
+  conflicts: []
+  upstream_detail: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/reference/firmware-format.md#e-pm2-v16-blocks
+- type: reference
+  id: reference.epm2-1600.image-processor
+  title: 'Image processor generation, E-PM2 1.6'
+  summary: 'Image processor generation for E-PM2 1.6: TruePic VI.'
+  source_refs:
+  - source.epm2.model-matrix
+  topics:
+  - platform
+  last_reviewed: '2026-11-20'
+  category: platform
+  camera_ids:
+  - camera.epm2
+  firmware_ids:
+  - firmware.epm2-1600
+  trait: trait.image-processor
+  value: 'TruePic VI'
+  note: 'Same generation as the E-PL5, E-PL6 and E-P5.'
+  observations:
+  - method: static-analysis
+    source_ref: source.epm2.model-matrix
+    project_id: project.epm2mod
+    summary: Read from the E-PM2 1.6 firmware by EPM2Mod.
+  conflicts: []
+  upstream_detail: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/reference/model-matrix.md#1-the-generations
+- type: reference
+  id: reference.epm2-1600.main-cpu
+  title: 'Main CPU, E-PM2 1.6'
+  summary: 'Main CPU for E-PM2 1.6: MN103, two cores, uITRON.'
+  source_refs:
+  - source.epm2.feasibility
+  topics:
+  - platform
+  last_reviewed: '2026-11-20'
+  category: platform
+  camera_ids:
+  - camera.epm2
+  firmware_ids:
+  - firmware.epm2-1600
+  trait: trait.main-cpu
+  value: 'MN103, two cores, uITRON'
+  note: 'Both cores appear in the camera''s own log.'
+  observations:
+  - method: static-analysis
+    source_ref: source.epm2.feasibility
+    project_id: project.epm2mod
+    summary: Read from the E-PM2 1.6 firmware by EPM2Mod.
+  conflicts: []
+  upstream_detail: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/dev/feasibility.md#what-the-body-has
+- type: reference
+  id: reference.epm2-1600.arm-coprocessor
+  title: 'ARM co-processor, E-PM2 1.6'
+  summary: 'ARM co-processor for E-PM2 1.6: None.'
+  source_refs:
+  - source.epm2.model-matrix
+  topics:
+  - platform
+  last_reviewed: '2026-11-20'
+  category: platform
+  camera_ids:
+  - camera.epm2
+  firmware_ids:
+  - firmware.epm2-1600
+  trait: trait.arm-coprocessor
+  value: 'None'
+  note: 'No network processor; the body has no radio.'
+  observations:
+  - method: static-analysis
+    source_ref: source.epm2.model-matrix
+    project_id: project.epm2mod
+    summary: Read from the E-PM2 1.6 firmware by EPM2Mod.
+  conflicts: []
+  upstream_detail: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/reference/model-matrix.md#1-the-generations
+- type: reference
+  id: reference.epm2-1600.container-magic
+  title: 'Update file magic, E-PM2 1.6'
+  summary: 'Update file magic for E-PM2 1.6: OE 10 10.'
+  source_refs:
+  - source.epm2.format
+  topics:
+  - platform
+  last_reviewed: '2026-11-20'
+  category: platform
+  camera_ids:
+  - camera.epm2
+  firmware_ids:
+  - firmware.epm2-1600
+  trait: trait.container-magic
+  value: 'OE 10 10'
+  note: 'Model bytes after OE; the E-PL5 has 10 00. The payload is lane-scrambled and XORed, with a checksum and no signature.'
+  observations:
+  - method: static-analysis
+    source_ref: source.epm2.format
+    project_id: project.epm2mod
+    summary: Read from the E-PM2 1.6 firmware by EPM2Mod.
+  conflicts: []
+  upstream_detail: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/reference/firmware-format.md#oe-block
+- type: reference
+  id: reference.epm2-1600.firmware-blocks
+  title: 'Firmware blocks, E-PM2 1.6'
+  summary: 'Firmware blocks for E-PM2 1.6: 4, plus an image-stabiliser tail.'
+  source_refs:
+  - source.epm2.format
+  topics:
+  - platform
+  last_reviewed: '2026-11-20'
+  category: platform
+  camera_ids:
+  - camera.epm2
+  firmware_ids:
+  - firmware.epm2-1600
+  trait: trait.firmware-blocks
+  value: '4, plus an image-stabiliser tail'
+  note: 'Main code, languages and fonts, Grainy Film texture, frame overlays; the tail is the stabiliser controller''s firmware.'
+  observations:
+  - method: static-analysis
+    source_ref: source.epm2.format
+    project_id: project.epm2mod
+    summary: Read from the E-PM2 1.6 firmware by EPM2Mod.
+  conflicts: []
+  upstream_detail: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/reference/firmware-format.md#e-pm2-v16-blocks
+- type: reference
+  id: reference.epm2-1600.main-compression
+  title: 'Main program compression, E-PM2 1.6'
+  summary: 'Main program compression for E-PM2 1.6: None.'
+  source_refs:
+  - source.epm2.model-matrix
+  topics:
+  - platform
+  last_reviewed: '2026-11-20'
+  category: platform
+  camera_ids:
+  - camera.epm2
+  firmware_ids:
+  - firmware.epm2-1600
+  trait: trait.main-compression
+  value: 'None'
+  note: 'Block 0 is stored uncompressed, unlike the E-M1 III and OM-5.'
+  observations:
+  - method: static-analysis
+    source_ref: source.epm2.model-matrix
+    project_id: project.epm2mod
+    summary: Read from the E-PM2 1.6 firmware by EPM2Mod.
+  conflicts: []
+  upstream_detail: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/reference/model-matrix.md#1-the-generations

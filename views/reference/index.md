@@ -42,16 +42,16 @@ What each stock firmware contains, before any project changes it. Absent means c
 
 Hardware and layout facts per stock firmware build.
 
-| | OM-D E-M5 Mark III 1.7 | PEN E-P7 1.1 | OM-5 1.2 | OM-5 Mark II 1.1 | PEN-F 3.1 |
-|---|---|---|---|---|---|
-| Image processor generation | [TruePic VIII](em5-iii-1700.image-processor.md) |  | [TruePic IX](om5-1200.image-processor.md) | [TruePic IX](om5-ii-1100.image-processor.md) |  |
-| Main CPU | [MN103/AM33-2, cores CPU0 to CPU2](em5-iii-1700.main-cpu.md) | [MN103/AM33-2, several cores](ep7-1100.main-cpu.md) | [MN103/AM33-2, cores CPU0 to CPU2](om5-1200.main-cpu.md) | [MN103/AM33-2, cores CPU0 to CPU2](om5-ii-1100.main-cpu.md) | [MN103, cores CPU0 to CPU2](pen-f-3101.main-cpu.md) |
-| ARM co-processor | [Cortex-A9, Linux 4.4](em5-iii-1700.arm-coprocessor.md) |  | [Cortex-A9, Linux 4.4](om5-1200.arm-coprocessor.md) | [Cortex-A9, Linux 5.10](om5-ii-1100.arm-coprocessor.md) |  |
-| Image memory class | [1 GB (image buffer map 924 MB)](em5-iii-1700.memory-class.md) |  | [1 GB (same buffer map span as the E-M5 III)](om5-1200.memory-class.md) | [1 GB (same layout as the OM-5)](om5-ii-1100.memory-class.md) |  |
-| Update file magic | [OE 13 70](em5-iii-1700.container-magic.md) | [OE 14 20](ep7-1100.container-magic.md) | [OE 14 40](om5-1200.container-magic.md) | [OE 14 80](om5-ii-1100.container-magic.md) |  |
-| Firmware blocks | [5](em5-iii-1700.firmware-blocks.md) | [5](ep7-1100.firmware-blocks.md) | [5](om5-1200.firmware-blocks.md) | [5](om5-ii-1100.firmware-blocks.md) | [4](pen-f-3101.firmware-blocks.md) |
-| Main program compression | [None](em5-iii-1700.main-compression.md) |  | [Two LZ4 sections](om5-1200.main-compression.md) | [Two LZ4 sections](om5-ii-1100.main-compression.md) |  |
-| Wi-Fi chip | [CYW43455](em5-iii-1700.wifi-chip.md) |  | [CYW43455](om5-1200.wifi-chip.md) | [CYW43439](om5-ii-1100.wifi-chip.md) |  |
+| | OM-D E-M5 Mark III 1.7 | PEN E-P7 1.1 | PEN E-PM2 1.6 | OM-5 1.2 | OM-5 Mark II 1.1 | PEN-F 3.1 |
+|---|---|---|---|---|---|---|
+| Image processor generation | [TruePic VIII](em5-iii-1700.image-processor.md) |  | [TruePic VI](epm2-1600.image-processor.md) | [TruePic IX](om5-1200.image-processor.md) | [TruePic IX](om5-ii-1100.image-processor.md) |  |
+| Main CPU | [MN103/AM33-2, cores CPU0 to CPU2](em5-iii-1700.main-cpu.md) | [MN103/AM33-2, several cores](ep7-1100.main-cpu.md) | [MN103, two cores, uITRON](epm2-1600.main-cpu.md) | [MN103/AM33-2, cores CPU0 to CPU2](om5-1200.main-cpu.md) | [MN103/AM33-2, cores CPU0 to CPU2](om5-ii-1100.main-cpu.md) | [MN103, cores CPU0 to CPU2](pen-f-3101.main-cpu.md) |
+| ARM co-processor | [Cortex-A9, Linux 4.4](em5-iii-1700.arm-coprocessor.md) |  | [None](epm2-1600.arm-coprocessor.md) | [Cortex-A9, Linux 4.4](om5-1200.arm-coprocessor.md) | [Cortex-A9, Linux 5.10](om5-ii-1100.arm-coprocessor.md) |  |
+| Image memory class | [1 GB (image buffer map 924 MB)](em5-iii-1700.memory-class.md) |  |  | [1 GB (same buffer map span as the E-M5 III)](om5-1200.memory-class.md) | [1 GB (same layout as the OM-5)](om5-ii-1100.memory-class.md) |  |
+| Update file magic | [OE 13 70](em5-iii-1700.container-magic.md) | [OE 14 20](ep7-1100.container-magic.md) | [OE 10 10](epm2-1600.container-magic.md) | [OE 14 40](om5-1200.container-magic.md) | [OE 14 80](om5-ii-1100.container-magic.md) |  |
+| Firmware blocks | [5](em5-iii-1700.firmware-blocks.md) | [5](ep7-1100.firmware-blocks.md) | [4, plus an image-stabiliser tail](epm2-1600.firmware-blocks.md) | [5](om5-1200.firmware-blocks.md) | [5](om5-ii-1100.firmware-blocks.md) | [4](pen-f-3101.firmware-blocks.md) |
+| Main program compression | [None](em5-iii-1700.main-compression.md) |  | [None](epm2-1600.main-compression.md) | [Two LZ4 sections](om5-1200.main-compression.md) | [Two LZ4 sections](om5-ii-1100.main-compression.md) |  |
+| Wi-Fi chip | [CYW43455](em5-iii-1700.wifi-chip.md) |  |  | [CYW43455](om5-1200.wifi-chip.md) | [CYW43439](om5-ii-1100.wifi-chip.md) |  |
 
 ## Olympus OM-D E-M5 Mark III, E-M5 Mark III firmware 1.7, build 1700
 
@@ -112,6 +112,12 @@ Hardware and layout facts per stock firmware build.
 | [Card updater task](ep7-1100.firmup-cli.md) | `0x60c95bab` | function | Camera-confirmed |
 | [Update file validator](ep7-1100.update-validator.md) | `0x60c964c1` | function | Single source |
 | [Section loaded mask](ep7-1100.loaded-mask.md) | `0xa272e420` | data | Single source |
+
+## Olympus PEN E-PM2, E-PM2 firmware 1.6, build 1600
+
+| Name | Address | Category | Status |
+|---|---|---|---|
+| [Main CPU base, E-PM2 1.6](epm2-1600.main-cpu-base.md) | `0x7e421020` | layout | Camera-confirmed |
 
 ## OM SYSTEM OM-3, om3 firmware 1.1, build 1100
 

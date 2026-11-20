@@ -14,6 +14,7 @@ Open only the matching route.
 | [db firmware / om-c-firmware](db-firmware.md) | Release-centred controls, localisation and other modifications. |
 | [E-M1 Mark III Mod Builder](em1-iii-mod-builder.md) | Inactive mod builder for E-M1 III firmware 1.6; the author reports it functional and invites others to continue it. |
 | [Olympus firmware notes (E-M5 Mark III)](em5-iii-notes.md) | Tagged technical notes on E-M5 III 1.7 firmware and hardware, with OM-5 donor feature ports. |
+| [EPM2Mod](epm2mod.md) | Firmware mod for the 2012 PEN E-PM2 with film simulations, interval shooting, level gauge and focus peaking. |
 | [Ghidra MN103 processor module](ghidra-mn103.md) | Ghidra disassembly and decompiler support for MN10300, AM33 and AM33-2. |
 | [Historical manual update research](manual-update.md) | Historical SD update procedure and model naming. |
 | [Olympus firmware research](oly-fw-analysis.md) | Foundational firmware work with deep PEN-F coverage. |

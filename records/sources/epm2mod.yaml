@@ -1,0 +1,131 @@
+schema_version: 1
+records:
+- type: source
+  id: source.epm2.readme
+  title: 'EPM2Mod overview'
+  summary: 'Features, install routes, the landscape of other projects and the AI-assistance note.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-20'
+  url: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/README.md
+  source_kind: github-file
+  upstream_repo: cfu288/EPM2Mod
+  revision: 09b982771e2809e2ee73076b25c41d9c5c5ad905
+  locator: README.md
+  retrieved_on: '2026-11-20'
+  last_checked: '2026-11-20'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.epm2.feasibility
+  title: 'E-PM2 feasibility and real limits'
+  summary: 'Measured limits, resources, recovery record and what is feasible, each labelled verified, inferred or unknown.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-20'
+  url: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/dev/feasibility.md
+  source_kind: github-file
+  upstream_repo: cfu288/EPM2Mod
+  revision: 09b982771e2809e2ee73076b25c41d9c5c5ad905
+  locator: docs/dev/feasibility.md
+  retrieved_on: '2026-11-20'
+  last_checked: '2026-11-20'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.epm2.install
+  title: 'EPM2Mod pinned build'
+  summary: 'The pinned build films-look-exif, its feature set, and the stock and build SHA-256s.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-20'
+  url: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/user/install.md
+  source_kind: github-file
+  upstream_repo: cfu288/EPM2Mod
+  revision: 09b982771e2809e2ee73076b25c41d9c5c5ad905
+  locator: docs/user/install.md
+  retrieved_on: '2026-11-20'
+  last_checked: '2026-11-20'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.epm2.camera-log
+  title: 'films-look-exif camera log'
+  summary: 'Owner camera result for the pinned build on 2026-11-20, with the emulator checks run before the flash.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-20'
+  url: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/camera-log/2026-11-20-films-look-exif.md
+  source_kind: github-file
+  upstream_repo: cfu288/EPM2Mod
+  revision: 09b982771e2809e2ee73076b25c41d9c5c5ad905
+  locator: docs/camera-log/2026-11-20-films-look-exif.md
+  retrieved_on: '2026-11-20'
+  last_checked: '2026-11-20'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.epm2.format
+  title: 'E-PM2 firmware format'
+  summary: 'OE container fields, scrambling, checksum and the v1.6 blocks with their runtime base.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-20'
+  url: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/reference/firmware-format.md
+  source_kind: github-file
+  upstream_repo: cfu288/EPM2Mod
+  revision: 09b982771e2809e2ee73076b25c41d9c5c5ad905
+  locator: docs/reference/firmware-format.md
+  retrieved_on: '2026-11-20'
+  last_checked: '2026-11-20'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.epm2.model-matrix
+  title: 'Olympus generations for modding'
+  summary: 'Generations, firmware codes, layouts and processors across 32 surveyed update files, with labelled certainty.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-20'
+  url: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/reference/model-matrix.md
+  source_kind: github-file
+  upstream_repo: cfu288/EPM2Mod
+  revision: 09b982771e2809e2ee73076b25c41d9c5c5ad905
+  locator: docs/reference/model-matrix.md
+  retrieved_on: '2026-11-20'
+  last_checked: '2026-11-20'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.epm2.landscape
+  title: 'Olympus custom firmware landscape'
+  summary: 'Known projects by camera, and why EPM2Mod is not a fork of the newer-body mods.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-20'
+  url: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/reference/landscape.md
+  source_kind: github-file
+  upstream_repo: cfu288/EPM2Mod
+  revision: 09b982771e2809e2ee73076b25c41d9c5c5ad905
+  locator: docs/reference/landscape.md
+  retrieved_on: '2026-11-20'
+  last_checked: '2026-11-20'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.epm2.releases
+  title: EPM2Mod releases
+  summary: Seven installer pre-releases from 18 to 20 November 2026; v2026.11.20-rc.1 is the newest.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-20'
+  url: https://github.com/cfu288/EPM2Mod/releases
+  source_kind: github-release
+  upstream_repo: cfu288/EPM2Mod
+  revision: v2026.11.20-rc.1
+  locator: Releases page; release v2026.11.20-rc.1
+  retrieved_on: '2026-11-20'
+  last_checked: '2026-11-20'
+  published_on: '2026-11-20'
+  publication: public
+  reuse_note: Attributed summary of mutable release notes; no code, firmware or executables imported.

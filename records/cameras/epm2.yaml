@@ -1,0 +1,21 @@
+schema_version: 1
+records:
+- type: camera
+  id: camera.epm2
+  title: Olympus PEN E-PM2
+  summary: 'E101, TruePic VI (2012): one camera-tested mod; its addresses and edits do not carry over to newer bodies.'
+  source_refs:
+  - source.epm2.readme
+  - source.epm2.model-matrix
+  topics: []
+  last_reviewed: '2026-11-20'
+  aliases:
+  - E-PM2
+  - PEN mini E-PM2
+  - EPM2
+  - E101
+  model_codes:
+  - E101
+  project_ids:
+  - project.epm2mod
+  coverage: initial-review

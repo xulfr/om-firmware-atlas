@@ -55,6 +55,11 @@
       "bytes": 482,
       "method": "ceil(utf8-bytes/4)"
     },
+    "records/cameras/epm2.yaml": {
+      "approx_tokens": 116,
+      "bytes": 461,
+      "method": "ceil(utf8-bytes/4)"
+    },
     "records/cameras/om3.yaml": {
       "approx_tokens": 129,
       "bytes": 514,
@@ -93,6 +98,11 @@
     "records/capabilities/ep7/ep7-hsl.yaml": {
       "approx_tokens": 169,
       "bytes": 673,
+      "method": "ceil(utf8-bytes/4)"
+    },
+    "records/capabilities/epm2/epm2-films-look-exif.yaml": {
+      "approx_tokens": 246,
+      "bytes": 982,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/capabilities/om3/om3-hsl.yaml": {
@@ -180,6 +190,11 @@
       "bytes": 1441,
       "method": "ceil(utf8-bytes/4)"
     },
+    "records/evidence/epm2mod.yaml": {
+      "approx_tokens": 406,
+      "bytes": 1624,
+      "method": "ceil(utf8-bytes/4)"
+    },
     "records/firmware/em1-iii/em1-iii-1600.yaml": {
       "approx_tokens": 160,
       "bytes": 640,
@@ -193,6 +208,11 @@
     "records/firmware/ep7/ep7-1100.yaml": {
       "approx_tokens": 119,
       "bytes": 476,
+      "method": "ceil(utf8-bytes/4)"
+    },
+    "records/firmware/epm2/epm2-1600.yaml": {
+      "approx_tokens": 161,
+      "bytes": 641,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/firmware/om3/om3-1100.yaml": {
@@ -255,6 +275,11 @@
       "bytes": 5071,
       "method": "ceil(utf8-bytes/4)"
     },
+    "records/projects/epm2mod.yaml": {
+      "approx_tokens": 1424,
+      "bytes": 5694,
+      "method": "ceil(utf8-bytes/4)"
+    },
     "records/projects/ghidra-mn103.yaml": {
       "approx_tokens": 548,
       "bytes": 2192,
@@ -298,6 +323,11 @@
     "records/sources/ep7.yaml": {
       "approx_tokens": 1286,
       "bytes": 5143,
+      "method": "ceil(utf8-bytes/4)"
+    },
+    "records/sources/epm2mod.yaml": {
+      "approx_tokens": 1344,
+      "bytes": 5374,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/fishcu.yaml": {
