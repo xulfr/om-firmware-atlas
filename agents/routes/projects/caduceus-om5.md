@@ -4,11 +4,11 @@
 
 Separate original OM-5 and Mark II work, strict builders and failures.
 
-[Contribution home](https://github.com/xulfr/caduceus-om5/issues). Alpha12 remains the published Mark II build. The project reports emulator checks for the unreleased v0.2.0-dev build.
+[Contribution home](https://github.com/xulfr/caduceus-om5/issues). The owner reports overall success with v0.2.0-alpha1 on the Mark II running stock firmware 1.1.
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [caduceus-om5.yaml](../../../records/projects/caduceus-om5.yaml) | Project scope, related work and contribution destination | 5,951 | ~1,488 |
+| [caduceus-om5.yaml](../../../records/projects/caduceus-om5.yaml) | Project scope, related work and contribution destination | 6,377 | ~1,595 |
 | [om5.yaml](../../../records/sources/om5.yaml) | Find the relevant source/observation ID; use bounded reads | 7,138 | ~1,785 |
 | [caduceus-om5.yaml](../../../records/evidence/caduceus-om5.yaml) | Find the relevant source/observation ID; use bounded reads | 4,373 | ~1,094 |
 

@@ -49,7 +49,7 @@ Korean language support on several bodies.
 
 Looks and a full colour editor for the OM-5 Mark II. Experimental.
 
-Latest: v0.1.0-alpha12, 16 Nov 2026
+Latest: v0.2.0-alpha1, 20 Nov 2026
 { .card-meta }
 
 [Project home](https://github.com/xulfr/caduceus-om5) · [Ask or report issues](https://github.com/xulfr/caduceus-om5/issues)

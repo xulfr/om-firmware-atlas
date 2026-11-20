@@ -212,6 +212,10 @@ class Catalogue:
                 if len(tags) != len(set(tags)):
                     errors.append(f"{node_id}: duplicate release tag; keep one entry per release.")
                 for release in row.get("releases", []):
+                    if row["url"].startswith("https://github.com/"):
+                        expected_url = f"{row['url'].rstrip('/')}/releases/tag/{release['tag']}"
+                        if release["url"] != expected_url:
+                            errors.append(f"{node_id}: release {release['tag']} must link to {expected_url}.")
                     check_ref(node_id, f"release {release['tag']} source_ref", release["source_ref"], "source")
                     for camera in release["camera_ids"]:
                         if camera not in row["camera_ids"]:

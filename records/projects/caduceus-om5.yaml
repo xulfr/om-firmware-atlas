@@ -22,8 +22,7 @@ records:
   - camera.om5
   - camera.om5-ii
   contribution_home: https://github.com/xulfr/caduceus-om5/issues
-  status_summary: Alpha12 remains the published Mark II build. The project reports emulator checks for
-    the unreleased v0.2.0-dev build.
+  status_summary: The owner reports overall success with v0.2.0-alpha1 on the Mark II running stock firmware 1.1.
   related_projects:
   - project.caduceus-om3
   - project.caduceus-ep7
@@ -128,6 +127,16 @@ records:
     since: v0.2.0-dev
     source_ref: source.om5.v020-dev
   releases:
+  - tag: v0.2.0-alpha1
+    title: Caduceus OM-5 Mark II v0.2.0-alpha1
+    date: '2026-11-20'
+    url: https://github.com/xulfr/caduceus-om5/releases/tag/v0.2.0-alpha1
+    prerelease: true
+    camera_ids: [camera.om5-ii]
+    highlights:
+    - Black and White points, split-tone controls and live-view updates.
+    warning: For E148 firmware 1.1. Verify the file on the card against the checksum in the release notes.
+    source_ref: source.om5.releases
   - tag: v0.1.0-alpha12
     title: Caduceus OM-5 Mark II v0.1.0-alpha12
     date: '2026-11-16'
