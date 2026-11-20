@@ -12,7 +12,7 @@ Bring a repository, release, research note, forum post, community venue or a cor
 
 ## What belongs here
 
-Sourced camera and project records, precise observations, explanations of shared research, tool setup references, contribution destinations and community links. The Atlas does not host firmware, decoded images, executable tools or whole chat transcripts.
+Sourced camera and project records, precise observations, explanations of shared research, tool setup references, contribution destinations and community links. The Atlas does not host firmware, decoded images, executable tools or whole chat transcripts. It also does not list a repository that publishes firmware (a stock or modified update file, or a decoded image) on a branch, tag or release; such a source will be declined.
 
 For a repository, point to the relevant release, branch, issue or report as well as the README; a README alone may miss the work. Missing evidence means unknown, not failure, and a new version does not inherit an older package's results.
 

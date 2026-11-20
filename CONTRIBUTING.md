@@ -14,6 +14,8 @@ Bring a useful source, correction, project or test result. You can open an issue
 
 Sourced camera/project records, precise observations, explanations of shared research, tool setup references, contribution destinations and community discovery links. Contribute implementation changes to their upstream project. The Atlas does not host firmware, decoded images, executable research tools or whole chat transcripts.
 
+**No repositories that distribute firmware.** The Atlas does not list, cite or link a repository that publishes camera firmware: a stock or modified update file, a decoded or expanded firmware image, or a dump of part of one, on any branch or tag or as a release asset. Card data files (looks, settings), hashes, edit lists, and builders that download the official file on the user's own machine are fine. Check before writing any records; if a listed project starts publishing firmware, remove its listing. See [decision 0008](maintenance/decisions/0008-no-firmware-repos.md).
+
 Read [the record format](maintenance/record-format.md) before changing data. Record what a source establishes, its target and its limitations. Missing evidence means unknown, not failure. A new version does not inherit an older package's camera results. Preserve failures when later packages succeed.
 
 For a source URL, inspect the relevant release, branch, issue/comment or report; a README alone may miss the work. Compare with existing records before adding content. Pin repository sources to a commit; identify mutable comments/releases by URL, date and content digest when useful. Attribute interpretations and proposals to their authors.
