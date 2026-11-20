@@ -31,4 +31,4 @@ python scripts/atlas.py build
 
 [How the Atlas works](docs/how-it-works.md) explains records, generated pages, checks, review and publication, and has copyable agent prompts. Agents may raise PRs; humans review and merge.
 
-Original Atlas contributions use the existing [Apache-2.0 licence](LICENSE). External projects retain their own terms. No vendor firmware is stored here. Not affiliated with Olympus or OM Digital Solutions.
+Original Atlas contributions use the existing [Apache-2.0 licence](LICENSE). External projects retain their own terms. No vendor firmware is stored here. The Atlas links to other projects but is not responsible for their contents or downloads; see the [disclaimer](docs/about.md#disclaimer). Not affiliated with Olympus or OM Digital Solutions.
