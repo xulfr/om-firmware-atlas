@@ -9,6 +9,7 @@ Open only the matching route.
 | [Caduceus for E-P7](caduceus-ep7.md) | E-P7 modifications and shared-panel/port research. |
 | [Caduceus for OM-3](caduceus-om3.md) | OM-3 looks, colour editing, persistence and research. |
 | [Caduceus for OM-5](caduceus-om5.md) | Separate original OM-5 and Mark II work, strict builders and failures. |
+| [Caduceus port for the original OM-5 (tadejs)](caduceus-om5-tadejs.md) | Original OM-5 1.2 port work on a Caduceus E-P7 fork; camera safety ladder passed, no features released. |
 | [OM-3 downstream experiments](camera-stuff.md) | Downstream experiments intended to send fixes upstream. |
 | [db firmware / om-c-firmware](db-firmware.md) | Release-centred controls, localisation and other modifications. |
 | [Olympus firmware notes (E-M5 Mark III)](em5-iii-notes.md) | Tagged technical notes on E-M5 III 1.7 firmware and hardware, with OM-5 donor feature ports. |

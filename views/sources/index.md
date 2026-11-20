@@ -98,3 +98,6 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [OM-5 Mark II startup readiness correction](om5.startup-fix.md) | E148 section-ready words, the section 5 loaded extent and an overlay defect. |
 | [Mark II v0.2.0-alpha1 release notes](om5.v020-alpha1.md) | Owner's overall result, new tone and tint controls, and the expected on-card checksum. |
 | [OM-5 Mark II v0.2.0 development handover](om5.v020-dev.md) | Emulator regressions and pending camera checks for grain, Black/White and split tone. |
+| [Original OM-5 port notes (tadejs)](tom5.port.md) | Static and emulator analysis of OM-5 1.2, the C1–C5 camera ladder and the emulator-only COLOR 1–3 back end. |
+| [OM-5 port pull request (tadejs)](tom5.pr1.md) | Open PR bringing branch om5-port into the fork's main; summarises scope, camera results and open items. |
+| [OM-5 camera ladder log (tadejs)](tom5.worklog.md) | Dated owner results for C1–C5 on an original OM-5 and the COLOR back-end batch. |

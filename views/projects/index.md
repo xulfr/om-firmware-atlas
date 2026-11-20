@@ -84,6 +84,20 @@ Experimental fork
 
 </div>
 
+<div class="project-card" markdown="1">
+
+[Caduceus port for the original OM-5 (tadejs)](caduceus-om5-tadejs.md){ .card-title }
+
+Groundwork for bringing Caduceus to the original OM-5. Not released.
+
+Camera test ladder C1–C5 · COLOR 1–3 back end · LCD tint fix
+{ .card-features }
+
+Experimental fork
+{ .card-meta }
+
+</div>
+
 </div>
 
 ## Research and tools

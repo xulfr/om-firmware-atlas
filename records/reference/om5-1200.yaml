@@ -1,0 +1,124 @@
+schema_version: 1
+records:
+- type: reference
+  id: reference.om5-1200.main-cpu-base
+  title: Main CPU base, OM-5 1.2
+  summary: Runtime address = decoded block 0 offset + 0x60021020, the OM-3's base, not the E-P7's.
+  source_refs:
+  - source.tom5.port
+  topics:
+  - platform
+  last_reviewed: '2026-11-20'
+  category: layout
+  camera_ids:
+  - camera.om5
+  firmware_ids:
+  - firmware.om5-1200
+  address:
+    space: runtime-cached
+    value: '0x60021020'
+  note: With the E-P7 base 0x60020020 the settings validator's list pointers land inside other records; with
+    this base every list decodes cleanly. Addresses from tools that assume the E-P7 base are offset.
+  observations:
+  - method: static-analysis
+    source_ref: source.tom5.port
+    project_id: project.caduceus-om5-tadejs
+    summary: Validator lists decode cleanly with this base and not with the E-P7's.
+  - method: physical-camera
+    source_ref: source.tom5.port
+    project_id: project.caduceus-om5-tadejs
+    summary: Patches placed with this base (ladder C3–C5) run on the owner's camera.
+  conflicts: []
+  upstream_detail: https://github.com/tadejs/caduceus-om5/blob/d8fd0ccfb06557d2b63be84a46f3ab5ad6eae066/docs/PORT_OM5.md#cpu-address-base-0x60021020-not-0x60020020
+- type: reference
+  id: reference.om5-1200.s1-hook
+  title: Half-press (S1) event hook site, OM-5 1.2
+  summary: The E-P7 SD-loader trigger call, byte-identical apart from its displacement; a 5-byte call in section 1.
+  source_refs:
+  - source.tom5.port
+  topics:
+  - patching
+  last_reviewed: '2026-11-20'
+  category: hook-site
+  camera_ids:
+  - camera.om5
+  firmware_ids:
+  - firmware.om5-1200
+  address:
+    space: runtime-cached
+    value: '0x602ed768'
+  note: Counterpart of E-P7 0x602c805f. The port replaces it with a jump to a trampoline that replays the call
+    and returns to 0x602ed76d with registers and stack as stock.
+  observations:
+  - method: emulator
+    source_ref: source.tom5.port
+    project_id: project.caduceus-om5-tadejs
+    summary: om-emu E144 counts S1 presses through the hook; stock leaves the counter at zero.
+  - method: physical-camera
+    source_ref: source.tom5.port
+    project_id: project.caduceus-om5-tadejs
+    summary: Ladder C4 and C5 hooked here; half-press, focus, photos, playback and menus normal.
+  conflicts: []
+  upstream_detail: https://github.com/tadejs/caduceus-om5/blob/d8fd0ccfb06557d2b63be84a46f3ab5ad6eae066/docs/PORT_OM5.md#c4-and-c5-the-s1-hook-and-the-sd-probe-2026-11-08-emulator-only
+- type: reference
+  id: reference.om5-1200.section-1-loaded-tail
+  title: Section 1 loaded tail, OM-5 1.2
+  summary: 0x138 bytes of 0xFF before section 1's loaded end; the larger free run past that end is not copied to RAM.
+  source_refs:
+  - source.tom5.port
+  topics:
+  - patching
+  last_reviewed: '2026-11-20'
+  category: free-space
+  camera_ids:
+  - camera.om5
+  firmware_ids:
+  - firmware.om5-1200
+  address:
+    space: runtime-cached
+    value: '0x605a76c8'
+    end: '0x605a7800'
+  note: The boot copy stops at a per-section loaded end below the next section's start. Only the part up to the
+    end is usable; the port's toolchain refuses claims beyond it.
+  observations:
+  - method: static-analysis
+    source_ref: source.tom5.port
+    project_id: project.caduceus-om5-tadejs
+    summary: Loaded ends read from the section-copy code and its jump table.
+  - method: physical-camera
+    source_ref: source.tom5.port
+    project_id: project.caduceus-om5-tadejs
+    summary: Ladder C4 and C5 trampoline at 0x605a7700 runs on the owner's camera.
+  conflicts: []
+  upstream_detail: https://github.com/tadejs/caduceus-om5/blob/d8fd0ccfb06557d2b63be84a46f3ab5ad6eae066/docs/PORT_OM5.md#boot-section-table-bcs
+- type: reference
+  id: reference.om5-1200.section-8-loaded-tail
+  title: Section 8 loaded tail, OM-5 1.2
+  summary: 0x7b8 bytes of 0xFF before section 8's loaded end; section 8 is copied second, after section 0.
+  source_refs:
+  - source.tom5.port
+  topics:
+  - patching
+  last_reviewed: '2026-11-20'
+  category: free-space
+  camera_ids:
+  - camera.om5
+  firmware_ids:
+  - firmware.om5-1200
+  address:
+    space: runtime-cached
+    value: '0x615e9848'
+    end: '0x615ea000'
+  note: Code here called from a hook should first test that all ten section-ready bits are set (word 0xa2693fa0);
+    the copy order is inferred from the call order.
+  observations:
+  - method: static-analysis
+    source_ref: source.tom5.port
+    project_id: project.caduceus-om5-tadejs
+    summary: Loaded end and section-ready bits read from the boot section-copy code.
+  - method: physical-camera
+    source_ref: source.tom5.port
+    project_id: project.caduceus-om5-tadejs
+    summary: Ladder C5 card-read loader at 0x615e9900 runs behind the ready gate on the owner's camera.
+  conflicts: []
+  upstream_detail: https://github.com/tadejs/caduceus-om5/blob/d8fd0ccfb06557d2b63be84a46f3ab5ad6eae066/docs/PORT_OM5.md#boot-section-table-bcs

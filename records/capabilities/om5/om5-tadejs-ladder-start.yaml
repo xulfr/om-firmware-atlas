@@ -1,0 +1,28 @@
+schema_version: 1
+records:
+- type: capability
+  id: capability.om5-tadejs-ladder-start
+  title: Original OM-5 patched startup, tadejs ladder C5
+  summary: The owner reports the ladder's last package, a half-press hook with a card read, starts and runs normally.
+  source_refs:
+  - source.tom5.port
+  - source.tom5.worklog
+  topics:
+  - platform
+  - patching
+  last_reviewed: '2026-11-20'
+  camera_id: camera.om5
+  firmware_id: firmware.om5-1200
+  project_id: project.caduceus-om5-tadejs
+  mod_build: om5-ladder-c5
+  feature_id: feature.startup
+  assertion: The owner reports that the C5 package, the last of five ladder steps, starts and leaves shooting,
+    playback, menus and video normal. Earlier steps C1–C4 are separate evidence records.
+  availability: experimental-branch
+  implementation: reported
+  evidence_refs:
+  - evidence.om5-tadejs-c5
+  contradicting_refs: []
+  limitations:
+  - No released build; packages are built locally and not committed.
+  - No verdict on Caduceus for OM-5's original-OM-5 pre-alpha, on other packages or on Mark II hardware.

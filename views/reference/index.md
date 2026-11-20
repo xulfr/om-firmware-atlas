@@ -139,6 +139,15 @@ Hardware and layout facts per stock firmware build.
 | [Section 9 free tail](om3-1100.section-9-tail.md) | `0x619a966c` | free space | Single source |
 | [Section copied mask](om3-1100.copied-mask.md) | `0xa32de590` | data | Corroborated |
 
+## OM SYSTEM OM-5, om5 firmware 1.2, build 1200
+
+| Name | Address | Category | Status |
+|---|---|---|---|
+| [Main CPU base, OM-5 1.2](om5-1200.main-cpu-base.md) | `0x60021020` | layout | Camera-confirmed |
+| [Half-press (S1) event hook site, OM-5 1.2](om5-1200.s1-hook.md) | `0x602ed768` | hook site | Camera-confirmed |
+| [Section 1 loaded tail, OM-5 1.2](om5-1200.section-1-loaded-tail.md) | `0x605a76c8` | free space | Camera-confirmed |
+| [Section 8 loaded tail, OM-5 1.2](om5-1200.section-8-loaded-tail.md) | `0x615e9848` | free space | Camera-confirmed |
+
 ## OM SYSTEM OM-5 Mark II, om5-ii firmware 1.1, build 1100
 
 | Name | Address | Category | Status |

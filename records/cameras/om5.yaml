@@ -7,6 +7,7 @@ records:
   source_refs:
   - source.om5.readme
   - source.db.release041
+  - source.tom5.port
   topics: []
   last_reviewed: '2026-11-17'
   aliases:
@@ -17,6 +18,7 @@ records:
   - E144
   project_ids:
   - project.caduceus-om5
+  - project.caduceus-om5-tadejs
   - project.db-firmware
   - project.oly-fw-analysis
   - project.om-emu
