@@ -1,0 +1,201 @@
+schema_version: 1
+records:
+- type: evidence
+  id: evidence.om5-tadejs-c1
+  title: 'Original OM-5 C1: official 1.2 file through the SD updater'
+  summary: 'The owner reports step C1 passed with normal camera behaviour afterwards.'
+  source_refs:
+  - source.tom5.port
+  - source.tom5.worklog
+  topics:
+  - patching
+  last_reviewed: '2026-11-20'
+  camera_id: camera.om5
+  firmware_id: firmware.om5-1200
+  project_id: project.caduceus-om5-tadejs
+  mod_build: om5-ladder-c1
+  method: physical-camera
+  provenance: maintainer-summary
+  identity_level: release-label-only
+  package_sha256: null
+  expected_package_sha256: a0c91f3ac7caaf0925b2af609e711183cf3b5982b3333224bcef26c0c5943d11
+  outcome: reported-pass
+  quality: partial
+  reported_on: '2026-11-08'
+  tested_on: null
+  procedure: 'Official 1.2 file as DCOLYMP/E1449999.BIN, hold OK while powering on; front light steady about a minute then about 2 Hz until switched off.'
+  coverage:
+  - 'The hold-OK SD update trigger and the success light pattern work on this body.'
+  - 'Setup > Firmware shows 1.2 afterwards.'
+  limitations:
+  - 'The owner names packages by short hash; no installed-file readout was reported.'
+  - 'Results are dated 2026-11-08 in the work log; the test date is not stated separately.'
+  - 'One owner on one camera; not independently reproduced.'
+  assumptions: []
+- type: evidence
+  id: evidence.om5-tadejs-c2
+  title: 'Original OM-5 C2: re-encoded LZ4 parts'
+  summary: 'The owner reports step C2 passed with normal camera behaviour afterwards.'
+  source_refs:
+  - source.tom5.port
+  - source.tom5.worklog
+  topics:
+  - patching
+  last_reviewed: '2026-11-20'
+  camera_id: camera.om5
+  firmware_id: firmware.om5-1200
+  project_id: project.caduceus-om5-tadejs
+  mod_build: om5-ladder-c2
+  method: physical-camera
+  provenance: maintainer-summary
+  identity_level: release-label-only
+  package_sha256: null
+  expected_package_sha256: 35411d71ec724c0367488fbd0c4eb98f3191b3c2f9cc66f20f6f0c41a79e53e9
+  outcome: reported-pass
+  quality: partial
+  reported_on: '2026-11-08'
+  tested_on: null
+  procedure: 'Main-only package with both LZ4 parts re-encoded by the port''s own encoder, installed through the SD updater.'
+  coverage:
+  - 'Same light pattern; firmware 1.2; photo, playback, menu and half-press normal.'
+  limitations:
+  - 'The owner names packages by short hash; no installed-file readout was reported.'
+  - 'Results are dated 2026-11-08 in the work log; the test date is not stated separately.'
+  - 'One owner on one camera; not independently reproduced.'
+  assumptions: []
+- type: evidence
+  id: evidence.om5-tadejs-c3
+  title: 'Original OM-5 C3: firmware-screen label'
+  summary: 'The owner reports step C3 passed with normal camera behaviour afterwards.'
+  source_refs:
+  - source.tom5.port
+  - source.tom5.worklog
+  topics:
+  - patching
+  last_reviewed: '2026-11-20'
+  camera_id: camera.om5
+  firmware_id: firmware.om5-1200
+  project_id: project.caduceus-om5-tadejs
+  mod_build: om5-ladder-c3
+  method: physical-camera
+  provenance: maintainer-summary
+  identity_level: release-label-only
+  package_sha256: null
+  expected_package_sha256: 337b91988d59b8e0df26428391ad062184043f8af5f12c75f61ad64087df90b7
+  outcome: reported-pass
+  quality: partial
+  reported_on: '2026-11-08'
+  tested_on: null
+  procedure: 'Label package changing code and a descriptor inside a compressed part, installed through the SD updater.'
+  coverage:
+  - 'Setup > Firmware shows Caduceus 0.1; photo, playback, menu and half-press normal.'
+  limitations:
+  - 'The owner names packages by short hash; no installed-file readout was reported.'
+  - 'Results are dated 2026-11-08 in the work log; the test date is not stated separately.'
+  - 'One owner on one camera; not independently reproduced.'
+  assumptions: []
+- type: evidence
+  id: evidence.om5-tadejs-c4
+  title: 'Original OM-5 C4: half-press no-op hook'
+  summary: 'The owner reports step C4 passed with normal camera behaviour afterwards.'
+  source_refs:
+  - source.tom5.port
+  - source.tom5.worklog
+  topics:
+  - patching
+  last_reviewed: '2026-11-20'
+  camera_id: camera.om5
+  firmware_id: firmware.om5-1200
+  project_id: project.caduceus-om5-tadejs
+  mod_build: om5-ladder-c4
+  method: physical-camera
+  provenance: maintainer-summary
+  identity_level: release-label-only
+  package_sha256: null
+  expected_package_sha256: dc84df0b8540a92fea74e819fa843bfe6b2ec3b65984998e13feb80a5cbf65cf
+  outcome: reported-pass
+  quality: partial
+  reported_on: '2026-11-08'
+  tested_on: null
+  procedure: 'Package with a jump from the half-press call site to a trampoline in section 1''s loaded tail that counts presses.'
+  coverage:
+  - 'Caduceus 0.2; half-press, focus, photos, playback, menu and video normal.'
+  limitations:
+  - 'The owner names packages by short hash; no installed-file readout was reported.'
+  - 'The press counter is in RAM and not visible on the camera.'
+  - 'Results are dated 2026-11-08 in the work log; the test date is not stated separately.'
+  - 'One owner on one camera; not independently reproduced.'
+  assumptions: []
+- type: evidence
+  id: evidence.om5-tadejs-c5
+  title: 'Original OM-5 C5: card read from the half-press hook'
+  summary: 'The owner reports step C5 passed with normal camera behaviour afterwards.'
+  source_refs:
+  - source.tom5.port
+  - source.tom5.worklog
+  topics:
+  - patching
+  last_reviewed: '2026-11-20'
+  camera_id: camera.om5
+  firmware_id: firmware.om5-1200
+  project_id: project.caduceus-om5-tadejs
+  mod_build: om5-ladder-c5
+  method: physical-camera
+  provenance: maintainer-summary
+  identity_level: release-label-only
+  package_sha256: null
+  expected_package_sha256: 1d4459c072807469e8aa25a6403131e158b60c0c26027e7540e315d84ea61b55
+  outcome: reported-pass
+  quality: partial
+  reported_on: '2026-11-08'
+  tested_on: null
+  procedure: 'Package that reads a 32-byte header from OM5MOD/BUNDLES.BIN at the first gated half-press; tried with and without the file on the card.'
+  coverage:
+  - 'Caduceus 0.3; half-press, photos, playback, menu and video normal with and without the card file.'
+  limitations:
+  - 'The owner names packages by short hash; no installed-file readout was reported.'
+  - 'Whether the read succeeded is not visible on the camera; the status word is in RAM only.'
+  - 'Results are dated 2026-11-08 in the work log; the test date is not stated separately.'
+  - 'One owner on one camera; not independently reproduced.'
+  assumptions: []
+- type: evidence
+  id: evidence.om5-tadejs-color-core-emu
+  title: 'Original OM-5 COLOR 1–3 back end: emulator runs'
+  summary: 'Native runs in om-emu: each profile supplies its own 12 saturation values; other modes unchanged.'
+  source_refs:
+  - source.tom5.port
+  - source.tom5.worklog
+  topics:
+  - emulation
+  - colour
+  last_reviewed: '2026-11-20'
+  camera_id: camera.om5
+  firmware_id: firmware.om5-1200
+  project_id: project.caduceus-om5-tadejs
+  mod_build: om5_color_core
+  method: emulator
+  provenance: maintainer-summary
+  identity_level: not-applicable
+  package_sha256: null
+  expected_package_sha256: null
+  outcome: reported-pass
+  quality: partial
+  reported_on: '2026-11-08'
+  tested_on: null
+  procedure: 'Capture-path code entered natively in a booted om-emu E144 session with chosen property values; the port''s verifier reports all checks passing.'
+  coverage:
+  - 'Profiles 1–3 read their own saturation values; profile 0 or above 3, and other modes, keep stock behaviour.'
+  - 'Model check still passes on the rear screen and EVF with the patch applied.'
+  limitations:
+  - 'om-emu does not emulate the image pipeline and never reaches this capture path in normal use; no photo was taken.'
+  - 'Only saturation is per profile; contrast, sharpness and other profile values are not loaded.'
+  - 'No Picture Mode entry, so the mode cannot be chosen on a camera. Not run on a camera.'
+  assumptions:
+  - 'That the real firmware reaches this capture path for a normal still shot is the port''s inference.'
+  emulator:
+    url: https://github.com/flatpanda/om-emu
+    revision: 147ca89
+    model: E144
+    stand_ins:
+    - Capture-path code entered directly with chosen registers and property values
+    - Image pipeline not emulated

@@ -15,6 +15,42 @@ Features as each project describes them, with their status. Follow a project's o
 
 <div class="feature-card" markdown="1">
 
+**Camera test ladder C1–C5** <span class="pill pill-testing">Testing</span>
+{ .feature-head }
+
+SD updater, re-encoded LZ4 parts, a patched label, a half-press hook and a card read, each passed on the owner's OM-5 with normal shooting, playback and menus.
+
+[Caduceus port for the original OM-5 (tadejs)](../projects/caduceus-om5-tadejs.md)
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
+**COLOR 1–3 back end** <span class="pill pill-in-development">In development</span>
+{ .feature-head }
+
+For a COLOR profile, the capture path reads that profile's 12 saturation values. Emulator only; no Picture Mode entry exists yet.
+
+[Caduceus port for the original OM-5 (tadejs)](../projects/caduceus-om5-tadejs.md)
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
+**LCD tint fix** <span class="pill pill-research">Research</span>
+{ .feature-head }
+
+Panel table analysed; paused because the owner sees no pink cast on the OM-5 screen. Nothing built.
+
+[Caduceus port for the original OM-5 (tadejs)](../projects/caduceus-om5-tadejs.md)
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
 **Panasonic aperture rings** <span class="pill pill-beta">Beta</span>
 { .feature-head }
 
@@ -53,6 +89,20 @@ Latest: v0.2.0-alpha1, 20 Nov 2026
 { .card-meta }
 
 [Project home](https://github.com/xulfr/caduceus-om5) · [Ask or report issues](https://github.com/xulfr/caduceus-om5/issues)
+{ .card-links }
+
+</div>
+
+<div class="project-card" markdown="1">
+
+[Caduceus port for the original OM-5 (tadejs)](../projects/caduceus-om5-tadejs.md){ .card-title }
+
+Groundwork for bringing Caduceus to the original OM-5. Not released.
+
+Experimental fork
+{ .card-meta }
+
+[Project home](https://github.com/tadejs/caduceus-om5) · [Ask or report issues](https://github.com/tadejs/caduceus-om5/pull/1)
 { .card-links }
 
 </div>
@@ -138,6 +188,7 @@ Installing modified firmware is at your own risk. Follow the project's own guide
 | [db firmware OM-5 aperture-ring claim](../capabilities/om5-db-aperture.md) | [db firmware / om-c-firmware](../projects/db-firmware.md) / dbv0.4.1 | published release | Upstream description; no separate test observation catalogued |
 | [Restoration after pre-alpha 1](../capabilities/om5-prealpha1-recovery.md) | [Caduceus for OM-5](../projects/caduceus-om5.md) / original-om5-prealpha1 | candidate | physical camera; reported pass; partial report; reported hash |
 | [Original OM-5 pre-alpha 1 startup](../capabilities/om5-prealpha1-start.md) | [Caduceus for OM-5](../projects/caduceus-om5.md) / original-om5-prealpha1 | candidate | physical camera; reported fail; partial report; reported hash |
+| [Original OM-5 patched startup, tadejs ladder C5](../capabilities/om5-tadejs-ladder-start.md) | [Caduceus port for the original OM-5 (tadejs)](../projects/caduceus-om5-tadejs.md) / om5-ladder-c5 | experimental branch | physical camera; reported pass; partial report; release label only |
 
 Results belong to the named project and package. Emulator output does not establish physical-camera behaviour.
 
@@ -174,5 +225,6 @@ What the stock firmware itself contains, separate from what projects add. Follow
 
 - [Caduceus OM-5 overview](../sources/om5.readme.md)
 - [db firmware v0.4.1 release](../sources/db.release041.md)
+- [Original OM-5 port notes (tadejs)](../sources/tom5.port.md)
 
 [Canonical record](../../records/cameras/om5.yaml) · Substantively reviewed: 2026-11-17.

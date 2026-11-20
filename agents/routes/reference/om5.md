@@ -23,6 +23,15 @@ Exact-build facts only: never apply an address to another build or body. Status:
 | Starry Sky AF | Native | single-source | [d6] |
 | AI subject detection AF | Dormant code: Code present, not reachable | single-source | [d7] |
 
+## firmware.om5-1200
+
+| Name | Space | Address | Kind | Status | Detail |
+|---|---|---|---|---|---|
+| Main CPU base, OM-5 1.2 | runtime-cached | `0x60021020` | layout | camera-confirmed | [d8] |
+| Half-press (S1) event hook site, OM-5 1.2 | runtime-cached | `0x602ed768` | hook-site | camera-confirmed | [d9] |
+| Section 1 loaded tail, OM-5 1.2 | runtime-cached | `0x605a76c8..0x605a7800` | free-space | camera-confirmed | [d10] |
+| Section 8 loaded tail, OM-5 1.2 | runtime-cached | `0x615e9848..0x615ea000` | free-space | camera-confirmed | [d10] |
+
 [d1]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/bodies/comparison.md
 [d2]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/features/live-nd.md#how-olympus-does-it-om-5-12-our-donor
 [d3]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/features/webcam.md
@@ -30,5 +39,8 @@ Exact-build facts only: never apply an address to another build or body. Status:
 [d5]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/features/hhhr.md#how-the-om-5-does-it-om-5-12-our-donor
 [d6]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/features/starry-sky-af.md#what-the-feature-is
 [d7]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/features/af-detect.md
+[d8]: https://github.com/tadejs/caduceus-om5/blob/d8fd0ccfb06557d2b63be84a46f3ab5ad6eae066/docs/PORT_OM5.md#cpu-address-base-0x60021020-not-0x60020020
+[d9]: https://github.com/tadejs/caduceus-om5/blob/d8fd0ccfb06557d2b63be84a46f3ab5ad6eae066/docs/PORT_OM5.md#c4-and-c5-the-s1-hook-and-the-sd-probe-2026-11-08-emulator-only
+[d10]: https://github.com/tadejs/caduceus-om5/blob/d8fd0ccfb06557d2b63be84a46f3ab5ad6eae066/docs/PORT_OM5.md#boot-section-table-bcs
 
-Records: [om5-1200-platform.yaml](../../../records/reference/om5-1200-platform.yaml).
+Records: [om5-1200-platform.yaml](../../../records/reference/om5-1200-platform.yaml), [om5-1200.yaml](../../../records/reference/om5-1200.yaml).

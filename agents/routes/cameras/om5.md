@@ -8,12 +8,13 @@ Exact ID: `camera.om5`. Codes: E144. [Human status view](../../../views/cameras/
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [om5.yaml](../../../records/cameras/om5.yaml) | Identity and aliases | 549 | ~138 |
+| [om5.yaml](../../../records/cameras/om5.yaml) | Identity and aliases | 602 | ~151 |
 | [om5-1200.yaml](../../../records/firmware/om5/om5-1200.yaml) | om5 firmware 1.2, build 1200 | 459 | ~115 |
 
 ## Existing project homes
 
 - [Caduceus for OM-5](../projects/caduceus-om5.md): Separate original OM-5 and Mark II work, strict builders and failures.
+- [Caduceus port for the original OM-5 (tadejs)](../projects/caduceus-om5-tadejs.md): Original OM-5 1.2 port work on a Caduceus E-P7 fork; camera safety ladder passed, no features released.
 - [db firmware / om-c-firmware](../projects/db-firmware.md): Release-centred controls, localisation and other modifications.
 - [Olympus firmware research](../projects/oly-fw-analysis.md): Foundational firmware work with deep PEN-F coverage.
 - [OM-Emu](../projects/om-emu.md): Firmware lab, model ports, traces and patch overlays.
@@ -25,6 +26,7 @@ Exact ID: `camera.om5`. Codes: E144. [Human status view](../../../views/cameras/
 | [om5-db-aperture.yaml](../../../records/capabilities/om5/om5-db-aperture.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 802 | ~201 |
 | [om5-prealpha1-recovery.yaml](../../../records/capabilities/om5/om5-prealpha1-recovery.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 750 | ~188 |
 | [om5-prealpha1-start.yaml](../../../records/capabilities/om5/om5-prealpha1-start.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 743 | ~186 |
+| [om5-tadejs-ladder-start.yaml](../../../records/capabilities/om5/om5-tadejs-ladder-start.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 1,067 | ~267 |
 
 Compact technical reference for this camera: [reference shard](../reference/om5.md).
 

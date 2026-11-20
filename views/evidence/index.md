@@ -20,3 +20,9 @@ Individual observations from physical cameras, emulators and code inspection, wi
 | [Mark II v0.2.0-alpha1: overall owner report](om5-ii-v020-alpha1-owner.md) | The owner reports that the release candidate "works perfectly", without per-step details. |
 | [Original OM-5 pre-alpha 1: startup failure](om5-prealpha1-boot.md) | One tester identifies a package and reports a dark, unusable start. |
 | [Original OM-5: restoration after that failure](om5-prealpha1-restore.md) | The tester reports stock 1.2 restoration after the failed experiment. |
+| [Original OM-5 C1: official 1.2 file through the SD updater](om5-tadejs-c1.md) | The owner reports step C1 passed with normal camera behaviour afterwards. |
+| [Original OM-5 C2: re-encoded LZ4 parts](om5-tadejs-c2.md) | The owner reports step C2 passed with normal camera behaviour afterwards. |
+| [Original OM-5 C3: firmware-screen label](om5-tadejs-c3.md) | The owner reports step C3 passed with normal camera behaviour afterwards. |
+| [Original OM-5 C4: half-press no-op hook](om5-tadejs-c4.md) | The owner reports step C4 passed with normal camera behaviour afterwards. |
+| [Original OM-5 C5: card read from the half-press hook](om5-tadejs-c5.md) | The owner reports step C5 passed with normal camera behaviour afterwards. |
+| [Original OM-5 COLOR 1–3 back end: emulator runs](om5-tadejs-color-core-emu.md) | Native runs in om-emu: each profile supplies its own 12 saturation values; other modes unchanged. |

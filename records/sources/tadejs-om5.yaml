@@ -1,0 +1,50 @@
+schema_version: 1
+records:
+- type: source
+  id: source.tom5.port
+  title: Original OM-5 port notes (tadejs)
+  summary: Static and emulator analysis of OM-5 1.2, the C1–C5 camera ladder and the emulator-only COLOR 1–3 back end.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-20'
+  url: https://github.com/tadejs/caduceus-om5/blob/d8fd0ccfb06557d2b63be84a46f3ab5ad6eae066/docs/PORT_OM5.md
+  source_kind: github-file
+  upstream_repo: tadejs/caduceus-om5
+  revision: d8fd0ccfb06557d2b63be84a46f3ab5ad6eae066
+  locator: 'docs/PORT_OM5.md on branch om5-port'
+  retrieved_on: '2026-11-20'
+  last_checked: '2026-11-20'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.tom5.worklog
+  title: OM-5 camera ladder log (tadejs)
+  summary: Dated owner results for C1–C5 on an original OM-5 and the COLOR back-end batch.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-20'
+  url: https://github.com/tadejs/caduceus-om5/blob/d8fd0ccfb06557d2b63be84a46f3ab5ad6eae066/WORKLOG.md
+  source_kind: github-file
+  upstream_repo: tadejs/caduceus-om5
+  revision: d8fd0ccfb06557d2b63be84a46f3ab5ad6eae066
+  locator: 'WORKLOG.md on branch om5-port: the OM-5 C1–C5 and COLOR back end entries'
+  retrieved_on: '2026-11-20'
+  last_checked: '2026-11-20'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.tom5.pr1
+  title: OM-5 port pull request (tadejs)
+  summary: Open PR bringing branch om5-port into the fork's main; summarises scope, camera results and open items.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-20'
+  url: https://github.com/tadejs/caduceus-om5/pull/1
+  source_kind: web-page
+  upstream_repo: tadejs/caduceus-om5
+  revision: d8fd0ccfb06557d2b63be84a46f3ab5ad6eae066
+  locator: 'Pull request #1, head om5-port at d8fd0cc'
+  retrieved_on: '2026-11-20'
+  last_checked: '2026-11-20'
+  publication: public
+  reuse_note: Attributed summary of a mutable PR description; no code, firmware or executables imported.

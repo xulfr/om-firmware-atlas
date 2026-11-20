@@ -61,8 +61,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/cameras/om5.yaml": {
-      "approx_tokens": 138,
-      "bytes": 549,
+      "approx_tokens": 151,
+      "bytes": 602,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/cameras/pen-f.yaml": {
@@ -135,6 +135,11 @@
       "bytes": 743,
       "method": "ceil(utf8-bytes/4)"
     },
+    "records/capabilities/om5/om5-tadejs-ladder-start.yaml": {
+      "approx_tokens": 267,
+      "bytes": 1067,
+      "method": "ceil(utf8-bytes/4)"
+    },
     "records/capabilities/pen-f/pen-f-hsl.yaml": {
       "approx_tokens": 175,
       "bytes": 699,
@@ -143,6 +148,11 @@
     "records/community/venues.yaml": {
       "approx_tokens": 330,
       "bytes": 1320,
+      "method": "ceil(utf8-bytes/4)"
+    },
+    "records/evidence/caduceus-om5-tadejs.yaml": {
+      "approx_tokens": 2046,
+      "bytes": 8182,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/evidence/caduceus-om5.yaml": {
@@ -203,6 +213,11 @@
     "records/projects/caduceus-om3.yaml": {
       "approx_tokens": 4107,
       "bytes": 16426,
+      "method": "ceil(utf8-bytes/4)"
+    },
+    "records/projects/caduceus-om5-tadejs.yaml": {
+      "approx_tokens": 910,
+      "bytes": 3637,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/caduceus-om5.yaml": {
@@ -288,6 +303,11 @@
     "records/sources/om5.yaml": {
       "approx_tokens": 2351,
       "bytes": 9404,
+      "method": "ceil(utf8-bytes/4)"
+    },
+    "records/sources/tadejs-om5.yaml": {
+      "approx_tokens": 523,
+      "bytes": 2090,
       "method": "ceil(utf8-bytes/4)"
     }
   },

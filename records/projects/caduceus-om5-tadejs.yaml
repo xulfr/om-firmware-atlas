@@ -1,0 +1,80 @@
+schema_version: 1
+records:
+- type: project
+  id: project.caduceus-om5-tadejs
+  title: Caduceus port for the original OM-5 (tadejs)
+  summary: Original OM-5 1.2 port work on a Caduceus E-P7 fork; camera safety ladder passed, no features released.
+  source_refs:
+  - source.tom5.port
+  - source.tom5.worklog
+  - source.tom5.pr1
+  topics:
+  - platform
+  - patching
+  - colour
+  - emulation
+  last_reviewed: '2026-11-20'
+  url: https://github.com/tadejs/caduceus-om5
+  kind: experimental-fork
+  camera_ids:
+  - camera.om5
+  contribution_home: https://github.com/tadejs/caduceus-om5/pull/1
+  status_summary: The owner reports five camera test steps (C1–C5) passed on an original OM-5 on 1.2. The COLOR
+    1–3 back end has run only in the emulator, and nothing has been released. The work is on branch om5-port;
+    main is an unchanged copy of Caduceus for E-P7.
+  related_projects:
+  - project.caduceus-ep7
+  - project.caduceus-om5
+  - project.caduceus-om3
+  - project.om-emu
+  - project.oly-fw-analysis
+  tagline: Groundwork for bringing Caduceus to the original OM-5. Not released.
+  description:
+  - tadejs's fork of Caduceus for E-P7 carries a port to the original OM-5 (2022, firmware 1.2). It is a separate
+    project from Caduceus for OM-5, which targets the Mark II and has no working build for the original body. The
+    fork's main branch is an unchanged copy of the E-P7 project; the OM-5 work is on the om5-port branch and its
+    open pull request.
+  - The port notes read the OM-5 firmware after expanding its two LZ4-compressed parts of the main program, and
+    find the Color Profile 1–3 and Monochrome Profile 1–3 settings still in the firmware, renumbered from the
+    E-P7's, with the colour builder intact but no Picture Mode entries or editor screen to reach them.
+  - On the owner's camera, the official 1.2 file through the SD updater, the port's own LZ4 re-encoding, a
+    firmware-screen label, a no-op half-press hook and a card read from that hook all passed. A first COLOR 1–3
+    back end lets each profile supply its own saturation, but only in the emulator; the profiles cannot yet be
+    chosen on the camera.
+  goals:
+  - Picture Mode entries, labels and a profile selector so that COLOR 1–3 can be chosen on the camera.
+  - Per-profile contrast, sharpness and the other profile values, beyond saturation.
+  - One shared look format and Control Panel with the other Caduceus ports.
+  maintainers:
+  - label: tadejs
+    url: https://github.com/tadejs
+  links:
+  - label: Port notes
+    url: https://github.com/tadejs/caduceus-om5/blob/d8fd0ccfb06557d2b63be84a46f3ab5ad6eae066/docs/PORT_OM5.md
+  - label: om5-port branch
+    url: https://github.com/tadejs/caduceus-om5/tree/om5-port
+  features:
+  - name: Camera test ladder C1–C5
+    summary: SD updater, re-encoded LZ4 parts, a patched label, a half-press hook and a card read, each passed on
+      the owner's OM-5 with normal shooting, playback and menus.
+    camera_ids:
+    - camera.om5
+    status: testing
+    since: null
+    source_ref: source.tom5.port
+    capability_id: capability.om5-tadejs-ladder-start
+  - name: COLOR 1–3 back end
+    summary: For a COLOR profile, the capture path reads that profile's 12 saturation values. Emulator only;
+      no Picture Mode entry exists yet.
+    camera_ids:
+    - camera.om5
+    status: in-development
+    since: null
+    source_ref: source.tom5.port
+  - name: LCD tint fix
+    summary: Panel table analysed; paused because the owner sees no pink cast on the OM-5 screen. Nothing built.
+    camera_ids:
+    - camera.om5
+    status: research
+    since: null
+    source_ref: source.tom5.port
