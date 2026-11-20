@@ -120,6 +120,20 @@ E142: original Caduceus project and a documented Ghidra/REA setup.
 
 <div class="camera-card" markdown="1">
 
+[PEN E-PM2](epm2.md){ .card-title }
+
+E101
+{ .model-code }
+
+E101, TruePic VI (2012): one camera-tested mod; its addresses and edits do not carry over to newer bodies.
+
+1 project · 1 feature catalogued
+{ .card-meta }
+
+</div>
+
+<div class="camera-card" markdown="1">
+
 [PEN-F](pen-f.md){ .card-title }
 
 E122

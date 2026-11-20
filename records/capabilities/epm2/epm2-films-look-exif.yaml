@@ -1,0 +1,27 @@
+schema_version: 1
+records:
+- type: capability
+  id: capability.epm2-films-look-exif
+  title: E-PM2 card-loaded film simulations, films-look-exif
+  summary: The owner reports film simulations loaded from the card work in the pinned build, with names in EXIF.
+  source_refs:
+  - source.epm2.camera-log
+  topics:
+  - colour
+  - interfaces
+  last_reviewed: '2026-11-20'
+  camera_id: camera.epm2
+  firmware_id: firmware.epm2-1600
+  project_id: project.epm2mod
+  mod_build: films-look-exif
+  feature_id: feature.looks
+  assertion: In build films-look-exif, film simulations loaded from the card into the ART entries render as fitted
+    on the owner's E-PM2 and record the film's name in the photo.
+  availability: candidate
+  implementation: reported
+  evidence_refs:
+  - evidence.epm2-films-look-exif
+  contradicting_refs: []
+  limitations:
+  - Built into installer pre-release v2026.11.20-rc.1; not a final release.
+  - Filter Type and Add Effects with a film simulation are untested.

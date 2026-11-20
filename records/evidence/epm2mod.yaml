@@ -1,0 +1,37 @@
+schema_version: 1
+records:
+- type: evidence
+  id: evidence.epm2-films-look-exif
+  title: 'E-PM2 films-look-exif: owner camera test'
+  summary: The owner reports the pinned build working, with film output matching the fitted model and the film name in EXIF.
+  source_refs:
+  - source.epm2.camera-log
+  - source.epm2.install
+  topics:
+  - colour
+  last_reviewed: '2026-11-20'
+  camera_id: camera.epm2
+  firmware_id: firmware.epm2-1600
+  project_id: project.epm2mod
+  mod_build: films-look-exif
+  method: physical-camera
+  provenance: maintainer-summary
+  identity_level: reported-hash
+  package_sha256: af4bcb38df908c3d29b3ef028059a3142cbecc4b66737f7bb2cc2848d6a4bcf4
+  expected_package_sha256: af4bcb38df908c3d29b3ef028059a3142cbecc4b66737f7bb2cc2848d6a4bcf4
+  outcome: reported-pass
+  quality: complete
+  reported_on: '2026-11-20'
+  tested_on: '2026-11-20'
+  procedure: Flashed the logged build; developed a test RAW with Portra 400 and compared it with the model; checked
+    EXIF in JPEG and ORF with and without a film, and in Natural; developed all 32 films. Emulator boot, update-path
+    and hook checks passed before the flash.
+  coverage:
+  - Portra 400 from the test RAW matches the model (ΔL* −0.2 to +0.1 in every lightness bin).
+  - A photo with a film records ArtFilter Off and the film's name in ImageDescription, in JPEG and ORF.
+  - All 32 films developed on this build.
+  limitations:
+  - One owner and one camera; not reproduced by the Atlas.
+  - Filter Type and Add Effects are not tested with the film simulations.
+  - A recovery from a boot loop has not been recorded on this body.
+  assumptions: []

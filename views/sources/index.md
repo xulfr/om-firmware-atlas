@@ -59,6 +59,14 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [E-P7 Ghidra/REA profile](ep7.rea.md) | A specific locally patched setup and decompiler limitations. |
 | [Caduceus E-P7 overview](ep7.readme.md) | Advertised modifications and feature-specific limitations. |
 | [Caduceus E-P7 releases](ep7.releases.md) | Beta release notes from v0.31b to v0.34a. |
+| [films-look-exif camera log](epm2.camera-log.md) | Owner camera result for the pinned build on 2026-11-20, with the emulator checks run before the flash. |
+| [E-PM2 feasibility and real limits](epm2.feasibility.md) | Measured limits, resources, recovery record and what is feasible, each labelled verified, inferred or unknown. |
+| [E-PM2 firmware format](epm2.format.md) | OE container fields, scrambling, checksum and the v1.6 blocks with their runtime base. |
+| [EPM2Mod pinned build](epm2.install.md) | The pinned build films-look-exif, its feature set, and the stock and build SHA-256s. |
+| [Olympus custom firmware landscape](epm2.landscape.md) | Known projects by camera, and why EPM2Mod is not a fork of the newer-body mods. |
+| [Olympus generations for modding](epm2.model-matrix.md) | Generations, firmware codes, layouts and processors across 32 surveyed update files, with labelled certainty. |
+| [EPM2Mod overview](epm2.readme.md) | Features, install routes, the landscape of other projects and the AI-assistance note. |
+| [EPM2Mod releases](epm2.releases.md) | Seven installer pre-releases from 18 to 20 November 2026; v2026.11.20-rc.1 is the newest. |
 | [Finding space for added code](fishcu.code-space.md) | How to qualify free code space; PEN-F section 3 and OM-3 1100 section tails. |
 | [OE container reference](fishcu.containers.md) | Component wrappers, transform and checksum scope. |
 | [IDA 4.9 profile](fishcu.ida.md) | The specific optional tested IDA/MN103 combination. |

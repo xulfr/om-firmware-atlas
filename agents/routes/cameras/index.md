@@ -10,6 +10,7 @@ Open only the matching route.
 | [Olympus OM-D E-M10 Mark IV](em10-iv.md) | E140: port/signature research and emulator coverage; no physical feature report imported. |
 | [Olympus OM-D E-M5 Mark III](em5-iii.md) | E137: firmware 1.7 studied in depth; focus stacking with any lens, a Live ND port and the card-file debug shell tested on one camera. |
 | [Olympus PEN E-P7](ep7.md) | E142: original Caduceus project and a documented Ghidra/REA setup. |
+| [Olympus PEN E-PM2](epm2.md) | E101, TruePic VI (2012): one camera-tested mod; its addresses and edits do not carry over to newer bodies. |
 | [OM SYSTEM OM-3](om3.md) | E147: advanced Caduceus work, other modifications and an established research notebook. |
 | [OM SYSTEM OM-5](om5.md) | Original E144: several projects have distinct experiments. Mark II results do not apply. |
 | [OM SYSTEM OM-5 Mark II](om5-ii.md) | E148: v0.2.0-alpha1 has an overall positive owner report; original OM-5 work is separate. |

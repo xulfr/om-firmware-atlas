@@ -1,0 +1,126 @@
+schema_version: 1
+records:
+- type: project
+  id: project.epm2mod
+  title: EPM2Mod
+  summary: Firmware mod for the 2012 PEN E-PM2 with film simulations, interval shooting, level gauge and focus peaking.
+  source_refs:
+  - source.epm2.readme
+  - source.epm2.feasibility
+  - source.epm2.install
+  - source.epm2.camera-log
+  - source.epm2.format
+  - source.epm2.model-matrix
+  - source.epm2.landscape
+  - source.epm2.releases
+  topics:
+  - colour
+  - capture
+  - patching
+  - emulation
+  - tooling
+  last_reviewed: '2026-11-20'
+  url: https://github.com/cfu288/EPM2Mod
+  kind: mod
+  camera_ids:
+  - camera.epm2
+  contribution_home: https://github.com/cfu288/EPM2Mod/issues
+  status_summary: The owner reports the pinned build films-look-exif tested on a real E-PM2 on 2026-11-20. Every
+    release so far is a pre-release, and the project calls the firmware unofficial and at the user's own risk.
+  related_projects:
+  - project.om-emu
+  - project.caduceus-ep7
+  tagline: Film simulations, interval shooting, focus peaking and a level gauge for the PEN E-PM2.
+  description:
+  - EPM2Mod is a firmware mod for the Olympus PEN E-PM2 (2012), the oldest body in the Atlas. It loads film
+    simulations such as Portra, Ektachrome and Velvia into the art-filter entries, and adds interval shooting up
+    to 240 frames, a level gauge, focus peaking and a lowest shutter speed for ISO Auto.
+  - The E-PM2 is two image-processor generations older than the bodies the Caduceus family patches and has no
+    Color Profiles, so nothing carries over by address. The film simulations are fitted to the camera's own adjustable
+    tone and six-axis colour stages from spektrafilm and Spectral Film LUT renders, and a film file on the
+    card is loaded from a Custom Menu row. The camera keeps them, with their names, after power-off and without
+    the card.
+  - The research is unusually explicit about evidence. Every limit is labelled verified, inferred or unknown, each
+    flash is logged before and after, and each build that moves a hook is run through an emulator boot test first.
+    Five builds failed on the camera, and a normal card update recovered each; a recovery from a boot loop has not
+    been recorded on this body. The project says it was made with heavy use of AI assistance.
+  goals:
+  - Add Effects on film simulations, and a higher movie bit rate without the 29-minute limit.
+  - The other E-PL6 additions, such as a small AF target and ISO LOW, and a simple on-camera editor.
+  maintainers:
+  - label: cfu288
+    url: https://github.com/cfu288
+  links:
+  - label: Film simulation comparison
+    url: https://cfu288.github.io/EPM2Mod/films
+  - label: Install guide
+    url: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/user/install.md
+  - label: Feasibility and limits
+    url: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/dev/feasibility.md
+  - label: Landscape of Olympus mods
+    url: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/reference/landscape.md
+  features:
+  - name: Film simulations
+    summary: Up to 12 of 32 film simulations in the ART entries, loaded from a card file with Load Looks; kept after
+      power-off. For photos and live view; the photo records the film's name.
+    camera_ids: &id001
+    - camera.epm2
+    status: beta
+    since: v2026.11.20-rc.1
+    source_ref: source.epm2.install
+    capability_id: capability.epm2-films-look-exif
+  - name: Interval shooting
+    summary: Time Lapse Settings with up to 240 frames.
+    camera_ids: *id001
+    status: beta
+    since: null
+    source_ref: source.epm2.install
+  - name: Level gauge
+    summary: The firmware's own gauge as an LV-Info view, with calibration and the histogram screen's shooting
+      information. Three data edits, no new code.
+    camera_ids: *id001
+    status: beta
+    since: null
+    source_ref: source.epm2.feasibility
+  - name: Focus peaking
+    summary: Turning the focus ring with MF Assist zooms in and outlines sharp edges in white, red, yellow or blue;
+      ported from the E-P5.
+    camera_ids: *id001
+    status: beta
+    since: null
+    source_ref: source.epm2.feasibility
+  - name: Lowest S/S Setting for ISO Auto
+    summary: In P and A, the shutter speed at which ISO Auto starts to rise; a copy of the PEN-F 3.1's logic.
+    camera_ids: *id001
+    status: beta
+    since: null
+    source_ref: source.epm2.feasibility
+  - name: Debug Log
+    summary: A Custom Menu J row, Off by default, that writes EPM2LOG.BIN to the card for developers.
+    camera_ids: *id001
+    status: beta
+    since: null
+    source_ref: source.epm2.install
+  releases:
+  - tag: v2026.11.20-rc.1
+    title: EPM2Mod 2026.11.20-rc.1
+    date: '2026-11-20'
+    url: https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20-rc.1
+    prerelease: true
+    camera_ids: *id001
+    highlights:
+    - Film simulations use the identity look and record each film's name in the photo's metadata.
+    - Ten more films and corrected fits for 24; all 32 films developed on the owner's camera.
+    warning: Unofficial and for the E-PM2 only; installing is at your own risk. Charge the battery fully first.
+    source_ref: source.epm2.releases
+  - tag: v2026.11.19-rc.3
+    title: EPM2Mod 2026.11.19-rc.3
+    date: '2026-11-19'
+    url: https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.19-rc.3
+    prerelease: true
+    camera_ids: *id001
+    highlights:
+    - Shooting information kept on the level gauge screen.
+    - Experimental Full HD movie and bit-rate candidates.
+    warning: Unofficial and for the E-PM2 only; installing is at your own risk.
+    source_ref: source.epm2.releases

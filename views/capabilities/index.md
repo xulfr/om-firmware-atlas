@@ -14,6 +14,7 @@ Scoped feature claims: one camera, firmware, project and build each. Availabilit
 | [E-M5 III 1.7 USB webcam (partial port)](em5-iii-uvc-webcam.md) | Test builds enumerate as a UVC webcam and stream a picture; live view over USB does not work. |
 | [Card-file debug Wi-Fi shell on stock E-M5 III 1.7](em5-iii-wifi-debug-shell.md) | The card-file debug shell documented by Olympus firmware research also works on a stock E-M5 III. |
 | [E-P7 HSLFX](ep7-hsl.md) | The README describes HSLFX with feature-specific states and caveats. |
+| [E-PM2 card-loaded film simulations, films-look-exif](epm2-films-look-exif.md) | The owner reports film simulations loaded from the card work in the pinned build, with names in EXIF. |
 | [OM-3 HSL editor](om3-hsl.md) | The README describes a full on-camera colour editor and reports camera-tested feature history. |
 | [db firmware OM-5 aperture-ring claim](om5-db-aperture.md) | The release advertises Panasonic lens aperture-ring support among its modifications. |
 | [Mark II alpha12 HSL](om5-ii-alpha12-hsl.md) | The project describes per-colour Hue, Saturation and Lightness. |
