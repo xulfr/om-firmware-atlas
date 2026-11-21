@@ -1,0 +1,26 @@
+schema_version: 1
+records:
+- type: capability
+  id: capability.em10-v56-hsl
+  title: E-M10 per-sector Hue/Saturation/Lightness, version 56
+  summary: The owner reports the 12-sector colour editor visible and effective in photos on their E-M10 Mark I.
+  source_refs:
+  - source.om10mi.readme
+  topics:
+  - colour
+  last_reviewed: '2026-11-21'
+  camera_id: camera.em10
+  firmware_id: firmware.em10-1400
+  project_id: project.om10mi-mods
+  mod_build: '56'
+  feature_id: feature.colour.hsl
+  assertion: In version 56 on firmware 1.4, Hue, Saturation and Lightness can be set for 12 named colour sectors,
+    and the owner reports the effect visible in photos.
+  availability: published-release
+  implementation: reported
+  evidence_refs:
+  - evidence.em10-v56-owner
+  contradicting_refs: []
+  limitations:
+  - The editor's field test is reported for version 46; version 56 carries it with per-bank rows, and the owner reports 56 working well.
+  - One owner camera; the open freeze-and-reboot report with filters is not linked to this editor.

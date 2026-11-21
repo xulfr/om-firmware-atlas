@@ -1,0 +1,183 @@
+schema_version: 1
+records:
+- type: source
+  id: source.om10mi.readme
+  title: 'om10mi-mods overview'
+  summary: 'Features of version 56, test status per version, warnings, colour-wheel status, credits and licences.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/Meghnus/om10mi-mods/blob/f36772dc709ee630333ff576acc0ede02f87da19/README.md
+  source_kind: github-file
+  upstream_repo: Meghnus/om10mi-mods
+  revision: f36772dc709ee630333ff576acc0ede02f87da19
+  locator: README.md
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.om10mi.install
+  title: 'om10mi-mods install guide'
+  summary: 'Builder steps, the stock and result SHA-1 checks, the SD-card update and the route back to stock.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/Meghnus/om10mi-mods/blob/f36772dc709ee630333ff576acc0ede02f87da19/INSTALL.md
+  source_kind: github-file
+  upstream_repo: Meghnus/om10mi-mods
+  revision: f36772dc709ee630333ff576acc0ede02f87da19
+  locator: INSTALL.md
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.om10mi.guide
+  title: 'Version 56 guide and test list'
+  summary: 'What is new in 56, steps after installing, risks, recovery and the owner''s ten-step camera test list.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/Meghnus/om10mi-mods/blob/f36772dc709ee630333ff576acc0ede02f87da19/docs/GUIDE-56.md
+  source_kind: github-file
+  upstream_repo: Meghnus/om10mi-mods
+  revision: f36772dc709ee630333ff576acc0ede02f87da19
+  locator: docs/GUIDE-56.md
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.om10mi.changelog
+  title: 'om10mi-mods changes'
+  summary: 'Version 56 contents against 51, earlier milestones and the expected result SHA-1.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/Meghnus/om10mi-mods/blob/f36772dc709ee630333ff576acc0ede02f87da19/CHANGELOG.md
+  source_kind: github-file
+  upstream_repo: Meghnus/om10mi-mods
+  revision: f36772dc709ee630333ff576acc0ede02f87da19
+  locator: CHANGELOG.md
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.om10mi.notice
+  title: 'om10mi-mods notice'
+  summary: 'What the repository does and does not contain, licences and the references the look data is fitted to.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/Meghnus/om10mi-mods/blob/f36772dc709ee630333ff576acc0ede02f87da19/NOTICE
+  source_kind: github-file
+  upstream_repo: Meghnus/om10mi-mods
+  revision: f36772dc709ee630333ff576acc0ede02f87da19
+  locator: NOTICE
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.om10mi.lookfile
+  title: 'om10mi look file, version 1 (draft)'
+  summary: 'Draft JSON look format for external editors: 18 look slots, name limits and parameters; builder side not finished.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/Meghnus/om10mi-mods/blob/f36772dc709ee630333ff576acc0ede02f87da19/docs/lookfile/LOOKFILE_SPEC.md
+  source_kind: github-file
+  upstream_repo: Meghnus/om10mi-mods
+  revision: f36772dc709ee630333ff576acc0ede02f87da19
+  locator: docs/lookfile/LOOKFILE_SPEC.md
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.om10mi.releases
+  title: om10mi-mods releases
+  summary: One release, v56, published 2026-11-10 and marked Latest; Windows exe and Python zip, with the stock and result SHA-1s.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/Meghnus/om10mi-mods/releases
+  source_kind: github-release
+  upstream_repo: Meghnus/om10mi-mods
+  revision: v56
+  locator: Releases page; release v56 at commit 20ef8fe846ec432bbfa361b8be3f0edca91d51ee
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  published_on: '2026-11-10'
+  publication: public
+  reuse_note: Attributed summary of mutable release notes; no code, firmware or executables imported.
+- type: source
+  id: source.om10mi.issue-1
+  title: 'Support for E-M10 Mark II? (issue 1)'
+  summary: 'Port request for the E-M10 II and original E-M1; the maintainer declined for now and warned against cross-flashing.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/Meghnus/om10mi-mods/issues/1
+  source_kind: github-comment
+  upstream_repo: Meghnus/om10mi-mods
+  revision: null
+  locator: Issue 1 by MrOptionist, opened 2026-11-11; maintainer reply by Meghnus and closure on 2026-11-15
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  published_on: '2026-11-11'
+  publication: public
+  reuse_note: Public issue paraphrased with attribution; issue text is mutable.
+- type: source
+  id: source.om10mi.issue-2
+  title: 'Caduceus Control Panel export offer (issue 2)'
+  summary: 'cakelesscoder offers an E-M10 Mark I export from the Caduceus editor; the maintainer accepts in principle and points to the look-file draft.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/Meghnus/om10mi-mods/issues/2
+  source_kind: github-comment
+  upstream_repo: Meghnus/om10mi-mods
+  revision: null
+  locator: Issue 2 by cakelesscoder, opened 2026-11-15; maintainer reply by Meghnus on 2026-11-15
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  published_on: '2026-11-15'
+  publication: public
+  reuse_note: Public issue paraphrased with attribution; issue text is mutable.
+- type: source
+  id: source.om10mi.issue-3
+  title: 'RAW white balance in Lightroom Classic (issue 3)'
+  summary: 'A user reports RAWs opening about 300 K lower in Lightroom Classic than set in camera; no body, build or reply given.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/Meghnus/om10mi-mods/issues/3
+  source_kind: github-comment
+  upstream_repo: Meghnus/om10mi-mods
+  revision: null
+  locator: Issue 3 by rayv3r, opened 2026-11-20; no maintainer reply when read
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  published_on: '2026-11-20'
+  publication: public
+  reuse_note: Public issue paraphrased with attribution; issue text is mutable.
+- type: source
+  id: source.om10mi.issue-4
+  title: 'Freezes and reboots with filters (issue 4)'
+  summary: 'A user reports three freezes and reboots in about 40 to 50 shots with filters enabled; no body, build or reply given.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-21'
+  url: https://github.com/Meghnus/om10mi-mods/issues/4
+  source_kind: github-comment
+  upstream_repo: Meghnus/om10mi-mods
+  revision: null
+  locator: Issue 4 by kzjken, opened 2026-11-21; no maintainer reply when read
+  retrieved_on: '2026-11-21'
+  last_checked: '2026-11-21'
+  published_on: '2026-11-21'
+  publication: public
+  reuse_note: Public issue paraphrased with attribution; issue text is mutable.

@@ -1,0 +1,129 @@
+schema_version: 1
+records:
+- type: project
+  id: project.om10mi-mods
+  title: om10mi-mods
+  summary: Firmware mod for the original OM-D E-M10 with 18 film looks, per-colour and per-look colour editors and a 59:50 video limit.
+  source_refs:
+  - source.om10mi.readme
+  - source.om10mi.install
+  - source.om10mi.guide
+  - source.om10mi.changelog
+  - source.om10mi.notice
+  - source.om10mi.lookfile
+  - source.om10mi.releases
+  - source.om10mi.issue-1
+  - source.om10mi.issue-2
+  - source.om10mi.issue-3
+  - source.om10mi.issue-4
+  topics:
+  - colour
+  - capture
+  - patching
+  - interfaces
+  last_reviewed: '2026-11-21'
+  url: https://github.com/Meghnus/om10mi-mods
+  kind: mod
+  camera_ids:
+  - camera.em10
+  contribution_home: https://github.com/Meghnus/om10mi-mods/issues
+  status_summary: The owner reports version 56 field-tested on one E-M10 Mark I with firmware 1.4 and released it
+    as v56. Recording past 30 minutes is not yet confirmed. Two open user reports (a freeze and reboot with
+    filters, and a RAW white-balance shift in Lightroom) name no body or build and have no reply yet.
+  work_items:
+  - summary: Intermittent freeze and reboot with filters enabled; body, build and filter not stated
+    state: needs-evidence
+    url: https://github.com/Meghnus/om10mi-mods/issues/4
+    owner: null
+  - summary: RAWs open about 300 K lower in Lightroom Classic than set in camera; not yet linked to the mod
+    state: needs-evidence
+    url: https://github.com/Meghnus/om10mi-mods/issues/3
+    owner: null
+  - summary: E-M10 Mark I export from the Caduceus Control Panel, using the draft look file
+    state: proposed
+    url: https://github.com/Meghnus/om10mi-mods/issues/2
+    owner: null
+  related_projects:
+  - project.caduceus-ep7
+  tagline: Film looks, colour editors and a longer video limit for the original OM-D E-M10.
+  description:
+  - om10mi-mods adds firmware features to the Olympus OM-D E-M10 Mark I (E113) on firmware 1.4. Version 56 has
+    18 film looks, each with its own colour matrix and tone curve, a per-sector Hue, Saturation and Lightness
+    editor for 12 colours, a per-look colour editor, looks in RAW Data Edit Custom1 and Custom2, and a video
+    recording limit raised from 29:59 to 59:50.
+  - The repository holds no firmware. A builder downloads the official 1.4 file from OM Digital Solutions after
+    the user accepts its licence, applies a list of edits, and refuses to write anything unless the result
+    matches the published SHA-1. It also writes a copy of the stock file for going back through the card update.
+  - The look data is numbers fitted to Fujifilm film-simulation, spektrafilm, HaldCLUT and Spectral Film LUT
+    references; no LUT files are shipped. Caduceus for the E-P7 is credited as the design reference for the look
+    editor. Everything was made and tested on the author's one camera body.
+  goals:
+  - A colour wheel on the Color Creator screen, like the PEN-F's; working on the owner's camera in internal test
+    builds 57 to 78, not released.
+  - Importing a LUT or .cube file into a chosen look slot as an approximate look, after the colour wheel.
+  - Own icons for the four newest looks, which borrow existing icons.
+  maintainers:
+  - label: Meghnus
+    url: https://github.com/Meghnus
+  links:
+  - label: Install guide
+    url: https://github.com/Meghnus/om10mi-mods/blob/f36772dc709ee630333ff576acc0ede02f87da19/INSTALL.md
+  - label: Version 56 guide and test list
+    url: https://github.com/Meghnus/om10mi-mods/blob/f36772dc709ee630333ff576acc0ede02f87da19/docs/GUIDE-56.md
+  - label: Look file spec (draft)
+    url: https://github.com/Meghnus/om10mi-mods/blob/f36772dc709ee630333ff576acc0ede02f87da19/docs/lookfile/LOOKFILE_SPEC.md
+  features:
+  - name: Film looks
+    summary: 18 looks in Picture Mode, the SCP menu, Live View and RAW Data Edit, including Portra 400, Kodachrome
+      64, Ektar 100 and Gold 200; Contrast, Sharpness, Highlight, Shadow and Gradation act on them.
+    camera_ids: &id001
+    - camera.em10
+    status: released
+    since: v56
+    source_ref: source.om10mi.readme
+  - name: Per-sector colour editor
+    summary: Hue, Saturation and Lightness for 12 named colour sectors, also per bank in RAW Data Edit.
+    camera_ids: *id001
+    status: released
+    since: v56
+    source_ref: source.om10mi.readme
+    capability_id: capability.em10-v56-hsl
+  - name: Per-look colour editor
+    summary: Colour edits for each look on the Custom page (Picture Mode, right key).
+    camera_ids: *id001
+    status: released
+    since: v56
+    source_ref: source.om10mi.readme
+  - name: 59:50 video limit
+    summary: Recording limit raised from 29:59 to 59:50; one file is still capped at 4 GB, so high bit rates can
+      stop earlier. Recording past 30 minutes is not yet confirmed.
+    camera_ids: *id001
+    status: released
+    since: v56
+    source_ref: source.om10mi.readme
+  - name: Colour wheel
+    summary: Pick one or more sectors with the dial on the Color Creator screen and adjust them with a live preview;
+      saved per Custom bank.
+    camera_ids: *id001
+    status: testing
+    since: null
+    source_ref: source.om10mi.readme
+  - name: LUT import
+    summary: A PC tool fits a .cube file to a look slot as an approximate colour matrix and tone curve.
+    camera_ids: *id001
+    status: planned
+    since: null
+    source_ref: source.om10mi.readme
+  releases:
+  - tag: v56
+    title: Look pack 56 for the Olympus OM-D E-M10 Mark I (firmware 1.4)
+    date: '2026-11-10'
+    url: https://github.com/Meghnus/om10mi-mods/releases/tag/v56
+    prerelease: false
+    camera_ids: *id001
+    highlights:
+    - Four new looks (Portra 400, Kodachrome 64, Ektar 100, Gold 200) and per-bank editing rows in RAW Data Edit.
+    - Builder for Windows (exe, no Python) or any system (zip, Python 3.10+); downloads and checks the stock file.
+    warning: Unofficial, for the E-M10 Mark I on firmware 1.4 only; tested on one body. Do not flash on any other
+      model. Installing is at your own risk.
+    source_ref: source.om10mi.releases

@@ -6,6 +6,7 @@ Scoped feature claims: one camera, firmware, project and build each. Availabilit
 
 | Entry | What you will find |
 |---|---|
+| [E-M10 per-sector Hue/Saturation/Lightness, version 56](em10-v56-hsl.md) | The owner reports the 12-sector colour editor visible and effective in photos on their E-M10 Mark I. |
 | [E-M5 III 1.7 focus stacking with any lens](em5-iii-focus-stacking-any-lens.md) | A published two-byte patch removes the per-lens focus-stacking flag check. |
 | [E-M5 III 1.7 Live ND photo (OM-5 port)](em5-iii-live-nd.md) | Test builds take a full Live ND shot from one press; not released. |
 | [E-M5 III 1.7 Live ND live-view simulation (OM-5 port)](em5-iii-live-nd-preview.md) | Test builds show the Live ND blur in live view, averaged by image-engine job 12. |

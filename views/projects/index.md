@@ -103,6 +103,20 @@ Latest: mod-builder-1.17, 18 Nov 2026
 
 <div class="project-card" markdown="1">
 
+[om10mi-mods](om10mi-mods.md){ .card-title }
+
+Film looks, colour editors and a longer video limit for the original OM-D E-M10.
+
+Film looks · Per-sector colour editor · Per-look colour editor
+{ .card-features }
+
+Latest: v56, 10 Nov 2026
+{ .card-meta }
+
+</div>
+
+<div class="project-card" markdown="1">
+
 [OM-3 downstream experiments](camera-stuff.md){ .card-title }
 
 A downstream OM-3 fork for trying fixes before sending them upstream.

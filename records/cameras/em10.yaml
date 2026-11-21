@@ -1,0 +1,22 @@
+schema_version: 1
+records:
+- type: camera
+  id: camera.em10
+  title: Olympus OM-D E-M10 (Mark I)
+  summary: 'E113 (2014): one mod built for firmware 1.4 and field-tested on one owner body; distinct from the E-M10 Mark II and Mark IV.'
+  source_refs:
+  - source.om10mi.readme
+  - source.om10mi.issue-1
+  topics: []
+  last_reviewed: '2026-11-21'
+  aliases:
+  - E-M10
+  - E-M10 Mark I
+  - E-M10 I
+  - EM10
+  - E113
+  model_codes:
+  - E113
+  project_ids:
+  - project.om10mi-mods
+  coverage: initial-review

@@ -1,0 +1,97 @@
+schema_version: 1
+records:
+- type: evidence
+  id: evidence.em10-v56-owner
+  title: 'E-M10 version 56: owner field test'
+  summary: The owner reports version 56 working well on their camera after two independent audits; no test date or steps beyond the published test list.
+  source_refs:
+  - source.om10mi.readme
+  - source.om10mi.guide
+  - source.om10mi.changelog
+  topics:
+  - colour
+  last_reviewed: '2026-11-21'
+  camera_id: camera.em10
+  firmware_id: firmware.em10-1400
+  project_id: project.om10mi-mods
+  mod_build: '56'
+  method: physical-camera
+  provenance: maintainer-summary
+  identity_level: release-label-only
+  package_sha256: null
+  expected_package_sha256: null
+  outcome: reported-pass
+  quality: partial
+  reported_on: '2026-11-18'
+  tested_on: null
+  procedure: null
+  coverage:
+  - 'Version 56: two independent audits passed; owner field test reported as working well.'
+  - 'Carried from earlier milestones: the per-sector editor (46), per-look editor (48) and looks in RAW Data Edit (51) passed field tests.'
+  - Version 40 was installed and used with the 59:50 limit; recording past 30 minutes not yet confirmed.
+  limitations:
+  - One owner and one camera; never tried on another body and not reproduced by the Atlas.
+  - The builder's expected result is published only as SHA-1 0d4e1649cb930d39fc49a331d92840a7cbcbd83e; no SHA-256 of the installed file was reported.
+  - No test date or per-step results for the GUIDE-56 test list were published.
+  assumptions:
+  - reported_on is the date of the README revision read, not the date of the field test.
+- type: evidence
+  id: evidence.em10-filters-reboot
+  title: 'E-M10 om10mi-mods: freeze and reboot with filters (user report)'
+  summary: A user reports three random freezes and reboots in about 40 to 50 shots with filters enabled; body, build and filter not stated.
+  source_refs:
+  - source.om10mi.issue-4
+  topics:
+  - colour
+  last_reviewed: '2026-11-21'
+  camera_id: camera.em10
+  firmware_id: null
+  project_id: project.om10mi-mods
+  mod_build: null
+  method: physical-camera
+  provenance: firsthand-tester-report
+  identity_level: release-label-only
+  package_sha256: null
+  expected_package_sha256: null
+  outcome: reported-fail
+  quality: partial
+  reported_on: '2026-11-21'
+  tested_on: null
+  procedure: Shooting with filters enabled; no filter, look or Picture Mode named.
+  coverage:
+  - Three freezes followed by a reboot in about 40 to 50 photos; intermittent.
+  limitations:
+  - No body, firmware or build stated, and no maintainer reply when read.
+  - Not established whether "filters" means the mod's film looks or the stock Art Filters.
+  assumptions:
+  - Camera recorded as the E-M10 Mark I because the project targets only that body; the report does not say so.
+- type: evidence
+  id: evidence.em10-raw-wb-lightroom
+  title: 'E-M10 om10mi-mods: RAW white balance in Lightroom Classic (user report)'
+  summary: A user reports RAWs opening about 300 K lower in Lightroom Classic than set in camera; not linked to the mod.
+  source_refs:
+  - source.om10mi.issue-3
+  topics:
+  - colour
+  last_reviewed: '2026-11-21'
+  camera_id: camera.em10
+  firmware_id: null
+  project_id: project.om10mi-mods
+  mod_build: null
+  method: physical-camera
+  provenance: firsthand-tester-report
+  identity_level: release-label-only
+  package_sha256: null
+  expected_package_sha256: null
+  outcome: inconclusive
+  quality: partial
+  reported_on: '2026-11-20'
+  tested_on: null
+  procedure: Shot RAW at 5400 K and 5600 K in camera and opened the files in Lightroom Classic.
+  coverage:
+  - Lightroom Classic showed 5100 K and 5300 K.
+  limitations:
+  - No body, firmware or build stated, no comparison with stock firmware, and no maintainer reply when read.
+  - A raw converter's temperature reading can differ from the camera's setting on stock firmware too; not established as a mod effect.
+  assumptions:
+  - Camera recorded as the E-M10 Mark I because the project targets only that body; the report does not say so.

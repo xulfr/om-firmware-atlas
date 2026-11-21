@@ -45,6 +45,11 @@
       "bytes": 476,
       "method": "ceil(utf8-bytes/4)"
     },
+    "records/cameras/em10.yaml": {
+      "approx_tokens": 126,
+      "bytes": 502,
+      "method": "ceil(utf8-bytes/4)"
+    },
     "records/cameras/em5-iii.yaml": {
       "approx_tokens": 146,
       "bytes": 583,
@@ -78,6 +83,11 @@
     "records/cameras/pen-f.yaml": {
       "approx_tokens": 114,
       "bytes": 453,
+      "method": "ceil(utf8-bytes/4)"
+    },
+    "records/capabilities/em10/em10-v56-hsl.yaml": {
+      "approx_tokens": 260,
+      "bytes": 1038,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/capabilities/em5-iii/em5-iii-features.yaml": {
@@ -195,9 +205,19 @@
       "bytes": 1624,
       "method": "ceil(utf8-bytes/4)"
     },
+    "records/evidence/om10mi-mods.yaml": {
+      "approx_tokens": 998,
+      "bytes": 3992,
+      "method": "ceil(utf8-bytes/4)"
+    },
     "records/firmware/em1-iii/em1-iii-1600.yaml": {
       "approx_tokens": 160,
       "bytes": 640,
+      "method": "ceil(utf8-bytes/4)"
+    },
+    "records/firmware/em10/em10-1400.yaml": {
+      "approx_tokens": 158,
+      "bytes": 631,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/firmware/em5-iii/em5-iii-1700.yaml": {
@@ -300,6 +320,11 @@
       "bytes": 3165,
       "method": "ceil(utf8-bytes/4)"
     },
+    "records/projects/om10mi-mods.yaml": {
+      "approx_tokens": 1509,
+      "bytes": 6036,
+      "method": "ceil(utf8-bytes/4)"
+    },
     "records/sources/db.yaml": {
       "approx_tokens": 547,
       "bytes": 2185,
@@ -343,6 +368,11 @@
     "records/sources/manual.yaml": {
       "approx_tokens": 170,
       "bytes": 677,
+      "method": "ceil(utf8-bytes/4)"
+    },
+    "records/sources/om10mi-mods.yaml": {
+      "approx_tokens": 1891,
+      "bytes": 7562,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/om3.yaml": {

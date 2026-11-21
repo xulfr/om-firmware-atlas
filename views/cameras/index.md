@@ -72,6 +72,20 @@ E139: one inactive mod builder for firmware 1.6; owner camera reports per mod, n
 
 <div class="camera-card" markdown="1">
 
+[OM-D E-M10 (Mark I)](em10.md){ .card-title }
+
+E113
+{ .model-code }
+
+E113 (2014): one mod built for firmware 1.4 and field-tested on one owner body; distinct from the E-M10 Mark II and Mark IV.
+
+1 project · 1 feature catalogued
+{ .card-meta }
+
+</div>
+
+<div class="camera-card" markdown="1">
+
 [OM-D E-M10 Mark IV](em10-iv.md){ .card-title }
 
 E140

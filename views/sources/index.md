@@ -81,6 +81,17 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [Ghidra MN103 pointer-register compiler spec](gmn103.ptrregs.md) | Optional ptrregs spec, expanded validation and supported Ghidra versions. |
 | [Ghidra MN103 module README](gmn103.readme.md) | Supported CPUs, decompiler features, install and tested Ghidra versions. |
 | [Historical manual updates](manual.readme.md) | SD update research and explicitly obsolete static download links. |
+| [om10mi-mods changes](om10mi.changelog.md) | Version 56 contents against 51, earlier milestones and the expected result SHA-1. |
+| [Version 56 guide and test list](om10mi.guide.md) | What is new in 56, steps after installing, risks, recovery and the owner's ten-step camera test list. |
+| [om10mi-mods install guide](om10mi.install.md) | Builder steps, the stock and result SHA-1 checks, the SD-card update and the route back to stock. |
+| [Support for E-M10 Mark II? (issue 1)](om10mi.issue-1.md) | Port request for the E-M10 II and original E-M1; the maintainer declined for now and warned against cross-flashing. |
+| [Caduceus Control Panel export offer (issue 2)](om10mi.issue-2.md) | cakelesscoder offers an E-M10 Mark I export from the Caduceus editor; the maintainer accepts in principle and points to the look-file draft. |
+| [RAW white balance in Lightroom Classic (issue 3)](om10mi.issue-3.md) | A user reports RAWs opening about 300 K lower in Lightroom Classic than set in camera; no body, build or reply given. |
+| [Freezes and reboots with filters (issue 4)](om10mi.issue-4.md) | A user reports three freezes and reboots in about 40 to 50 shots with filters enabled; no body, build or reply given. |
+| [om10mi look file, version 1 (draft)](om10mi.lookfile.md) | Draft JSON look format for external editors: 18 look slots, name limits and parameters; builder side not finished. |
+| [om10mi-mods notice](om10mi.notice.md) | What the repository does and does not contain, licences and the references the look data is fitted to. |
+| [om10mi-mods overview](om10mi.readme.md) | Features of version 56, test status per version, warnings, colour-wheel status, credits and licences. |
+| [om10mi-mods releases](om10mi.releases.md) | One release, v56, published 2026-11-10 and marked Latest; Windows exe and Python zip, with the stock and result SHA-1s. |
 | [OM-3 v0.40 grain crash report](om3.atlas-grain-report.md) | A user reports a crash at shutter release with Film Grain enabled and loss of the last photo. |
 | [Caduceus OM-3 developer notes](om3.devnotes.md) | Addresses, hooks and test history for the OM-3 1.1 port, with camera-proven sites marked. |
 | [OM-3 card formats](om3.formats.md) | OM3P layout and release-dependent field semantics. |

@@ -1,0 +1,18 @@
+schema_version: 1
+records:
+- type: firmware
+  id: firmware.em10-1400
+  title: E-M10 firmware 1.4, build 1400
+  summary: Stock update file OLY_E_113_1400_0000_0000.BIN, 70,254,592 bytes; the only input om10mi-mods patches.
+  source_refs:
+  - source.om10mi.install
+  - source.om10mi.readme
+  topics:
+  - platform
+  last_reviewed: '2026-11-21'
+  camera_id: camera.em10
+  version: '1.4'
+  internal_build: '1400'
+  container_sha256: null
+  identity_note: No SHA-256 is published. om10mi-mods checks the downloaded stock file against SHA-1
+    5a0703acadf27fde157a827d3b8c713a4d257fe1 and size 70,254,592 bytes. Not hashed by the Atlas.

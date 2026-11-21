@@ -19,3 +19,4 @@ Open only the matching route.
 | [Historical manual update research](manual-update.md) | Historical SD update procedure and model naming. |
 | [Olympus firmware research](oly-fw-analysis.md) | Foundational firmware work with deep PEN-F coverage. |
 | [OM-Emu](om-emu.md) | Firmware lab, model ports, traces and patch overlays. |
+| [om10mi-mods](om10mi-mods.md) | Firmware mod for the original OM-D E-M10 with 18 film looks, per-colour and per-look colour editors and a 59:50 video limit. |
