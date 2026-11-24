@@ -2,16 +2,16 @@
 
 # Looks and colour editors guide and test list (since 56)
 
-Look controls and test list, including the menu location for the recommended User Hue reset.
+Look controls, the per-look colour page added in 88 and the test list, including the User Hue reset.
 
-**[Open original source](https://github.com/Meghnus/om10mi-mods/blob/a73028a8cc38d581e0279c0890811d68e8a8ca0b/docs/GUIDE-56.md)**
+**[Open original source](https://github.com/Meghnus/om10mi-mods/blob/c8d72448b8a2981cc995b70230e1619f1a89d39f/docs/GUIDE-56.md)**
 
 **Kind:** github file. **Locator:** docs/GUIDE-56.md.
 
-**Revision / release:** `a73028a8cc38d581e0279c0890811d68e8a8ca0b`. **Retrieved:** 2026-11-22. **Last source check:** 2026-11-22.
+**Revision / release:** `c8d72448b8a2981cc995b70230e1619f1a89d39f`. **Retrieved:** 2026-11-24. **Last source check:** 2026-11-24.
 
 **Publication:** public. Linked and synthesised; upstream material retains its own terms.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/om10mi-mods.yaml) · Substantively reviewed: 2026-11-22.
+[Canonical record](../../records/sources/om10mi-mods.yaml) · Substantively reviewed: 2026-11-24.

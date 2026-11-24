@@ -21,15 +21,15 @@ Model E147
 
 Your films in Picture Mode, 20 film simulations, Colour editor on the camera.
 
-**v0.40.3-beta4 (pre-release)** · Stock firmware 1.1
+**v0.41-beta (pre-release)**
 { .release-scope }
 
 No camera test recorded for this release.
 
-Test release. Upstream keeps v0.40.2 as its current release and asks owners to check their stock-mode white-balance shift once after updating.
+Test release. Upstream keeps v0.40.3 as its current version; roll back by making v0.40.3.
 { .release-warning }
 
-[Install guide](https://github.com/androidfanman/caduceus-om3/blob/45706369aa922dfeeccf7d60a9721e0b9f3fcc43/releases/v0.40.3-beta4/NOTES.md){ .btn .btn-primary } · [Release notes & files](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.40.3-beta4)
+[Read release notes](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.41-beta)
 
 <details class="mod-details" markdown="1"><summary>Features and examples</summary>
 

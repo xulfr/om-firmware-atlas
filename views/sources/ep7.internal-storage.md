@@ -4,14 +4,14 @@
 
 Research on keeping mod data in the unused tail of the user-settings image, saved by the camera's own settings save.
 
-**[Open original source](https://github.com/cakelesscoder/caduceus-ep7/blob/0cb1dbcc50595cd87f56648810762ffbbb8e17f3/docs/INTERNAL_STORAGE.md)**
+**[Open original source](https://github.com/cakelesscoder/caduceus-ep7/blob/6b421a4a06c47f635bf84d4940e2cdb660dabb06/docs/INTERNAL_STORAGE.md)**
 
 **Kind:** github file. **Locator:** docs/INTERNAL_STORAGE.md.
 
-**Revision / release:** `0cb1dbcc50595cd87f56648810762ffbbb8e17f3`. **Retrieved:** 2026-11-19. **Last source check:** 2026-11-19.
+**Revision / release:** `6b421a4a06c47f635bf84d4940e2cdb660dabb06`. **Retrieved:** 2026-11-24. **Last source check:** 2026-11-24.
 
 **Publication:** public. Linked and synthesised; upstream material retains its own terms.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/ep7.yaml) · Substantively reviewed: 2026-11-19.
+[Canonical record](../../records/sources/ep7.yaml) · Substantively reviewed: 2026-11-24.

@@ -16,7 +16,7 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 
 </div>
 
-**Type:** mod · **Camera details:** [OM-5](#for-om5), [OM-5 Mark II](#for-om5-ii), [OM-3](#for-om3), [PEN E-P7](#for-ep7), [PEN-F](#for-pen-f) · **Latest release:** [dbv0.4.4b](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.4b), 22 Nov 2026 · **Maintained by** [azqeurio](https://github.com/azqeurio)
+**Type:** mod · **Camera details:** [OM-5](#for-om5), [OM-5 Mark II](#for-om5-ii), [OM-3](#for-om3), [PEN E-P7](#for-ep7), [PEN-F](#for-pen-f) · **Latest release:** [dbv0.4.5](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.5), 23 Nov 2026 · **Maintained by** [azqeurio](https://github.com/azqeurio)
 { .facts }
 
 ## Cameras
@@ -30,7 +30,7 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 **For this camera:** Beta patches include Panasonic aperture rings, Korean menus and Hybrid Shutter. The Mark II-based port’s boot fix has only simulator and emulator results in the release notes.
 { .card-for }
 
-**Get it:** [dbv0.4.4b](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.4b), 22 Nov 2026. See the release notes for this model.
+**Get it:** [dbv0.4.5](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.5), 23 Nov 2026. See the release notes for this model.
 { .card-get }
 
 [Mods and installation](../cameras/om5.md) · [Test results](../research/om5.md#evidence)
@@ -196,6 +196,20 @@ Switches to the electronic shutter on overexposure in P or A mode and, since v0.
 </div>
 
 ## Releases
+
+<div class="release-item" markdown="1">
+
+**[db firmware v0.4.5 beta](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.5)** · 23 Nov 2026
+{ .release-head }
+
+- Reports a fix for OI Share connections on the Mark II-based OM-5 port.
+
+OM-5 · [Report your result](https://github.com/xulfr/om-firmware-atlas/issues/new?template=camera-report.yml&target=OM+SYSTEM+OM-5+%C2%B7+stock+firmware%3A+&package=db+firmware+%2F+om-c-firmware+%C2%B7+dbv0.4.5)
+
+Upstream calls this a beta. The notes list one bug fix and no physical-camera result; the maintainer does not own an original OM-5.
+{ .release-warning }
+
+</div>
 
 <div class="release-item" markdown="1">
 
@@ -427,7 +441,7 @@ None catalogued. These links do not assign ownership or imply identical implemen
 
 ## Research notes
 
-The latest reviewed release is v0.4.4b beta. The maintainer reports fixes for Hybrid Shutter startup, the Mark II-based OM-5 port and E-P7 1.1. The preceding OM-5 boot fix was checked only in simulation and emulation, and these notes add no physical-camera result.
+The latest reviewed release is v0.4.5 beta, which reports an OI Share connection fix for the Mark II-based OM-5 port. The README says the maintainer tests on real OM-1, OM-5 Mark II and E-M10 bodies only; other models are checked in offline simulation. The release notes add no physical-camera result.
 
 ## Sources and record
 
@@ -438,5 +452,7 @@ The latest reviewed release is v0.4.4b beta. The maintainer reports fixes for Hy
 - [db firmware v0.4.4b beta](../sources/db.release044b.md)
 - [db firmware v0.4.4 beta](../sources/db.release044.md)
 - [db firmware v0.4.3b beta](../sources/db.release043b.md)
+- [db firmware v0.4.5 beta](../sources/db.release045.md)
+- [db firmware README for v0.4.5](../sources/db.readme.md)
 
-[Canonical record](../../records/projects/db-firmware.yaml) · Substantively reviewed: 2026-11-22.
+[Canonical record](../../records/projects/db-firmware.yaml) · Substantively reviewed: 2026-11-24.

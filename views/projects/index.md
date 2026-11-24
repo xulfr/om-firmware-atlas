@@ -29,7 +29,27 @@ Your films in Picture Mode · 20 film simulations · Colour editor on the camera
 For: OM-3
 { .card-cameras }
 
-Latest: v0.40.3-beta4 (pre-release), 21 Nov 2026
+Latest: v0.41-beta (pre-release), 24 Nov 2026
+{ .card-meta }
+
+</div>
+
+<div class="project-card" markdown="1">
+
+![Eight film looks shown on four sample scenes](../../docs/assets/projects/caduceus-ep7/film-looks.jpg)
+{ .card-image }
+
+[Caduceus for E-P7](caduceus-ep7.md){ .card-title }
+
+The original Caduceus: HSLFX colour editing and 29 film looks for the PEN E-P7.
+
+On-camera look editor (HSLFX) · 29 film simulations · Colour mix and base curve
+{ .card-features }
+
+For: PEN E-P7
+{ .card-cameras }
+
+Latest: v0.35, 23 Nov 2026
 { .card-meta }
 
 </div>
@@ -56,26 +76,6 @@ Latest: v0.2.0-alpha1 (pre-release), 20 Nov 2026
 
 <div class="project-card" markdown="1">
 
-![Eight film looks shown on four sample scenes](../../docs/assets/projects/caduceus-ep7/film-looks.jpg)
-{ .card-image }
-
-[Caduceus for E-P7](caduceus-ep7.md){ .card-title }
-
-The original Caduceus: HSLFX colour editing and 29 film looks for the PEN E-P7.
-
-On-camera look editor (HSLFX) · 29 film simulations · Colour mix and base curve
-{ .card-features }
-
-For: PEN E-P7
-{ .card-cameras }
-
-Latest: v0.34a, 15 Nov 2026
-{ .card-meta }
-
-</div>
-
-<div class="project-card" markdown="1">
-
 ![The E-M10 Mark II live-view INFO screen with labelled additions, battery 86 %, focus meter bar, PRE tag, focus distance 27.0 cm and depth of field 6 mm, on a photo with red and blue swapped](../../docs/assets/projects/fenykl/main-info-screen.jpg)
 { .card-image }
 
@@ -96,6 +96,23 @@ Mod
 
 <div class="project-card" markdown="1">
 
+[om10mi-mods](om10mi-mods.md){ .card-title }
+
+Film looks, a colour wheel, colour editors and a longer video limit for the original OM-D E-M10.
+
+Film looks · Per-sector colour editor · Per-look colour editor
+{ .card-features }
+
+For: OM-D E-M10 (Mark I)
+{ .card-cameras }
+
+Latest: v94, 24 Nov 2026
+{ .card-meta }
+
+</div>
+
+<div class="project-card" markdown="1">
+
 [db firmware / om-c-firmware](db-firmware.md){ .card-title }
 
 Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to new burst rates.
@@ -106,7 +123,7 @@ Panasonic aperture rings · Korean menus · Quasi-LUT and DBLink
 For: OM-5, OM-5 Mark II, OM-3, PEN E-P7, PEN-F
 { .card-cameras }
 
-Latest: dbv0.4.4b, 22 Nov 2026
+Latest: dbv0.4.5, 23 Nov 2026
 { .card-meta }
 
 </div>
@@ -123,7 +140,7 @@ Film simulations · Interval shooting · Level gauge
 For: PEN E-PM2
 { .card-cameras }
 
-Latest: v2026.11.20-rc.5 (pre-release), 22 Nov 2026
+Latest: v2026.11.20, 23 Nov 2026
 { .card-meta }
 
 </div>
@@ -141,23 +158,6 @@ For: OM-D E-M1 Mark III
 { .card-cameras }
 
 Latest: mod-builder-1.19, 22 Nov 2026
-{ .card-meta }
-
-</div>
-
-<div class="project-card" markdown="1">
-
-[om10mi-mods](om10mi-mods.md){ .card-title }
-
-Film looks, a colour wheel, colour editors and a longer video limit for the original OM-D E-M10.
-
-Film looks · Per-sector colour editor · Per-look colour editor
-{ .card-features }
-
-For: OM-D E-M10 (Mark I)
-{ .card-cameras }
-
-Latest: v87, 21 Nov 2026
 { .card-meta }
 
 </div>

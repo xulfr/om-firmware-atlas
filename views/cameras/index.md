@@ -232,13 +232,37 @@ E-M10 IV target needs physical-camera evidence. [View the testing request](https
 
 <div class="release-item" markdown="1">
 
-**OM-3, OM-5, OM-5 Mark II, PEN E-P7**
+**OM-D E-M10 (Mark I)**
 { .release-model }
 
-[db firmware / om-c-firmware](../projects/db-firmware.md) · [dbv0.4.4b](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.4b) · 22 Nov 2026
+[om10mi-mods](../projects/om10mi-mods.md) · [v94](https://github.com/Meghnus/om10mi-mods/releases/tag/v94) · 24 Nov 2026
 { .release-head }
 
-Reports a fix for the double restart with Hybrid Shutter on the OM-5, OM-5 Mark II, E-M1 III, E-M1X and E-P7.
+The RAW Data Edit Custom1 and Custom2 Sector, Hue, Sat and Light rows now change the developed picture.
+
+</div>
+
+<div class="release-item" markdown="1">
+
+**OM-3**
+{ .release-model }
+
+[Caduceus for OM-3](../projects/caduceus-om3.md) · [v0.41-beta](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.41-beta) · 24 Nov 2026 <span class="pill pill-alpha">Pre-release</span>
+{ .release-head }
+
+INFO hints on the colour wheel's H / S / L bar and the Split toning bar; Balance shows only its bar.
+
+</div>
+
+<div class="release-item" markdown="1">
+
+**OM-5**
+{ .release-model }
+
+[db firmware / om-c-firmware](../projects/db-firmware.md) · [dbv0.4.5](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.5) · 23 Nov 2026
+{ .release-head }
+
+Reports a fix for OI Share connections on the Mark II-based OM-5 port.
 
 </div>
 
@@ -247,10 +271,22 @@ Reports a fix for the double restart with Hybrid Shutter on the OM-5, OM-5 Mark 
 **PEN E-PM2**
 { .release-model }
 
-[EPM2Mod](../projects/epm2mod.md) · [v2026.11.20-rc.5](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20-rc.5) · 22 Nov 2026 <span class="pill pill-alpha">Pre-release</span>
+[EPM2Mod](../projects/epm2mod.md) · [v2026.11.20](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20) · 23 Nov 2026
 { .release-head }
 
-Corrects the Tri-X look pack entry and shows 32 films across nine scenes on the project site.
+The final release of the 2026.11.20 installer, with the films, interval shooting, level gauge, MF focus peaking, Lowest S/S Setting and Debug Log of the release candidates.
+
+</div>
+
+<div class="release-item" markdown="1">
+
+**PEN E-P7**
+{ .release-model }
+
+[Caduceus for E-P7](../projects/caduceus-ep7.md) · [v0.35](https://github.com/cakelesscoder/caduceus-ep7/releases/tag/v0.35) · 23 Nov 2026
+{ .release-head }
+
+ISO or flash compensation on the front dial, and an ISO or exposure-compensation dial in M with a manual lens.
 
 </div>
 
@@ -263,42 +299,6 @@ Corrects the Tri-X look pack entry and shows 32 films across nine scenes on the 
 { .release-head }
 
 Packages the builder for Windows and macOS, including a universal Mac build.
-
-</div>
-
-<div class="release-item" markdown="1">
-
-**OM-D E-M10 (Mark I)**
-{ .release-model }
-
-[om10mi-mods](../projects/om10mi-mods.md) · [v87](https://github.com/Meghnus/om10mi-mods/releases/tag/v87) · 21 Nov 2026
-{ .release-head }
-
-Colour wheel in Color Creator at the ART dial, with an on-screen key hint and a COLOR WHEEL mode guide.
-
-</div>
-
-<div class="release-item" markdown="1">
-
-**OM-3**
-{ .release-model }
-
-[Caduceus for OM-3](../projects/caduceus-om3.md) · [v0.40.3-beta4](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.40.3-beta4) · 21 Nov 2026 <span class="pill pill-alpha">Pre-release</span>
-{ .release-head }
-
-Films and COLOR keep their own white-balance shift in live view and stills. The stock picture modes keep the camera’s own setting.
-
-</div>
-
-<div class="release-item" markdown="1">
-
-**OM-5 Mark II**
-{ .release-model }
-
-[OMKit](../projects/omkit.md) · [v0.1.0](https://github.com/necrostaz/omkit/releases/tag/v0.1.0) · 20 Nov 2026
-{ .release-head }
-
-First public release, for the OM-5 Mark II on firmware 1.1; core 1.32, CREATPRF 1.5, FILMLOOK 1.12.
 
 </div>
 

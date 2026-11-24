@@ -4,11 +4,11 @@
 
 E-P7 modifications and shared-panel/port research.
 
-[Contribution home](https://github.com/cakelesscoder/caduceus-ep7/issues). The reviewed documentation names v0.34a. E-M10 IV is a research target seeking physical testing, not a released port.
+[Contribution home](https://github.com/cakelesscoder/caduceus-ep7/issues). The latest reviewed release is v0.35 beta for E-P7 firmware 1.1, which the release notes say was tested on an E-P7. The full Colour Profile page still does not show film names. E-M10 IV is a research target seeking physical testing, not a released port.
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [caduceus-ep7.yaml](../../../records/projects/caduceus-ep7.yaml) | Project scope, related work and contribution destination | 12,154 | ~3,039 |
-| [ep7.yaml](../../../records/sources/ep7.yaml) | Find the relevant source/observation ID; use bounded reads | 5,143 | ~1,286 |
+| [caduceus-ep7.yaml](../../../records/projects/caduceus-ep7.yaml) | Project scope, related work and contribution destination | 13,664 | ~3,416 |
+| [ep7.yaml](../../../records/sources/ep7.yaml) | Find the relevant source/observation ID; use bounded reads | 5,848 | ~1,462 |
 
 Follow only relevant camera/topic routes. Upstream policies apply to work there; Atlas does not assign ownership across projects.

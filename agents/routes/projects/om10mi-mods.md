@@ -2,14 +2,14 @@
 
 # om10mi-mods
 
-Firmware mod for the original OM-D E-M10 with 18 film looks, a colour wheel, per-colour and per-look colour editors and a 59:50 video limit.
+Firmware mod for the original OM-D E-M10 with 18 film looks, a colour wheel, per-colour and per-look colour editors, an optional look pack builder and a 59:50 video limit.
 
-[Contribution home](https://github.com/Meghnus/om10mi-mods/issues). Version 87 adds a colour wheel for the original E-M10 on firmware 1.4. The owner reports emulator and camera tests; recording past 30 minutes is still unconfirmed. A filter-related reboot report remains open. The reporter closed the Lightroom white-balance display issue after a second look.
+[Contribution home](https://github.com/Meghnus/om10mi-mods/issues). Version 94 is the single current build for the original E-M10 on firmware 1.4. It fixes the RAW Data Edit bank rows that had no effect in pre-release 88 and adds an optional look pack builder. The maintainer reports field tests on one camera; recording past 30 minutes is still unconfirmed. A filter-related reboot report remains open. The reporter closed the Lightroom white-balance display issue after a second look.
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [om10mi-mods.yaml](../../../records/projects/om10mi-mods.yaml) | Project scope, related work and contribution destination | 8,158 | ~2,040 |
-| [om10mi-mods.yaml](../../../records/sources/om10mi-mods.yaml) | Find the relevant source/observation ID; use bounded reads | 9,149 | ~2,288 |
+| [om10mi-mods.yaml](../../../records/projects/om10mi-mods.yaml) | Project scope, related work and contribution destination | 10,059 | ~2,515 |
+| [om10mi-mods.yaml](../../../records/sources/om10mi-mods.yaml) | Find the relevant source/observation ID; use bounded reads | 9,434 | ~2,359 |
 | [om10mi-mods.yaml](../../../records/evidence/om10mi-mods.yaml) | Find the relevant source/observation ID; use bounded reads | 7,605 | ~1,902 |
 
 Follow only relevant camera/topic routes. Upstream policies apply to work there; Atlas does not assign ownership across projects.

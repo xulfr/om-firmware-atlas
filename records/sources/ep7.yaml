@@ -6,14 +6,14 @@ records:
   summary: Advertised modifications and feature-specific limitations.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-17'
-  url: https://github.com/cakelesscoder/caduceus-ep7/blob/0cb1dbcc50595cd87f56648810762ffbbb8e17f3/README.md
+  last_reviewed: '2026-11-24'
+  url: https://github.com/cakelesscoder/caduceus-ep7/blob/6b421a4a06c47f635bf84d4940e2cdb660dabb06/README.md
   source_kind: github-file
   upstream_repo: cakelesscoder/caduceus-ep7
-  revision: 0cb1dbcc50595cd87f56648810762ffbbb8e17f3
+  revision: 6b421a4a06c47f635bf84d4940e2cdb660dabb06
   locator: README.md
-  retrieved_on: '2026-11-17'
-  last_checked: '2026-11-17'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -22,14 +22,14 @@ records:
   summary: Containers, mapping, loaders and patching lessons.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-17'
-  url: https://github.com/cakelesscoder/caduceus-ep7/blob/0cb1dbcc50595cd87f56648810762ffbbb8e17f3/docs/FIRMWARE_GUIDE.md
+  last_reviewed: '2026-11-24'
+  url: https://github.com/cakelesscoder/caduceus-ep7/blob/6b421a4a06c47f635bf84d4940e2cdb660dabb06/docs/FIRMWARE_GUIDE.md
   source_kind: github-file
   upstream_repo: cakelesscoder/caduceus-ep7
-  revision: 0cb1dbcc50595cd87f56648810762ffbbb8e17f3
+  revision: 6b421a4a06c47f635bf84d4940e2cdb660dabb06
   locator: docs/FIRMWARE_GUIDE.md
-  retrieved_on: '2026-11-17'
-  last_checked: '2026-11-17'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -38,14 +38,14 @@ records:
   summary: Related projects and method-specific signature comparisons.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-17'
-  url: https://github.com/cakelesscoder/caduceus-ep7/blob/0cb1dbcc50595cd87f56648810762ffbbb8e17f3/docs/BODIES.md
+  last_reviewed: '2026-11-24'
+  url: https://github.com/cakelesscoder/caduceus-ep7/blob/6b421a4a06c47f635bf84d4940e2cdb660dabb06/docs/BODIES.md
   source_kind: github-file
   upstream_repo: cakelesscoder/caduceus-ep7
-  revision: 0cb1dbcc50595cd87f56648810762ffbbb8e17f3
+  revision: 6b421a4a06c47f635bf84d4940e2cdb660dabb06
   locator: docs/BODIES.md
-  retrieved_on: '2026-11-17'
-  last_checked: '2026-11-17'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -54,14 +54,14 @@ records:
   summary: A specific locally patched setup and decompiler limitations.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-17'
-  url: https://github.com/cakelesscoder/caduceus-ep7/blob/0cb1dbcc50595cd87f56648810762ffbbb8e17f3/docs/REA_SETUP.md
+  last_reviewed: '2026-11-24'
+  url: https://github.com/cakelesscoder/caduceus-ep7/blob/6b421a4a06c47f635bf84d4940e2cdb660dabb06/docs/REA_SETUP.md
   source_kind: github-file
   upstream_repo: cakelesscoder/caduceus-ep7
-  revision: 0cb1dbcc50595cd87f56648810762ffbbb8e17f3
+  revision: 6b421a4a06c47f635bf84d4940e2cdb660dabb06
   locator: docs/REA_SETUP.md
-  retrieved_on: '2026-11-17'
-  last_checked: '2026-11-17'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -70,14 +70,14 @@ records:
   summary: Research on keeping mod data in the unused tail of the user-settings image, saved by the camera's own settings save.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-19'
-  url: https://github.com/cakelesscoder/caduceus-ep7/blob/0cb1dbcc50595cd87f56648810762ffbbb8e17f3/docs/INTERNAL_STORAGE.md
+  last_reviewed: '2026-11-24'
+  url: https://github.com/cakelesscoder/caduceus-ep7/blob/6b421a4a06c47f635bf84d4940e2cdb660dabb06/docs/INTERNAL_STORAGE.md
   source_kind: github-file
   upstream_repo: cakelesscoder/caduceus-ep7
-  revision: 0cb1dbcc50595cd87f56648810762ffbbb8e17f3
+  revision: 6b421a4a06c47f635bf84d4940e2cdb660dabb06
   locator: docs/INTERNAL_STORAGE.md
-  retrieved_on: '2026-11-19'
-  last_checked: '2026-11-19'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -86,14 +86,14 @@ records:
   summary: Maintainer proposal for common settings and camera exporters.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-17'
-  url: https://github.com/cakelesscoder/caduceus-ep7/blob/0cb1dbcc50595cd87f56648810762ffbbb8e17f3/docs/CONTROL_PANEL.md
+  last_reviewed: '2026-11-24'
+  url: https://github.com/cakelesscoder/caduceus-ep7/blob/6b421a4a06c47f635bf84d4940e2cdb660dabb06/docs/CONTROL_PANEL.md
   source_kind: github-file
   upstream_repo: cakelesscoder/caduceus-ep7
-  revision: 0cb1dbcc50595cd87f56648810762ffbbb8e17f3
+  revision: 6b421a4a06c47f635bf84d4940e2cdb660dabb06
   locator: docs/CONTROL_PANEL.md
-  retrieved_on: '2026-11-17'
-  last_checked: '2026-11-17'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -102,30 +102,47 @@ records:
   summary: Curve/matrix fields and older-consumer behaviour.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-17'
-  url: https://github.com/cakelesscoder/caduceus-ep7/blob/0cb1dbcc50595cd87f56648810762ffbbb8e17f3/docs/LOOK_FORMAT_V4.md
+  last_reviewed: '2026-11-24'
+  url: https://github.com/cakelesscoder/caduceus-ep7/blob/6b421a4a06c47f635bf84d4940e2cdb660dabb06/docs/LOOK_FORMAT_V4.md
   source_kind: github-file
   upstream_repo: cakelesscoder/caduceus-ep7
-  revision: 0cb1dbcc50595cd87f56648810762ffbbb8e17f3
+  revision: 6b421a4a06c47f635bf84d4940e2cdb660dabb06
   locator: docs/LOOK_FORMAT_V4.md
-  retrieved_on: '2026-11-17'
-  last_checked: '2026-11-17'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
   id: source.ep7.releases
   title: Caduceus E-P7 releases
-  summary: Beta release notes from v0.31b to v0.34a.
+  summary: Beta release notes from v0.31b to v0.35.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-17'
+  last_reviewed: '2026-11-24'
   url: https://github.com/cakelesscoder/caduceus-ep7/releases
   source_kind: github-release
   upstream_repo: cakelesscoder/caduceus-ep7
-  revision: v0.34a
-  locator: Releases page, newest ten entries
-  retrieved_on: '2026-11-17'
-  last_checked: '2026-11-17'
-  published_on: '2026-11-15'
+  revision: v0.35
+  locator: Releases page, newest entries through v0.35
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
+  published_on: '2026-11-23'
   publication: public
   reuse_note: Attributed summary of mutable release notes; no code, firmware or executables imported.
+- type: source
+  id: source.ep7.v035
+  title: Caduceus v0.35 (beta)
+  summary: More dial functions, an M-mode dial for manual lenses, and fixes for the Shortcut-button wheel and Movie Extras rows.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-24'
+  url: https://github.com/cakelesscoder/caduceus-ep7/releases/tag/v0.35
+  source_kind: github-release
+  upstream_repo: cakelesscoder/caduceus-ep7
+  revision: v0.35
+  locator: GitHub release notes for v0.35 (tag commit 7ae6366e1c48a5557f586728c2148f71ee61016f)
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
+  published_on: '2026-11-23'
+  publication: public
+  reuse_note: Attributed summary of the maintainer’s release notes.

@@ -2,16 +2,16 @@
 
 # Caduceus E-P7 releases
 
-Beta release notes from v0.31b to v0.34a.
+Beta release notes from v0.31b to v0.35.
 
 **[Open original source](https://github.com/cakelesscoder/caduceus-ep7/releases)**
 
-**Kind:** github release. **Locator:** Releases page, newest ten entries.
+**Kind:** github release. **Locator:** Releases page, newest entries through v0.35.
 
-**Revision / release:** `v0.34a`. **Retrieved:** 2026-11-17. **Last source check:** 2026-11-17.
+**Revision / release:** `v0.35`. **Retrieved:** 2026-11-24. **Last source check:** 2026-11-24.
 
 **Publication:** public. Attributed summary of mutable release notes; no code, firmware or executables imported.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/ep7.yaml) · Substantively reviewed: 2026-11-17.
+[Canonical record](../../records/sources/ep7.yaml) · Substantively reviewed: 2026-11-24.

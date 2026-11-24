@@ -7,13 +7,15 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | Entry | What you will find |
 |---|---|
 | [r/M43 community page](community.m43.md) | Public photography venue; Caduceus relevance supplied by the Atlas maintainer. |
+| [db firmware README for v0.4.5](db.readme.md) | Feature list, supported bodies and base firmware, and the maintainer's statement of which bodies are tested on real hardware. |
 | [db firmware v0.4.1 release](db.release041.md) | Release-centred feature claims and named limitations, not an independent camera audit. |
 | [db firmware v0.4.2 beta](db.release042.md) | Hybrid Shutter and OM-5 port changes reported by the maintainer. |
 | [db firmware v0.4.3 beta](db.release043.md) | Hybrid Shutter in S/M as well as P/A across nine bodies, Quasi-LUT fixes, and a known issue that the OM-5 and OM-5 Mark II firmware does not work. |
 | [db firmware v0.4.3b beta](db.release043b.md) | Adds infrared channel swap and power-cycle persistence for Hybrid Shutter and Quasi-LUT on their listed targets. |
 | [db firmware v0.4.4 beta](db.release044.md) | The maintainer reports a simulated and emulated fix for the OM-5 port’s black screen on boot. |
 | [db firmware v0.4.4b beta](db.release044b.md) | The maintainer reports Hybrid Shutter startup, OM-5 port, Quasi-LUT and E-P7 1.1 fixes. |
-| [db firmware releases](db.releases.md) | Beta release notes through v0.4.4b, in Korean and English. |
+| [db firmware v0.4.5 beta](db.release045.md) | The maintainer reports a fix for OI Share connections on the Mark II-based OM-5 port. |
+| [db firmware releases](db.releases.md) | Beta release notes through v0.4.5, in Korean and English. |
 | [Author's note on project status](em1m3.author-note.md) | The author asked on 2026-11-20 that the Atlas record the project as inactive but open to continue, functional, with one known preview issue. Historical: the README of 2026-11-21 says the project continues. |
 | [E-M1 III mod builder guide](em1m3.builder.md) | What the builder does, the mod list with the owner's camera status per mod, install steps and credits. |
 | [E-M1 III firmware findings](em1m3.findings.md) | Research notes behind the mods, including Multiple Exposure frame counts tried on the camera and the overlay fix in test 1.746. |
@@ -84,7 +86,8 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [Shared Control Panel direction](ep7.panel.md) | Maintainer proposal for common settings and camera exporters. |
 | [E-P7 Ghidra/REA profile](ep7.rea.md) | A specific locally patched setup and decompiler limitations. |
 | [Caduceus E-P7 overview](ep7.readme.md) | Advertised modifications and feature-specific limitations. |
-| [Caduceus E-P7 releases](ep7.releases.md) | Beta release notes from v0.31b to v0.34a. |
+| [Caduceus E-P7 releases](ep7.releases.md) | Beta release notes from v0.31b to v0.35. |
+| [Caduceus v0.35 (beta)](ep7.v035.md) | More dial functions, an M-mode dial for manual lenses, and fixes for the Shortcut-button wheel and Movie Extras rows. |
 | [films-look-exif camera log](epm2.camera-log.md) | Owner camera result for the pinned build on 2026-11-20, with the emulator checks run before the flash. |
 | [E-PM2 peaking-mf camera log](epm2.camera-log-peaking-mf.md) | Owner test of the first peaking-mf candidate and the rebuilt, pinned firmware on 21 November. |
 | [films-twelve-off camera log](epm2.camera-log-twelve-off.md) | Owner camera result for the films-twelve-off build on 2026-11-21, the checks not done and the emulator checks run before the flash. |
@@ -100,7 +103,8 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [EPM2Mod 2026.11.20-rc.4](epm2.rc4.md) | Adds a signed and notarised macOS installer and resets settings on stock restore. |
 | [EPM2Mod 2026.11.20-rc.5](epm2.rc5.md) | Corrects the dark Tri-X look and expands the online film comparison. |
 | [EPM2Mod overview](epm2.readme.md) | Features, install routes, the landscape of other projects and the AI-assistance note. |
-| [EPM2Mod releases](epm2.releases.md) | Installer release candidates through v2026.11.20-rc.5. |
+| [EPM2Mod releases](epm2.releases.md) | Installer release candidates through v2026.11.20-rc.5 and the final v2026.11.20. |
+| [EPM2Mod 2026.11.20](epm2.v20261120.md) | Final release of the 2026.11.20 installer, with its firmware digest and the features of the films-twelve-off build. |
 | [fenykl contrast client](fenykl.afc.md) | The own contrast-AF client of the focus meter: what it reads, its state machine and the camera run. |
 | [fenykl update-file container code](fenykl.container-code.md) | Block header layout, type and model signatures, scrambling and the checksum rule of Olympus .BIN files. |
 | [fenykl stock-image unpack tests](fenykl.container-tests.md) | Pins the unpacked blocks of the stock E-M10 Mark II 1.4 file: names, sizes and digests. |
@@ -129,10 +133,10 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [Ghidra MN103 pointer-register compiler spec](gmn103.ptrregs.md) | Optional ptrregs spec, expanded validation and supported Ghidra versions. |
 | [Ghidra MN103 module README](gmn103.readme.md) | Installation, import for several bodies, scripts (sections, register names), decompiler checks and calling-convention validation. |
 | [Historical manual updates](manual.readme.md) | SD update research and explicitly obsolete static download links. |
-| [om10mi-mods changes](om10mi.changelog.md) | Version history through 87 and the updated User Hue reset recommendation. |
-| [om10mi-mods colour wheel guide](om10mi.color-wheel.md) | Version 87 colour wheel in Color Creator at the ART dial: controls, value ranges, mode guide, the moved art filters and known limits. |
+| [om10mi-mods changes](om10mi.changelog.md) | Version history through 94, the known limits of 94 and the User Hue reset on each look's own page. |
+| [om10mi-mods colour wheel guide](om10mi.color-wheel.md) | Colour wheel in Color Creator at the ART dial (since 87): controls, value ranges, mode guide, the moved art filters, the version 94 viewfinder centring and known limits. |
 | [om10mi-mods development and testing method](om10mi.development.md) | Licence boundaries, the build and test workflow, the verification ladder (byte oracle, census, emulation, mutants, dual audits) and a worked example. |
-| [Looks and colour editors guide and test list (since 56)](om10mi.guide.md) | Look controls and test list, including the menu location for the recommended User Hue reset. |
+| [Looks and colour editors guide and test list (since 56)](om10mi.guide.md) | Look controls, the per-look colour page added in 88 and the test list, including the User Hue reset. |
 | [om10mi-mods install guide](om10mi.install.md) | Install and restore instructions for the original E-M10 on 1.4, plus the recommended User Hue reset. |
 | [Support for E-M10 Mark II? (issue 1)](om10mi.issue-1.md) | Port request for the E-M10 II and original E-M1; the maintainer declined for now and warned against cross-flashing. |
 | [Caduceus Control Panel export offer (issue 2)](om10mi.issue-2.md) | cakelesscoder offers an E-M10 Mark I export from the Caduceus editor; the maintainer accepts in principle and points to the look-file draft. |
@@ -140,16 +144,16 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [Freezes and reboots with filters (issue 4)](om10mi.issue-4.md) | The reporter describes freezes and automatic restarts while taking single-shot JPEG + RAW with looks. Exact look and build unspecified. |
 | [om10mi look file, version 1 (draft)](om10mi.lookfile.md) | Draft JSON look format for external editors: 18 look slots, name limits and parameters; builder side not finished. |
 | [om10mi-mods notice](om10mi.notice.md) | What the repository does and does not contain, licences and the references the look data is fitted to. |
-| [om10mi-mods overview](om10mi.readme.md) | Features of version 87, the colour wheel, test status per version, known changes and limitations, credits and licences. |
-| [om10mi-mods releases](om10mi.releases.md) | Two releases, v87 (2026-11-21, Latest) and v56 (2026-11-10); each has a Windows exe and a Python zip with SHA-256s, and the stock and result SHA-1s. |
+| [om10mi-mods overview](om10mi.readme.md) | Features of version 94, the colour wheel, the optional look pack builder, test status per version, known changes and limitations, credits and licences. |
+| [om10mi-mods releases](om10mi.releases.md) | Four releases: v94 (2026-11-24), v88 (2026-11-23, pre-release, superseded), v87 (2026-11-21) and v56 (2026-11-10); each has a Windows exe and a Python zip with SHA-256s, and the stock and result SHA-1s. |
 | [OM-3 v0.40 grain crash report](om3.atlas-grain-report.md) | A user reports a crash at shutter release with Film Grain enabled and loss of the last photo. |
 | [Caduceus OM-3 developer notes](om3.devnotes.md) | Addresses, hooks and test history for the OM-3 1.1 port, with camera-proven sites marked. |
 | [OM-3 card formats](om3.formats.md) | OM3P layout and release-specific semantics, including the v0.40 border and film grain fields. |
 | [OM-3 LookLab](om3.looklab.md) | OM-3-only editor, sharing schema and export targets. |
-| [LookLab import and preview updates](om3.looklab-current.md) | Upstream changelog for multi-photo previews and opening card curves or a readable recipe JSON. |
+| [LookLab import and preview updates](om3.looklab-current.md) | Upstream changelog for multi-photo previews, opening card curves or a recipe JSON, saved film sims, kept photos and reading photo code om3.2. |
 | [OM-3 research notebook](om3.notes.md) | Caduceus OM-3 lab notebook: camera, emulator and static findings per issue. |
 | [Caduceus OM-3 overview](om3.readme.md) | Current stable release, camera scope, features and owner installation guidance. |
-| [Caduceus OM-3 releases](om3.releases.md) | Release notes through test version v0.40.3-beta4. The project lists v0.40.2 as the current stable release. |
+| [Caduceus OM-3 releases](om3.releases.md) | Release notes through test version v0.41-beta. The project lists v0.40.3 as the current stable release. |
 | [OM-3 research index](om3.research.md) | Research entry points, release tests and the shooting-screen investigation. |
 | [Caduceus OM-3 roadmap](om3.roadmap.md) | Planned, testing, parked and fixed work as the owner describes it. |
 | [OM-3 v0.40-alpha release notes](om3.v040.md) | Release notes for the v0.40-alpha test version, read at its tag. |
@@ -159,10 +163,13 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [Caduceus for OM-3 v0.40](om3.v040-release.md) | Releases XPan, 21:9 and 5:4 crops, black and white JPEG borders, and adjustable film grain. |
 | [Caduceus for OM-3 v0.40.1](om3.v0401.md) | Medium and Coarse grain use rounder clumps with fewer repeated patterns. |
 | [Caduceus for OM-3 v0.40.2](om3.v0402.md) | Produces colour grain on every row to remove faint banding and reduces red–green speckling. |
+| [Caduceus for OM-3 v0.40.3](om3.v0403.md) | Stable release of the v0.40.3 test versions, camera-tested as v0.40.3-beta4: Halation Radius, faster Halation, separate film and stock WB shifts, and the #91, #93, #97 and #101 fixes. |
 | [Caduceus for OM-3 v0.40.3-beta notes](om3.v0403-beta.md) | Test version adding Halation Radius, faster Halation, a burst pause cap and the playback film-name fix (#93); camera-tested as build r5; #91 listed as a known issue. |
 | [Caduceus for OM-3 v0.40.3-beta2 notes](om3.v0403-beta2.md) | Test version on top of v0.40.3-beta fixing #91, #97 and #99; camera-tested on an OM-3 on 2026-11-20 as build fixes2; v0.40.2 stays current. |
 | [Caduceus for OM-3 v0.40.3-beta3 notes](om3.v0403-beta3.md) | Test version on top of v0.40.3-beta fixing #91, #97, #99 and #101 (Delete); replaces the withdrawn beta2 (boot loop on some start-ups); camera-tested on an OM-3 on 2026-11-21 as test build f9; v0.40.2 stays current. |
 | [Caduceus for OM-3 v0.40.3-beta4 (test version)](om3.v0403-beta4.md) | The maintainer reports that test build w1 keeps film and stock white-balance compensation separate on the OM-3. |
+| [Caduceus for OM-3 v0.41-alpha (test version)](om3.v041-alpha.md) | Early test version with new Picture Mode pages; the maintainer reports camera testing on an OM-3 as build p4. |
+| [Caduceus for OM-3 v0.41-beta (test version)](om3.v041-beta.md) | Test version that tidies the v0.41-alpha pages and adds photo code om3.2; the maintainer reports camera testing on an OM-3 as builds a2 to a6 and pc3. |
 | [Mark II alpha12 report](om5.alpha12.md) | Expected digest and an explicitly incomplete owner report. |
 | [OM-5 Mark II brick-risk review](om5.brick-risk.md) | E148 1.1 recovery route, hook map and incident record for the HSL/WB build. |
 | [OM-5 strict builder](om5.builder.md) | Declarative patch scope, bounds and recorded hashes. |

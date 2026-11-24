@@ -3,17 +3,17 @@ records:
 - type: source
   id: source.om10mi.readme
   title: 'om10mi-mods overview'
-  summary: 'Features of version 87, the colour wheel, test status per version, known changes and limitations, credits and licences.'
+  summary: 'Features of version 94, the colour wheel, the optional look pack builder, test status per version, known changes and limitations, credits and licences.'
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-21'
-  url: https://github.com/Meghnus/om10mi-mods/blob/46874155947715e0d54baabe2df5006376c8bbab/README.md
+  last_reviewed: '2026-11-24'
+  url: https://github.com/Meghnus/om10mi-mods/blob/c8d72448b8a2981cc995b70230e1619f1a89d39f/README.md
   source_kind: github-file
   upstream_repo: Meghnus/om10mi-mods
-  revision: 46874155947715e0d54baabe2df5006376c8bbab
+  revision: c8d72448b8a2981cc995b70230e1619f1a89d39f
   locator: README.md
-  retrieved_on: '2026-11-21'
-  last_checked: '2026-11-21'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -22,46 +22,46 @@ records:
   summary: Install and restore instructions for the original E-M10 on 1.4, plus the recommended User Hue reset.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-22'
-  url: https://github.com/Meghnus/om10mi-mods/blob/a73028a8cc38d581e0279c0890811d68e8a8ca0b/INSTALL.md
+  last_reviewed: '2026-11-24'
+  url: https://github.com/Meghnus/om10mi-mods/blob/c8d72448b8a2981cc995b70230e1619f1a89d39f/INSTALL.md
   source_kind: github-file
   upstream_repo: Meghnus/om10mi-mods
-  revision: a73028a8cc38d581e0279c0890811d68e8a8ca0b
+  revision: c8d72448b8a2981cc995b70230e1619f1a89d39f
   locator: INSTALL.md
-  retrieved_on: '2026-11-22'
-  last_checked: '2026-11-22'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
   id: source.om10mi.guide
   title: Looks and colour editors guide and test list (since 56)
-  summary: Look controls and test list, including the menu location for the recommended User Hue reset.
+  summary: Look controls, the per-look colour page added in 88 and the test list, including the User Hue reset.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-22'
-  url: https://github.com/Meghnus/om10mi-mods/blob/a73028a8cc38d581e0279c0890811d68e8a8ca0b/docs/GUIDE-56.md
+  last_reviewed: '2026-11-24'
+  url: https://github.com/Meghnus/om10mi-mods/blob/c8d72448b8a2981cc995b70230e1619f1a89d39f/docs/GUIDE-56.md
   source_kind: github-file
   upstream_repo: Meghnus/om10mi-mods
-  revision: a73028a8cc38d581e0279c0890811d68e8a8ca0b
+  revision: c8d72448b8a2981cc995b70230e1619f1a89d39f
   locator: docs/GUIDE-56.md
-  retrieved_on: '2026-11-22'
-  last_checked: '2026-11-22'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
   id: source.om10mi.changelog
   title: om10mi-mods changes
-  summary: Version history through 87 and the updated User Hue reset recommendation.
+  summary: Version history through 94, the known limits of 94 and the User Hue reset on each look's own page.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-22'
-  url: https://github.com/Meghnus/om10mi-mods/blob/a73028a8cc38d581e0279c0890811d68e8a8ca0b/CHANGELOG.md
+  last_reviewed: '2026-11-24'
+  url: https://github.com/Meghnus/om10mi-mods/blob/c8d72448b8a2981cc995b70230e1619f1a89d39f/CHANGELOG.md
   source_kind: github-file
   upstream_repo: Meghnus/om10mi-mods
-  revision: a73028a8cc38d581e0279c0890811d68e8a8ca0b
+  revision: c8d72448b8a2981cc995b70230e1619f1a89d39f
   locator: CHANGELOG.md
-  retrieved_on: '2026-11-22'
-  last_checked: '2026-11-22'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -70,14 +70,14 @@ records:
   summary: 'What the repository does and does not contain, licences and the references the look data is fitted to.'
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-21'
-  url: https://github.com/Meghnus/om10mi-mods/blob/46874155947715e0d54baabe2df5006376c8bbab/NOTICE
+  last_reviewed: '2026-11-24'
+  url: https://github.com/Meghnus/om10mi-mods/blob/c8d72448b8a2981cc995b70230e1619f1a89d39f/NOTICE
   source_kind: github-file
   upstream_repo: Meghnus/om10mi-mods
-  revision: 46874155947715e0d54baabe2df5006376c8bbab
+  revision: c8d72448b8a2981cc995b70230e1619f1a89d39f
   locator: NOTICE
-  retrieved_on: '2026-11-21'
-  last_checked: '2026-11-21'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -86,31 +86,31 @@ records:
   summary: 'Draft JSON look format for external editors: 18 look slots, name limits and parameters; builder side not finished.'
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-21'
-  url: https://github.com/Meghnus/om10mi-mods/blob/46874155947715e0d54baabe2df5006376c8bbab/docs/lookfile/LOOKFILE_SPEC.md
+  last_reviewed: '2026-11-24'
+  url: https://github.com/Meghnus/om10mi-mods/blob/c8d72448b8a2981cc995b70230e1619f1a89d39f/docs/lookfile/LOOKFILE_SPEC.md
   source_kind: github-file
   upstream_repo: Meghnus/om10mi-mods
-  revision: 46874155947715e0d54baabe2df5006376c8bbab
+  revision: c8d72448b8a2981cc995b70230e1619f1a89d39f
   locator: docs/lookfile/LOOKFILE_SPEC.md
-  retrieved_on: '2026-11-21'
-  last_checked: '2026-11-21'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
   id: source.om10mi.releases
   title: om10mi-mods releases
-  summary: Two releases, v87 (2026-11-21, Latest) and v56 (2026-11-10); each has a Windows exe and a Python zip with SHA-256s, and the stock and result SHA-1s.
+  summary: 'Four releases: v94 (2026-11-24), v88 (2026-11-23, pre-release, superseded), v87 (2026-11-21) and v56 (2026-11-10); each has a Windows exe and a Python zip with SHA-256s, and the stock and result SHA-1s.'
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-21'
+  last_reviewed: '2026-11-24'
   url: https://github.com/Meghnus/om10mi-mods/releases
   source_kind: github-release
   upstream_repo: Meghnus/om10mi-mods
-  revision: v87
-  locator: Releases page; release v87 at commit 46874155947715e0d54baabe2df5006376c8bbab; release v56 at commit 20ef8fe846ec432bbfa361b8be3f0edca91d51ee
-  retrieved_on: '2026-11-21'
-  last_checked: '2026-11-21'
-  published_on: '2026-11-21'
+  revision: v94
+  locator: Releases page; release v94 at commit 84d4f36365270a9393d0b46b8beeae44a8e3491d; release v88 at commit 04f5184fc8c8a745ad4ec686b3f839177ee2ff4f; release v87 at commit 46874155947715e0d54baabe2df5006376c8bbab; release v56 at commit 20ef8fe846ec432bbfa361b8be3f0edca91d51ee
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
+  published_on: '2026-11-24'
   publication: public
   reuse_note: Attributed summary of mutable release notes; no code, firmware or executables imported.
 - type: source
@@ -186,17 +186,17 @@ records:
 - type: source
   id: source.om10mi.color-wheel
   title: 'om10mi-mods colour wheel guide'
-  summary: 'Version 87 colour wheel in Color Creator at the ART dial: controls, value ranges, mode guide, the moved art filters and known limits.'
+  summary: 'Colour wheel in Color Creator at the ART dial (since 87): controls, value ranges, mode guide, the moved art filters, the version 94 viewfinder centring and known limits.'
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-21'
-  url: https://github.com/Meghnus/om10mi-mods/blob/46874155947715e0d54baabe2df5006376c8bbab/docs/GUIDE-COLOR-WHEEL.md
+  last_reviewed: '2026-11-24'
+  url: https://github.com/Meghnus/om10mi-mods/blob/c8d72448b8a2981cc995b70230e1619f1a89d39f/docs/GUIDE-COLOR-WHEEL.md
   source_kind: github-file
   upstream_repo: Meghnus/om10mi-mods
-  revision: 46874155947715e0d54baabe2df5006376c8bbab
+  revision: c8d72448b8a2981cc995b70230e1619f1a89d39f
   locator: docs/GUIDE-COLOR-WHEEL.md
-  retrieved_on: '2026-11-21'
-  last_checked: '2026-11-21'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -205,13 +205,13 @@ records:
   summary: 'Licence boundaries, the build and test workflow, the verification ladder (byte oracle, census, emulation, mutants, dual audits) and a worked example.'
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-21'
-  url: https://github.com/Meghnus/om10mi-mods/blob/46874155947715e0d54baabe2df5006376c8bbab/docs/DEVELOPMENT.md
+  last_reviewed: '2026-11-24'
+  url: https://github.com/Meghnus/om10mi-mods/blob/c8d72448b8a2981cc995b70230e1619f1a89d39f/docs/DEVELOPMENT.md
   source_kind: github-file
   upstream_repo: Meghnus/om10mi-mods
-  revision: 46874155947715e0d54baabe2df5006376c8bbab
+  revision: c8d72448b8a2981cc995b70230e1619f1a89d39f
   locator: docs/DEVELOPMENT.md
-  retrieved_on: '2026-11-21'
-  last_checked: '2026-11-21'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
