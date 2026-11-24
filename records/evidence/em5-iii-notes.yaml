@@ -22,8 +22,8 @@ records:
   quality: partial
   reported_on: '2026-10-19'
   tested_on: '2026-10-19'
-  procedure: Patched 0x6065e5ec c9 04 -> cb cb, fixed checksums, flashed from the SD card, used focus stacking with
-    a lens the stock list excludes.
+  procedure: Replaced the branch after the per-lens flag check with two no-ops, flashed from the SD card, and used
+    focus stacking with a lens the stock list excludes.
   coverage:
   - Focus stacking runs with the patch on one E-M5 III.
   limitations:

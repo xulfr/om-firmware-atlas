@@ -4,11 +4,11 @@
 
 The notes' script for drawing with the GUI's own calls in om-emu (demos and the showcase overlay).
 
-**[Open original source](https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/tools/osdlab/README.md)**
+**[Open original source](https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/tools/osdlab/README.md)**
 
 **Kind:** github file. **Locator:** tools/osdlab/README.md.
 
-**Revision / release:** `4ee043ec5fd30b42b56d029c70c3fed6f2e8077a`. **Retrieved:** 2026-11-23. **Last source check:** 2026-11-23.
+**Revision / release:** `c35661d826c66971073920651178bf90f5a75694`. **Retrieved:** 2026-11-24. **Last source check:** 2026-11-24.
 
 **Publication:** public. Written by the notes' author; docs CC BY 4.0, tools MIT per the repo licences.
 

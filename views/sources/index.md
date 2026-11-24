@@ -27,9 +27,11 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [E-M5 III vector GPU (c3d) reference](em5n.c3d-gpu.md) | Reference for the c3d task, the OpenVG/EGL library, draw kinds, renderer interface and command lists. |
 | [Card mods on the E-M5 III](em5n.card-mods.md) | How small mods load from the SD card at start-up and switch on and off from a Custom Menu page, without reflashing; camera results. |
 | [Body comparison (technical notes)](em5n.comparison.md) | Chip generation, memory, blocks and built-in features of seven bodies side by side. |
-| [E-M5 III container format](em5n.container.md) | Update-file layout, obfuscation and checksum. |
+| [E-M5 III container format](em5n.container.md) | Update-file layout, obfuscation, checksum and compressed sections. |
 | [E-M5 III display controller](em5n.display-controller.md) | The display controller (VSC) and the view assists built on it (red night view, RGB clipping view, zebras), with camera results and emulator limits. |
-| [Focus stacking lens check patch](em5n.focus-patch.md) | Function, patched bytes and camera result. |
+| [I/O expander driver swap](em5n.expander-driver-swap.md) | A bug of our own: a driver moved between firmware versions without one of its functions. Symptoms, root cause and the check that now catches it. |
+| [Failure patterns](em5n.failure-patterns.md) | Ways a changed firmware failed on an E-M5 III, each with symptom, cause and a pre-flash check. |
+| [Focus stacking lens check patch](em5n.focus-patch.md) | The lens check function, how to find it, the change and the camera result. |
 | [Focus stacking](em5n.focus-stacking.md) | Lens check patch background and the shot-count setting. |
 | [Gotchas](em5n.gotchas.md) | Mistakes that hung, reset or delayed work on the camera, and the rule since. |
 | [E-M5 III drawing to the screen guide](em5n.guide-drawing.md) | The GUI layers, the 2D draw engine, and the OpenVG vector GPU (c3d) used by the colour-wheel editors. |
@@ -37,23 +39,31 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [E-M5 III settings and menus guide](em5n.guide-settings.md) | How a setting gets from a menu row to the saved settings, and how native rows were added. |
 | [E-M5 III guide: drawing with the vector GPU](em5n.guide-vector-gpu.md) | The DMP OpenVG library, the c3d driver and its draw kinds, own C renderers, and the decoded GPU command lists. |
 | [E-M5 Mark III firmware guides](em5n.guides.md) | Process guides for E-M5 Mark III 1.7, including boot, shooting, live view, memory and drawing to the screen. |
-| [Handheld High Res Shot](em5n.hhhr.md) | How the OM-5 does HHHR and what the E-M5 III already has. |
+| [Handheld High Res Shot](em5n.hhhr.md) | How the OM-5 does HHHR, how far the port got, and where the research closed on 2026-11-24. |
+| [Histogram](em5n.histogram.md) | How the live and playback histograms are measured, and what a live RGB histogram would need. |
 | [E-M5 III image engine (technical notes)](em5n.image-engine.md) | Where job programs live, jobs per body, the parameter window, job records and safe submission. |
 | [E-M5 III image-stabiliser controller](em5n.is-controller.md) | The separate two-core chip that runs the in-body stabiliser, with its program, the commands it handles and the OM-5 version. |
 | [Live GND](em5n.live-gnd.md) | Which bodies have a real Live GND and which only carry its UI. |
-| [Live ND on the E-M5 III](em5n.live-nd.md) | OM-5 Live ND port, stage results and open problems. |
+| [Live ND on the E-M5 III](em5n.live-nd.md) | OM-5 Live ND port, results when the research closed on 2026-11-24, and what was left. |
 | [E-M5 III memory map](em5n.memory-map.md) | RAM per body, flash layout, frame pools and spare space used by patches. |
 | [MN103 CPU on the E-M5 III](em5n.mn103.md) | Call frames, compiler, instruction limits and a table of useful routines. |
+| [om-emu additions](em5n.om-emu-additions.md) | What each of the eleven om-emu patches adds, its switch, and what it found. |
+| [om-emu patch set README](em5n.om-emu-patches-readme.md) | The patch files, the om-emu commit they apply to, the apply script and om-emu's MIT notice. |
+| [E-M5 III, OM-5 and OM-5 II hardware compared](em5n.om5-family-hardware.md) | Shared hardware, differences and model-specific parts of the three bodies, read from their firmware. |
+| [Open gate video](em5n.open-gate.md) | Whether the E-M5 III hardware could record video from the whole 4:3 sensor. Research from the firmware, nothing built. |
 | [E-M5 III 2D GUI drawing reference](em5n.osd-drawing.md) | Reference for the GUI layers: draw commands, palettes, pictures, text and the display update. |
 | [What the E-M5 III project has looked into](em5n.overview.md) | Tour of every area studied with a tagged result per feature. |
 | [Modifying the firmware](em5n.patching.md) | Twenty-one modification techniques, each with method, pitfalls and a per-camera checked-on table. |
 | [Live ND port layers](em5n.port-layers.md) | Layers of the Live ND port and where ported and native code join. |
+| [Power and watchdog block](em5n.power-block.md) | The always-on block for wake sources, alarms, watchdog, clock and power-off, register by register, with keys and other bodies. |
 | [Color and Monochrome Profile on the E-M5 III](em5n.profiles.md) | The hidden Color/Monochrome Profile back end on the E-M5 III, and an on-camera wheel editor added by test builds; camera results. |
 | [E-M5 III notes overview](em5n.readme.md) | Scope, tag meanings, address convention, tools. |
-| [E-M5 III recovery (technical notes)](em5n.recovery.md) | Power-on checks, flash map, write guard, card updater and recoverable failures. |
+| [E-M5 III recovery (technical notes)](em5n.recovery.md) | Power-on checks, start-up loader, flash map, write guard, card updater and recoverable failures. |
 | [Saved mod settings and native menu rows on the E-M5 III](em5n.saved-settings.md) | Native menu rows and mod settings kept in the unused tail of the user-settings image; camera result. |
 | [E-M5 III sensor (technical notes)](em5n.sensor.md) | Raw frame layout, calibration entries and sensor mode requests. |
 | [E-M5 III shooting sequencer](em5n.sequencer.md) | State table, path choice, burst streaming, exposure record and sensor requests. |
+| [Operating system and framework](em5n.serial-port.md) | Tasks, kernel objects, debug consoles and the debug serial port (UART, pads and routing). |
+| [Settings map E-M5 III and OM-5](em5n.settings-map-om5.md) | The two cameras' saved settings compared one by one, and how settings could move between them. Read from both firmware files, not tried on a camera. |
 | [Starry Sky AF](em5n.starry-af.md) | Starry Sky AF on the OM-5 and E-M1 III; absent on the E-M5 III. |
 | [c3d_vg: own renderers for the vector GPU](em5n.tool-c3d-vg.md) | Header, two example renderers and a GPU command-list decoder for writing c3d renderers in C. |
 | [om-emu c3d patches and runner](em5n.tool-omemu-c3d.md) | Patches to om-emu (keeping its MIT notice) that composite the GPU layer and run c3d renderers with a JavaScript OpenVG stand-in. |
@@ -117,7 +127,7 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [Validation reference](fishcu.validation.md) | Scoped checks and alignment blind spots. |
 | [OM-3 downstream experiment](fork.readme.md) | Experimental changes intended to contribute upstream. |
 | [Ghidra MN103 pointer-register compiler spec](gmn103.ptrregs.md) | Optional ptrregs spec, expanded validation and supported Ghidra versions. |
-| [Ghidra MN103 module README](gmn103.readme.md) | Installation, decompiler checks against E-M5 III 1.7, and pointer-register calling convention validation. |
+| [Ghidra MN103 module README](gmn103.readme.md) | Installation, import for several bodies, scripts (sections, register names), decompiler checks and calling-convention validation. |
 | [Historical manual updates](manual.readme.md) | SD update research and explicitly obsolete static download links. |
 | [om10mi-mods changes](om10mi.changelog.md) | Version history through 87 and the updated User Hue reset recommendation. |
 | [om10mi-mods colour wheel guide](om10mi.color-wheel.md) | Version 87 colour wheel in Color Creator at the ART dial: controls, value ranges, mode guide, the moved art filters and known limits. |

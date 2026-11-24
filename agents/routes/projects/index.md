@@ -20,5 +20,6 @@ Open only the matching route.
 | [Historical manual update research](manual-update.md) | Historical SD update procedure and model naming. |
 | [Olympus firmware research](oly-fw-analysis.md) | Foundational firmware work with deep PEN-F coverage. |
 | [OM-Emu](om-emu.md) | Firmware lab, model ports, traces and patch overlays. |
+| [om-emu additions (patch set)](om-emu-additions.md) | Eleven patches for the om-emu emulator that add screen layers and pre-flash crash checks. |
 | [om10mi-mods](om10mi-mods.md) | Firmware mod for the original OM-D E-M10 with 18 film looks, a colour wheel, per-colour and per-look colour editors and a 59:50 video limit. |
 | [OMKit](omkit.md) | Loader flashed once; core and modules then run from the SD card. |

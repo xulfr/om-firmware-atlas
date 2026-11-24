@@ -21,7 +21,7 @@ Read MN103 camera firmware in Ghidra, with the decompiler.
 
 ### OM-D E-M5 Mark III { #for-em5-iii }
 
-**For this camera:** A tool; it does not change the camera. Covers this camera for: MN103 disassembly and decompiler (released), Pointer-register calling convention (released).
+**For this camera:** A tool; it does not change the camera. Covers this camera for: 4 features, including MN103 disassembly and decompiler, Pointer-register calling convention and Firmware sections and register names.
 { .card-for }
 
 **Get it:** [Install and use](https://github.com/nsud-dev/ghidra-mn103/blob/main/README.md)
@@ -35,7 +35,7 @@ Read MN103 camera firmware in Ghidra, with the decompiler.
 
 ### Original OM-5 { #for-om5 }
 
-**For this camera:** A tool; it does not change the camera. Covers this camera for: MN103 disassembly and decompiler (released), Pointer-register calling convention (released).
+**For this camera:** A tool; it does not change the camera. Covers this camera for: 4 features, including MN103 disassembly and decompiler, Pointer-register calling convention and Firmware sections and register names.
 { .card-for }
 
 **Get it:** [Install and use](https://github.com/nsud-dev/ghidra-mn103/blob/main/README.md)
@@ -49,7 +49,7 @@ Read MN103 camera firmware in Ghidra, with the decompiler.
 
 ### OM-5 Mark II { #for-om5-ii }
 
-**For this camera:** A tool; it does not change the camera. Covers this camera for: MN103 disassembly and decompiler (released), Pointer-register calling convention (released).
+**For this camera:** A tool; it does not change the camera. Covers this camera for: MN103 disassembly and decompiler (released), Pointer-register calling convention (released), Import for other bodies (released).
 { .card-for }
 
 **Get it:** [Install and use](https://github.com/nsud-dev/ghidra-mn103/blob/main/README.md)
@@ -94,6 +94,8 @@ A Ghidra processor module for the Panasonic MN103 family (MN10300, AM33, AM33-2)
 
 The decompiler handles caller-built call frames and hardware loops. Its helper scripts load symbols, recover switch tables and batch-decompile. Upstream reports testing with Ghidra 11.4.2 on Java 21 and Ghidra 12.2 on Java 25.
 
+Since 2026-11-24 the import splits the main block into the boot part and sections 1 to 10 from the firmware's own section table, adds the uncached view at 0xa0000000, and names peripheral registers. The display controller names are read from the user's own firmware, so the module ships none. Other bodies import from their main block image.
+
 ## Features
 
 As the project describes them. Status is the project's own; linked evidence is the Atlas's record of what was reported or observed.
@@ -117,9 +119,33 @@ SLEIGH module with call-frame, loop and calling-convention support, plus helper 
 **Pointer-register calling convention** <span class="pill pill-released">Available</span>
 { .feature-head }
 
-The optional ptrregs compiler spec places typed pointer arguments in the MN103 address registers. Upstream CI checks argument placement. The maintainer reports the same final decompilation check counts with Ghidra 11.4.2 and 12.2.
+The optional ptrregs compiler spec places typed pointer arguments in the MN103 address registers. Upstream CI checks argument placement. The maintainer reports the same final decompilation check counts with Ghidra 11.4.2 and 12.2. A script switches an open program between the two specs without reimporting.
 
 [OM-D E-M5 Mark III](../cameras/em5-iii.md), [OM-5](../cameras/om5.md), [OM-5 Mark II](../cameras/om5-ii.md), [PEN-F](../cameras/pen-f.md), [PEN E-P7](../cameras/ep7.md)
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
+**Firmware sections and register names** <span class="pill pill-released">Available</span>
+{ .feature-head }
+
+The import splits the main block into the boot part and sections 1 to 10, read from the firmware's own section table, and adds the uncached view. It names the power block, debug serial port, lock bits, doorbells, pads and shared memory, and the 422 display controller registers from the firmware's own name table.
+
+[OM-D E-M5 Mark III](../cameras/em5-iii.md), [OM-5](../cameras/om5.md)
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
+**Import for other bodies** <span class="pill pill-released">Available</span>
+{ .feature-head }
+
+Imports a main block image from any body at the shared base address, with a program name. Bodies with compressed sections, such as the OM-5, need the expanded image. Sections and display controller names were also checked on the OM-5 II 1.1.
+
+[OM-D E-M5 Mark III](../cameras/em5-iii.md), [OM-5](../cameras/om5.md), [OM-5 Mark II](../cameras/om5-ii.md)
 { .card-meta }
 
 </div>
@@ -132,7 +158,7 @@ The optional ptrregs compiler spec places typed pointer arguments in the MN103 a
 
 ## Research notes
 
-Built and checked against E-M5 III 1.7 block 0. Nothing in the module is camera-specific; it applies to any body whose main CPU is MN103 (AM33-2).
+Built and checked against E-M5 III 1.7 block 0, with the import steps also run on OM-5 1.2. The processor module is not camera-specific; it applies to any body whose main CPU is MN103 (AM33-2).
 
 ## Sources and record
 
@@ -141,4 +167,4 @@ Built and checked against E-M5 III 1.7 block 0. Nothing in the module is camera-
 - [E-P7 Ghidra/REA profile](../sources/ep7.rea.md)
 - [Ghidra MN103 pointer-register compiler spec](../sources/gmn103.ptrregs.md)
 
-[Canonical record](../../records/projects/ghidra-mn103.yaml) · Substantively reviewed: 2026-11-22.
+[Canonical record](../../records/projects/ghidra-mn103.yaml) · Substantively reviewed: 2026-11-24.

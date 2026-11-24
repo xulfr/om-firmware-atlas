@@ -18,7 +18,7 @@ The notes' author flashed the lens-check patch and reports focus stacking workin
 
 ## Procedure and coverage
 
-Patched 0x6065e5ec c9 04 -> cb cb, fixed checksums, flashed from the SD card, used focus stacking with a lens the stock list excludes.
+Replaced the branch after the per-lens flag check with two no-ops, flashed from the SD card, and used focus stacking with a lens the stock list excludes.
 
 - Focus stacking runs with the patch on one E-M5 III.
 

@@ -7,13 +7,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/guides/drawing-your-own.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/guides/drawing-your-own.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/guides/drawing-your-own.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; docs CC BY 4.0, tools MIT per the repo licences.
 - type: source
@@ -23,13 +23,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/guides/vector-gpu.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/guides/vector-gpu.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/guides/vector-gpu.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; docs CC BY 4.0, tools MIT per the repo licences.
 - type: source
@@ -39,13 +39,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/hardware/osd-drawing.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/hardware/osd-drawing.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/hardware/osd-drawing.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; docs CC BY 4.0, tools MIT per the repo licences.
 - type: source
@@ -55,13 +55,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/hardware/c3d-gpu.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/hardware/c3d-gpu.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/hardware/c3d-gpu.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; docs CC BY 4.0, tools MIT per the repo licences.
 - type: source
@@ -71,13 +71,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/tools/osdlab/README.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/tools/osdlab/README.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: tools/osdlab/README.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; docs CC BY 4.0, tools MIT per the repo licences.
 - type: source
@@ -87,13 +87,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/tools/c3d_vg/README.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/tools/c3d_vg/README.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: tools/c3d_vg/README.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; docs CC BY 4.0, tools MIT per the repo licences.
 - type: source
@@ -103,12 +103,12 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/tools/om-emu-c3d/c3d/README.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/tools/om-emu-c3d/c3d/README.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: tools/om-emu-c3d/c3d/README.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; docs CC BY 4.0, tools MIT per the repo licences.

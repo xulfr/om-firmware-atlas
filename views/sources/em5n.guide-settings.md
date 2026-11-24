@@ -4,11 +4,11 @@
 
 How a setting gets from a menu row to the saved settings, and how native rows were added.
 
-**[Open original source](https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/guides/settings-and-menus.md)**
+**[Open original source](https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/guides/settings-and-menus.md)**
 
 **Kind:** github file. **Locator:** docs/guides/settings-and-menus.md.
 
-**Revision / release:** `4ee043ec5fd30b42b56d029c70c3fed6f2e8077a`. **Retrieved:** 2026-11-23. **Last source check:** 2026-11-23.
+**Revision / release:** `c35661d826c66971073920651178bf90f5a75694`. **Retrieved:** 2026-11-24. **Last source check:** 2026-11-24.
 
 **Publication:** public. Written by the notes' author; CC BY 4.0 per the repo licence.
 

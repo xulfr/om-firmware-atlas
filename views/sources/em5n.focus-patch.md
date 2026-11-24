@@ -2,13 +2,13 @@
 
 # Focus stacking lens check patch
 
-Function, patched bytes and camera result.
+The lens check function, how to find it, the change and the camera result.
 
-**[Open original source](https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/patches/focus-stacking-any-lens.md)**
+**[Open original source](https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/patches/focus-stacking-any-lens.md)**
 
 **Kind:** github file. **Locator:** docs/patches/focus-stacking-any-lens.md.
 
-**Revision / release:** `4ee043ec5fd30b42b56d029c70c3fed6f2e8077a`. **Retrieved:** 2026-11-23. **Last source check:** 2026-11-23.
+**Revision / release:** `c35661d826c66971073920651178bf90f5a75694`. **Retrieved:** 2026-11-24. **Last source check:** 2026-11-24.
 
 **Publication:** public. Written by the notes' author; CC BY 4.0 per the repo licence.
 

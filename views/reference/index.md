@@ -105,7 +105,7 @@ Hardware and layout facts per stock firmware build.
 | [fclose (card file)](em5-iii-1700.fclose.md) | `0x60631f6c` | function | Single source |
 | [fwrite (card file)](em5-iii-1700.fwrite.md) | `0x60631fe8` | function | Camera-confirmed |
 | [fread (card file)](em5-iii-1700.fread.md) | `0x606320f2` | function | Camera-confirmed |
-| [Focus stacking per-lens flag branch](em5-iii-1700.focus-stacking-lens-check.md) | `0x6065e5ec` | hook site | Camera-confirmed |
+| [Focus stacking lens check](em5-iii-1700.focus-stacking-lens-check.md) | `0x6065e5d6` | function | Camera-confirmed |
 | [Section 4 slack](em5-iii-1700.section-4-slack.md) | `0x6079d800` | free space | Camera-confirmed |
 | [GUI string lookup](em5-iii-1700.menu-string-lookup.md) | `0x60c9350c` | hook site | Camera-confirmed |
 | [Show the drawn GUI layers (gpiUpdateDisplay)](em5-iii-1700.gpi-update-display.md) | `0x60c9588b` | function | Single source |

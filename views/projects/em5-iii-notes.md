@@ -2,20 +2,20 @@
 
 # Oly Firmware Notes and Mods (E-M5 Mark III)
 
-How the E-M5 Mark III firmware works, and bringing OM-5 features to it.
+How the E-M5 Mark III firmware works, and how much of its design newer bodies share.
 
 <div class="cta-row" markdown="1">
 
 [Project home](https://github.com/nsud-dev/olympus-firmware-notes){ .btn .btn-primary }
 [Ask or report issues](https://github.com/nsud-dev/olympus-firmware-notes/issues){ .btn .btn-ghost }
 [Notes website](https://nsud-dev.github.io/olympus-firmware-notes/){ .btn .btn-ghost }
-[Firmware guides](https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/guides/README.md){ .btn .btn-ghost }
+[Firmware guides](https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/guides/README.md){ .btn .btn-ghost }
 [Overview of everything studied](https://github.com/nsud-dev/olympus-firmware-notes/blob/main/docs/overview.md){ .btn .btn-ghost }
 [Gotchas](https://github.com/nsud-dev/olympus-firmware-notes/blob/main/docs/reference/gotchas.md){ .btn .btn-ghost }
 
 </div>
 
-**Type:** research · **Camera details:** [OM-D E-M5 Mark III](#for-em5-iii) · **Maintained by** [nsud-dev](https://github.com/nsud-dev)
+**Type:** research · **Camera details:** [OM-D E-M5 Mark III](#for-em5-iii), [OM-5](#for-om5), [OM-5 Mark II](#for-om5-ii) · **Maintained by** [nsud-dev](https://github.com/nsud-dev)
 { .facts }
 
 ## Cameras
@@ -24,13 +24,41 @@ How the E-M5 Mark III firmware works, and bringing OM-5 features to it.
 
 ### OM-D E-M5 Mark III { #for-em5-iii }
 
-**For this camera:** Notes and tools only; no builds are published. The author's own test builds on one E-M5 III cover focus stacking with any lens, Live ND and its live-view preview ported from the OM-5, a Color / Monochrome Profile editor, card mods loaded from the SD card, display view assists, and a parked USB webcam. Drawing your own screens and GPU graphics is so far shown in the om-emu emulator only.
+**For this camera:** Notes and tools only; no builds are published. The author's own test builds on one E-M5 III cover focus stacking with any lens, Live ND and its live-view preview ported from the OM-5 (research closed 2026-11-24), a Color / Monochrome Profile editor, card mods loaded from the SD card, display view assists, and a parked USB webcam. Drawing your own screens and GPU graphics is so far shown in the om-emu emulator only.
 { .card-for }
 
-**Get it:** [Firmware guides](https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/guides/README.md)
+**Get it:** [Firmware guides](https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/guides/README.md)
 { .card-get }
 
 [Mods and installation](../cameras/em5-iii.md) · [Test results](../research/em5-iii.md#evidence)
+
+</div>
+
+<div class="model-panel" markdown="1">
+
+### Original OM-5 { #for-om5 }
+
+**For this camera:** Notes read from the stock OM-5 1.2 firmware: the power and watchdog block, the E-M5 III and OM-5 settings map, how the OM-5 takes a hand-held High Res shot, the shared hardware, and the histogram and open gate tables it shares with the E-M5 III. No builds or tests on this camera.
+{ .card-for }
+
+**Get it:** [Firmware guides](https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/guides/README.md)
+{ .card-get }
+
+[Mods and installation](../cameras/om5.md) · [Test results](../research/om5.md#evidence)
+
+</div>
+
+<div class="model-panel" markdown="1">
+
+### OM-5 Mark II { #for-om5-ii }
+
+**For this camera:** Notes read from the stock OM-5 II 1.1 firmware: the hardware it shares with the E-M5 III and OM-5, and where it differs. No builds or tests on this camera.
+{ .card-for }
+
+**Get it:** [Firmware guides](https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/guides/README.md)
+{ .card-get }
+
+[Mods and installation](../cameras/om5-ii.md) · [Test results](../research/om5-ii.md#evidence)
 
 </div>
 
@@ -45,9 +73,9 @@ Editing a colour profile, in the om-emu emulator with our c3d patches. The hue, 
 
 A study of the Olympus OM-D E-M5 Mark III firmware 1.7: container format, boot and section loading, recovery, the MN103 CPU, memory map, image engine, ARM co-processor, display, stabiliser, shooting sequencer, settings and menus, with comparisons against the OM-5, OM-5 II, E-M1 III, OM-1 and PEN-F.
 
-The aim is to run features of newer bodies on the E-M5 III, mainly Live ND and Handheld High Res from the OM-5. Each page tags claims as seen on the camera, read in the code, or inferred, and gives dates.
+The project began by porting Live ND and Handheld High Res from the OM-5. Both ports were closed on 2026-11-24, with Live ND working in test builds. The work since documents the camera's systems and how far this hardware shares its design with the OM-5 and OM-5 II. Each page tags claims as seen on the camera, read in the code, or inferred, and gives dates.
 
-Tools: olyfw.py unpacks and repacks E-M5 III update files and fixes their checksums; ptpinfo.py reads PTP device info; osdlab, c3d_vg and a set of om-emu patches (with om-emu's MIT notice) draw on the GUI layers and the vector GPU in the om-emu emulator. No firmware images, disassembly or patched builds are included.
+Tools: olyfw.py unpacks E-M5 III update files; ptpinfo.py reads PTP device info; osdlab and c3d_vg draw on the GUI layers and the vector GPU in the om-emu emulator; eleven om-emu patches (with om-emu's MIT notice) add screen layers and pre-flash crash checks. No firmware images, disassembly or patched builds are included.
 
 ## Features
 
@@ -72,7 +100,7 @@ A two-byte change to the lens check lets any lens that passes the lens-type chec
 **Live ND (port from the OM-5)** <span class="pill pill-research">Research</span>
 { .feature-head }
 
-A full Live ND shot from one press, ND2 to ND16, merged by the OM-5's image-engine job 11, with a Noise Reduction dark pass at low ISO, in test builds on one camera. Builds are not published.
+A full Live ND shot from one press, ND2 to ND16, merged by the OM-5's image-engine job 11, with a Noise Reduction dark pass at low ISO, in test builds on one camera. Builds are not published. The research closed on 2026-11-24 with the feature working.
 
 [OM-D E-M5 Mark III](../cameras/em5-iii.md) · [Evidence](../capabilities/em5-iii-live-nd.md)
 { .card-meta }
@@ -84,7 +112,7 @@ A full Live ND shot from one press, ND2 to ND16, merged by the OM-5's image-engi
 **Live ND live-view simulation (port from the OM-5)** <span class="pill pill-research">Research</span>
 { .feature-head }
 
-Live view shows the Live ND blur, averaged over up to 240 frames by the OM-5's job 12, with restarts on shutter changes and movement, in test builds.
+Live view shows the Live ND blur, averaged over up to 240 frames by the OM-5's job 12, with restarts on shutter changes and movement, in test builds. Research closed on 2026-11-24.
 
 [OM-D E-M5 Mark III](../cameras/em5-iii.md) · [Evidence](../capabilities/em5-iii-live-nd-preview.md)
 { .card-meta }
@@ -171,6 +199,102 @@ The stabiliser runs on a separate chip with two MN10300-family cores; its progra
 Test builds enumerate as a UVC webcam and stream a generated picture; live view over USB failed, so the work is parked.
 
 [OM-D E-M5 Mark III](../cameras/em5-iii.md) · [Evidence](../capabilities/em5-iii-uvc-webcam.md)
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
+**Handheld High Res (port from the OM-5)** <span class="pill pill-research">Research</span>
+{ .feature-head }
+
+How the OM-5 takes a hand-held High Res shot and how far a port to the E-M5 III got. Its four image-engine programs load and the helper processor starts on the camera. Whether they compose a correct picture was not proven when the research closed on 2026-11-24.
+
+[OM-D E-M5 Mark III](../cameras/em5-iii.md), [OM-5](../cameras/om5.md)
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
+**Power and watchdog block** <span class="pill pill-research">Research</span>
+{ .feature-head }
+
+The always-on part of the main chip that handles power-on causes, wake inputs, alarms, the watchdog and the clock, mapped register by register with its keys. The OM-5 drives the same block the same way. The E-M1 III and OM-1 add a separate power processor.
+
+[OM-D E-M5 Mark III](../cameras/em5-iii.md), [OM-5](../cameras/om5.md)
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
+**Debug serial port** <span class="pill pill-research">Research</span>
+{ .feature-head }
+
+The UART the system shell and every putc use, its setup, and how the ARM serial ports are routed to the card-slot and debug pads.
+
+[OM-D E-M5 Mark III](../cameras/em5-iii.md)
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
+**Settings map E-M5 III and OM-5** <span class="pill pill-research">Research</span>
+{ .feature-head }
+
+Both cameras' saved settings compared one by one, with how settings could be converted in either direction. Read from both firmware files, not tried on a camera.
+
+[OM-D E-M5 Mark III](../cameras/em5-iii.md), [OM-5](../cameras/om5.md)
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
+**E-M5 III, OM-5 and OM-5 II hardware compared** <span class="pill pill-research">Research</span>
+{ .feature-head }
+
+What the three bodies share and where they differ, read from their firmware, with a report on one driver-move bug of our own and the check that now catches it.
+
+[OM-D E-M5 Mark III](../cameras/em5-iii.md), [OM-5](../cameras/om5.md), [OM-5 Mark II](../cameras/om5-ii.md)
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
+**Open gate video** <span class="pill pill-research">Research</span>
+{ .feature-head }
+
+Whether the sensor, image pipeline, encoder and stabiliser could record video from the whole 4:3 sensor. Research from the firmware, nothing built. The OM-5 shares every table described.
+
+[OM-D E-M5 Mark III](../cameras/em5-iii.md), [OM-5](../cameras/om5.md)
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
+**Live RGB histogram** <span class="pill pill-research">Research</span>
+{ .feature-head }
+
+How the stock live and playback histograms are measured, and what a live red, green and blue histogram needs. The OM-5 has the same histogram code. An experiment on the E-M5 III showed the three curves on the camera but does not yet run cleanly beside the stock drawing.
+
+[OM-D E-M5 Mark III](../cameras/em5-iii.md), [OM-5](../cameras/om5.md)
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
+**Failure patterns** <span class="pill pill-research">Research</span>
+{ .feature-head }
+
+The ways a changed firmware has failed on an E-M5 III, each with its symptom, cause and the check that catches it before flashing.
+
+[OM-D E-M5 Mark III](../cameras/em5-iii.md)
 { .card-meta }
 
 </div>
@@ -284,7 +408,7 @@ Our own renderer on the camera's vector GPU, running in the om-emu emulator with
 
 ## Related work
 
-[Ghidra MN103 processor module](ghidra-mn103.md), [Olympus firmware research](oly-fw-analysis.md), [OM-Emu](om-emu.md). These links do not assign ownership or imply identical implementations.
+[Ghidra MN103 processor module](ghidra-mn103.md), [Olympus firmware research](oly-fw-analysis.md), [OM-Emu](om-emu.md), [om-emu additions (patch set)](om-emu-additions.md). These links do not assign ownership or imply identical implementations.
 
 ## Research notes
 
@@ -307,5 +431,13 @@ Notes and tools only; no firmware or builds are published. Every claim is tagged
 - [Card mods on the E-M5 III](../sources/em5n.card-mods.md)
 - [E-M5 III display controller](../sources/em5n.display-controller.md)
 - [E-M5 III image-stabiliser controller](../sources/em5n.is-controller.md)
+- [Power and watchdog block](../sources/em5n.power-block.md)
+- [Operating system and framework](../sources/em5n.serial-port.md)
+- [Settings map E-M5 III and OM-5](../sources/em5n.settings-map-om5.md)
+- [E-M5 III, OM-5 and OM-5 II hardware compared](../sources/em5n.om5-family-hardware.md)
+- [Open gate video](../sources/em5n.open-gate.md)
+- [Histogram](../sources/em5n.histogram.md)
+- [Failure patterns](../sources/em5n.failure-patterns.md)
+- [Handheld High Res Shot](../sources/em5n.hhhr.md)
 
-[Canonical record](../../records/projects/em5-iii-notes.yaml) · Substantively reviewed: 2026-11-23.
+[Canonical record](../../records/projects/em5-iii-notes.yaml) · Substantively reviewed: 2026-11-24.

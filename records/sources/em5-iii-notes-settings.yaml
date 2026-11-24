@@ -7,12 +7,12 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/features/saved-settings-and-menu-rows.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/features/saved-settings-and-menu-rows.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/features/saved-settings-and-menu-rows.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.

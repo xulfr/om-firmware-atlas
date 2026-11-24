@@ -10,6 +10,6 @@ Foundational firmware work with deep PEN-F coverage.
 |---|---|---:|---:|
 | [oly-fw-analysis.yaml](../../../records/projects/oly-fw-analysis.yaml) | Project scope, related work and contribution destination | 4,396 | ~1,099 |
 | [fishcu.yaml](../../../records/sources/fishcu.yaml) | Find the relevant source/observation ID; use bounded reads | 6,505 | ~1,627 |
-| [em5-iii-notes.yaml](../../../records/evidence/em5-iii-notes.yaml) | Find the relevant source/observation ID; use bounded reads | 7,246 | ~1,812 |
+| [em5-iii-notes.yaml](../../../records/evidence/em5-iii-notes.yaml) | Find the relevant source/observation ID; use bounded reads | 7,265 | ~1,817 |
 
 Follow only relevant camera/topic routes. Upstream policies apply to work there; Atlas does not assign ownership across projects.

@@ -158,7 +158,7 @@ Results belong to the named project and package. Emulator output does not establ
 - [Image-engine job setter table](../reference/em5-iii-1700.engine-setter-table.md)
 - [fclose (card file)](../reference/em5-iii-1700.fclose.md)
 - [Flash write guard](../reference/em5-iii-1700.flash-write-guard.md)
-- [Focus stacking per-lens flag branch](../reference/em5-iii-1700.focus-stacking-lens-check.md)
+- [Focus stacking lens check](../reference/em5-iii-1700.focus-stacking-lens-check.md)
 - [fopen (card file)](../reference/em5-iii-1700.fopen.md)
 - [fread (card file)](../reference/em5-iii-1700.fread.md)
 - [fwrite (card file)](../reference/em5-iii-1700.fwrite.md)

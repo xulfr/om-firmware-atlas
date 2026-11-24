@@ -7,13 +7,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/README.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/README.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: README.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
@@ -23,76 +23,76 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/overview.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/overview.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/overview.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
   id: source.em5n.container
   title: E-M5 III container format
-  summary: Update-file layout, obfuscation and checksum.
+  summary: Update-file layout, obfuscation, checksum and compressed sections.
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/firmware/container-format.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/firmware/container-format.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/firmware/container-format.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
   id: source.em5n.focus-patch
   title: Focus stacking lens check patch
-  summary: Function, patched bytes and camera result.
+  summary: The lens check function, how to find it, the change and the camera result.
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/patches/focus-stacking-any-lens.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/patches/focus-stacking-any-lens.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/patches/focus-stacking-any-lens.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
   id: source.em5n.live-nd
   title: Live ND on the E-M5 III
-  summary: OM-5 Live ND port, stage results and open problems.
+  summary: OM-5 Live ND port, results when the research closed on 2026-11-24, and what was left.
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/features/live-nd.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/features/live-nd.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/features/live-nd.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
   id: source.gmn103.readme
   title: Ghidra MN103 module README
-  summary: Installation, decompiler checks against E-M5 III 1.7, and pointer-register calling convention validation.
+  summary: Installation, import for several bodies, scripts (sections, register names), decompiler checks and calling-convention validation.
   source_refs: []
   topics: []
   last_reviewed: '2026-11-22'
-  url: https://github.com/nsud-dev/ghidra-mn103/blob/4290b76b8f5730c8cc10cd06582a0e4550662314/README.md
+  url: https://github.com/nsud-dev/ghidra-mn103/blob/8a93c54a6b815753fd77a2bd12c53728d6339109/README.md
   source_kind: github-file
   upstream_repo: nsud-dev/ghidra-mn103
-  revision: 4290b76b8f5730c8cc10cd06582a0e4550662314
+  revision: 8a93c54a6b815753fd77a2bd12c53728d6339109
   locator: README.md
-  retrieved_on: '2026-11-22'
+  retrieved_on: '2026-11-24'
   last_checked: '2026-11-22'
   publication: public
   reuse_note: Written by the module's author; GPL-3.0 per the repo licence.
@@ -103,13 +103,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/firmware/boot-and-sections.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/firmware/boot-and-sections.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/firmware/boot-and-sections.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
@@ -119,29 +119,29 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/hardware/memory-map.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/hardware/memory-map.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/hardware/memory-map.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
   id: source.em5n.recovery
   title: E-M5 III recovery (technical notes)
-  summary: Power-on checks, flash map, write guard, card updater and recoverable failures.
+  summary: Power-on checks, start-up loader, flash map, write guard, card updater and recoverable failures.
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/firmware/recovery-technical.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/firmware/recovery-technical.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/firmware/recovery-technical.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
@@ -151,13 +151,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/hardware/image-engine-technical.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/hardware/image-engine-technical.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/hardware/image-engine-technical.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
@@ -167,13 +167,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/hardware/sensor-technical.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/hardware/sensor-technical.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/hardware/sensor-technical.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
@@ -183,13 +183,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/firmware/shooting-sequencer.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/firmware/shooting-sequencer.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/firmware/shooting-sequencer.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
@@ -199,13 +199,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/hardware/mn103-cpu.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/hardware/mn103-cpu.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/hardware/mn103-cpu.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
@@ -215,13 +215,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/firmware/live-nd-port-layers.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/firmware/live-nd-port-layers.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/firmware/live-nd-port-layers.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
@@ -231,13 +231,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/features/wifi-debug-shell.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/features/wifi-debug-shell.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/features/wifi-debug-shell.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
@@ -247,13 +247,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/features/webcam.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/features/webcam.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/features/webcam.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
@@ -263,13 +263,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/reference/gotchas.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/reference/gotchas.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/reference/gotchas.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
@@ -279,13 +279,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/firmware/patching-techniques.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/firmware/patching-techniques.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/firmware/patching-techniques.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
@@ -295,13 +295,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/features/focus-stacking.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/features/focus-stacking.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/features/focus-stacking.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
@@ -311,29 +311,29 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/bodies/comparison-technical.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/bodies/comparison-technical.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/bodies/comparison-technical.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
   id: source.em5n.hhhr
   title: Handheld High Res Shot
-  summary: How the OM-5 does HHHR and what the E-M5 III already has.
+  summary: How the OM-5 does HHHR, how far the port got, and where the research closed on 2026-11-24.
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/features/hhhr.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/features/hhhr.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/features/hhhr.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
@@ -343,13 +343,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/features/live-gnd.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/features/live-gnd.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/features/live-gnd.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
@@ -359,13 +359,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/features/starry-sky-af.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/features/starry-sky-af.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/features/starry-sky-af.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
@@ -375,13 +375,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/features/af-detect.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/features/af-detect.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/features/af-detect.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
@@ -391,12 +391,12 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-20'
-  url: https://github.com/nsud-dev/ghidra-mn103/blob/4290b76b8f5730c8cc10cd06582a0e4550662314/README.md
+  url: https://github.com/nsud-dev/ghidra-mn103/blob/8a93c54a6b815753fd77a2bd12c53728d6339109/README.md
   source_kind: github-file
   upstream_repo: nsud-dev/ghidra-mn103
-  revision: 4290b76b8f5730c8cc10cd06582a0e4550662314
+  revision: 8a93c54a6b815753fd77a2bd12c53728d6339109
   locator: README.md
-  retrieved_on: '2026-11-20'
+  retrieved_on: '2026-11-24'
   last_checked: '2026-11-20'
   published_on: null
   publication: public
@@ -408,13 +408,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/guides/README.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/guides/README.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/guides/README.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   published_on: null
   publication: public
   reuse_note: Attributed synthesis of upstream documentation.
@@ -425,13 +425,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/guides/settings-and-menus.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/guides/settings-and-menus.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/guides/settings-and-menus.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
@@ -441,13 +441,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/guides/drawing-to-the-screen.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/guides/drawing-to-the-screen.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/guides/drawing-to-the-screen.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   published_on: null
   publication: public
   reuse_note: Attributed synthesis of upstream documentation.
@@ -458,13 +458,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/features/card-mods.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/features/card-mods.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/features/card-mods.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
@@ -474,13 +474,13 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/hardware/vsc-display-controller.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/hardware/vsc-display-controller.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/hardware/vsc-display-controller.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.
 - type: source
@@ -490,12 +490,12 @@ records:
   source_refs: []
   topics: []
   last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/hardware/is-controller.md
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/hardware/is-controller.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: 4ee043ec5fd30b42b56d029c70c3fed6f2e8077a
+  revision: c35661d826c66971073920651178bf90f5a75694
   locator: docs/hardware/is-controller.md
-  retrieved_on: '2026-11-23'
-  last_checked: '2026-11-23'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Written by the notes' author; CC BY 4.0 per the repo licence.

@@ -233,28 +233,29 @@ records:
   upstream_detail: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/firmware/boot-and-sections.md#sections-load-in-the-background
 - type: reference
   id: reference.em5-iii-1700.focus-stacking-lens-check
-  title: Focus stacking per-lens flag branch
-  summary: The branch that rejects lenses without the stacking flag; patching it out allows any lens.
+  title: Focus stacking lens check
+  summary: The function that decides whether a lens may be used for focus stacking; its per-lens flag branch is the patch point.
   source_refs:
   - source.em5n.focus-patch
   topics:
   - patching
   - capture
-  last_reviewed: '2026-11-18'
-  category: hook-site
+  last_reviewed: '2026-11-24'
+  category: function
   camera_ids:
   - camera.em5-iii
   firmware_ids:
   - firmware.em5-iii-1700
   address:
     space: runtime-cached
-    value: '0x6065e5ec'
-  note: Inside fcs_check_focus_stacking_enable (0x6065e5d6). The earlier lens-type check is shared with eight other
-    callers and is left alone.
+    value: '0x6065e5d6'
+  note: The one function that references the debug string fcs_check_focus_stacking_enable. It checks the lens type,
+    then a per-lens flag, and the branch after the flag check is the one replaced. The lens-type check is shared with
+    eight other callers and is left alone.
   observations:
   - method: physical-camera
     source_ref: source.em5n.focus-patch
     project_id: project.em5-iii-notes
     summary: With the branch replaced by two no-ops, focus stacking runs with lenses outside the stock list.
   conflicts: []
-  upstream_detail: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/patches/focus-stacking-any-lens.md#the-patch
+  upstream_detail: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/patches/focus-stacking-any-lens.md#the-function

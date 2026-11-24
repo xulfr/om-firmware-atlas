@@ -3,27 +3,27 @@ records:
 - type: capability
   id: capability.em5-iii-focus-stacking-any-lens
   title: E-M5 III 1.7 focus stacking with any lens
-  summary: A published two-byte patch removes the per-lens focus-stacking flag check.
+  summary: Replacing one two-byte branch in the lens check removes the per-lens focus-stacking flag check.
   source_refs:
   - source.em5n.focus-patch
   topics:
   - patching
   - capture
-  last_reviewed: '2026-11-18'
+  last_reviewed: '2026-11-24'
   camera_id: camera.em5-iii
   firmware_id: firmware.em5-iii-1700
   project_id: project.em5-iii-notes
   mod_build: focus-stacking lens check patch
   feature_id: feature.capture.focus-stacking-any-lens
-  assertion: Changing 0x6065e5ec from c9 04 to cb cb lets any lens that passes the lens-type check use in-camera
-    focus stacking.
+  assertion: Replacing the branch after the per-lens flag check with two no-ops lets any lens that passes the
+    lens-type check use in-camera focus stacking. The notes describe how to find the function by its debug string.
   availability: research
   implementation: inspected
   evidence_refs:
   - evidence.em5-iii-focus-stacking-camera
   contradicting_refs: []
   limitations:
-  - Byte description only; no patched firmware is published, and the user must rebuild and re-checksum it.
+  - Description only; no patched firmware is published.
   - Lenses that fail the first lens-type check stay blocked.
 - type: capability
   id: capability.em5-iii-live-nd

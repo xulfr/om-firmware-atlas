@@ -20,7 +20,7 @@ Exact ID: `camera.em5-iii`. Codes: E137. [Human status view](../../../views/came
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [em5-iii-features.yaml](../../../records/capabilities/em5-iii/em5-iii-features.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 5,124 | ~1,281 |
+| [em5-iii-features.yaml](../../../records/capabilities/em5-iii/em5-iii-features.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 5,186 | ~1,297 |
 | [em5-iii-profile-editor.yaml](../../../records/capabilities/em5-iii/em5-iii-profile-editor.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 1,676 | ~419 |
 | [em5-iii-saved-settings.yaml](../../../records/capabilities/em5-iii/em5-iii-saved-settings.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 1,461 | ~366 |
 

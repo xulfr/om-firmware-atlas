@@ -4,11 +4,11 @@
 
 How to draw boxes, curves, pictures, camera-font text, see-through palettes and animation on the GUI layers with the camera's own calls; emulator-verified.
 
-**[Open original source](https://github.com/nsud-dev/olympus-firmware-notes/blob/4ee043ec5fd30b42b56d029c70c3fed6f2e8077a/docs/guides/drawing-your-own.md)**
+**[Open original source](https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/guides/drawing-your-own.md)**
 
 **Kind:** github file. **Locator:** docs/guides/drawing-your-own.md.
 
-**Revision / release:** `4ee043ec5fd30b42b56d029c70c3fed6f2e8077a`. **Retrieved:** 2026-11-23. **Last source check:** 2026-11-23.
+**Revision / release:** `c35661d826c66971073920651178bf90f5a75694`. **Retrieved:** 2026-11-24. **Last source check:** 2026-11-24.
 
 **Publication:** public. Written by the notes' author; docs CC BY 4.0, tools MIT per the repo licences.
 

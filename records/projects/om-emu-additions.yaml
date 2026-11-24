@@ -1,0 +1,64 @@
+schema_version: 1
+records:
+- type: project
+  id: project.om-emu-additions
+  title: om-emu additions (patch set)
+  summary: Eleven patches for the om-emu emulator that add screen layers and pre-flash crash checks.
+  source_refs:
+  - source.em5n.om-emu-additions
+  - source.em5n.om-emu-patches-readme
+  topics:
+  - tooling
+  last_reviewed: '2026-11-24'
+  url: https://github.com/nsud-dev/olympus-firmware-notes/tree/main/tools/om-emu-c3d/patches
+  kind: tool
+  camera_ids:
+  - camera.em5-iii
+  contribution_home: https://github.com/nsud-dev/olympus-firmware-notes/issues
+  status_summary: Plain patch files for a fixed om-emu commit. Offered here until om-emu takes them upstream. Tested on E-M5 III 1.7, and briefly on OM-5 1.2 and OM-5 II 1.1 block 0.
+  related_projects:
+  - project.om-emu
+  - project.em5-iii-notes
+  tagline: Extra screen layers and crash checks for om-emu, as patch files.
+  description:
+  - Eleven small patches to om-emu, the emulator by the om-emu contributors. They ship as git diff files with an
+    apply script and om-emu's MIT notice. There is no fork. Four patches add drawing, such as the 32-bit layer the vector GPU draws
+    into and a still picture under the overlays. Seven add optional checks that are off by default.
+  - Each check was added after a real failure on a camera. It had to fail the broken image and pass both the fixed
+    image and the stock firmware. Eight of the eleven patches are not tied to one camera body. The two that start
+    the second and third processor cores carry E-M5 III addresses, and the kernel-check patch names one E-M5 III
+    address.
+  maintainers:
+  - label: nsud-dev
+    url: https://github.com/nsud-dev
+  links:
+  - label: What each patch does
+    url: https://github.com/nsud-dev/olympus-firmware-notes/blob/main/docs/tools/om-emu-additions.md
+  - label: Apply and use
+    url: https://github.com/nsud-dev/olympus-firmware-notes/blob/main/tools/om-emu-c3d/patches/README.md
+  features:
+  - name: Screen drawing
+    summary: GPU picture layer, live-view stand-in picture, bitmaps without a colour table, display register write log.
+    camera_ids: []
+    status: released
+    since: null
+    source_ref: source.em5n.om-emu-additions
+  - name: Start-up and memory checks
+    summary: Section first-touch monitor, cache model, heap fill, and a monitor that fails any write into always-loaded code.
+    camera_ids: []
+    status: released
+    since: null
+    source_ref: source.em5n.om-emu-additions
+  - name: Kernel and bus checks
+    summary: Blocking calls made from interrupt context, and a serial bus tap that fails a message with no device address.
+    camera_ids: []
+    status: released
+    since: null
+    source_ref: source.em5n.om-emu-additions
+  - name: Second and third processor cores
+    summary: Starts CPU 1 and CPU 2 natively beside the main core.
+    camera_ids:
+    - camera.em5-iii
+    status: released
+    since: null
+    source_ref: source.em5n.om-emu-additions

@@ -11,7 +11,7 @@ records:
   - source.gmn103.ptrregs
   topics:
   - tooling
-  last_reviewed: '2026-11-22'
+  last_reviewed: '2026-11-24'
   url: https://github.com/nsud-dev/ghidra-mn103
   kind: tool
   camera_ids: &id001
@@ -21,8 +21,8 @@ records:
   - camera.pen-f
   - camera.ep7
   contribution_home: https://github.com/nsud-dev/ghidra-mn103/issues
-  status_summary: Built and checked against E-M5 III 1.7 block 0. Nothing in the module is camera-specific;
-    it applies to any body whose main CPU is MN103 (AM33-2).
+  status_summary: Built and checked against E-M5 III 1.7 block 0, with the import steps also run on OM-5 1.2.
+    The processor module is not camera-specific; it applies to any body whose main CPU is MN103 (AM33-2).
   related_projects:
   - project.em5-iii-notes
   tagline: Read MN103 camera firmware in Ghidra, with the decompiler.
@@ -33,6 +33,10 @@ records:
   - The decompiler handles caller-built call frames and hardware loops. Its helper scripts load symbols,
     recover switch tables and batch-decompile. Upstream reports testing with Ghidra 11.4.2 on Java 21
     and Ghidra 12.2 on Java 25.
+  - 'Since 2026-11-24 the import splits the main block into the boot part and sections 1 to 10 from the firmware''s
+    own section table, adds the uncached view at 0xa0000000, and names peripheral registers. The display controller
+    names are read from the user''s own firmware, so the module ships none. Other bodies import from their main
+    block image.'
   maintainers:
   - label: nsud-dev
     url: https://github.com/nsud-dev
@@ -54,8 +58,29 @@ records:
   - name: Pointer-register calling convention
     summary: The optional ptrregs compiler spec places typed pointer arguments in the MN103 address registers.
       Upstream CI checks argument placement. The maintainer reports the same final decompilation check counts
-      with Ghidra 11.4.2 and 12.2.
+      with Ghidra 11.4.2 and 12.2. A script switches an open program between the two specs without reimporting.
     camera_ids: *id001
     status: released
     since: null
     source_ref: source.gmn103.ptrregs
+  - name: Firmware sections and register names
+    summary: The import splits the main block into the boot part and sections 1 to 10, read from the firmware's own
+      section table, and adds the uncached view. It names the power block, debug serial port, lock bits, doorbells,
+      pads and shared memory, and the 422 display controller registers from the firmware's own name table.
+    camera_ids:
+    - camera.em5-iii
+    - camera.om5
+    status: released
+    since: null
+    source_ref: source.gmn103.readme
+  - name: Import for other bodies
+    summary: Imports a main block image from any body at the shared base address, with a program name. Bodies with
+      compressed sections, such as the OM-5, need the expanded image. Sections and display controller names were
+      also checked on the OM-5 II 1.1.
+    camera_ids:
+    - camera.em5-iii
+    - camera.om5
+    - camera.om5-ii
+    status: released
+    since: null
+    source_ref: source.gmn103.readme

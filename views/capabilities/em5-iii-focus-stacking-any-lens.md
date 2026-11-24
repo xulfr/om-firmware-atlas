@@ -2,13 +2,13 @@
 
 # E-M5 III 1.7 focus stacking with any lens
 
-A published two-byte patch removes the per-lens focus-stacking flag check.
+Replacing one two-byte branch in the lens check removes the per-lens focus-stacking flag check.
 
 **Camera:** [Olympus OM-D E-M5 Mark III](../cameras/em5-iii.md) · **Project:** [Oly Firmware Notes and Mods (E-M5 Mark III)](../projects/em5-iii-notes.md)
 
 **Firmware:** [E-M5 Mark III firmware 1.7, build 1700](../firmware/em5-iii-1700.md) · **Mod build:** focus-stacking lens check patch
 
-Changing 0x6065e5ec from c9 04 to cb cb lets any lens that passes the lens-type check use in-camera focus stacking.
+Replacing the branch after the per-lens flag check with two no-ops lets any lens that passes the lens-type check use in-camera focus stacking. The notes describe how to find the function by its debug string.
 
 **Availability:** research. **Implementation basis:** inspected.
 
@@ -18,11 +18,11 @@ Changing 0x6065e5ec from c9 04 to cb cb lets any lens that passes the lens-type 
 
 ## Limits
 
-- Byte description only; no patched firmware is published, and the user must rebuild and re-checksum it.
+- Description only; no patched firmware is published.
 - Lenses that fail the first lens-type check stay blocked.
 
 ## Sources and record
 
 - [Focus stacking lens check patch](../sources/em5n.focus-patch.md)
 
-[Canonical record](../../records/capabilities/em5-iii/em5-iii-features.yaml) · Substantively reviewed: 2026-11-18.
+[Canonical record](../../records/capabilities/em5-iii/em5-iii-features.yaml) · Substantively reviewed: 2026-11-24.

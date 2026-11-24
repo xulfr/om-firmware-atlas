@@ -223,12 +223,12 @@ Experimental fork
 
 [Oly Firmware Notes and Mods (E-M5 Mark III)](em5-iii-notes.md){ .card-title }
 
-How the E-M5 Mark III firmware works, and bringing OM-5 features to it.
+How the E-M5 Mark III firmware works, and how much of its design newer bodies share.
 
 Focus stacking with any lens · Live ND (port from the OM-5) · Live ND live-view simulation (port from the OM-5)
 { .card-features }
 
-For: OM-D E-M5 Mark III
+For: OM-D E-M5 Mark III, OM-5, OM-5 Mark II
 { .card-cameras }
 
 Research
@@ -249,6 +249,23 @@ For: PEN-F
 { .card-cameras }
 
 Latest: alpha-20261017 (pre-release), 18 Oct 2026
+{ .card-meta }
+
+</div>
+
+<div class="project-card" markdown="1">
+
+[om-emu additions (patch set)](om-emu-additions.md){ .card-title }
+
+Extra screen layers and crash checks for om-emu, as patch files.
+
+Screen drawing · Start-up and memory checks · Kernel and bus checks
+{ .card-features }
+
+For: OM-D E-M5 Mark III
+{ .card-cameras }
+
+Tool
 { .card-meta }
 
 </div>
@@ -293,7 +310,7 @@ Reference
 
 Read MN103 camera firmware in Ghidra, with the decompiler.
 
-MN103 disassembly and decompiler · Pointer-register calling convention
+MN103 disassembly and decompiler · Pointer-register calling convention · Firmware sections and register names
 { .card-features }
 
 For: OM-D E-M5 Mark III, OM-5, OM-5 Mark II, PEN-F, PEN E-P7

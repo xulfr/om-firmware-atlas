@@ -10,7 +10,7 @@ Scoped feature claims: one camera, firmware, project and build each. Availabilit
 | [E-M10 Mark II native settings tab with saved values, fenykl main plugin](em10-ii-fenykl-settings-tab.md) | A twelfth Custom menu tab, L. Fenykl, drawn and edited by the stock menu code; values persist on the card across boots. |
 | [E-M10 per-sector Hue/Saturation/Lightness, version 56](em10-v56-hsl.md) | The owner reports the 12-sector colour editor visible and effective in photos on their E-M10 Mark I. |
 | [E-M10 colour wheel in Color Creator, version 87](em10-v87-colour-wheel.md) | The owner reports a 12-sector Hue/Saturation/Lightness wheel in Color Creator at the ART dial working on their E-M10 Mark I. |
-| [E-M5 III 1.7 focus stacking with any lens](em5-iii-focus-stacking-any-lens.md) | A published two-byte patch removes the per-lens focus-stacking flag check. |
+| [E-M5 III 1.7 focus stacking with any lens](em5-iii-focus-stacking-any-lens.md) | Replacing one two-byte branch in the lens check removes the per-lens focus-stacking flag check. |
 | [E-M5 III 1.7 Live ND photo (OM-5 port)](em5-iii-live-nd.md) | Test builds take a full Live ND shot from one press; not released. |
 | [E-M5 III 1.7 Live ND live-view simulation (OM-5 port)](em5-iii-live-nd-preview.md) | Test builds show the Live ND blur in live view, averaged by image-engine job 12. |
 | [E-M5 III 1.7 Color / Monochrome Profile with an on-camera wheel editor](em5-iii-profile-editor.md) | Test builds make the hidden Color and Monochrome Profile modes selectable and editable on the camera; edits show in live view and photos. |

@@ -111,8 +111,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/capabilities/em5-iii/em5-iii-features.yaml": {
-      "approx_tokens": 1281,
-      "bytes": 5124,
+      "approx_tokens": 1297,
+      "bytes": 5186,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/capabilities/em5-iii/em5-iii-profile-editor.yaml": {
@@ -216,8 +216,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/evidence/em5-iii-notes.yaml": {
-      "approx_tokens": 1812,
-      "bytes": 7246,
+      "approx_tokens": 1817,
+      "bytes": 7265,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/evidence/em5-iii-profile-editor.yaml": {
@@ -336,8 +336,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/em5-iii-notes.yaml": {
-      "approx_tokens": 2887,
-      "bytes": 11545,
+      "approx_tokens": 3935,
+      "bytes": 15739,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/epm2mod.yaml": {
@@ -351,8 +351,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/ghidra-mn103.yaml": {
-      "approx_tokens": 573,
-      "bytes": 2292,
+      "approx_tokens": 936,
+      "bytes": 3741,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/manual-update.yaml": {
@@ -363,6 +363,11 @@
     "records/projects/oly-fw-analysis.yaml": {
       "approx_tokens": 1099,
       "bytes": 4396,
+      "method": "ceil(utf8-bytes/4)"
+    },
+    "records/projects/om-emu-additions.yaml": {
+      "approx_tokens": 740,
+      "bytes": 2959,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/om-emu.yaml": {
@@ -395,9 +400,14 @@
       "bytes": 5294,
       "method": "ceil(utf8-bytes/4)"
     },
+    "records/sources/em5-iii-notes-platform.yaml": {
+      "approx_tokens": 1844,
+      "bytes": 7375,
+      "method": "ceil(utf8-bytes/4)"
+    },
     "records/sources/em5-iii-notes.yaml": {
-      "approx_tokens": 5345,
-      "bytes": 21377,
+      "approx_tokens": 5385,
+      "bytes": 21538,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/emu.yaml": {

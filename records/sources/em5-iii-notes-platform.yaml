@@ -1,0 +1,162 @@
+schema_version: 1
+records:
+- type: source
+  id: source.em5n.power-block
+  title: Power and watchdog block
+  summary: The always-on block for wake sources, alarms, watchdog, clock and power-off, register by register, with keys and other bodies.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-24'
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/hardware/power-block-technical.md
+  source_kind: github-file
+  upstream_repo: nsud-dev/olympus-firmware-notes
+  revision: c35661d826c66971073920651178bf90f5a75694
+  locator: docs/hardware/power-block-technical.md
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
+  publication: public
+  reuse_note: "Written by the notes' author; CC BY 4.0 per the repo licence."
+- type: source
+  id: source.em5n.serial-port
+  title: Operating system and framework
+  summary: Tasks, kernel objects, debug consoles and the debug serial port (UART, pads and routing).
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-24'
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/firmware/os-and-framework.md
+  source_kind: github-file
+  upstream_repo: nsud-dev/olympus-firmware-notes
+  revision: c35661d826c66971073920651178bf90f5a75694
+  locator: docs/firmware/os-and-framework.md
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
+  publication: public
+  reuse_note: "Written by the notes' author; CC BY 4.0 per the repo licence."
+- type: source
+  id: source.em5n.settings-map-om5
+  title: Settings map E-M5 III and OM-5
+  summary: The two cameras' saved settings compared one by one, and how settings could move between them. Read from both firmware files, not tried on a camera.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-24'
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/bodies/settings-map-om5.md
+  source_kind: github-file
+  upstream_repo: nsud-dev/olympus-firmware-notes
+  revision: c35661d826c66971073920651178bf90f5a75694
+  locator: docs/bodies/settings-map-om5.md
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
+  publication: public
+  reuse_note: "Written by the notes' author; CC BY 4.0 per the repo licence."
+- type: source
+  id: source.em5n.om5-family-hardware
+  title: E-M5 III, OM-5 and OM-5 II hardware compared
+  summary: Shared hardware, differences and model-specific parts of the three bodies, read from their firmware.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-24'
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/bodies/om5-family-hardware.md
+  source_kind: github-file
+  upstream_repo: nsud-dev/olympus-firmware-notes
+  revision: c35661d826c66971073920651178bf90f5a75694
+  locator: docs/bodies/om5-family-hardware.md
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
+  publication: public
+  reuse_note: "Written by the notes' author; CC BY 4.0 per the repo licence."
+- type: source
+  id: source.em5n.expander-driver-swap
+  title: I/O expander driver swap
+  summary: "A bug of our own: a driver moved between firmware versions without one of its functions. Symptoms, root cause and the check that now catches it."
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-24'
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/bodies/expander-driver-swap.md
+  source_kind: github-file
+  upstream_repo: nsud-dev/olympus-firmware-notes
+  revision: c35661d826c66971073920651178bf90f5a75694
+  locator: docs/bodies/expander-driver-swap.md
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
+  publication: public
+  reuse_note: "Written by the notes' author; CC BY 4.0 per the repo licence."
+- type: source
+  id: source.em5n.open-gate
+  title: Open gate video
+  summary: "Whether the E-M5 III hardware could record video from the whole 4:3 sensor. Research from the firmware, nothing built."
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-24'
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/features/open-gate.md
+  source_kind: github-file
+  upstream_repo: nsud-dev/olympus-firmware-notes
+  revision: c35661d826c66971073920651178bf90f5a75694
+  locator: docs/features/open-gate.md
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
+  publication: public
+  reuse_note: "Written by the notes' author; CC BY 4.0 per the repo licence."
+- type: source
+  id: source.em5n.histogram
+  title: Histogram
+  summary: How the live and playback histograms are measured, and what a live RGB histogram would need.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-24'
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/features/histogram.md
+  source_kind: github-file
+  upstream_repo: nsud-dev/olympus-firmware-notes
+  revision: c35661d826c66971073920651178bf90f5a75694
+  locator: docs/features/histogram.md
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
+  publication: public
+  reuse_note: "Written by the notes' author; CC BY 4.0 per the repo licence."
+- type: source
+  id: source.em5n.failure-patterns
+  title: Failure patterns
+  summary: Ways a changed firmware failed on an E-M5 III, each with symptom, cause and a pre-flash check.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-24'
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/reference/failure-patterns.md
+  source_kind: github-file
+  upstream_repo: nsud-dev/olympus-firmware-notes
+  revision: c35661d826c66971073920651178bf90f5a75694
+  locator: docs/reference/failure-patterns.md
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
+  publication: public
+  reuse_note: "Written by the notes' author; CC BY 4.0 per the repo licence."
+- type: source
+  id: source.em5n.om-emu-additions
+  title: om-emu additions
+  summary: What each of the eleven om-emu patches adds, its switch, and what it found.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-24'
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/tools/om-emu-additions-technical.md
+  source_kind: github-file
+  upstream_repo: nsud-dev/olympus-firmware-notes
+  revision: c35661d826c66971073920651178bf90f5a75694
+  locator: docs/tools/om-emu-additions-technical.md
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
+  publication: public
+  reuse_note: "Written by the notes' author; CC BY 4.0 per the repo licence."
+- type: source
+  id: source.em5n.om-emu-patches-readme
+  title: om-emu patch set README
+  summary: The patch files, the om-emu commit they apply to, the apply script and om-emu's MIT notice.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-24'
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/tools/om-emu-c3d/patches/README.md
+  source_kind: github-file
+  upstream_repo: nsud-dev/olympus-firmware-notes
+  revision: c35661d826c66971073920651178bf90f5a75694
+  locator: tools/om-emu-c3d/patches/README.md
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
+  publication: public
+  reuse_note: "Patches to MIT code, shipped with om-emu's licence notice; our additions MIT."
