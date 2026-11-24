@@ -403,6 +403,54 @@ def people_markdown(catalogue, origin):
     return text + "</div>\n"
 
 
+SHOWCASE_LIMIT = 6
+
+
+def showcase_items(catalogue):
+    """One agreed project image per project, newest release first, scoped to the camera it shows.
+
+    An image without camera_id belongs to the project's only camera; a multi-model image without
+    camera_id stays on the project pages, as the record format says."""
+    items = []
+    for project in catalogue.of_type("project"):
+        for picture in project.get("images", []):
+            camera_id = picture.get("camera_id") or (project["camera_ids"][0] if len(project["camera_ids"]) == 1 else None)
+            if camera_id:
+                items.append((project, picture, camera_id, latest_release(project, camera_id)))
+                break
+    items.sort(key=lambda item: (bool(item[3]), (item[3] or {}).get("date", ""), item[0]["title"]), reverse=True)
+    return items[:SHOWCASE_LIMIT]
+
+
+def showcase_scope(project, release):
+    if release:
+        return release["tag"] + (" · test version" if release["prerelease"] else "")
+    return "Research" if project_group(project) == "Research and tools" else "No release yet"
+
+
+def showcase(catalogue, origin):
+    """Homepage gallery of what community projects have shown on real camera screens and in emulators."""
+    text = '<div class="showcase-grid" markdown="1">\n\n'
+    for project, picture, camera_id, release in showcase_items(catalogue):
+        camera = catalogue.records[camera_id]
+        anchor = "for-" + slug(camera_id)
+        text += '<div class="showcase-card" markdown="1">\n\n'
+        text += f"![{cell(picture['alt'])}]({asset_link(origin, picture['path'])}){{ loading=lazy }}\n{{ .showcase-image }}\n\n"
+        text += f"{cell(short_name(camera['title']))} · {cell(showcase_scope(project, release))}\n{{ .showcase-scope }}\n\n"
+        text += f"[{cell(project['title'])}]({link(origin, view_path(project))}#{anchor}){{ .card-title }}\n\n"
+        text += f"{project.get('tagline') or project['summary']}\n{{ .showcase-tagline }}\n\n"
+        text += f"{picture['caption']} *{picture['credit']}.*\n{{ .image-caption }}\n\n</div>\n\n"
+    return text + "</div>\n"
+
+
+def atlas_counts(catalogue):
+    """Headline counts for the homepage, from the same records as every other page."""
+    tests = [row for row in catalogue.of_type("evidence") if row["method"] == "physical-camera"]
+    return (f"{plural(len(catalogue.of_type('camera')), 'camera')} · "
+            f"{plural(len(catalogue.of_type('project')), 'project')} · "
+            f"{plural(len(tests), 'recorded camera test')}\n{{ .home-counts }}\n")
+
+
 def evidence_label(row):
     return f"{label(row['method'])}; {label(row['outcome'])}; {row['quality']} report; {label(row['identity_level'])}"
 

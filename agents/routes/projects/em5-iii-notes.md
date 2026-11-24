@@ -8,7 +8,7 @@ Tagged technical notes on E-M5 III 1.7 firmware and hardware, with OM-5 donor fe
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [em5-iii-notes.yaml](../../../records/projects/em5-iii-notes.yaml) | Project scope, related work and contribution destination | 15,739 | ~3,935 |
+| [em5-iii-notes.yaml](../../../records/projects/em5-iii-notes.yaml) | Project scope, related work and contribution destination | 15,979 | ~3,995 |
 | [em5-iii-notes-drawing.yaml](../../../records/sources/em5-iii-notes-drawing.yaml) | Find the relevant source/observation ID; use bounded reads | 5,294 | ~1,324 |
 | [em5-iii-notes-platform.yaml](../../../records/sources/em5-iii-notes-platform.yaml) | Find the relevant source/observation ID; use bounded reads | 7,375 | ~1,844 |
 | [em5-iii-notes.yaml](../../../records/sources/em5-iii-notes.yaml) | Find the relevant source/observation ID; use bounded reads | 21,538 | ~5,385 |

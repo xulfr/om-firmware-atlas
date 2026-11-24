@@ -307,7 +307,7 @@
     },
     "records/projects/caduceus-om3.yaml": {
       "approx_tokens": 5906,
-      "bytes": 23621,
+      "bytes": 23624,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/caduceus-om5-tadejs.yaml": {
@@ -336,8 +336,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/em5-iii-notes.yaml": {
-      "approx_tokens": 3935,
-      "bytes": 15739,
+      "approx_tokens": 3995,
+      "bytes": 15979,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/epm2mod.yaml": {

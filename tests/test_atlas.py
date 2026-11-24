@@ -231,6 +231,31 @@ class AtlasTests(unittest.TestCase):
         self.assertTrue(any("references stock firmware for a different camera" in error
                             for error in self.catalogue.validate()))
 
+    def test_homepage_showcase_is_camera_scoped_and_honest_about_status(self):
+        from atlas_generate import atlas_counts, showcase, showcase_items
+        items = showcase_items(self.catalogue)
+        self.assertTrue(items)
+        for project, picture, camera_id, release in items:
+            self.assertIn(camera_id, project["camera_ids"])
+            self.assertIs(picture, next(p for p in project["images"]
+                                        if (p.get("camera_id") or (project["camera_ids"][0] if len(project["camera_ids"]) == 1 else None))))
+            if release:
+                self.assertIn(camera_id, release["camera_ids"])
+        dates = [(release or {}).get("date", "") for _, _, _, release in items if release]
+        self.assertEqual(dates, sorted(dates, reverse=True))
+        page = showcase(self.catalogue, "docs/index.md")
+        self.assertIn("(../views/projects/caduceus-om5.md#for-om5-ii)", page)
+        self.assertIn("v0.2.0-alpha1 · test version", page)
+        self.assertIn("(assets/projects/", page)
+        for _, picture, _, _ in items:
+            self.assertIn(picture["caption"], page)
+        project = copy.deepcopy(self.catalogue.records["project.caduceus-om5"])
+        for picture in project["images"]:
+            picture.pop("camera_id")
+        self.catalogue.records["project.caduceus-om5"] = project
+        self.assertNotIn("project.caduceus-om5", [p["id"] for p, *_ in showcase_items(self.catalogue)])
+        self.assertIn(f"{len(self.original.of_type('project'))} projects", atlas_counts(self.original))
+
     def test_latest_release_is_chronological_and_camera_specific(self):
         project = copy.deepcopy(self.catalogue.records["project.db-firmware"])
         release = latest_release(project)

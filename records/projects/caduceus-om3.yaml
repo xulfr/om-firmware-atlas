@@ -204,6 +204,10 @@ records:
     prerelease: true
     camera_ids:
     - camera.om3
+    installation:
+      camera.om3:
+        firmware_id: firmware.om3-1100
+        url: https://github.com/androidfanman/caduceus-om3/blob/27f155364d6b445ee72f647793e91e0cfad1b23f/releases/v0.41-beta/NOTES.md
     highlights:
     - INFO hints on the colour wheel's H / S / L bar and the Split toning bar; Balance shows only its bar.
     - Photo code om3.2 also carries the RGB curves, Color Mix, Film Grain strength and Grain Size. LookLab and the
@@ -230,10 +234,6 @@ records:
     url: https://github.com/androidfanman/caduceus-om3/releases/tag/v0.40.3
     prerelease: false
     camera_ids: *id001
-    installation:
-      camera.om3:
-        firmware_id: firmware.om3-1100
-        url: https://github.com/androidfanman/caduceus-om3/blob/ffe1de9b1d83d5abfb59387eb2e9a8f0926c1090/releases/v0.40.3/NOTES.md
     highlights:
     - Halation Radius (Bloom, Tight, Medium, Wide) per film, and Halation with about half the fixed work.
     - Films and COLOR keep their own white-balance shift; the camera's own picture modes keep the camera's (#99).
