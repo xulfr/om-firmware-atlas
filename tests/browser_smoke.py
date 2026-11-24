@@ -14,6 +14,12 @@ class SiteHandler(SimpleHTTPRequestHandler):
         pass
 
 
+def open_search(page):
+    # A URL assertion passes when navigation commits; the deferred atlas.js binds "/" by DOMContentLoaded.
+    page.wait_for_load_state("domcontentloaded")
+    page.keyboard.press("/")
+
+
 def owner_journey(page, base, phone):
     page.goto(base)
     finder = page.get_by_label("Find your camera")
@@ -49,7 +55,7 @@ def owner_journey(page, base, phone):
     page.get_by_role("link", name="Mods & installation for this camera").click()
     expect(page).to_have_url(base + "views/cameras/om5-ii/")
 
-    page.keyboard.press("/")
+    open_search(page)
     search = page.get_by_role("searchbox", name="Search terms")
     expect(search).to_be_focused()
     search.fill("OM-5")
@@ -111,7 +117,7 @@ def developer_journey(page, base, phone):
     page.get_by_role("link", name="File identity, platform and stock features").click()
     expect(page).to_have_url(base + "views/firmware/om5-ii-1100/")
 
-    page.keyboard.press("/")
+    open_search(page)
     search = page.get_by_role("searchbox", name="Search terms")
     search.press_sequentially("Ghidra MN103")
     page.wait_for_function("""() => {
