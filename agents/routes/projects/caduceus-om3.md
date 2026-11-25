@@ -4,11 +4,11 @@
 
 OM-3 looks, colour editing, persistence and research.
 
-[Contribution home](https://github.com/androidfanman/caduceus-om3/issues). The project's current stable release is v0.40.2 for OM-3 firmware 1.1. The newest test release, v0.40.3-beta4, makes film white-balance compensation independent of the stock modes. The maintainer reports a camera test. The earlier beta2 remains withdrawn because of a startup loop.
+[Contribution home](https://github.com/androidfanman/caduceus-om3/issues). The project's current stable release is v0.40.3 for OM-3 firmware 1.1, camera-tested by the maintainer as v0.40.3-beta4. The newest test release, v0.41-beta, redesigns the Picture Mode colour, tone and split-toning pages and writes a new photo code (om3.2) that older readers need updating for.
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [caduceus-om3.yaml](../../../records/projects/caduceus-om3.yaml) | Project scope, related work and contribution destination | 21,118 | ~5,280 |
-| [om3.yaml](../../../records/sources/om3.yaml) | Find the relevant source/observation ID; use bounded reads | 14,928 | ~3,732 |
+| [caduceus-om3.yaml](../../../records/projects/caduceus-om3.yaml) | Project scope, related work and contribution destination | 23,624 | ~5,906 |
+| [om3.yaml](../../../records/sources/om3.yaml) | Find the relevant source/observation ID; use bounded reads | 17,167 | ~4,292 |
 
 Follow only relevant camera/topic routes. Upstream policies apply to work there; Atlas does not assign ownership across projects.

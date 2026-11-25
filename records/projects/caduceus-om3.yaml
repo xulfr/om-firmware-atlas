@@ -23,20 +23,23 @@ records:
   - source.om3.v040-beta
   - source.om3.atlas-grain-report
   - source.om3.v0403-beta4
+  - source.om3.v0403
+  - source.om3.v041-alpha
+  - source.om3.v041-beta
   topics:
   - colour
   - interfaces
   - capture
   - emulation
-  last_reviewed: '2026-11-22'
+  last_reviewed: '2026-11-24'
   url: https://github.com/androidfanman/caduceus-om3
   kind: mod
   camera_ids:
   - camera.om3
   contribution_home: https://github.com/androidfanman/caduceus-om3/issues
-  status_summary: The project's current stable release is v0.40.2 for OM-3 firmware 1.1. The newest test release,
-    v0.40.3-beta4, makes film white-balance compensation independent of the stock modes. The maintainer reports a
-    camera test. The earlier beta2 remains withdrawn because of a startup loop.
+  status_summary: The project's current stable release is v0.40.3 for OM-3 firmware 1.1, camera-tested by the
+    maintainer as v0.40.3-beta4. The newest test release, v0.41-beta, redesigns the Picture Mode colour, tone and
+    split-toning pages and writes a new photo code (om3.2) that older readers need updating for.
   related_projects:
   - project.caduceus-ep7
   - project.om-emu
@@ -149,7 +152,8 @@ records:
     source_ref: source.om3.readme
   - name: LookLab
     summary: Edit films in your browser and preview one film on up to 12 of your own photos at once. LookLab
-      can open a card’s curves with its look file, or read a recipe JSON. Photos stay in the browser.
+      can open a card’s curves with its look file, read a recipe JSON, save your own film sims and keep your
+      photos for the next visit. Everything stays in the browser.
     camera_ids: *id001
     status: released
     since: null
@@ -193,6 +197,52 @@ records:
     since: v0.40
     source_ref: source.om3.v040-release
   releases:
+  - tag: v0.41-beta
+    title: Caduceus for OM-3 v0.41-beta (test version)
+    date: '2026-11-24'
+    url: https://github.com/androidfanman/caduceus-om3/releases/tag/v0.41-beta
+    prerelease: true
+    camera_ids:
+    - camera.om3
+    installation:
+      camera.om3:
+        firmware_id: firmware.om3-1100
+        url: https://github.com/androidfanman/caduceus-om3/blob/27f155364d6b445ee72f647793e91e0cfad1b23f/releases/v0.41-beta/NOTES.md
+    highlights:
+    - INFO hints on the colour wheel's H / S / L bar and the Split toning bar; Balance shows only its bar.
+    - Photo code om3.2 also carries the RGB curves, Color Mix, Film Grain strength and Grain Size. LookLab and the
+      developer kit read both codes; other readers of om3.1 need updating.
+    - The maintainer reports camera testing on an OM-3 on 23 and 24 November as builds a2 to a6 and pc3.
+    warning: Test release. Upstream keeps v0.40.3 as its current version; roll back by making v0.40.3.
+    source_ref: source.om3.v041-beta
+  - tag: v0.41-alpha
+    title: Caduceus for OM-3 v0.41-alpha (test version)
+    date: '2026-11-23'
+    url: https://github.com/androidfanman/caduceus-om3/releases/tag/v0.41-alpha
+    prerelease: true
+    camera_ids: *id001
+    highlights:
+    - An H / S / L bar on the colour wheel, a five-point tone curve with Blacks and Whites as its ends, and Split
+      toning on its own row with Balance.
+    - The Blacks / Whites and Tone Balance rows leave Picture Mode's list; films keep their saved values.
+    - The maintainer reports a camera test on an OM-3 on 23 November as build p4.
+    warning: Early test release. Upstream keeps v0.40.3 as its current version.
+    source_ref: source.om3.v041-alpha
+  - tag: v0.40.3
+    title: Caduceus for OM-3 v0.40.3
+    date: '2026-11-23'
+    url: https://github.com/androidfanman/caduceus-om3/releases/tag/v0.40.3
+    prerelease: false
+    camera_ids: *id001
+    highlights:
+    - Halation Radius (Bloom, Tight, Medium, Wide) per film, and Halation with about half the fixed work.
+    - Films and COLOR keep their own white-balance shift; the camera's own picture modes keep the camera's (#99).
+    - 'Fixes #91 (Film Grain on Drive Priority), #93 (film names in playback), #97 (Magnify in the crop modes) and
+      #101 (Delete long press).'
+    - The maintainer reports camera testing in each test version, finally as v0.40.3-beta4.
+    warning: After updating from v0.40.1 or later, set the camera's own white-balance shift once. Long presses on the
+      arrow keys still do nothing.
+    source_ref: source.om3.v0403
   - tag: v0.40.3-beta4
     title: Caduceus for OM-3 v0.40.3-beta4 (test version)
     date: '2026-11-21'
@@ -200,10 +250,6 @@ records:
     prerelease: true
     camera_ids:
     - camera.om3
-    installation:
-      camera.om3:
-        firmware_id: firmware.om3-1100
-        url: https://github.com/androidfanman/caduceus-om3/blob/45706369aa922dfeeccf7d60a9721e0b9f3fcc43/releases/v0.40.3-beta4/NOTES.md
     highlights:
     - Films and COLOR keep their own white-balance shift in live view and stills. The stock picture modes keep the
       camera’s own setting.

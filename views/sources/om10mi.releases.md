@@ -2,16 +2,16 @@
 
 # om10mi-mods releases
 
-Two releases, v87 (2026-11-21, Latest) and v56 (2026-11-10); each has a Windows exe and a Python zip with SHA-256s, and the stock and result SHA-1s.
+Four releases: v94 (2026-11-24), v88 (2026-11-23, pre-release, superseded), v87 (2026-11-21) and v56 (2026-11-10); each has a Windows exe and a Python zip with SHA-256s, and the stock and result SHA-1s.
 
 **[Open original source](https://github.com/Meghnus/om10mi-mods/releases)**
 
-**Kind:** github release. **Locator:** Releases page; release v87 at commit 46874155947715e0d54baabe2df5006376c8bbab; release v56 at commit 20ef8fe846ec432bbfa361b8be3f0edca91d51ee.
+**Kind:** github release. **Locator:** Releases page; release v94 at commit 84d4f36365270a9393d0b46b8beeae44a8e3491d; release v88 at commit 04f5184fc8c8a745ad4ec686b3f839177ee2ff4f; release v87 at commit 46874155947715e0d54baabe2df5006376c8bbab; release v56 at commit 20ef8fe846ec432bbfa361b8be3f0edca91d51ee.
 
-**Revision / release:** `v87`. **Retrieved:** 2026-11-21. **Last source check:** 2026-11-21.
+**Revision / release:** `v94`. **Retrieved:** 2026-11-24. **Last source check:** 2026-11-24.
 
 **Publication:** public. Attributed summary of mutable release notes; no code, firmware or executables imported.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/om10mi-mods.yaml) · Substantively reviewed: 2026-11-21.
+[Canonical record](../../records/sources/om10mi-mods.yaml) · Substantively reviewed: 2026-11-24.

@@ -2,16 +2,16 @@
 
 # EPM2Mod releases
 
-Installer release candidates through v2026.11.20-rc.5.
+Installer release candidates through v2026.11.20-rc.5 and the final v2026.11.20.
 
 **[Open original source](https://github.com/cfu288/EPM2Mod/releases)**
 
-**Kind:** github release. **Locator:** Release listing through v2026.11.20-rc.5.
+**Kind:** github release. **Locator:** Release listing through v2026.11.20.
 
-**Revision / release:** `v2026.11.20-rc.5`. **Retrieved:** 2026-11-22. **Last source check:** 2026-11-22.
+**Revision / release:** `v2026.11.20`. **Retrieved:** 2026-11-24. **Last source check:** 2026-11-24.
 
 **Publication:** public. Attributed summary of mutable release notes; no code, firmware or executables imported.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/epm2mod.yaml) · Substantively reviewed: 2026-11-22.
+[Canonical record](../../records/sources/epm2mod.yaml) · Substantively reviewed: 2026-11-24.

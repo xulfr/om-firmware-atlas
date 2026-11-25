@@ -9,20 +9,22 @@ records:
   - source.ep7.bodies
   - source.ep7.panel
   - source.ep7.releases
+  - source.ep7.v035
   topics:
   - colour
   - interfaces
   - capture
   - tooling
-  last_reviewed: '2026-11-17'
+  last_reviewed: '2026-11-24'
   url: https://github.com/cakelesscoder/caduceus-ep7
   kind: mod
   camera_ids:
   - camera.ep7
   - camera.em10-iv
   contribution_home: https://github.com/cakelesscoder/caduceus-ep7/issues
-  status_summary: The reviewed documentation names v0.34a. E-M10 IV is a research target seeking physical
-    testing, not a released port.
+  status_summary: The latest reviewed release is v0.35 beta for E-P7 firmware 1.1, which the release notes say was
+    tested on an E-P7. The full Colour Profile page still does not show film names. E-M10 IV is a research target
+    seeking physical testing, not a released port.
   related_projects:
   - project.caduceus-om3
   - project.oly-fw-analysis
@@ -143,6 +145,20 @@ records:
     status: released
     since: v0.29
     source_ref: source.ep7.readme
+  - name: More dial functions
+    summary: Custom Menu B › Dial Function can put ISO or flash compensation on the front dial in P, A, S and M; the
+      rear dial keeps its job.
+    camera_ids: *id001
+    status: released
+    since: v0.35
+    source_ref: source.ep7.v035
+  - name: M-mode dial for manual lenses
+    summary: In M with a lens without contacts, the free dial sets ISO or exposure compensation. Ported from phocean's
+      omsystem-ep7.
+    camera_ids: *id001
+    status: released
+    since: v0.35
+    source_ref: source.ep7.v035
   - name: Longer video recording
     summary: The 29-minute and 2-hour caps raised to 9 hours; file and heat limits still apply.
     camera_ids: *id001
@@ -176,16 +192,30 @@ records:
     since: null
     source_ref: source.ep7.readme
   releases:
+  - tag: v0.35
+    title: Caduceus v0.35 (beta)
+    date: '2026-11-23'
+    url: https://github.com/cakelesscoder/caduceus-ep7/releases/tag/v0.35
+    prerelease: false
+    camera_ids: *id001
+    installation:
+      camera.ep7:
+        firmware_id: firmware.ep7-1100
+        url: https://github.com/cakelesscoder/caduceus-ep7/blob/7ae6366e1c48a5557f586728c2148f71ee61016f/docs/INSTALL.md
+    highlights:
+    - ISO or flash compensation on the front dial, and an ISO or exposure-compensation dial in M with a manual lens.
+    - The colour wheel opened from the Shortcut button no longer flashes; Movie Extras rows show the right names.
+    - Card files are unchanged from v0.34a.
+    warning: Beta. Known issue, the full Colour Profile page does not show film names properly; pick films from the
+      colour wheel in the Super Control Panel. The author warns that flashing modified firmware can crash or brick the
+      camera; never flash an E-P7 build on another body.
+    source_ref: source.ep7.v035
   - tag: v0.34a
     title: Caduceus v0.34a (beta)
     date: '2026-11-15'
     url: https://github.com/cakelesscoder/caduceus-ep7/releases/tag/v0.34a
     prerelease: false
     camera_ids: *id001
-    installation:
-      camera.ep7:
-        firmware_id: firmware.ep7-1100
-        url: https://github.com/cakelesscoder/caduceus-ep7/blob/a0c351f5398a4e7b69738103bda3e5c92f81971d/docs/INSTALL.md
     highlights:
     - Halation now applies in brighter scenes.
     - Japanese labels when the camera is set to Japanese.

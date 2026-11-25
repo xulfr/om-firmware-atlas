@@ -10,7 +10,7 @@ Film simulations, interval shooting, focus peaking and a level gauge for the PEN
 
 <div class="cta-row" markdown="1">
 
-[Read the install guide](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20-rc.5){ .btn .btn-primary }
+[Read the install guide](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20){ .btn .btn-primary }
 [Project home](https://github.com/cfu288/EPM2Mod){ .btn .btn-ghost }
 [Ask or report issues](https://github.com/cfu288/EPM2Mod/issues){ .btn .btn-ghost }
 [Film simulation comparison](https://cfu288.github.io/EPM2Mod/films){ .btn .btn-ghost }
@@ -20,7 +20,7 @@ Film simulations, interval shooting, focus peaking and a level gauge for the PEN
 
 </div>
 
-**Type:** mod · **Camera details:** [PEN E-PM2](#for-epm2) · **Latest release:** [v2026.11.20-rc.5 (pre-release)](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20-rc.5), 22 Nov 2026 · **Maintained by** [cfu288](https://github.com/cfu288)
+**Type:** mod · **Camera details:** [PEN E-PM2](#for-epm2) · **Latest release:** [v2026.11.20](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20), 23 Nov 2026 · **Maintained by** [cfu288](https://github.com/cfu288)
 { .facts }
 
 ## Cameras
@@ -31,10 +31,10 @@ Film simulations, interval shooting, focus peaking and a level gauge for the PEN
 
 [Before you install: risks and recovery](../../docs/before-you-install.md)
 
-**For this camera:** 6 features, including Film simulations, Interval shooting and Level gauge.
+**For this camera:** 7 features, including Film simulations, Interval shooting and Level gauge.
 { .card-for }
 
-**Get it:** [v2026.11.20-rc.5 (pre-release)](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20-rc.5), 22 Nov 2026
+**Get it:** [v2026.11.20](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20), 23 Nov 2026
 { .card-get }
 
 [Mods and installation](../cameras/epm2.md) · [Test results](../research/epm2.md#evidence)
@@ -123,6 +123,18 @@ In P and A, the shutter speed at which ISO Auto starts to rise; a copy of the PE
 
 <div class="feature-card" markdown="1">
 
+**Spot metering at the AF point** <span class="pill pill-testing">Testing</span>
+{ .feature-head }
+
+Custom Menu E › Spot Metering moves Spot, Spot Hilight and Spot Shadow metering to a touched point or the selected AF target, as on the E-M5 II. Off by default; faces are ignored.
+
+[PEN E-PM2](../cameras/epm2.md)
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
 **Debug Log** <span class="pill pill-beta">Beta</span>
 { .feature-head }
 
@@ -136,6 +148,21 @@ A Custom Menu J row, Off by default, that writes EPM2LOG.BIN to the card for dev
 </div>
 
 ## Releases
+
+<div class="release-item" markdown="1">
+
+**[EPM2Mod 2026.11.20](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20)** · 23 Nov 2026
+{ .release-head }
+
+- The final release of the 2026.11.20 installer, with the films, interval shooting, level gauge, MF focus peaking, Lowest S/S Setting and Debug Log of the release candidates.
+- A Mac disk image, or a zip for Windows and Linux, opens a page that writes the card.
+
+PEN E-PM2 · [Report your result](https://github.com/xulfr/om-firmware-atlas/issues/new?template=camera-report.yml&target=Olympus+PEN+E-PM2+%C2%B7+stock+firmware%3A+&package=EPM2Mod+%C2%B7+v2026.11.20)
+
+Unofficial firmware, only for the Olympus PEN E-PM2.
+{ .release-warning }
+
+</div>
 
 <div class="release-item" markdown="1">
 
@@ -236,7 +263,7 @@ Unofficial and for the E-PM2 only; installing is at your own risk.
 
 ## Research notes
 
-The latest general-use release candidate is v2026.11.20-rc.5. It includes continuous focus peaking in MF and applies saved film simulations on startup. A separate Panasonic aperture-ring probe is a developer debug build. The project calls the firmware unofficial and at the user's own risk.
+The latest release is the final v2026.11.20, after five release candidates. It includes continuous focus peaking in MF and applies saved film simulations on startup. Spot metering at the AF point is camera-tested by the owner on the main branch but is not in a release yet. A separate Panasonic aperture-ring probe is a developer debug build. The project calls the firmware unofficial and at the user's own risk.
 
 ## Sources and record
 
@@ -250,10 +277,11 @@ The latest general-use release candidate is v2026.11.20-rc.5. It includes contin
 - [Olympus generations for modding](../sources/epm2.model-matrix.md)
 - [Olympus custom firmware landscape](../sources/epm2.landscape.md)
 - [EPM2Mod releases](../sources/epm2.releases.md)
+- [EPM2Mod 2026.11.20](../sources/epm2.v20261120.md)
 - [EPM2Mod 2026.11.20-rc.5](../sources/epm2.rc5.md)
 - [EPM2Mod 2026.11.20-rc.4](../sources/epm2.rc4.md)
 - [EPM2Mod 2026.11.20-rc.3](../sources/epm2.rc3.md)
 - [EPM2Mod 2026.11.20-rc.2](../sources/epm2.rc2.md)
 - [EPM2Mod 2026.11.20-pana-ring-probe.1](../sources/epm2.pana-ring-probe.md)
 
-[Canonical record](../../records/projects/epm2mod.yaml) · Substantively reviewed: 2026-11-22.
+[Canonical record](../../records/projects/epm2mod.yaml) · Substantively reviewed: 2026-11-24.

@@ -2,16 +2,16 @@
 
 # om10mi-mods changes
 
-Version history through 87 and the updated User Hue reset recommendation.
+Version history through 94, the known limits of 94 and the User Hue reset on each look's own page.
 
-**[Open original source](https://github.com/Meghnus/om10mi-mods/blob/a73028a8cc38d581e0279c0890811d68e8a8ca0b/CHANGELOG.md)**
+**[Open original source](https://github.com/Meghnus/om10mi-mods/blob/c8d72448b8a2981cc995b70230e1619f1a89d39f/CHANGELOG.md)**
 
 **Kind:** github file. **Locator:** CHANGELOG.md.
 
-**Revision / release:** `a73028a8cc38d581e0279c0890811d68e8a8ca0b`. **Retrieved:** 2026-11-22. **Last source check:** 2026-11-22.
+**Revision / release:** `c8d72448b8a2981cc995b70230e1619f1a89d39f`. **Retrieved:** 2026-11-24. **Last source check:** 2026-11-24.
 
 **Publication:** public. Linked and synthesised; upstream material retains its own terms.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/om10mi-mods.yaml) · Substantively reviewed: 2026-11-22.
+[Canonical record](../../records/sources/om10mi-mods.yaml) · Substantively reviewed: 2026-11-24.

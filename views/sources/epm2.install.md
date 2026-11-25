@@ -4,14 +4,14 @@
 
 The pinned build films-twelve-off, its feature set, the camera-test date and the stock and build SHA-256s.
 
-**[Open original source](https://github.com/cfu288/EPM2Mod/blob/f8f173d8b53d4370f85505cdec7be2b52d1ec830/docs/user/install.md)**
+**[Open original source](https://github.com/cfu288/EPM2Mod/blob/ccbad1a4637a3fa17d1fbedc2db3923513c0314d/docs/user/install.md)**
 
 **Kind:** github file. **Locator:** docs/user/install.md.
 
-**Revision / release:** `f8f173d8b53d4370f85505cdec7be2b52d1ec830`. **Retrieved:** 2026-11-21. **Last source check:** 2026-11-21.
+**Revision / release:** `ccbad1a4637a3fa17d1fbedc2db3923513c0314d`. **Retrieved:** 2026-11-24. **Last source check:** 2026-11-24.
 
 **Publication:** public. Linked and synthesised; upstream material retains its own terms.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/epm2mod.yaml) · Substantively reviewed: 2026-11-21.
+[Canonical record](../../records/sources/epm2mod.yaml) · Substantively reviewed: 2026-11-24.

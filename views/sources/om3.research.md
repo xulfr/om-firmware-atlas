@@ -4,14 +4,14 @@
 
 Research entry points, release tests and the shooting-screen investigation.
 
-**[Open original source](https://github.com/androidfanman/caduceus-om3/blob/f3b84dca32cf0e60b442a5d2271bcf6dc58ecdc5/research/README.md)**
+**[Open original source](https://github.com/androidfanman/caduceus-om3/blob/d14f4e3dcc77a22385b3c7d36d65189c000dd175/research/README.md)**
 
 **Kind:** github file. **Locator:** research/README.md.
 
-**Revision / release:** `f3b84dca32cf0e60b442a5d2271bcf6dc58ecdc5`. **Retrieved:** 2026-11-22. **Last source check:** 2026-11-22.
+**Revision / release:** `d14f4e3dcc77a22385b3c7d36d65189c000dd175`. **Retrieved:** 2026-11-24. **Last source check:** 2026-11-24.
 
 **Publication:** public. Linked and synthesised; upstream material retains its own terms.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/om3.yaml) · Substantively reviewed: 2026-11-22.
+[Canonical record](../../records/sources/om3.yaml) · Substantively reviewed: 2026-11-24.

@@ -272,6 +272,7 @@ records:
     source_ref: source.em5n.guides
   images:
   - path: assets/projects/em5-iii-notes/profile-editor-animation.webp
+    camera_id: camera.em5-iii
     alt: The Color Profile editor over a generated lake scene. A colour is picked on the wheel, its hue and lightness
       sliders move, then the side bar steps down to the tone curve and five points are moved into an S curve
     caption: Editing a colour profile, in the om-emu emulator with our c3d patches. The hue, saturation and lightness
@@ -279,32 +280,39 @@ records:
       set by writing the settings directly, because two dial steps don't work there.
     credit: olympus-firmware-notes; om-emu by its contributors (MIT); generated backdrop, no photo
   - path: assets/projects/em5-iii-notes/mods-page-switches.webp
+    camera_id: camera.em5-iii
     alt: A Custom Menu page titled K1. Mods with On and Off rows for the Wi-Fi shell and each card mod
     caption: The card mods page, with one On/Off row per mod found on the card, in the om-emu emulator.
     credit: olympus-firmware-notes; om-emu by its contributors (MIT); generated backdrop, no photo
   - path: assets/projects/em5-iii-notes/live-nd-page.webp
+    camera_id: camera.em5-iii
     alt: A menu page titled Live ND Shooting with rows Live ND Shooting On, ND Number ND8 and LV Simulation Off
     caption: The Live ND page added to the shooting menu by the port, in the om-emu emulator.
     credit: olympus-firmware-notes; om-emu by its contributors (MIT); generated backdrop, no photo
   - path: assets/projects/em5-iii-notes/view-assist-red-night.webp
+    camera_id: camera.em5-iii
     alt: The shooting screen in red only, menus and information included
     caption: The red night view card mod. The emulator stores but does not apply display gamma, so the mod's own
       curves, read back from the emulator, were applied to the frame afterwards.
     credit: olympus-firmware-notes; om-emu by its contributors (MIT); generated backdrop, no photo
   - path: assets/projects/em5-iii-notes/view-assist-rgb-clipping.webp
+    camera_id: camera.em5-iii
     alt: The shooting screen dimmed to half brightness except the brightest part of the sun
     caption: The RGB clipping view card mod. As with the red view, its curves were applied to the emulator's frame
       afterwards.
     credit: olympus-firmware-notes; om-emu by its contributors (MIT); generated backdrop, no photo
   - path: assets/projects/em5-iii-notes/own-2d-overlay.webp
+    camera_id: camera.em5-iii
     alt: The E-M5 III shooting screen with an extra overlay of boxes, a curve and text drawn on the GUI layers
     caption: An overlay drawn with the GUI's own calls over the shooting screen, in the om-emu emulator.
     credit: olympus-firmware-notes; om-emu by its contributors (MIT)
   - path: assets/projects/em5-iii-notes/colour-wheel-in-emulator.webp
+    camera_id: camera.em5-iii
     alt: The stock Color Creator colour wheel over a generated lake scene
     caption: The stock Color Creator wheel, drawn by the camera's own c3d code in om-emu once the GPU layer is shown.
     credit: olympus-firmware-notes; om-emu by its contributors (MIT)
   - path: assets/projects/em5-iii-notes/own-gpu-renderer.webp
+    camera_id: camera.em5-iii
     alt: A coloured aperture iris inside a dial, drawn by our own vector-GPU renderer and turning in steps over a generated lake scene
     caption: Our own renderer on the camera's vector GPU, running in the om-emu emulator with our c3d patches. Emulator
       only, not yet run on a camera.

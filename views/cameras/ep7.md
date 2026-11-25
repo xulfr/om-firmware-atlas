@@ -21,15 +21,15 @@ Model E142
 
 On-camera look editor (HSLFX), 29 film simulations, Colour mix and base curve.
 
-**v0.34a** · Stock firmware 1.1
+**v0.35** · Stock firmware 1.1
 { .release-scope }
 
 No camera test recorded for this release.
 
-Beta. The author warns that flashing modified firmware can crash or brick the camera; never flash an E-P7 build on another body.
+Beta. Known issue, the full Colour Profile page does not show film names properly; pick films from the colour wheel in the Super Control Panel. The author warns that flashing modified firmware can crash or brick the camera; never flash an E-P7 build on another body.
 { .release-warning }
 
-[Install guide](https://github.com/cakelesscoder/caduceus-ep7/blob/a0c351f5398a4e7b69738103bda3e5c92f81971d/docs/INSTALL.md){ .btn .btn-primary } · [Release notes & files](https://github.com/cakelesscoder/caduceus-ep7/releases/tag/v0.34a)
+[Install guide](https://github.com/cakelesscoder/caduceus-ep7/blob/7ae6366e1c48a5557f586728c2148f71ee61016f/docs/INSTALL.md){ .btn .btn-primary } · [Release notes & files](https://github.com/cakelesscoder/caduceus-ep7/releases/tag/v0.35)
 
 <details class="mod-details" markdown="1"><summary>Features and examples</summary>
 

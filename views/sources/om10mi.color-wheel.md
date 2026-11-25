@@ -2,16 +2,16 @@
 
 # om10mi-mods colour wheel guide
 
-Version 87 colour wheel in Color Creator at the ART dial: controls, value ranges, mode guide, the moved art filters and known limits.
+Colour wheel in Color Creator at the ART dial (since 87): controls, value ranges, mode guide, the moved art filters, the version 94 viewfinder centring and known limits.
 
-**[Open original source](https://github.com/Meghnus/om10mi-mods/blob/46874155947715e0d54baabe2df5006376c8bbab/docs/GUIDE-COLOR-WHEEL.md)**
+**[Open original source](https://github.com/Meghnus/om10mi-mods/blob/c8d72448b8a2981cc995b70230e1619f1a89d39f/docs/GUIDE-COLOR-WHEEL.md)**
 
 **Kind:** github file. **Locator:** docs/GUIDE-COLOR-WHEEL.md.
 
-**Revision / release:** `46874155947715e0d54baabe2df5006376c8bbab`. **Retrieved:** 2026-11-21. **Last source check:** 2026-11-21.
+**Revision / release:** `c8d72448b8a2981cc995b70230e1619f1a89d39f`. **Retrieved:** 2026-11-24. **Last source check:** 2026-11-24.
 
 **Publication:** public. Linked and synthesised; upstream material retains its own terms.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/om10mi-mods.yaml) · Substantively reviewed: 2026-11-21.
+[Canonical record](../../records/sources/om10mi-mods.yaml) · Substantively reviewed: 2026-11-24.

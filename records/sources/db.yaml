@@ -21,21 +21,20 @@ records:
 - type: source
   id: source.db.releases
   title: db firmware releases
-  summary: Beta release notes through v0.4.4b, in Korean and English.
+  summary: Beta release notes through v0.4.5, in Korean and English.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-22'
+  last_reviewed: '2026-11-24'
   url: https://github.com/azqeurio/om-c-firmware/releases
   source_kind: github-release
   upstream_repo: azqeurio/om-c-firmware
-  revision: dbv0.4.4b
-  locator: Release listing through dbv0.4.4b
-  retrieved_on: '2026-11-22'
-  last_checked: '2026-11-22'
-  published_on: '2026-11-22'
+  revision: dbv0.4.5
+  locator: Release listing through dbv0.4.5
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
+  published_on: '2026-11-23'
   publication: public
   reuse_note: Attributed summary of mutable release notes; no code, firmware or executables imported.
-  content_sha256: 6e27cad37d7fad967f0cdb29f27bf4ddf038724472d3a19698d39ecbf8fa5517
 - type: source
   id: source.db.release042
   title: db firmware v0.4.2 beta
@@ -126,3 +125,36 @@ records:
   publication: public
   reuse_note: Attributed summary of the maintainer’s release notes.
   content_sha256: 6e27cad37d7fad967f0cdb29f27bf4ddf038724472d3a19698d39ecbf8fa5517
+- type: source
+  id: source.db.release045
+  title: db firmware v0.4.5 beta
+  summary: The maintainer reports a fix for OI Share connections on the Mark II-based OM-5 port.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-24'
+  url: https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.5
+  source_kind: github-release
+  upstream_repo: azqeurio/om-c-firmware
+  revision: dbv0.4.5
+  locator: GitHub release notes for dbv0.4.5, English and Korean sections
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
+  published_on: '2026-11-23'
+  publication: public
+  reuse_note: Attributed summary of the maintainer’s release notes.
+- type: source
+  id: source.db.readme
+  title: db firmware README for v0.4.5
+  summary: Feature list, supported bodies and base firmware, and the maintainer's statement of which bodies are tested on real hardware.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-24'
+  url: https://github.com/azqeurio/om-c-firmware/blob/036763267140bb418286d88b6dccb6246d91d7f7/README.md
+  source_kind: github-file
+  upstream_repo: azqeurio/om-c-firmware
+  revision: 036763267140bb418286d88b6dccb6246d91d7f7
+  locator: README.md (Read before using, Features, Supported Cameras)
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.

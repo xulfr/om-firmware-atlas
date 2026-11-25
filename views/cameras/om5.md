@@ -21,15 +21,15 @@ Model E144
 
 Beta patches include Panasonic aperture rings, Korean menus and Hybrid Shutter. The Mark II-based port’s boot fix has only simulator and emulator results in the release notes.
 
-**dbv0.4.4b**
+**dbv0.4.5**
 { .release-scope }
 
 No camera test recorded for this release.
 
-Upstream calls this a beta. The notes provide no physical-camera results for the claimed fixes.
+Upstream calls this a beta. The notes list one bug fix and no physical-camera result; the maintainer does not own an original OM-5.
 { .release-warning }
 
-[Read release notes](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.4b)
+[Read release notes](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.5)
 
 <details class="mod-details" markdown="1"><summary>Features and examples</summary>
 

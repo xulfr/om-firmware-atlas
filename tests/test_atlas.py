@@ -200,7 +200,7 @@ class AtlasTests(unittest.TestCase):
         self.assertIn("[Ghidra MN103", research)
         self.assertNotIn("[Ghidra MN103", showcase)
         self.assertNotIn("v0.2.0-alpha1", showcase)
-        self.assertIn("dbv0.4.4b", showcase)
+        self.assertIn("dbv0.4.5", showcase)
         self.assertIn("No camera test recorded for this release.", showcase)
         self.assertIn("## In development", showcase)
         self.assertIn("Read release notes", showcase)
@@ -231,13 +231,42 @@ class AtlasTests(unittest.TestCase):
         self.assertTrue(any("references stock firmware for a different camera" in error
                             for error in self.catalogue.validate()))
 
+    def test_homepage_showcase_is_camera_scoped_and_honest_about_status(self):
+        from atlas_generate import atlas_counts, showcase, showcase_items
+        items = showcase_items(self.catalogue)
+        self.assertTrue(items)
+        for project, picture, camera_id, release in items:
+            self.assertIn(camera_id, project["camera_ids"])
+            self.assertIs(picture, next(p for p in project["images"]
+                                        if (p.get("camera_id") or (project["camera_ids"][0] if len(project["camera_ids"]) == 1 else None))))
+            if release:
+                self.assertIn(camera_id, release["camera_ids"])
+        dates = [(release or {}).get("date", "") for _, _, _, release in items if release]
+        self.assertEqual(dates, sorted(dates, reverse=True))
+        page = showcase(self.catalogue, "docs/index.md")
+        self.assertIn("(../views/projects/caduceus-om5.md#for-om5-ii)", page)
+        self.assertIn("v0.2.0-alpha1 · test version", page)
+        self.assertIn("(assets/projects/", page)
+        for _, picture, _, _ in items:
+            self.assertIn(picture["caption"], page)
+        project = copy.deepcopy(self.catalogue.records["project.caduceus-om5"])
+        for picture in project["images"]:
+            picture.pop("camera_id")
+        self.catalogue.records["project.caduceus-om5"] = project
+        self.assertNotIn("project.caduceus-om5", [p["id"] for p, *_ in showcase_items(self.catalogue)])
+        self.assertIn(f"{len(self.original.of_type('project'))} projects", atlas_counts(self.original))
+
     def test_latest_release_is_chronological_and_camera_specific(self):
         project = copy.deepcopy(self.catalogue.records["project.db-firmware"])
         release = latest_release(project)
         historical = next(r for r in project["releases"] if r["tag"] == "dbv0.4.3")
+        om5_only = next(r for r in project["releases"] if r["tag"] == "dbv0.4.5")
+        shared = next(r for r in project["releases"] if r["tag"] == "dbv0.4.4b")
+        self.assertIs(release, om5_only)
+        self.assertIs(latest_release(project, "camera.om5"), om5_only)
+        self.assertIs(latest_release(project, "camera.om5-ii"), shared)
         for camera in ("camera.om5", "camera.om5-ii"):
-            self.assertIs(latest_release(project, camera), release)
-            self.assertIsNone(release_limit(release, camera))
+            self.assertIsNone(release_limit(latest_release(project, camera), camera))
             self.assertIn("does not work", release_limit(historical, camera))
         self.assertIsNone(release_limit(historical, "camera.om3"))
         self.assertEqual(latest_release(project, "camera.pen-f")["tag"], "dbv0.3.2")

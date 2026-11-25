@@ -301,13 +301,13 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/caduceus-ep7.yaml": {
-      "approx_tokens": 3039,
-      "bytes": 12154,
+      "approx_tokens": 3416,
+      "bytes": 13664,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/caduceus-om3.yaml": {
-      "approx_tokens": 5280,
-      "bytes": 21118,
+      "approx_tokens": 5906,
+      "bytes": 23624,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/caduceus-om5-tadejs.yaml": {
@@ -326,8 +326,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/db-firmware.yaml": {
-      "approx_tokens": 2797,
-      "bytes": 11187,
+      "approx_tokens": 2939,
+      "bytes": 11755,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/em1-iii-mod-builder.yaml": {
@@ -336,13 +336,13 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/em5-iii-notes.yaml": {
-      "approx_tokens": 3935,
-      "bytes": 15739,
+      "approx_tokens": 3995,
+      "bytes": 15979,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/epm2mod.yaml": {
-      "approx_tokens": 2063,
-      "bytes": 8252,
+      "approx_tokens": 2336,
+      "bytes": 9344,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/fenykl.yaml": {
@@ -376,8 +376,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/om10mi-mods.yaml": {
-      "approx_tokens": 2040,
-      "bytes": 8158,
+      "approx_tokens": 2515,
+      "bytes": 10059,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/omkit.yaml": {
@@ -386,8 +386,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/db.yaml": {
-      "approx_tokens": 1255,
-      "bytes": 5018,
+      "approx_tokens": 1578,
+      "bytes": 6309,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/em1-iii-mod-builder.yaml": {
@@ -416,13 +416,13 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/ep7.yaml": {
-      "approx_tokens": 1286,
-      "bytes": 5143,
+      "approx_tokens": 1462,
+      "bytes": 5848,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/epm2mod.yaml": {
-      "approx_tokens": 2786,
-      "bytes": 11144,
+      "approx_tokens": 2943,
+      "bytes": 11769,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/fenykl.yaml": {
@@ -446,13 +446,13 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/om10mi-mods.yaml": {
-      "approx_tokens": 2288,
-      "bytes": 9149,
+      "approx_tokens": 2359,
+      "bytes": 9434,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/om3.yaml": {
-      "approx_tokens": 3732,
-      "bytes": 14928,
+      "approx_tokens": 4292,
+      "bytes": 17167,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/om5.yaml": {

@@ -6,14 +6,14 @@ records:
   summary: 'Features, install routes, the landscape of other projects and the AI-assistance note.'
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-20'
-  url: https://github.com/cfu288/EPM2Mod/blob/f8f173d8b53d4370f85505cdec7be2b52d1ec830/README.md
+  last_reviewed: '2026-11-24'
+  url: https://github.com/cfu288/EPM2Mod/blob/ccbad1a4637a3fa17d1fbedc2db3923513c0314d/README.md
   source_kind: github-file
   upstream_repo: cfu288/EPM2Mod
-  revision: f8f173d8b53d4370f85505cdec7be2b52d1ec830
+  revision: ccbad1a4637a3fa17d1fbedc2db3923513c0314d
   locator: README.md
-  retrieved_on: '2026-11-21'
-  last_checked: '2026-11-21'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -22,14 +22,14 @@ records:
   summary: 'Measured limits, resources, recovery record and what is feasible, each labelled verified, inferred or unknown.'
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-21'
-  url: https://github.com/cfu288/EPM2Mod/blob/f8f173d8b53d4370f85505cdec7be2b52d1ec830/docs/dev/feasibility.md
+  last_reviewed: '2026-11-24'
+  url: https://github.com/cfu288/EPM2Mod/blob/ccbad1a4637a3fa17d1fbedc2db3923513c0314d/docs/dev/feasibility.md
   source_kind: github-file
   upstream_repo: cfu288/EPM2Mod
-  revision: f8f173d8b53d4370f85505cdec7be2b52d1ec830
+  revision: ccbad1a4637a3fa17d1fbedc2db3923513c0314d
   locator: docs/dev/feasibility.md
-  retrieved_on: '2026-11-21'
-  last_checked: '2026-11-21'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -38,14 +38,14 @@ records:
   summary: 'The pinned build films-twelve-off, its feature set, the camera-test date and the stock and build SHA-256s.'
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-21'
-  url: https://github.com/cfu288/EPM2Mod/blob/f8f173d8b53d4370f85505cdec7be2b52d1ec830/docs/user/install.md
+  last_reviewed: '2026-11-24'
+  url: https://github.com/cfu288/EPM2Mod/blob/ccbad1a4637a3fa17d1fbedc2db3923513c0314d/docs/user/install.md
   source_kind: github-file
   upstream_repo: cfu288/EPM2Mod
-  revision: f8f173d8b53d4370f85505cdec7be2b52d1ec830
+  revision: ccbad1a4637a3fa17d1fbedc2db3923513c0314d
   locator: docs/user/install.md
-  retrieved_on: '2026-11-21'
-  last_checked: '2026-11-21'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -115,21 +115,20 @@ records:
 - type: source
   id: source.epm2.releases
   title: EPM2Mod releases
-  summary: Installer release candidates through v2026.11.20-rc.5.
+  summary: Installer release candidates through v2026.11.20-rc.5 and the final v2026.11.20.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-22'
+  last_reviewed: '2026-11-24'
   url: https://github.com/cfu288/EPM2Mod/releases
   source_kind: github-release
   upstream_repo: cfu288/EPM2Mod
-  revision: v2026.11.20-rc.5
-  locator: Release listing through v2026.11.20-rc.5
-  retrieved_on: '2026-11-22'
-  last_checked: '2026-11-22'
-  published_on: '2026-11-22'
+  revision: v2026.11.20
+  locator: Release listing through v2026.11.20
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
+  published_on: '2026-11-23'
   publication: public
   reuse_note: Attributed summary of mutable release notes; no code, firmware or executables imported.
-  content_sha256: 0a48040460005306596ac48215055f7704a573b417a71229cc94e17a42311bed
 - type: source
   id: source.epm2.camera-log-twelve-off
   title: 'films-twelve-off camera log'
@@ -268,3 +267,20 @@ records:
   last_checked: '2026-11-22'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.epm2.v20261120
+  title: EPM2Mod 2026.11.20
+  summary: Final release of the 2026.11.20 installer, with its firmware digest and the features of the films-twelve-off build.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-24'
+  url: https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20
+  source_kind: github-release
+  upstream_repo: cfu288/EPM2Mod
+  revision: v2026.11.20
+  locator: GitHub release notes for v2026.11.20 (tag commit dca170b93f9945435c05188d9ad5c8d960185595)
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
+  published_on: '2026-11-23'
+  publication: public
+  reuse_note: Attributed summary of the maintainer’s release notes.

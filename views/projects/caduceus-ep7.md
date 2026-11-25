@@ -10,7 +10,7 @@ The original Caduceus: HSLFX colour editing and 29 film looks for the PEN E-P7.
 
 <div class="cta-row" markdown="1">
 
-[Read the PEN E-P7 install guide](https://github.com/cakelesscoder/caduceus-ep7/blob/a0c351f5398a4e7b69738103bda3e5c92f81971d/docs/INSTALL.md){ .btn .btn-primary }
+[Read the PEN E-P7 install guide](https://github.com/cakelesscoder/caduceus-ep7/blob/7ae6366e1c48a5557f586728c2148f71ee61016f/docs/INSTALL.md){ .btn .btn-primary }
 [Project home](https://github.com/cakelesscoder/caduceus-ep7){ .btn .btn-ghost }
 [Ask or report issues](https://github.com/cakelesscoder/caduceus-ep7/issues){ .btn .btn-ghost }
 [Control Panel](https://cakelesscoder.github.io/caduceus-ep7/){ .btn .btn-ghost }
@@ -19,7 +19,7 @@ The original Caduceus: HSLFX colour editing and 29 film looks for the PEN E-P7.
 
 </div>
 
-**Type:** mod · **Camera details:** [PEN E-P7](#for-ep7), [OM-D E-M10 Mark IV](#for-em10-iv) · **Latest release:** [v0.34a](https://github.com/cakelesscoder/caduceus-ep7/releases/tag/v0.34a), 15 Nov 2026 · **Maintained by** [cakelesscoder](https://github.com/cakelesscoder)
+**Type:** mod · **Camera details:** [PEN E-P7](#for-ep7), [OM-D E-M10 Mark IV](#for-em10-iv) · **Latest release:** [v0.35](https://github.com/cakelesscoder/caduceus-ep7/releases/tag/v0.35), 23 Nov 2026 · **Maintained by** [cakelesscoder](https://github.com/cakelesscoder)
 { .facts }
 
 ## Cameras
@@ -30,10 +30,10 @@ The original Caduceus: HSLFX colour editing and 29 film looks for the PEN E-P7.
 
 [Before you install: risks and recovery](../../docs/before-you-install.md)
 
-**For this camera:** 17 features, including On-camera look editor (HSLFX), 29 film simulations and Colour mix and base curve.
+**For this camera:** 19 features, including On-camera look editor (HSLFX), 29 film simulations and Colour mix and base curve.
 { .card-for }
 
-**Get it:** [v0.34a](https://github.com/cakelesscoder/caduceus-ep7/releases/tag/v0.34a), 15 Nov 2026 · [Install guide](https://github.com/cakelesscoder/caduceus-ep7/blob/a0c351f5398a4e7b69738103bda3e5c92f81971d/docs/INSTALL.md)
+**Get it:** [v0.35](https://github.com/cakelesscoder/caduceus-ep7/releases/tag/v0.35), 23 Nov 2026 · [Install guide](https://github.com/cakelesscoder/caduceus-ep7/blob/7ae6366e1c48a5557f586728c2148f71ee61016f/docs/INSTALL.md)
 { .card-get }
 
 [Mods and installation](../cameras/ep7.md) · [Test results](../research/ep7.md#evidence)
@@ -229,6 +229,30 @@ More choices for REC and Fn, and the right and down arrow keys in Button Functio
 
 <div class="feature-card" markdown="1">
 
+**More dial functions** <span class="pill pill-released">Available</span>
+{ .feature-head }
+
+Custom Menu B › Dial Function can put ISO or flash compensation on the front dial in P, A, S and M; the rear dial keeps its job.
+
+[PEN E-P7](../cameras/ep7.md) · since v0.35
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
+**M-mode dial for manual lenses** <span class="pill pill-released">Available</span>
+{ .feature-head }
+
+In M with a lens without contacts, the free dial sets ISO or exposure compensation. Ported from phocean's omsystem-ep7.
+
+[PEN E-P7](../cameras/ep7.md) · since v0.35
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
 **Longer video recording** <span class="pill pill-released">Available</span>
 { .feature-head }
 
@@ -290,6 +314,22 @@ Make, preview and share looks in your browser, and export them for the camera or
 </div>
 
 ## Releases
+
+<div class="release-item" markdown="1">
+
+**[Caduceus v0.35 (beta)](https://github.com/cakelesscoder/caduceus-ep7/releases/tag/v0.35)** · 23 Nov 2026
+{ .release-head }
+
+- ISO or flash compensation on the front dial, and an ISO or exposure-compensation dial in M with a manual lens.
+- The colour wheel opened from the Shortcut button no longer flashes; Movie Extras rows show the right names.
+- Card files are unchanged from v0.34a.
+
+PEN E-P7 · [Report your result](https://github.com/xulfr/om-firmware-atlas/issues/new?template=camera-report.yml&target=Olympus+PEN+E-P7+%C2%B7+stock+firmware%3A+&package=Caduceus+for+E-P7+%C2%B7+v0.35)
+
+Beta. Known issue, the full Colour Profile page does not show film names properly; pick films from the colour wheel in the Super Control Panel. The author warns that flashing modified firmware can crash or brick the camera; never flash an E-P7 build on another body.
+{ .release-warning }
+
+</div>
 
 <div class="release-item" markdown="1">
 
@@ -449,7 +489,7 @@ Beta. The author warns that flashing modified firmware can crash or brick the ca
 
 ## Research notes
 
-The reviewed documentation names v0.34a. E-M10 IV is a research target seeking physical testing, not a released port.
+The latest reviewed release is v0.35 beta for E-P7 firmware 1.1, which the release notes say was tested on an E-P7. The full Colour Profile page still does not show film names. E-M10 IV is a research target seeking physical testing, not a released port.
 
 - [E-M10 IV target needs physical-camera evidence](https://github.com/cakelesscoder/caduceus-ep7/issues/21) — needs evidence; owner: not assigned here.
 
@@ -459,5 +499,6 @@ The reviewed documentation names v0.34a. E-M10 IV is a research target seeking p
 - [Caduceus body survey](../sources/ep7.bodies.md)
 - [Shared Control Panel direction](../sources/ep7.panel.md)
 - [Caduceus E-P7 releases](../sources/ep7.releases.md)
+- [Caduceus v0.35 (beta)](../sources/ep7.v035.md)
 
-[Canonical record](../../records/projects/caduceus-ep7.yaml) · Substantively reviewed: 2026-11-17.
+[Canonical record](../../records/projects/caduceus-ep7.yaml) · Substantively reviewed: 2026-11-24.

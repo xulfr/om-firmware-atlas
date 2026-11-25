@@ -3,7 +3,7 @@ records:
 - type: project
   id: project.om10mi-mods
   title: om10mi-mods
-  summary: Firmware mod for the original OM-D E-M10 with 18 film looks, a colour wheel, per-colour and per-look colour editors and a 59:50 video limit.
+  summary: Firmware mod for the original OM-D E-M10 with 18 film looks, a colour wheel, per-colour and per-look colour editors, an optional look pack builder and a 59:50 video limit.
   source_refs:
   - source.om10mi.readme
   - source.om10mi.install
@@ -23,14 +23,15 @@ records:
   - capture
   - patching
   - interfaces
-  last_reviewed: '2026-11-22'
+  last_reviewed: '2026-11-24'
   url: https://github.com/Meghnus/om10mi-mods
   kind: mod
   camera_ids:
   - camera.em10
   contribution_home: https://github.com/Meghnus/om10mi-mods/issues
-  status_summary: Version 87 adds a colour wheel for the original E-M10 on firmware 1.4. The owner reports emulator
-    and camera tests; recording past 30 minutes is still unconfirmed. A filter-related reboot report remains open.
+  status_summary: Version 94 is the single current build for the original E-M10 on firmware 1.4. It fixes the RAW
+    Data Edit bank rows that had no effect in pre-release 88 and adds an optional look pack builder. The maintainer
+    reports field tests on one camera; recording past 30 minutes is still unconfirmed. A filter-related reboot report remains open.
     The reporter closed the Lightroom white-balance display issue after a second look.
   work_items:
   - summary: The reporter confirmed immediate freeze and automatic restart during single-shot JPEG + RAW while trying looks, with no reset of User Hue. The exact look and build remain unspecified.
@@ -46,10 +47,11 @@ records:
   - project.oly-fw-analysis
   tagline: Film looks, a colour wheel, colour editors and a longer video limit for the original OM-D E-M10.
   description:
-  - om10mi-mods adds firmware features to the Olympus OM-D E-M10 Mark I (E113) on firmware 1.4. Version 87 has
+  - om10mi-mods adds firmware features to the Olympus OM-D E-M10 Mark I (E113) on firmware 1.4. Version 94 has
     18 film looks, each with its own colour matrix, tone curve and icon, a PEN-F-style colour wheel in Color
-    Creator, a per-sector Hue, Saturation and Lightness editor for 12 colours, a per-look colour editor, looks in
-    RAW Data Edit Custom1 and Custom2, and a video recording limit raised from 29:59 to 59:50.
+    Creator, a per-sector Hue, Saturation and Lightness editor for 12 colours, a colour page for each look, looks in
+    RAW Data Edit Custom1 and Custom2, and a video recording limit raised from 29:59 to 59:50. An optional look pack
+    builder replaces, renames and reorders looks from .cube or .xmp files, on the image the user built.
   - The repository holds no firmware. A builder downloads the official 1.4 file from OM Digital Solutions after
     the user accepts its licence, applies a list of edits, and refuses to write anything unless the result
     matches the published SHA-1. It also writes a copy of the stock file for going back through the card update.
@@ -62,8 +64,6 @@ records:
     routes with negative controls, deliberately broken images, and two independent audits. The emulator and
     harness are to be published later."
   goals:
-  - Importing a LUT, .cube or .xmp file into a chosen look slot as an approximate look (colour matrix, tone curve
-    and per-sector colour), previewed on the PC first.
   - Publishing the generic firmware tools (splitter, decoder, MN10300 emulator, census, byte oracle), with the GPL
     disassembler kept separate.
   maintainers:
@@ -71,15 +71,15 @@ records:
     url: https://github.com/Meghnus
   links:
   - label: Colour wheel guide
-    url: https://github.com/Meghnus/om10mi-mods/blob/46874155947715e0d54baabe2df5006376c8bbab/docs/GUIDE-COLOR-WHEEL.md
+    url: https://github.com/Meghnus/om10mi-mods/blob/c8d72448b8a2981cc995b70230e1619f1a89d39f/docs/GUIDE-COLOR-WHEEL.md
   - label: Development and testing method
-    url: https://github.com/Meghnus/om10mi-mods/blob/46874155947715e0d54baabe2df5006376c8bbab/docs/DEVELOPMENT.md
+    url: https://github.com/Meghnus/om10mi-mods/blob/c8d72448b8a2981cc995b70230e1619f1a89d39f/docs/DEVELOPMENT.md
   - label: Install guide
-    url: https://github.com/Meghnus/om10mi-mods/blob/a73028a8cc38d581e0279c0890811d68e8a8ca0b/INSTALL.md
+    url: https://github.com/Meghnus/om10mi-mods/blob/c8d72448b8a2981cc995b70230e1619f1a89d39f/INSTALL.md
   - label: Looks and colour editors guide and test list
-    url: https://github.com/Meghnus/om10mi-mods/blob/a73028a8cc38d581e0279c0890811d68e8a8ca0b/docs/GUIDE-56.md
+    url: https://github.com/Meghnus/om10mi-mods/blob/c8d72448b8a2981cc995b70230e1619f1a89d39f/docs/GUIDE-56.md
   - label: Look file spec (draft)
-    url: https://github.com/Meghnus/om10mi-mods/blob/46874155947715e0d54baabe2df5006376c8bbab/docs/lookfile/LOOKFILE_SPEC.md
+    url: https://github.com/Meghnus/om10mi-mods/blob/c8d72448b8a2981cc995b70230e1619f1a89d39f/docs/lookfile/LOOKFILE_SPEC.md
   features:
   - name: Film looks
     summary: 18 looks in Picture Mode, the SCP menu, Live View and RAW Data Edit, including Portra 400, Kodachrome
@@ -98,7 +98,8 @@ records:
     source_ref: source.om10mi.readme
     capability_id: capability.em10-v56-hsl
   - name: Per-look colour editor
-    summary: Colour edits for each look on the Custom page (Picture Mode, right key).
+    summary: Each colour look has its own User Hue page (Picture Mode, highlight the look, right arrow) with Sector,
+      Hue, Sector Sat and Lightness; it moved there from the Custom page in 88.
     camera_ids: *id001
     status: released
     since: v56
@@ -112,37 +113,64 @@ records:
     source_ref: source.om10mi.readme
   - name: Colour wheel
     summary: PEN-F-style wheel in Color Creator at the ART dial; mark one or more of 12 sectors and set Hue,
-      Saturation and Lightness from -7 to +7 with a live preview that matches the JPEG; kept after power-off. The
-      ART dial no longer reaches the stock art filters.
+      Saturation and Lightness from -7 to +7 with a live preview that matches the JPEG; kept after power-off. Since
+      94 it is roughly centred in the viewfinder and white balance can be set inside Color Creator. The ART dial no
+      longer reaches the stock art filters.
     camera_ids: *id001
     status: released
     since: v87
     source_ref: source.om10mi.color-wheel
     capability_id: capability.em10-v87-colour-wheel
-  - name: LUT import
-    summary: A PC tool fits a LUT, .cube or .xmp file to a look slot as an approximate colour matrix, tone curve and
-      per-sector colour.
+  - name: Look pack builder
+    summary: An optional PC tool and browser pages replace looks from a .cube or .xmp file, rename them and reorder
+      the Picture Mode list, working on the image the user built. A look is a fitted approximation of the LUT;
+      hiding looks is refused because it is not proven on a camera.
     camera_ids: *id001
-    status: planned
-    since: null
+    status: released
+    since: v94
     source_ref: source.om10mi.readme
   releases:
+  - tag: v94
+    title: 'Version 94: RAW edit rows fixed, EVF-centred colour wheel, optional look pack builder'
+    date: '2026-11-24'
+    url: https://github.com/Meghnus/om10mi-mods/releases/tag/v94
+    prerelease: false
+    camera_ids: *id001
+    installation:
+      camera.em10:
+        firmware_id: firmware.em10-1400
+        url: https://github.com/Meghnus/om10mi-mods/blob/84d4f36365270a9393d0b46b8beeae44a8e3491d/INSTALL.md
+    highlights:
+    - The RAW Data Edit Custom1 and Custom2 Sector, Hue, Sat and Light rows now change the developed picture.
+    - The colour wheel is roughly centred in the viewfinder, and white balance can be set inside Color Creator.
+    - The SCP Contrast, Sharpness and Saturation follow each look's own rows.
+    - An optional look pack builder makes looks from your own .cube or .xmp files.
+    warning: Unofficial, for the E-M10 Mark I on firmware 1.4 only; made and tested on a single body. No warranty;
+      installing custom firmware is risky. The ART dial no longer reaches the stock art filters.
+    source_ref: source.om10mi.releases
+  - tag: v88
+    title: 'Version 88: per-look colour pages'
+    date: '2026-11-23'
+    url: https://github.com/Meghnus/om10mi-mods/releases/tag/v88
+    prerelease: true
+    camera_ids: *id001
+    highlights:
+    - Each colour look gets its own User Hue page from Picture Mode's right arrow; User Hue Reset moved there.
+    warning: Superseded pre-release. Its RAW Data Edit Sector, Hue, Sat and Light rows had little or no effect, fixed
+      in 94.
+    source_ref: source.om10mi.releases
   - tag: v87
     title: 'Version 87: colour wheel + own look icons'
     date: '2026-11-21'
     url: https://github.com/Meghnus/om10mi-mods/releases/tag/v87
     prerelease: false
     camera_ids: *id001
-    installation:
-      camera.em10:
-        firmware_id: firmware.em10-1400
-        url: https://github.com/Meghnus/om10mi-mods/blob/a73028a8cc38d581e0279c0890811d68e8a8ca0b/INSTALL.md
     highlights:
     - Colour wheel in Color Creator at the ART dial, with an on-screen key hint and a COLOR WHEEL mode guide.
     - Own icons for Portra 400, Kodachrome 64, Ektar 100 and Gold 200.
     - Contrast/Gradation code on looks made safe when two images are processed at once (related to issue 4).
     - Pop-up message frames use the correct graphic again; the builder makes version 87 only.
-    warning: Unofficial, for the E-M10 Mark I on firmware 1.4 only; tested on one body. No warranty; installing
+    warning: Superseded by 94. Unofficial, for the E-M10 Mark I on firmware 1.4 only; tested on one body. No warranty; installing
       custom firmware is risky. The ART dial no longer reaches the stock art filters.
     source_ref: source.om10mi.releases
   - tag: v56

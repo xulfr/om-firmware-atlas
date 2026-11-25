@@ -10,6 +10,6 @@ Ghidra disassembly and decompiler support for MN10300, AM33 and AM33-2.
 |---|---|---:|---:|
 | [ghidra-mn103.yaml](../../../records/projects/ghidra-mn103.yaml) | Project scope, related work and contribution destination | 3,741 | ~936 |
 | [em5-iii-notes.yaml](../../../records/sources/em5-iii-notes.yaml) | Find the relevant source/observation ID; use bounded reads | 21,538 | ~5,385 |
-| [ep7.yaml](../../../records/sources/ep7.yaml) | Find the relevant source/observation ID; use bounded reads | 5,143 | ~1,286 |
+| [ep7.yaml](../../../records/sources/ep7.yaml) | Find the relevant source/observation ID; use bounded reads | 5,848 | ~1,462 |
 
 Follow only relevant camera/topic routes. Upstream policies apply to work there; Atlas does not assign ownership across projects.

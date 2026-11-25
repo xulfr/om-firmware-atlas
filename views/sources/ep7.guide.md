@@ -4,14 +4,14 @@
 
 Containers, mapping, loaders and patching lessons.
 
-**[Open original source](https://github.com/cakelesscoder/caduceus-ep7/blob/0cb1dbcc50595cd87f56648810762ffbbb8e17f3/docs/FIRMWARE_GUIDE.md)**
+**[Open original source](https://github.com/cakelesscoder/caduceus-ep7/blob/6b421a4a06c47f635bf84d4940e2cdb660dabb06/docs/FIRMWARE_GUIDE.md)**
 
 **Kind:** github file. **Locator:** docs/FIRMWARE_GUIDE.md.
 
-**Revision / release:** `0cb1dbcc50595cd87f56648810762ffbbb8e17f3`. **Retrieved:** 2026-11-17. **Last source check:** 2026-11-17.
+**Revision / release:** `6b421a4a06c47f635bf84d4940e2cdb660dabb06`. **Retrieved:** 2026-11-24. **Last source check:** 2026-11-24.
 
 **Publication:** public. Linked and synthesised; upstream material retains its own terms.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/ep7.yaml) · Substantively reviewed: 2026-11-17.
+[Canonical record](../../records/sources/ep7.yaml) · Substantively reviewed: 2026-11-24.

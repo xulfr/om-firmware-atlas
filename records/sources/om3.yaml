@@ -6,14 +6,14 @@ records:
   summary: Current stable release, camera scope, features and owner installation guidance.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-22'
-  url: https://github.com/androidfanman/caduceus-om3/blob/f3b84dca32cf0e60b442a5d2271bcf6dc58ecdc5/README.md
+  last_reviewed: '2026-11-24'
+  url: https://github.com/androidfanman/caduceus-om3/blob/d14f4e3dcc77a22385b3c7d36d65189c000dd175/README.md
   source_kind: github-file
   upstream_repo: androidfanman/caduceus-om3
-  revision: f3b84dca32cf0e60b442a5d2271bcf6dc58ecdc5
+  revision: d14f4e3dcc77a22385b3c7d36d65189c000dd175
   locator: README.md
-  retrieved_on: '2026-11-22'
-  last_checked: '2026-11-22'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -22,14 +22,14 @@ records:
   summary: OM3P layout and release-specific semantics, including the v0.40 border and film grain fields.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-22'
-  url: https://github.com/androidfanman/caduceus-om3/blob/f3b84dca32cf0e60b442a5d2271bcf6dc58ecdc5/docs/FORMATS.md
+  last_reviewed: '2026-11-24'
+  url: https://github.com/androidfanman/caduceus-om3/blob/d14f4e3dcc77a22385b3c7d36d65189c000dd175/docs/FORMATS.md
   source_kind: github-file
   upstream_repo: androidfanman/caduceus-om3
-  revision: f3b84dca32cf0e60b442a5d2271bcf6dc58ecdc5
+  revision: d14f4e3dcc77a22385b3c7d36d65189c000dd175
   locator: docs/FORMATS.md
-  retrieved_on: '2026-11-22'
-  last_checked: '2026-11-22'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -54,14 +54,14 @@ records:
   summary: Research entry points, release tests and the shooting-screen investigation.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-22'
-  url: https://github.com/androidfanman/caduceus-om3/blob/f3b84dca32cf0e60b442a5d2271bcf6dc58ecdc5/research/README.md
+  last_reviewed: '2026-11-24'
+  url: https://github.com/androidfanman/caduceus-om3/blob/d14f4e3dcc77a22385b3c7d36d65189c000dd175/research/README.md
   source_kind: github-file
   upstream_repo: androidfanman/caduceus-om3
-  revision: f3b84dca32cf0e60b442a5d2271bcf6dc58ecdc5
+  revision: d14f4e3dcc77a22385b3c7d36d65189c000dd175
   locator: research/README.md
-  retrieved_on: '2026-11-22'
-  last_checked: '2026-11-22'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -84,21 +84,20 @@ records:
 - type: source
   id: source.om3.releases
   title: Caduceus OM-3 releases
-  summary: Release notes through test version v0.40.3-beta4. The project lists v0.40.2 as the current stable release.
+  summary: Release notes through test version v0.41-beta. The project lists v0.40.3 as the current stable release.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-22'
+  last_reviewed: '2026-11-24'
   url: https://github.com/androidfanman/caduceus-om3/releases
   source_kind: github-release
   upstream_repo: androidfanman/caduceus-om3
-  revision: v0.40.3-beta4
-  locator: Release listing through v0.40.3-beta4
-  retrieved_on: '2026-11-22'
-  last_checked: '2026-11-22'
-  published_on: '2026-11-21'
+  revision: v0.41-beta
+  locator: Release listing through v0.41-beta
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
+  published_on: '2026-11-24'
   publication: public
   reuse_note: Attributed summary of mutable release notes; no code, firmware or executables imported.
-  content_sha256: 533324a51f5c6adbdc28b339803b804fd09675b358adfa3c33b479fe6eb6c268
 - type: source
   id: source.om3.devnotes
   title: Caduceus OM-3 developer notes
@@ -345,16 +344,67 @@ records:
 - type: source
   id: source.om3.looklab-current
   title: LookLab import and preview updates
-  summary: Upstream changelog for multi-photo previews and opening card curves or a readable recipe JSON.
+  summary: Upstream changelog for multi-photo previews, opening card curves or a recipe JSON, saved film sims, kept photos and reading photo code om3.2.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-22'
-  url: https://github.com/androidfanman/caduceus-om3/blob/f3b84dca32cf0e60b442a5d2271bcf6dc58ecdc5/CHANGELOG.md
+  last_reviewed: '2026-11-24'
+  url: https://github.com/androidfanman/caduceus-om3/blob/d14f4e3dcc77a22385b3c7d36d65189c000dd175/CHANGELOG.md
   source_kind: github-file
   upstream_repo: androidfanman/caduceus-om3
-  revision: f3b84dca32cf0e60b442a5d2271bcf6dc58ecdc5
+  revision: d14f4e3dcc77a22385b3c7d36d65189c000dd175
   locator: CHANGELOG.md
-  retrieved_on: '2026-11-22'
-  last_checked: '2026-11-22'
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.om3.v0403
+  title: Caduceus for OM-3 v0.40.3
+  summary: 'Stable release of the v0.40.3 test versions, camera-tested as v0.40.3-beta4: Halation Radius, faster Halation, separate film and stock WB shifts, and the #91, #93, #97 and #101 fixes.'
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-24'
+  url: https://github.com/androidfanman/caduceus-om3/releases/tag/v0.40.3
+  source_kind: github-release
+  upstream_repo: androidfanman/caduceus-om3
+  revision: v0.40.3
+  locator: GitHub release notes for v0.40.3 (tag commit ffe1de9b1d83d5abfb59387eb2e9a8f0926c1090)
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
+  published_on: '2026-11-23'
+  publication: public
+  reuse_note: Attributed summary of the maintainer’s release notes.
+- type: source
+  id: source.om3.v041-alpha
+  title: Caduceus for OM-3 v0.41-alpha (test version)
+  summary: Early test version with new Picture Mode pages; the maintainer reports camera testing on an OM-3 as build p4.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-24'
+  url: https://github.com/androidfanman/caduceus-om3/releases/tag/v0.41-alpha
+  source_kind: github-release
+  upstream_repo: androidfanman/caduceus-om3
+  revision: v0.41-alpha
+  locator: GitHub release notes for v0.41-alpha (tag commit 8876a94774602de44fb2c93bc65001593574d3e7)
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
+  published_on: '2026-11-23'
+  publication: public
+  reuse_note: Attributed summary of the maintainer’s release notes.
+- type: source
+  id: source.om3.v041-beta
+  title: Caduceus for OM-3 v0.41-beta (test version)
+  summary: Test version that tidies the v0.41-alpha pages and adds photo code om3.2; the maintainer reports camera testing on an OM-3 as builds a2 to a6 and pc3.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-24'
+  url: https://github.com/androidfanman/caduceus-om3/releases/tag/v0.41-beta
+  source_kind: github-release
+  upstream_repo: androidfanman/caduceus-om3
+  revision: v0.41-beta
+  locator: GitHub release notes for v0.41-beta (tag commit 27f155364d6b445ee72f647793e91e0cfad1b23f)
+  retrieved_on: '2026-11-24'
+  last_checked: '2026-11-24'
+  published_on: '2026-11-24'
+  publication: public
+  reuse_note: Attributed summary of the maintainer’s release notes.

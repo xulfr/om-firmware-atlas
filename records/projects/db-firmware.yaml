@@ -12,11 +12,13 @@ records:
   - source.db.release044b
   - source.db.release044
   - source.db.release043b
+  - source.db.release045
+  - source.db.readme
   topics:
   - capture
   - colour
   - patching
-  last_reviewed: '2026-11-22'
+  last_reviewed: '2026-11-24'
   url: https://github.com/azqeurio/om-c-firmware
   kind: mod
   camera_ids:
@@ -26,9 +28,9 @@ records:
   - camera.ep7
   - camera.pen-f
   contribution_home: https://github.com/azqeurio/om-c-firmware/issues
-  status_summary: The latest reviewed release is v0.4.4b beta. The maintainer reports fixes for Hybrid Shutter startup,
-    the Mark II-based OM-5 port and E-P7 1.1. The preceding OM-5 boot fix was checked only in simulation and emulation,
-    and these notes add no physical-camera result.
+  status_summary: The latest reviewed release is v0.4.5 beta, which reports an OI Share connection fix for the Mark
+    II-based OM-5 port. The README says the maintainer tests on real OM-1, OM-5 Mark II and E-M10 bodies only; other
+    models are checked in offline simulation. The release notes add no physical-camera result.
   related_projects: []
   tagline: Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to new burst
     rates.
@@ -114,6 +116,18 @@ records:
     since: dbv0.4.2
     source_ref: source.db.release043b
   releases:
+  - tag: dbv0.4.5
+    title: db firmware v0.4.5 beta
+    date: '2026-11-23'
+    url: https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.5
+    prerelease: false
+    camera_ids:
+    - camera.om5
+    highlights:
+    - Reports a fix for OI Share connections on the Mark II-based OM-5 port.
+    warning: Upstream calls this a beta. The notes list one bug fix and no physical-camera result; the maintainer does
+      not own an original OM-5.
+    source_ref: source.db.release045
   - tag: dbv0.4.4b
     title: db firmware v0.4.4b beta
     date: '2026-11-22'
