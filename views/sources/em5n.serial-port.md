@@ -4,14 +4,14 @@
 
 Tasks, kernel objects, debug consoles and the debug serial port (UART, pads and routing).
 
-**[Open original source](https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/firmware/os-and-framework.md)**
+**[Open original source](https://github.com/nsud-dev/olympus-firmware-notes/blob/b2c9a6116e9221d6cffa7f5ec04e084cdbf2a73c/docs/firmware/os-and-framework.md)**
 
 **Kind:** github file. **Locator:** docs/firmware/os-and-framework.md.
 
-**Revision / release:** `c35661d826c66971073920651178bf90f5a75694`. **Retrieved:** 2026-11-24. **Last source check:** 2026-11-24.
+**Revision / release:** `b2c9a6116e9221d6cffa7f5ec04e084cdbf2a73c`. **Retrieved:** 2026-11-25. **Last source check:** 2026-11-25.
 
 **Publication:** public. Written by the notes' author; CC BY 4.0 per the repo licence.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/em5-iii-notes-platform.yaml) · Substantively reviewed: 2026-11-24.
+[Canonical record](../../records/sources/em5-iii-notes-platform.yaml) · Substantively reviewed: 2026-11-25.

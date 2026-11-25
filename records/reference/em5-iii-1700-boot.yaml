@@ -258,4 +258,4 @@ records:
     project_id: project.em5-iii-notes
     summary: With the branch replaced by two no-ops, focus stacking runs with lenses outside the stock list.
   conflicts: []
-  upstream_detail: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/patches/focus-stacking-any-lens.md#the-function
+  upstream_detail: https://github.com/nsud-dev/olympus-firmware-notes/blob/b2c9a6116e9221d6cffa7f5ec04e084cdbf2a73c/docs/patches/focus-stacking-any-lens.md#the-function

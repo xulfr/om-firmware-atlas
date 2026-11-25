@@ -56,10 +56,10 @@ records:
     project calls it experimental: it can crash or freeze the camera, and the launcher keeps a restore
     file so you can go back to OM''s firmware.'
   goals:
-  - Make Color Profile mode the best JPEG maker of any camera. With v0.28 the owner considers the colour
-    profiles complete for now.
-  - Video comes next in the owner's order of work.
-  - Panasonic aperture-ring support remains planned.
+  - Make Color Profile mode the best JPEG maker of any camera. The owner now lists the colour profiles as
+    complete.
+  - Video comes next in the owner's order of work; films in video and 10-bit beyond Log and HLG are listed as requests.
+  - Panasonic aperture-ring support is listed as requested; until mid-November the roadmap had it as planned.
   maintainers:
   - label: androidfanman
     url: https://github.com/androidfanman
@@ -171,12 +171,6 @@ records:
     status: released
     since: v0.40
     source_ref: source.om3.v040-release
-  - name: Panasonic aperture rings
-    summary: The aperture ring on Panasonic lenses that have one sets the aperture.
-    camera_ids: *id001
-    status: planned
-    since: null
-    source_ref: source.om3.roadmap
   - name: Crop modes
     summary: XPan, 21:9 and 5:4 for JPEGs. RAW retains the full sensor with crop metadata.
     camera_ids: *id001

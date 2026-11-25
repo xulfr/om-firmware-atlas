@@ -6,14 +6,14 @@ records:
   summary: "How to draw boxes, curves, pictures, camera-font text, see-through palettes and animation on the GUI layers with the camera's own calls; emulator-verified."
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/guides/drawing-your-own.md
+  last_reviewed: '2026-11-25'
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/b2c9a6116e9221d6cffa7f5ec04e084cdbf2a73c/docs/guides/drawing-your-own.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: c35661d826c66971073920651178bf90f5a75694
+  revision: b2c9a6116e9221d6cffa7f5ec04e084cdbf2a73c
   locator: docs/guides/drawing-your-own.md
-  retrieved_on: '2026-11-24'
-  last_checked: '2026-11-24'
+  retrieved_on: '2026-11-25'
+  last_checked: '2026-11-25'
   publication: public
   reuse_note: Written by the notes' author; docs CC BY 4.0, tools MIT per the repo licences.
 - type: source
@@ -22,14 +22,14 @@ records:
   summary: "The DMP OpenVG library, the c3d driver and its draw kinds, own C renderers, and the decoded GPU command lists."
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/guides/vector-gpu.md
+  last_reviewed: '2026-11-25'
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/b2c9a6116e9221d6cffa7f5ec04e084cdbf2a73c/docs/guides/vector-gpu.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: c35661d826c66971073920651178bf90f5a75694
+  revision: b2c9a6116e9221d6cffa7f5ec04e084cdbf2a73c
   locator: docs/guides/vector-gpu.md
-  retrieved_on: '2026-11-24'
-  last_checked: '2026-11-24'
+  retrieved_on: '2026-11-25'
+  last_checked: '2026-11-25'
   publication: public
   reuse_note: Written by the notes' author; docs CC BY 4.0, tools MIT per the repo licences.
 - type: source
@@ -38,14 +38,14 @@ records:
   summary: "Reference for the GUI layers: draw commands, palettes, pictures, text and the display update."
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/hardware/osd-drawing.md
+  last_reviewed: '2026-11-25'
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/b2c9a6116e9221d6cffa7f5ec04e084cdbf2a73c/docs/hardware/osd-drawing.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: c35661d826c66971073920651178bf90f5a75694
+  revision: b2c9a6116e9221d6cffa7f5ec04e084cdbf2a73c
   locator: docs/hardware/osd-drawing.md
-  retrieved_on: '2026-11-24'
-  last_checked: '2026-11-24'
+  retrieved_on: '2026-11-25'
+  last_checked: '2026-11-25'
   publication: public
   reuse_note: Written by the notes' author; docs CC BY 4.0, tools MIT per the repo licences.
 - type: source
@@ -54,14 +54,14 @@ records:
   summary: "Reference for the c3d task, the OpenVG/EGL library, draw kinds, renderer interface and command lists."
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/hardware/c3d-gpu.md
+  last_reviewed: '2026-11-25'
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/b2c9a6116e9221d6cffa7f5ec04e084cdbf2a73c/docs/hardware/c3d-gpu.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: c35661d826c66971073920651178bf90f5a75694
+  revision: b2c9a6116e9221d6cffa7f5ec04e084cdbf2a73c
   locator: docs/hardware/c3d-gpu.md
-  retrieved_on: '2026-11-24'
-  last_checked: '2026-11-24'
+  retrieved_on: '2026-11-25'
+  last_checked: '2026-11-25'
   publication: public
   reuse_note: Written by the notes' author; docs CC BY 4.0, tools MIT per the repo licences.
 - type: source
@@ -70,14 +70,14 @@ records:
   summary: "The notes' script for drawing with the GUI's own calls in om-emu (demos and the showcase overlay)."
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/tools/osdlab/README.md
+  last_reviewed: '2026-11-25'
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/b2c9a6116e9221d6cffa7f5ec04e084cdbf2a73c/tools/osdlab/README.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: c35661d826c66971073920651178bf90f5a75694
+  revision: b2c9a6116e9221d6cffa7f5ec04e084cdbf2a73c
   locator: tools/osdlab/README.md
-  retrieved_on: '2026-11-24'
-  last_checked: '2026-11-24'
+  retrieved_on: '2026-11-25'
+  last_checked: '2026-11-25'
   publication: public
   reuse_note: Written by the notes' author; docs CC BY 4.0, tools MIT per the repo licences.
 - type: source
@@ -86,14 +86,14 @@ records:
   summary: "Header, two example renderers and a GPU command-list decoder for writing c3d renderers in C."
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/tools/c3d_vg/README.md
+  last_reviewed: '2026-11-25'
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/b2c9a6116e9221d6cffa7f5ec04e084cdbf2a73c/tools/c3d_vg/README.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: c35661d826c66971073920651178bf90f5a75694
+  revision: b2c9a6116e9221d6cffa7f5ec04e084cdbf2a73c
   locator: tools/c3d_vg/README.md
-  retrieved_on: '2026-11-24'
-  last_checked: '2026-11-24'
+  retrieved_on: '2026-11-25'
+  last_checked: '2026-11-25'
   publication: public
   reuse_note: Written by the notes' author; docs CC BY 4.0, tools MIT per the repo licences.
 - type: source
@@ -102,13 +102,13 @@ records:
   summary: "Patches to om-emu (keeping its MIT notice) that composite the GPU layer and run c3d renderers with a JavaScript OpenVG stand-in."
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-23'
-  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/tools/om-emu-c3d/c3d/README.md
+  last_reviewed: '2026-11-25'
+  url: https://github.com/nsud-dev/olympus-firmware-notes/blob/b2c9a6116e9221d6cffa7f5ec04e084cdbf2a73c/tools/om-emu-c3d/c3d/README.md
   source_kind: github-file
   upstream_repo: nsud-dev/olympus-firmware-notes
-  revision: c35661d826c66971073920651178bf90f5a75694
+  revision: b2c9a6116e9221d6cffa7f5ec04e084cdbf2a73c
   locator: tools/om-emu-c3d/c3d/README.md
-  retrieved_on: '2026-11-24'
-  last_checked: '2026-11-24'
+  retrieved_on: '2026-11-25'
+  last_checked: '2026-11-25'
   publication: public
   reuse_note: Written by the notes' author; docs CC BY 4.0, tools MIT per the repo licences.

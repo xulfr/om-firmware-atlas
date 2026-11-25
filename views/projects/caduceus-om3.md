@@ -31,7 +31,7 @@ Film looks and a full colour editor, built into the OM SYSTEM OM-3.
 
 [Before you install: risks and recovery](../../docs/before-you-install.md)
 
-**For this camera:** 18 features, including Your films in Picture Mode, 20 film simulations and Colour editor on the camera.
+**For this camera:** 17 features, including Your films in Picture Mode, 20 film simulations and Colour editor on the camera.
 { .card-for }
 
 **Get it:** [v0.41-beta (pre-release)](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.41-beta), 24 Nov 2026 · [Install guide](https://github.com/androidfanman/caduceus-om3/blob/27f155364d6b445ee72f647793e91e0cfad1b23f/releases/v0.41-beta/NOTES.md)
@@ -58,9 +58,9 @@ It is open source, for the OM-3 on firmware 1.1 only, and grew out of Caduceus f
 
 ### What it's working towards
 
-- Make Color Profile mode the best JPEG maker of any camera. With v0.28 the owner considers the colour profiles complete for now.
-- Video comes next in the owner's order of work.
-- Panasonic aperture-ring support remains planned.
+- Make Color Profile mode the best JPEG maker of any camera. The owner now lists the colour profiles as complete.
+- Video comes next in the owner's order of work; films in video and 10-bit beyond Log and HLG are listed as requests.
+- Panasonic aperture-ring support is listed as requested; until mid-November the roadmap had it as planned.
 
 ## Features
 
@@ -232,18 +232,6 @@ LookLab finds the camera settings closest to a .cube LUT or a Lightroom preset, 
 Extends in-camera focus stacking to more lenses, including the M.Zuiko 17mm F1.8 II.
 
 [OM-3](../cameras/om3.md) · since v0.40
-{ .card-meta }
-
-</div>
-
-<div class="feature-card" markdown="1">
-
-**Panasonic aperture rings** <span class="pill pill-planned">Planned</span>
-{ .feature-head }
-
-The aperture ring on Panasonic lenses that have one sets the aperture.
-
-[OM-3](../cameras/om3.md)
 { .card-meta }
 
 </div>

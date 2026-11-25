@@ -4,14 +4,14 @@
 
 Caduceus OM-3 lab notebook: camera, emulator and static findings per issue.
 
-**[Open original source](https://github.com/androidfanman/caduceus-om3/blob/e32363a01aef5f0119e750f35bc96644e6d9b4eb/research/NOTES.md)**
+**[Open original source](https://github.com/androidfanman/caduceus-om3/blob/d14f4e3dcc77a22385b3c7d36d65189c000dd175/research/NOTES.md)**
 
 **Kind:** github file. **Locator:** research/NOTES.md.
 
-**Revision / release:** `e32363a01aef5f0119e750f35bc96644e6d9b4eb`. **Retrieved:** 2026-11-18. **Last source check:** 2026-11-18.
+**Revision / release:** `d14f4e3dcc77a22385b3c7d36d65189c000dd175`. **Retrieved:** 2026-11-25. **Last source check:** 2026-11-25.
 
 **Publication:** public. Linked and synthesised; upstream material retains its own terms.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/om3.yaml) · Substantively reviewed: 2026-11-18.
+[Canonical record](../../records/sources/om3.yaml) · Substantively reviewed: 2026-11-25.

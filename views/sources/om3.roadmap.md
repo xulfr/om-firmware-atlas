@@ -4,14 +4,14 @@
 
 Planned, testing, parked and fixed work as the owner describes it.
 
-**[Open original source](https://github.com/androidfanman/caduceus-om3/blob/78a809e163d96f468d796c7f5b42a9846e43b19b/ROADMAP.md)**
+**[Open original source](https://github.com/androidfanman/caduceus-om3/blob/d14f4e3dcc77a22385b3c7d36d65189c000dd175/ROADMAP.md)**
 
 **Kind:** github file. **Locator:** ROADMAP.md: colour profiles, bugs, lenses and focus.
 
-**Revision / release:** `78a809e163d96f468d796c7f5b42a9846e43b19b`. **Retrieved:** 2026-11-17. **Last source check:** 2026-11-17.
+**Revision / release:** `d14f4e3dcc77a22385b3c7d36d65189c000dd175`. **Retrieved:** 2026-11-25. **Last source check:** 2026-11-25.
 
 **Publication:** public. Attributed summary; statuses are the owner's own.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/om3.yaml) · Substantively reviewed: 2026-11-17.
+[Canonical record](../../records/sources/om3.yaml) · Substantively reviewed: 2026-11-25.

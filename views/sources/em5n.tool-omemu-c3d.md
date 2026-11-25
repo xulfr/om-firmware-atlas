@@ -4,14 +4,14 @@
 
 Patches to om-emu (keeping its MIT notice) that composite the GPU layer and run c3d renderers with a JavaScript OpenVG stand-in.
 
-**[Open original source](https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/tools/om-emu-c3d/c3d/README.md)**
+**[Open original source](https://github.com/nsud-dev/olympus-firmware-notes/blob/b2c9a6116e9221d6cffa7f5ec04e084cdbf2a73c/tools/om-emu-c3d/c3d/README.md)**
 
 **Kind:** github file. **Locator:** tools/om-emu-c3d/c3d/README.md.
 
-**Revision / release:** `c35661d826c66971073920651178bf90f5a75694`. **Retrieved:** 2026-11-24. **Last source check:** 2026-11-24.
+**Revision / release:** `b2c9a6116e9221d6cffa7f5ec04e084cdbf2a73c`. **Retrieved:** 2026-11-25. **Last source check:** 2026-11-25.
 
 **Publication:** public. Written by the notes' author; docs CC BY 4.0, tools MIT per the repo licences.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/em5-iii-notes-drawing.yaml) · Substantively reviewed: 2026-11-23.
+[Canonical record](../../records/sources/em5-iii-notes-drawing.yaml) · Substantively reviewed: 2026-11-25.

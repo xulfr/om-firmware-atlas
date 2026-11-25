@@ -103,7 +103,7 @@ Exact-build facts only: never apply an address to another build or body. Status:
 [d23]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00/docs/features/saved-settings-and-menu-rows.md#how-the-menu-rows-are-added
 [d24]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/firmware/shooting-sequencer.md#the-state-table
 [d25]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbb287c7e5f39f9e8d3b382eede5951d7ecb00/docs/features/saved-settings-and-menu-rows.md#where-the-code-goes-the-boot-lesson
-[d26]: https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/patches/focus-stacking-any-lens.md#the-function
+[d26]: https://github.com/nsud-dev/olympus-firmware-notes/blob/b2c9a6116e9221d6cffa7f5ec04e084cdbf2a73c/docs/patches/focus-stacking-any-lens.md#the-function
 [d27]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/hardware/memory-map.md#spare-space-for-our-code
 [d28]: https://github.com/nsud-dev/olympus-firmware-notes/blob/c6eaab8f0eaaa21ca2a1af0f4990b79c5b1ddd7a/docs/hardware/osd-drawing.md#3-the-draw-calls
 [d29]: https://github.com/nsud-dev/olympus-firmware-notes/blob/3fcbefbd4c44894ca134cdb06c6cd1cd1bbfaa22/docs/features/wifi-debug-shell.md#how-it-works-e-m5-iii-17

@@ -4,14 +4,14 @@
 
 Addresses, hooks and test history for the OM-3 1.1 port, with camera-proven sites marked.
 
-**[Open original source](https://github.com/androidfanman/caduceus-om3/blob/78a809e163d96f468d796c7f5b42a9846e43b19b/docs/DEVELOPER_NOTES.md)**
+**[Open original source](https://github.com/androidfanman/caduceus-om3/blob/d14f4e3dcc77a22385b3c7d36d65189c000dd175/docs/DEVELOPER_NOTES.md)**
 
 **Kind:** github file. **Locator:** docs/DEVELOPER_NOTES.md: Proven on the camera.
 
-**Revision / release:** `78a809e163d96f468d796c7f5b42a9846e43b19b`. **Retrieved:** 2026-11-18. **Last source check:** 2026-11-18.
+**Revision / release:** `d14f4e3dcc77a22385b3c7d36d65189c000dd175`. **Retrieved:** 2026-11-25. **Last source check:** 2026-11-25.
 
 **Publication:** public. Named addresses and short attributed notes only; derivations and code stay upstream.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/om3.yaml) · Substantively reviewed: 2026-11-18.
+[Canonical record](../../records/sources/om3.yaml) · Substantively reviewed: 2026-11-25.
