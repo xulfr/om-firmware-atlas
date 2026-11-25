@@ -2,16 +2,16 @@
 
 # E-M1 III mod pack
 
-The builder's 19 mods with descriptions and camera notes, test builds 1.745 and 1.746, and the SHA-256 it requires of stock 1.6.
+The builder's 21 mods on the main branch after mod-builder-1.19, with descriptions and camera notes, and the SHA-256 it requires of stock 1.6.
 
-**[Open original source](https://github.com/dfeldt91-blip/E-M1-Miii/blob/ae16f3d2836e7273164c7cd3497237117c8b9ff9/builder/mods.json)**
+**[Open original source](https://github.com/dfeldt91-blip/E-M1-Miii/blob/4f68a41c2817c11ad0af6432bfa16b3e6e4a5d4d/builder/mods.json)**
 
 **Kind:** github file. **Locator:** builder/mods.json: firmware and each mod's title, description and camera fields.
 
-**Revision / release:** `ae16f3d2836e7273164c7cd3497237117c8b9ff9`. **Retrieved:** 2026-11-21. **Last source check:** 2026-11-21.
+**Revision / release:** `4f68a41c2817c11ad0af6432bfa16b3e6e4a5d4d`. **Retrieved:** 2026-11-25. **Last source check:** 2026-11-25.
 
 **Publication:** public. Summarised metadata only; no edit lists, code or firmware imported.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/em1-iii-mod-builder.yaml) · Substantively reviewed: 2026-11-21.
+[Canonical record](../../records/sources/em1-iii-mod-builder.yaml) · Substantively reviewed: 2026-11-25.

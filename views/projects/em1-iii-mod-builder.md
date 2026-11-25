@@ -29,7 +29,7 @@ Pick firmware mods for the E-M1 Mark III and build your own update file.
 
 [Before you install: risks and recovery](../../docs/before-you-install.md)
 
-**For this camera:** 20 features, including Panorama 65:24, Multiple Exposure with 3 and 4 frames and Focus stacking with any lens.
+**For this camera:** 21 features, including Panorama 65:24, Multiple Exposure with 3 and 4 frames and Focus stacking with any lens.
 { .card-for }
 
 **Get it:** [mod-builder-1.19](https://github.com/dfeldt91-blip/E-M1-Miii/releases/tag/mod-builder-1.19), 22 Nov 2026 · [Install guide](https://github.com/dfeldt91-blip/E-M1-Miii/blob/ba87b5f4358b6ee518cf133676d69698db6ef83e/builder/README.md)
@@ -113,6 +113,18 @@ Key Line II gets grey toning instead of colour. Worked on the camera (1.5 build)
 { .feature-head }
 
 The arrow keys can take 25 functions for stills and 15 for movies. Not tested on the camera.
+
+[OM-D E-M1 Mark III](../cameras/em1-iii.md)
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
+**Picture Mode on a custom button** <span class="pill pill-testing">Testing</span>
+{ .feature-head }
+
+Adds Picture Mode to Button Function; the button cycles i-Enhance, Vivid, Natural, Muted, Portrait, Monochrome and Custom. The author reports the five-profile version worked in test 1.755; the Portrait and Custom additions await a camera re-test. On the main branch, not in a release yet.
 
 [OM-D E-M1 Mark III](../cameras/em1-iii.md)
 { .card-meta }
@@ -357,7 +369,7 @@ Unofficial; flashing modified firmware is at your own risk. The apps are unsigne
 
 ## Research notes
 
-The latest packaged builder is mod-builder-1.19 for stock firmware 1.6. The project is active again. On 2026-11-20 the author had declared the project ended; on 2026-11-21 the README says it continues and release mod-builder-1.18 adds Fill In next to Manual flash in handheld High Res (test 1.745). A fix for the missing Multiple Exposure overlay after shots 2 and 3 is in test 1.746, awaiting a camera result.
+The latest packaged builder is mod-builder-1.19 for stock firmware 1.6. The project is active again. On 2026-11-20 the author had declared the project ended; on 2026-11-21 the README says it continues and release mod-builder-1.18 adds Fill In next to Manual flash in handheld High Res (test 1.745). A fix for the missing Multiple Exposure overlay after shots 2 and 3 is in test 1.746, awaiting a camera result. On the main branch after 1.19, a new Picture Mode button mod and a Monochrome II change that removes and disables the Star Light art effect await camera re-tests; neither is in a release yet.
 
 - [Multiple Exposure shows no preview between frames 2–3 and 3–4; the 3- and 4-frame result itself is correct. Test 1.746 changes the overlay refresh to every shot but the last; awaiting a camera result.](https://github.com/dfeldt91-blip/E-M1-Miii/blob/ae16f3d2836e7273164c7cd3497237117c8b9ff9/docs/FINDINGS.md) — needs evidence; owner: not assigned here.
 
@@ -372,4 +384,4 @@ The latest packaged builder is mod-builder-1.19 for stock firmware 1.6. The proj
 - [E-M1 III Mod Builder mod-builder-1.19](../sources/em1m3.release119.md)
 - [E-M1 III mod pack at builder 1.19](../sources/em1m3.mods119.md)
 
-[Canonical record](../../records/projects/em1-iii-mod-builder.yaml) · Substantively reviewed: 2026-11-22.
+[Canonical record](../../records/projects/em1-iii-mod-builder.yaml) · Substantively reviewed: 2026-11-25.

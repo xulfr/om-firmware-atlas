@@ -9,7 +9,7 @@ How the E-M5 Mark III firmware works, and how much of its design newer bodies sh
 [Project home](https://github.com/nsud-dev/olympus-firmware-notes){ .btn .btn-primary }
 [Ask or report issues](https://github.com/nsud-dev/olympus-firmware-notes/issues){ .btn .btn-ghost }
 [Notes website](https://nsud-dev.github.io/olympus-firmware-notes/){ .btn .btn-ghost }
-[Firmware guides](https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/guides/README.md){ .btn .btn-ghost }
+[Firmware guides](https://github.com/nsud-dev/olympus-firmware-notes/blob/b2c9a6116e9221d6cffa7f5ec04e084cdbf2a73c/docs/guides/README.md){ .btn .btn-ghost }
 [Overview of everything studied](https://github.com/nsud-dev/olympus-firmware-notes/blob/main/docs/overview.md){ .btn .btn-ghost }
 [Gotchas](https://github.com/nsud-dev/olympus-firmware-notes/blob/main/docs/reference/gotchas.md){ .btn .btn-ghost }
 
@@ -27,7 +27,7 @@ How the E-M5 Mark III firmware works, and how much of its design newer bodies sh
 **For this camera:** Notes and tools only; no builds are published. The author's own test builds on one E-M5 III cover focus stacking with any lens, Live ND and its live-view preview ported from the OM-5 (research closed 2026-11-24), a Color / Monochrome Profile editor, card mods loaded from the SD card, display view assists, and a parked USB webcam. Drawing your own screens and GPU graphics is so far shown in the om-emu emulator only.
 { .card-for }
 
-**Get it:** [Firmware guides](https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/guides/README.md)
+**Get it:** [Firmware guides](https://github.com/nsud-dev/olympus-firmware-notes/blob/b2c9a6116e9221d6cffa7f5ec04e084cdbf2a73c/docs/guides/README.md)
 { .card-get }
 
 [Mods and installation](../cameras/em5-iii.md) · [Test results](../research/em5-iii.md#evidence)
@@ -41,7 +41,7 @@ How the E-M5 Mark III firmware works, and how much of its design newer bodies sh
 **For this camera:** Notes read from the stock OM-5 1.2 firmware: the power and watchdog block, the E-M5 III and OM-5 settings map, how the OM-5 takes a hand-held High Res shot, the shared hardware, and the histogram and open gate tables it shares with the E-M5 III. No builds or tests on this camera.
 { .card-for }
 
-**Get it:** [Firmware guides](https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/guides/README.md)
+**Get it:** [Firmware guides](https://github.com/nsud-dev/olympus-firmware-notes/blob/b2c9a6116e9221d6cffa7f5ec04e084cdbf2a73c/docs/guides/README.md)
 { .card-get }
 
 [Mods and installation](../cameras/om5.md) · [Test results](../research/om5.md#evidence)
@@ -55,7 +55,7 @@ How the E-M5 Mark III firmware works, and how much of its design newer bodies sh
 **For this camera:** Notes read from the stock OM-5 II 1.1 firmware: the hardware it shares with the E-M5 III and OM-5, and where it differs. No builds or tests on this camera.
 { .card-for }
 
-**Get it:** [Firmware guides](https://github.com/nsud-dev/olympus-firmware-notes/blob/c35661d826c66971073920651178bf90f5a75694/docs/guides/README.md)
+**Get it:** [Firmware guides](https://github.com/nsud-dev/olympus-firmware-notes/blob/b2c9a6116e9221d6cffa7f5ec04e084cdbf2a73c/docs/guides/README.md)
 { .card-get }
 
 [Mods and installation](../cameras/om5-ii.md) · [Test results](../research/om5-ii.md#evidence)

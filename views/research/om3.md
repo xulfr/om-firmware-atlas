@@ -39,6 +39,10 @@ Availability · published release
 
 Results belong to the named project and package. Emulator output does not establish physical-camera behaviour.
 
+### Other observations
+
+- **Emulator test · reported working** · [OM-3 1.1 in om-emu: Caduceus v0.30.4-alpha to v0.40.2 pass the v0.30.3 flow](../evidence/om3-emu-v0304-to-v0402-flow.md)
+
 ## Firmware and technical reference { #platform }
 
 ### om3 firmware 1.1, build 1100

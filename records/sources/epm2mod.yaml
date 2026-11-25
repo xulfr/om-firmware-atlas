@@ -247,6 +247,7 @@ records:
   upstream_repo: cfu288/EPM2Mod
   revision: 475486f4d581d090162ea9f733fb31e05bc6e08a
   locator: docs/user/install.md
+  tracked_ref: v2026.11.20
   retrieved_on: '2026-11-22'
   last_checked: '2026-11-22'
   publication: public

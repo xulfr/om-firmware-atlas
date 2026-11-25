@@ -19,13 +19,13 @@ records:
   - colour
   - tooling
   - interfaces
-  last_reviewed: '2026-11-22'
+  last_reviewed: '2026-11-25'
   url: https://github.com/dfeldt91-blip/E-M1-Miii
   kind: mod
   camera_ids:
   - camera.em1-iii
   contribution_home: https://github.com/dfeldt91-blip/E-M1-Miii
-  status_summary: The latest packaged builder is mod-builder-1.19 for stock firmware 1.6. The project is active again. On 2026-11-20 the author had declared the project ended; on 2026-11-21 the README says it continues and release mod-builder-1.18 adds Fill In next to Manual flash in handheld High Res (test 1.745). A fix for the missing Multiple Exposure overlay after shots 2 and 3 is in test 1.746, awaiting a camera result.
+  status_summary: The latest packaged builder is mod-builder-1.19 for stock firmware 1.6. The project is active again. On 2026-11-20 the author had declared the project ended; on 2026-11-21 the README says it continues and release mod-builder-1.18 adds Fill In next to Manual flash in handheld High Res (test 1.745). A fix for the missing Multiple Exposure overlay after shots 2 and 3 is in test 1.746, awaiting a camera result. On the main branch after 1.19, a new Picture Mode button mod and a Monochrome II change that removes and disables the Star Light art effect await camera re-tests; neither is in a release yet.
   related_projects:
   - project.caduceus-ep7
   - project.oly-fw-analysis
@@ -82,6 +82,15 @@ records:
     source_ref: source.em1m3.mods
   - name: 'More arrow-key functions'
     summary: 'The arrow keys can take 25 functions for stills and 15 for movies. Not tested on the camera.'
+    camera_ids:
+    - camera.em1-iii
+    status: testing
+    since: null
+    source_ref: source.em1m3.mods
+  - name: Picture Mode on a custom button
+    summary: Adds Picture Mode to Button Function; the button cycles i-Enhance, Vivid, Natural, Muted, Portrait,
+      Monochrome and Custom. The author reports the five-profile version worked in test 1.755; the Portrait and
+      Custom additions await a camera re-test. On the main branch, not in a release yet.
     camera_ids:
     - camera.em1-iii
     status: testing

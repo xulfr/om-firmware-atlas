@@ -70,14 +70,14 @@ records:
   summary: Planned, testing, parked and fixed work as the owner describes it.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-17'
-  url: https://github.com/androidfanman/caduceus-om3/blob/78a809e163d96f468d796c7f5b42a9846e43b19b/ROADMAP.md
+  last_reviewed: '2026-11-25'
+  url: https://github.com/androidfanman/caduceus-om3/blob/d14f4e3dcc77a22385b3c7d36d65189c000dd175/ROADMAP.md
   source_kind: github-file
   upstream_repo: androidfanman/caduceus-om3
-  revision: 78a809e163d96f468d796c7f5b42a9846e43b19b
+  revision: d14f4e3dcc77a22385b3c7d36d65189c000dd175
   locator: 'ROADMAP.md: colour profiles, bugs, lenses and focus'
-  retrieved_on: '2026-11-17'
-  last_checked: '2026-11-17'
+  retrieved_on: '2026-11-25'
+  last_checked: '2026-11-25'
   published_on: null
   publication: public
   reuse_note: Attributed summary; statuses are the owner's own.
@@ -104,14 +104,14 @@ records:
   summary: Addresses, hooks and test history for the OM-3 1.1 port, with camera-proven sites marked.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-18'
-  url: https://github.com/androidfanman/caduceus-om3/blob/78a809e163d96f468d796c7f5b42a9846e43b19b/docs/DEVELOPER_NOTES.md
+  last_reviewed: '2026-11-25'
+  url: https://github.com/androidfanman/caduceus-om3/blob/d14f4e3dcc77a22385b3c7d36d65189c000dd175/docs/DEVELOPER_NOTES.md
   source_kind: github-file
   upstream_repo: androidfanman/caduceus-om3
-  revision: 78a809e163d96f468d796c7f5b42a9846e43b19b
+  revision: d14f4e3dcc77a22385b3c7d36d65189c000dd175
   locator: 'docs/DEVELOPER_NOTES.md: Proven on the camera'
-  retrieved_on: '2026-11-18'
-  last_checked: '2026-11-18'
+  retrieved_on: '2026-11-25'
+  last_checked: '2026-11-25'
   published_on: null
   publication: public
   reuse_note: Named addresses and short attributed notes only; derivations and code stay upstream.
@@ -121,14 +121,14 @@ records:
   summary: 'Caduceus OM-3 lab notebook: camera, emulator and static findings per issue.'
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-18'
-  url: https://github.com/androidfanman/caduceus-om3/blob/e32363a01aef5f0119e750f35bc96644e6d9b4eb/research/NOTES.md
+  last_reviewed: '2026-11-25'
+  url: https://github.com/androidfanman/caduceus-om3/blob/d14f4e3dcc77a22385b3c7d36d65189c000dd175/research/NOTES.md
   source_kind: github-file
   upstream_repo: androidfanman/caduceus-om3
-  revision: e32363a01aef5f0119e750f35bc96644e6d9b4eb
+  revision: d14f4e3dcc77a22385b3c7d36d65189c000dd175
   locator: research/NOTES.md
-  retrieved_on: '2026-11-18'
-  last_checked: '2026-11-18'
+  retrieved_on: '2026-11-25'
+  last_checked: '2026-11-25'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source

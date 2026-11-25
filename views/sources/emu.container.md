@@ -4,14 +4,14 @@
 
 Vendor API acquisition and address notation.
 
-**[Open original source](https://github.com/flatpanda/om-emu/blob/0819080133f6ca7edd455dfdfa209bd9eed291cc/docs/firmware-container.md)**
+**[Open original source](https://github.com/flatpanda/om-emu/blob/cafd92d94126006b3099e360f188bc2bf5493c31/docs/firmware-container.md)**
 
 **Kind:** github file. **Locator:** docs/firmware-container.md.
 
-**Revision / release:** `0819080133f6ca7edd455dfdfa209bd9eed291cc`. **Retrieved:** 2026-11-17. **Last source check:** 2026-11-17.
+**Revision / release:** `cafd92d94126006b3099e360f188bc2bf5493c31`. **Retrieved:** 2026-11-25. **Last source check:** 2026-11-25.
 
 **Publication:** public. Linked and synthesised; upstream material retains its own terms.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/emu.yaml) · Substantively reviewed: 2026-11-17.
+[Canonical record](../../records/sources/emu.yaml) · Substantively reviewed: 2026-11-25.

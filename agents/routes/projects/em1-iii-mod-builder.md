@@ -4,11 +4,11 @@
 
 Mod builder for E-M1 III firmware 1.6; after a short pause the author reports the project continuing, with Fill and Manual flash in handheld High Res in 1.18.
 
-[Contribution home](https://github.com/dfeldt91-blip/E-M1-Miii). The latest packaged builder is mod-builder-1.19 for stock firmware 1.6. The project is active again. On 2026-11-20 the author had declared the project ended; on 2026-11-21 the README says it continues and release mod-builder-1.18 adds Fill In next to Manual flash in handheld High Res (test 1.745). A fix for the missing Multiple Exposure overlay after shots 2 and 3 is in test 1.746, awaiting a camera result.
+[Contribution home](https://github.com/dfeldt91-blip/E-M1-Miii). The latest packaged builder is mod-builder-1.19 for stock firmware 1.6. The project is active again. On 2026-11-20 the author had declared the project ended; on 2026-11-21 the README says it continues and release mod-builder-1.18 adds Fill In next to Manual flash in handheld High Res (test 1.745). A fix for the missing Multiple Exposure overlay after shots 2 and 3 is in test 1.746, awaiting a camera result. On the main branch after 1.19, a new Picture Mode button mod and a Monochrome II change that removes and disables the Star Light art effect await camera re-tests; neither is in a release yet.
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [em1-iii-mod-builder.yaml](../../../records/projects/em1-iii-mod-builder.yaml) | Project scope, related work and contribution destination | 11,184 | ~2,796 |
-| [em1-iii-mod-builder.yaml](../../../records/sources/em1-iii-mod-builder.yaml) | Find the relevant source/observation ID; use bounded reads | 5,873 | ~1,469 |
+| [em1-iii-mod-builder.yaml](../../../records/projects/em1-iii-mod-builder.yaml) | Project scope, related work and contribution destination | 11,839 | ~2,960 |
+| [em1-iii-mod-builder.yaml](../../../records/sources/em1-iii-mod-builder.yaml) | Find the relevant source/observation ID; use bounded reads | 5,919 | ~1,480 |
 
 Follow only relevant camera/topic routes. Upstream policies apply to work there; Atlas does not assign ownership across projects.

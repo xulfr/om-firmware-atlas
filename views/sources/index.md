@@ -19,7 +19,7 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [Author's note on project status](em1m3.author-note.md) | The author asked on 2026-11-20 that the Atlas record the project as inactive but open to continue, functional, with one known preview issue. Historical: the README of 2026-11-21 says the project continues. |
 | [E-M1 III mod builder guide](em1m3.builder.md) | What the builder does, the mod list with the owner's camera status per mod, install steps and credits. |
 | [E-M1 III firmware findings](em1m3.findings.md) | Research notes behind the mods, including Multiple Exposure frame counts tried on the camera and the overlay fix in test 1.746. |
-| [E-M1 III mod pack](em1m3.mods.md) | The builder's 19 mods with descriptions and camera notes, test builds 1.745 and 1.746, and the SHA-256 it requires of stock 1.6. |
+| [E-M1 III mod pack](em1m3.mods.md) | The builder's 21 mods on the main branch after mod-builder-1.19, with descriptions and camera notes, and the SHA-256 it requires of stock 1.6. |
 | [E-M1 III mod pack at builder 1.19](em1m3.mods119.md) | Monochrome II, the author’s camera report for its profile and labels, and the Shade effect mitigation awaiting a camera retest. |
 | [E-M1 III repository status note](em1m3.readme.md) | The author states the project continues, now worked on locally, and that the newest version adds Fill Flash to handheld High Res. Replaces the 2026-11-20 inactive note. |
 | [E-M1 III Mod Builder mod-builder-1.19](em1m3.release119.md) | Packaged builder for E-M1 Mark III firmware 1.6, with Windows and macOS assets. |
@@ -73,7 +73,7 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [USB webcam](em5n.webcam.md) | UVC webcam port attempt, with what passed and what failed on the camera. |
 | [Stock Wi-Fi debug shell](em5n.wifi-shell.md) | Card file that starts the debug network and user shell; camera test and trace use. |
 | [OM-Emu architecture](emu.architecture.md) | Harness-driven startup, model translation and verification, including structured comparison results. |
-| [OM-Emu study of Caduceus OM-3](emu.caduceus-om3.md) | OM-Emu's checks of Caduceus OM-3's E147 claims against its own image and lab. |
+| [OM-Emu study of Caduceus OM-3](emu.caduceus-om3.md) | OM-Emu's checks of Caduceus OM-3's E147 claims against its own image and lab, and its run of releases v0.30.4-alpha to v0.40.2. |
 | [Acquisition and containers](emu.container.md) | Vendor API acquisition and address notation. |
 | [OM-1 processor roles](emu.cores.md) | Scoped static analysis of several cores and external processors. |
 | [OM-Emu model check on 19 November](emu.modelcheck-nov19.md) | Reported coverage for 18 ports, native card support and EVF display limits. |

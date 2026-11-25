@@ -2,16 +2,16 @@
 
 # OM-Emu study of Caduceus OM-3
 
-OM-Emu's checks of Caduceus OM-3's E147 claims against its own image and lab.
+OM-Emu's checks of Caduceus OM-3's E147 claims against its own image and lab, and its run of releases v0.30.4-alpha to v0.40.2.
 
-**[Open original source](https://github.com/flatpanda/om-emu/blob/750ad39fec02157897c09e1c520f042d95fdae4e/analysis/caduceus-om3/README.md)**
+**[Open original source](https://github.com/flatpanda/om-emu/blob/cafd92d94126006b3099e360f188bc2bf5493c31/analysis/caduceus-om3/README.md)**
 
 **Kind:** github file. **Locator:** analysis/caduceus-om3/README.md.
 
-**Revision / release:** `750ad39fec02157897c09e1c520f042d95fdae4e`. **Retrieved:** 2026-11-18. **Last source check:** 2026-11-18.
+**Revision / release:** `cafd92d94126006b3099e360f188bc2bf5493c31`. **Retrieved:** 2026-11-25. **Last source check:** 2026-11-25.
 
 **Publication:** public. Linked and synthesised; upstream material retains its own terms.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/emu.yaml) · Substantively reviewed: 2026-11-18.
+[Canonical record](../../records/sources/emu.yaml) · Substantively reviewed: 2026-11-25.

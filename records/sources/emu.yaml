@@ -6,14 +6,14 @@ records:
   summary: Model ports, patch overlays and named stand-ins.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-17'
-  url: https://github.com/flatpanda/om-emu/blob/0819080133f6ca7edd455dfdfa209bd9eed291cc/README.md
+  last_reviewed: '2026-11-25'
+  url: https://github.com/flatpanda/om-emu/blob/cafd92d94126006b3099e360f188bc2bf5493c31/README.md
   source_kind: github-file
   upstream_repo: flatpanda/om-emu
-  revision: 0819080133f6ca7edd455dfdfa209bd9eed291cc
+  revision: cafd92d94126006b3099e360f188bc2bf5493c31
   locator: README.md
-  retrieved_on: '2026-11-17'
-  last_checked: '2026-11-17'
+  retrieved_on: '2026-11-25'
+  last_checked: '2026-11-25'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -22,14 +22,14 @@ records:
   summary: Vendor API acquisition and address notation.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-17'
-  url: https://github.com/flatpanda/om-emu/blob/0819080133f6ca7edd455dfdfa209bd9eed291cc/docs/firmware-container.md
+  last_reviewed: '2026-11-25'
+  url: https://github.com/flatpanda/om-emu/blob/cafd92d94126006b3099e360f188bc2bf5493c31/docs/firmware-container.md
   source_kind: github-file
   upstream_repo: flatpanda/om-emu
-  revision: 0819080133f6ca7edd455dfdfa209bd9eed291cc
+  revision: cafd92d94126006b3099e360f188bc2bf5493c31
   locator: docs/firmware-container.md
-  retrieved_on: '2026-11-17'
-  last_checked: '2026-11-17'
+  retrieved_on: '2026-11-25'
+  last_checked: '2026-11-25'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -54,14 +54,14 @@ records:
   summary: Scoped static analysis of several cores and external processors.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-17'
-  url: https://github.com/flatpanda/om-emu/blob/0819080133f6ca7edd455dfdfa209bd9eed291cc/docs/om1-cores-spec.md
+  last_reviewed: '2026-11-25'
+  url: https://github.com/flatpanda/om-emu/blob/cafd92d94126006b3099e360f188bc2bf5493c31/docs/om1-cores-spec.md
   source_kind: github-file
   upstream_repo: flatpanda/om-emu
-  revision: 0819080133f6ca7edd455dfdfa209bd9eed291cc
+  revision: cafd92d94126006b3099e360f188bc2bf5493c31
   locator: docs/om1-cores-spec.md
-  retrieved_on: '2026-11-17'
-  last_checked: '2026-11-17'
+  retrieved_on: '2026-11-25'
+  last_checked: '2026-11-25'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -85,17 +85,17 @@ records:
 - type: source
   id: source.emu.caduceus-om3
   title: OM-Emu study of Caduceus OM-3
-  summary: OM-Emu's checks of Caduceus OM-3's E147 claims against its own image and lab.
+  summary: OM-Emu's checks of Caduceus OM-3's E147 claims against its own image and lab, and its run of releases v0.30.4-alpha to v0.40.2.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-18'
-  url: https://github.com/flatpanda/om-emu/blob/750ad39fec02157897c09e1c520f042d95fdae4e/analysis/caduceus-om3/README.md
+  last_reviewed: '2026-11-25'
+  url: https://github.com/flatpanda/om-emu/blob/cafd92d94126006b3099e360f188bc2bf5493c31/analysis/caduceus-om3/README.md
   source_kind: github-file
   upstream_repo: flatpanda/om-emu
-  revision: 750ad39fec02157897c09e1c520f042d95fdae4e
+  revision: cafd92d94126006b3099e360f188bc2bf5493c31
   locator: analysis/caduceus-om3/README.md
-  retrieved_on: '2026-11-18'
-  last_checked: '2026-11-18'
+  retrieved_on: '2026-11-25'
+  last_checked: '2026-11-25'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source

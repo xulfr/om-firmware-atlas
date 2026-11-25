@@ -36,6 +36,10 @@ Individual observations from physical cameras, emulators and code inspection, wi
 - [E-PM2 films-twelve-off: owner camera test](epm2-films-twelve-off.md) · Camera test · reported working · 21 Nov 2026
 - [E-PM2 films-look-exif: owner camera test](epm2-films-look-exif.md) · Camera test · reported working · 20 Nov 2026
 
+## OM-3
+
+- [OM-3 1.1 in om-emu: Caduceus v0.30.4-alpha to v0.40.2 pass the v0.30.3 flow](om3-emu-v0304-to-v0402-flow.md) · Emulator test · reported working · 22 Nov 2026
+
 ## OM-5
 
 - [Original OM-5: restoration after that failure](om5-prealpha1-restore.md) · Camera test · reported working · 17 Nov 2026
