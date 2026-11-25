@@ -5,7 +5,7 @@ This plan records the bootstrap scope and what remains. The bootstrap section be
 ## Initial delivery
 
 - Entry contract, shared Claude pointer, three short roles and source/status/freshness workflows.
-- Seven record types: the original six plus community venues, with schemas and scoped-reference checks. A technical `reference` type followed ([0006](decisions/0006-technical-reference.md), [0007](decisions/0007-build-facts.md)), making eight.
+- Seven record types: the original six plus community venues, with schemas and scoped-reference checks. A technical `reference` type followed ([0006](decisions/0006-technical-reference.md), [0007](decisions/0007-build-facts.md), [0008](decisions/0008-hazard-symptoms.md)), making eight.
 - A bounded initial corpus spanning the two OM-5 generations, OM-3, E-P7, PEN-F and an E-M10 IV discovery route.
 - Small shared guides that route into existing technical homes rather than mirror their notebooks.
 - Generated camera/project/evidence/source/community pages and agent route shards with reading costs.

@@ -13,6 +13,8 @@ Firmware paths are 8.3 only. Write from a cached heap buffer, and only from task
 
 > **What happens:** Empty (0-byte) log files.
 
+**Symptoms:** [Wrong picture, screen or card file](index.md#wrong-output)
+
 ## Observations
 
 - **Physical camera** ([Oly Firmware Notes and Mods (E-M5 Mark III)](../projects/em5-iii-notes.md)): Early E-M5 III card logs came out empty until names were 8.3 and the buffer was cached heap memory. Source: [Gotchas](../sources/em5n.gotchas.md).

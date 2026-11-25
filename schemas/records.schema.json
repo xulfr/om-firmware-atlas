@@ -190,6 +190,7 @@
           "value": {"type": "string", "minLength": 1, "maxLength": 120},
           "note": {"type": "string", "minLength": 1, "maxLength": 600},
           "consequence": {"type": "string", "minLength": 1, "maxLength": 300},
+          "symptoms": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^symptom\\.[a-z0-9.-]+$"}},
           "observations": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false,
             "required": ["method", "source_ref", "summary"], "properties": {
               "method": {"enum": ["static-analysis", "emulator", "physical-camera"]},

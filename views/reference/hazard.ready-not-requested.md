@@ -13,6 +13,8 @@ Test the word the firmware's own wait uses: OM-5 Mark II 0xa26e2694, not 0xa26e2
 
 > **What happens:** Hooks reached early in boot may call code or data that is not initialised yet.
 
+**Symptoms:** [Fails to start, restarts or loops at power-on](index.md#start-failure)
+
 ## Observations
 
 - **Static analysis** ([Caduceus for OM-5](../projects/caduceus-om5.md)): E148 guards tested decoder submission; corrected to completed initialisation. Source: [OM-5 Mark II startup readiness correction](../sources/om5.startup-fix.md).

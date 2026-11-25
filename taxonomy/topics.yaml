@@ -54,3 +54,11 @@ traits:
   trait.firmware-blocks: {title: Firmware blocks, topic: platform}
   trait.main-compression: {title: Main program compression, topic: platform}
   trait.wifi-chip: {title: Wi-Fi chip, topic: platform}
+# What a hazard looks like on the camera, so a reader can go from a symptom to the known causes on any body.
+symptoms:
+  symptom.start-failure: {title: 'Fails to start, restarts or loops at power-on'}
+  symptom.slow-start: {title: Starts slowly}
+  symptom.restart-in-use: {title: Restarts or crashes when a feature runs}
+  symptom.freeze: {title: Freezes until the battery is pulled}
+  symptom.wrong-output: {title: 'Wrong picture, screen or card file'}
+  symptom.recovery-at-risk: {title: Firmware update or recovery at risk}

@@ -103,7 +103,7 @@ E139
 
 E139: one mod builder for firmware 1.6; owner camera reports per mod, no Atlas evidence imported.
 
-1 mod or port, 1 with a release · discovery only
+2 mods or ports, 2 with a release · discovery only
 { .card-meta }
 
 </div>
@@ -232,6 +232,30 @@ E-M10 IV target needs physical-camera evidence. [View the testing request](https
 
 <div class="release-item" markdown="1">
 
+**OM-5, OM-5 Mark II, OM-D E-M1 Mark III, PEN E-P7**
+{ .release-model }
+
+[db firmware / om-c-firmware](../projects/db-firmware.md) · [dbv0.4.6](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.6) · 25 Nov 2026
+{ .release-head }
+
+Lists Quasi-LUT for the OM-5, OM-5 Mark II, the Mark II-based OM-5, E-M1X, E-M1 Mark III and E-P7.
+
+</div>
+
+<div class="release-item" markdown="1">
+
+**PEN E-PM2**
+{ .release-model }
+
+[EPM2Mod](../projects/epm2mod.md) · [v2026.11.25-rc.1](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.25-rc.1) · 25 Nov 2026 <span class="pill pill-alpha">Pre-release</span>
+{ .release-head }
+
+Fixes the slow cold start of rc.3 to v2026.11.20 (GitHub issue 6) by moving the peaking code that live view reaches at start-up into early-loaded space (build cold-start-fix).
+
+</div>
+
+<div class="release-item" markdown="1">
+
 **OM-D E-M10 (Mark I)**
 { .release-model }
 
@@ -251,30 +275,6 @@ The RAW Data Edit Custom1 and Custom2 Sector, Hue, Sat and Light rows now change
 { .release-head }
 
 INFO hints on the colour wheel's H / S / L bar and the Split toning bar; Balance shows only its bar.
-
-</div>
-
-<div class="release-item" markdown="1">
-
-**OM-5**
-{ .release-model }
-
-[db firmware / om-c-firmware](../projects/db-firmware.md) · [dbv0.4.5](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.5) · 23 Nov 2026
-{ .release-head }
-
-Reports a fix for OI Share connections on the Mark II-based OM-5 port.
-
-</div>
-
-<div class="release-item" markdown="1">
-
-**PEN E-PM2**
-{ .release-model }
-
-[EPM2Mod](../projects/epm2mod.md) · [v2026.11.20](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20) · 23 Nov 2026
-{ .release-head }
-
-The final release of the 2026.11.20 installer, with the films, interval shooting, level gauge, MF focus peaking, Lowest S/S Setting and Debug Log of the release candidates.
 
 </div>
 

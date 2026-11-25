@@ -4,11 +4,11 @@
 
 Mod builder for E-M1 III firmware 1.6; after a short pause the author reports the project continuing, with Fill and Manual flash in handheld High Res in 1.18.
 
-[Contribution home](https://github.com/dfeldt91-blip/E-M1-Miii). The latest packaged builder is mod-builder-1.19 for stock firmware 1.6. The project is active again. On 2026-11-20 the author had declared the project ended; on 2026-11-21 the README says it continues and release mod-builder-1.18 adds Fill In next to Manual flash in handheld High Res (test 1.745). A fix for the missing Multiple Exposure overlay after shots 2 and 3 is in test 1.746, awaiting a camera result. On the main branch after 1.19, a new Picture Mode button mod and a Monochrome II change that removes and disables the Star Light art effect await camera re-tests; neither is in a release yet.
+[Contribution home](https://github.com/dfeldt91-blip/E-M1-Miii). The latest packaged builder is mod-builder-1.19 for stock firmware 1.6. The project is active again. On 2026-11-20 the author had declared the project ended; on 2026-11-21 the README says it continues and release mod-builder-1.18 adds Fill In next to Manual flash in handheld High Res (test 1.745). On the main branch after 1.19, a Picture Mode button mod and a Monochrome II change that removes and disables the Star Light art effect await camera re-tests. On 2026-11-24 the main branch also removed the Multiple Exposure and Caduceus film-look mods, folded White frame in Panorama into White Frame, fixed a restart with HDR in the linear Sharpness mod, and gave the builder a new layout. None of this is in a release yet.
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [em1-iii-mod-builder.yaml](../../../records/projects/em1-iii-mod-builder.yaml) | Project scope, related work and contribution destination | 11,839 | ~2,960 |
-| [em1-iii-mod-builder.yaml](../../../records/sources/em1-iii-mod-builder.yaml) | Find the relevant source/observation ID; use bounded reads | 5,919 | ~1,480 |
+| [em1-iii-mod-builder.yaml](../../../records/projects/em1-iii-mod-builder.yaml) | Project scope, related work and contribution destination | 12,281 | ~3,071 |
+| [em1-iii-mod-builder.yaml](../../../records/sources/em1-iii-mod-builder.yaml) | Find the relevant source/observation ID; use bounded reads | 6,702 | ~1,676 |
 
 Follow only relevant camera/topic routes. Upstream policies apply to work there; Atlas does not assign ownership across projects.

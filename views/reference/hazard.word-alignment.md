@@ -13,6 +13,8 @@ MN103 needs natural alignment for word and halfword access. Strings may need two
 
 > **What happens:** Camera restart on entering COLOR, while the emulator of the time accepted the reads.
 
+**Symptoms:** [Restarts or crashes when a feature runs](index.md#restart-in-use)
+
 ## Observations
 
 - **Physical camera** ([Olympus firmware research](../projects/oly-fw-analysis.md)): A two-byte-aligned UI style restarted the camera on entering COLOR; four-byte alignment fixed it. Source: [Validation reference](../sources/fishcu.validation.md).

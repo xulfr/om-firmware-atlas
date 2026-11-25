@@ -21,15 +21,15 @@ Model E101
 
 Film simulations, Interval shooting, Level gauge.
 
-**v2026.11.20** · Stock firmware 1.6
+**v2026.11.25-rc.1 (pre-release)**
 { .release-scope }
 
-No camera test recorded for this release. See the camera report for [peaking-mf](../evidence/epm2-peaking-mf.md).
+No camera test recorded for this release. See the camera report for [cold-start-fix](../evidence/epm2-cold-start-fix.md).
 
-Unofficial firmware, only for the Olympus PEN E-PM2.
+Unofficial pre-release for the Olympus PEN E-PM2. The owner's test bodies never showed the slow start.
 { .release-warning }
 
-[Install instructions & files](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20){ .btn .btn-primary }
+[Read release notes](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.25-rc.1)
 
 <details class="mod-details" markdown="1"><summary>Features and examples</summary>
 

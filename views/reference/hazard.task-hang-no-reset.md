@@ -13,6 +13,8 @@ Faults reset the camera in about a second, but a task waiting forever does not. 
 
 > **What happens:** Frozen camera that needs a battery pull.
 
+**Symptoms:** [Freezes until the battery is pulled](index.md#freeze)
+
 ## Observations
 
 - **Static analysis** ([Oly Firmware Notes and Mods (E-M5 Mark III)](../projects/em5-iii-notes.md)): Watchdog kick task and reset path read from the code. Source: [E-M5 III boot and section loading](../sources/em5n.boot.md).

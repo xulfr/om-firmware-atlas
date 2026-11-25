@@ -34,12 +34,39 @@ Unofficial firmware builder. The apps are unsigned.
 <details class="mod-details" markdown="1"><summary>Features and examples</summary>
 
 - **Panorama 65:24.** Replaces the 7:6 aspect with 65:24 in the menu, live-view frame, AF areas and raw frame. Worked on the camera (1.5 build).
-- **Multiple Exposure with 3 and 4 frames.** Creates 3- and 4-frame multiple exposures correctly; the live preview is missing between frames 2–3 and 3–4 (fix in test 1.746, awaiting a camera result). Worked on the camera (1.5 build).
+- **Multiple Exposure with 3 and 4 frames.** Creates 3- and 4-frame multiple exposures correctly; the live preview is missing between frames 2–3 and 3–4. Worked on the camera (1.5 build). Removed from the main branch on 2026-11-24; still in mod-builder-1.19.
 - **Focus stacking with any lens.** Removes the lens check for in-camera focus stacking. Worked on the camera (1.5 build).
 
 </details>
 
 [Full project details](../projects/em1-iii-mod-builder.md#for-em1-iii)
+
+</section>
+
+<section class="model-panel" markdown="1">
+
+## db firmware / om-c-firmware { #db-firmware }
+
+v0.4.6 lists Quasi-LUT and most of a new user interface for this body, both beta. The notes give no test result.
+
+**dbv0.4.6**
+{ .release-scope }
+
+No camera test recorded for this release.
+
+Upstream calls this a beta. The notes give no test result, on a camera or in simulation, for these changes.
+{ .release-warning }
+
+[Read release notes](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.6)
+
+<details class="mod-details" markdown="1"><summary>Features and examples</summary>
+
+- **Quasi-LUT and DBLink.** Quasi-LUT with DBLink transfer. On OM-3, v0.4.3b adds power-cycle persistence for the on/off state and selected slot. v0.4.6 lists it for the OM-5, OM-5 Mark II, the Mark II-based OM-5, E-M1X, E-M1 Mark III and E-P7.
+- **New user interface on the E-M1 Mark III.** The Korean notes say most of a new user interface is ported to the E-M1 Mark III; the English notes call it a new UI port. No list of screens is given.
+
+</details>
+
+[Full project details](../projects/db-firmware.md#for-em1-iii)
 
 </section>
 

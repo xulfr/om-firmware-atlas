@@ -13,7 +13,7 @@ Pick firmware mods for the E-M1 Mark III and build your own update file.
 [Read the install guide](https://github.com/dfeldt91-blip/E-M1-Miii/blob/ba87b5f4358b6ee518cf133676d69698db6ef83e/builder/README.md){ .btn .btn-primary }
 [Project home](https://github.com/dfeldt91-blip/E-M1-Miii){ .btn .btn-ghost }
 [Ask or report issues](https://github.com/dfeldt91-blip/E-M1-Miii){ .btn .btn-ghost }
-[Builder guide](https://github.com/dfeldt91-blip/E-M1-Miii/blob/ae16f3d2836e7273164c7cd3497237117c8b9ff9/builder/README.md){ .btn .btn-ghost }
+[Builder guide](https://github.com/dfeldt91-blip/E-M1-Miii/blob/64ebb28d23e4d5aa11d3350774aa9c76a137fea0/builder/README.md){ .btn .btn-ghost }
 [Latest release](https://github.com/dfeldt91-blip/E-M1-Miii/releases/tag/mod-builder-1.19){ .btn .btn-ghost }
 
 </div>
@@ -42,15 +42,14 @@ Pick firmware mods for the E-M1 Mark III and build your own update file.
 
 ## About
 
-The author paused the project on 2026-11-20 and resumed it the next day, now working locally. They report the firmware functional; the one known issue, no Multiple Exposure preview between frames 2–3 and 3–4, has a fix in test. The 3- or 4-frame result itself is correct.
+The author paused the project on 2026-11-20 and resumed it the next day, now working locally. They report the firmware functional. The one known issue, no Multiple Exposure preview between frames 2–3 and 3–4, went away with the mod itself, removed from the main branch on 2026-11-24.
 
 The E-M1 III Mod Builder is a small Mac and Windows app. It downloads the official E-M1 Mark III firmware 1.6 from OM Digital Solutions' update server, checks its SHA-256, lets you tick the mods you want and writes an E1399999.BIN for the camera's card updater. The mods are stored as edit lists, so no OM firmware is kept in the app.
 
-The builder's mods cover a 65:24 Panorama aspect, 3- and 4-frame Multiple Exposure, focus stacking with any lens, High Res with flash and art filters, a linear Sharpness scale, Custom Modes in video, ISO-Auto down to 64, a 9-hour recording limit, extra Gradation curves, a plain white Frame effect, and film looks in Custom from Caduceus's recipes. Each mod's camera status is the owner's own; most were tried on the owner's camera in numbered test builds.
+The mods in mod-builder-1.19 cover a 65:24 Panorama aspect, 3- and 4-frame Multiple Exposure, focus stacking with any lens, High Res with flash and art filters, a linear Sharpness scale, Custom Modes in video, ISO-Auto down to 64, a 9-hour recording limit, extra Gradation curves, a plain white Frame effect, and film looks in Custom from Caduceus's recipes. Each mod's camera status is the owner's own; most were tried on the owner's camera in numbered test builds.
 
 ### What it's working towards
 
-- A live Multiple Exposure overlay after every shot but the last (test 1.746).
 - The author's list of unfinished ideas (100 % JPEG quality, 240 fps slow motion, loading looks from the card) is in the repository.
 
 ## Features
@@ -76,7 +75,7 @@ Replaces the 7:6 aspect with 65:24 in the menu, live-view frame, AF areas and ra
 **Multiple Exposure with 3 and 4 frames** <span class="pill pill-released">Available</span>
 { .feature-head }
 
-Creates 3- and 4-frame multiple exposures correctly; the live preview is missing between frames 2–3 and 3–4 (fix in test 1.746, awaiting a camera result). Worked on the camera (1.5 build).
+Creates 3- and 4-frame multiple exposures correctly; the live preview is missing between frames 2–3 and 3–4. Worked on the camera (1.5 build). Removed from the main branch on 2026-11-24; still in mod-builder-1.19.
 
 [OM-D E-M1 Mark III](../cameras/em1-iii.md)
 { .card-meta }
@@ -124,7 +123,7 @@ The arrow keys can take 25 functions for stills and 15 for movies. Not tested on
 **Picture Mode on a custom button** <span class="pill pill-testing">Testing</span>
 { .feature-head }
 
-Adds Picture Mode to Button Function; the button cycles i-Enhance, Vivid, Natural, Muted, Portrait, Monochrome and Custom. The author reports the five-profile version worked in test 1.755; the Portrait and Custom additions await a camera re-test. On the main branch, not in a release yet.
+Adds Picture Mode to the custom-button picker. The mod list of 2026-11-22 had the button cycle i-Enhance to Custom and a five-profile version working in test 1.755; the rewritten list of 2026-11-24 says it cycles through Art Filters and has no camera note. On the main branch, not in a release yet.
 
 [OM-D E-M1 Mark III](../cameras/em1-iii.md)
 { .card-meta }
@@ -172,7 +171,7 @@ The bottom-right Super Control Panel cell opens the main menu. Worked on the cam
 **Sharpness as a linear scale** <span class="pill pill-released">Available</span>
 { .feature-head }
 
-Sharpness −2 is off and +2 is the stock +2 strength, in even steps. Worked on the camera (test build 1.680).
+Sharpness −2 is off and +2 is the stock +2 strength, in even steps. Worked on the camera (test build 1.680). On the main branch after 1.19, a fix for a restart when HDR fires, which the mod list calls camera-tested.
 
 [OM-D E-M1 Mark III](../cameras/em1-iii.md)
 { .card-meta }
@@ -256,7 +255,7 @@ The Frame art effect becomes a plain white border, with a width setting. Worked 
 **White frame in Panorama** <span class="pill pill-released">Available</span>
 { .feature-head }
 
-White-border Frame masks for Panorama, where stock has none and froze. Worked on the camera (test build 1.665).
+White-border Frame masks for Panorama, where stock has none and froze. Worked on the camera (test build 1.665). On the main branch after 1.19 it is part of the White Frame mod.
 
 [OM-D E-M1 Mark III](../cameras/em1-iii.md)
 { .card-meta }
@@ -280,7 +279,7 @@ XPAN icons in the Super Control Panel option lists; the main cell still showed a
 **Film looks in Custom** <span class="pill pill-released">Available</span>
 { .feature-head }
 
-Custom becomes a film-look mode with six of Caduceus's film recipes picked in the builder. Worked on the camera (test build 1.691).
+Custom becomes a film-look mode with six of Caduceus's film recipes picked in the builder. Worked on the camera (test build 1.691). Removed from the main branch on 2026-11-24, with its Caduceus credit; still in mod-builder-1.19.
 
 [OM-D E-M1 Mark III](../cameras/em1-iii.md)
 { .card-meta }
@@ -369,9 +368,9 @@ Unofficial; flashing modified firmware is at your own risk. The apps are unsigne
 
 ## Research notes
 
-The latest packaged builder is mod-builder-1.19 for stock firmware 1.6. The project is active again. On 2026-11-20 the author had declared the project ended; on 2026-11-21 the README says it continues and release mod-builder-1.18 adds Fill In next to Manual flash in handheld High Res (test 1.745). A fix for the missing Multiple Exposure overlay after shots 2 and 3 is in test 1.746, awaiting a camera result. On the main branch after 1.19, a new Picture Mode button mod and a Monochrome II change that removes and disables the Star Light art effect await camera re-tests; neither is in a release yet.
+The latest packaged builder is mod-builder-1.19 for stock firmware 1.6. The project is active again. On 2026-11-20 the author had declared the project ended; on 2026-11-21 the README says it continues and release mod-builder-1.18 adds Fill In next to Manual flash in handheld High Res (test 1.745). On the main branch after 1.19, a Picture Mode button mod and a Monochrome II change that removes and disables the Star Light art effect await camera re-tests. On 2026-11-24 the main branch also removed the Multiple Exposure and Caduceus film-look mods, folded White frame in Panorama into White Frame, fixed a restart with HDR in the linear Sharpness mod, and gave the builder a new layout. None of this is in a release yet.
 
-- [Multiple Exposure shows no preview between frames 2–3 and 3–4; the 3- and 4-frame result itself is correct. Test 1.746 changes the overlay refresh to every shot but the last; awaiting a camera result.](https://github.com/dfeldt91-blip/E-M1-Miii/blob/ae16f3d2836e7273164c7cd3497237117c8b9ff9/docs/FINDINGS.md) — needs evidence; owner: not assigned here.
+- [Multiple Exposure showed no preview between frames 2–3 and 3–4, with a fix in test 1.746. The author removed the mod from the main branch on 2026-11-24 without recording a camera result for that test.](https://github.com/dfeldt91-blip/E-M1-Miii/blob/ae16f3d2836e7273164c7cd3497237117c8b9ff9/docs/FINDINGS.md) — paused; owner: not assigned here.
 
 ## Sources and record
 
@@ -379,6 +378,7 @@ The latest packaged builder is mod-builder-1.19 for stock firmware 1.6. The proj
 - [Author's note on project status](../sources/em1m3.author-note.md)
 - [E-M1 III mod builder guide](../sources/em1m3.builder.md)
 - [E-M1 III mod pack](../sources/em1m3.mods.md)
+- [E-M1 III linear Sharpness patch tool](../sources/em1m3.sharp-off.md)
 - [E-M1 III firmware findings](../sources/em1m3.findings.md)
 - [E-M1 III Mod Builder releases](../sources/em1m3.releases.md)
 - [E-M1 III Mod Builder mod-builder-1.19](../sources/em1m3.release119.md)

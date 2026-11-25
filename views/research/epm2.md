@@ -39,6 +39,7 @@ Results belong to the named project and package. Emulator output does not establ
 
 ### Other observations
 
+- **Camera test · reported working** · [E-PM2 cold-start-fix owner camera test](../evidence/epm2-cold-start-fix.md)
 - **Camera test · reported working** · [E-PM2 films-twelve-off: owner camera test](../evidence/epm2-films-twelve-off.md)
 - **Camera test · reported working** · [E-PM2 peaking-mf owner camera test](../evidence/epm2-peaking-mf.md)
 
@@ -51,6 +52,9 @@ Results belong to the named project and package. Emulator output does not establ
 ### Build-specific reference
 
 - [Main CPU base, E-PM2 1.6](../reference/epm2-1600.main-cpu-base.md)
+- [Check hook targets in the built image, not in each patch's own bytes](../reference/hazard.check-built-image.md)
+- [Test start-up changes after a long power-off, not a quick restart](../reference/hazard.kept-ram-hides-cold-start.md)
+- [Only call code in a section that has already loaded](../reference/hazard.section-load-order.md)
 
 [Community and discussion](../../docs/community.md){ #talk }
 

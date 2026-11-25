@@ -17,6 +17,10 @@ records:
   - source.epm2.releases
   - source.epm2.v20261120
   - source.epm2.rc5
+  - source.epm2.rc6
+  - source.epm2.v20261125-rc1
+  - source.epm2.slow-boot
+  - source.epm2.camera-log-cold-start-fix
   - source.epm2.rc4
   - source.epm2.rc3
   - source.epm2.rc2
@@ -27,16 +31,17 @@ records:
   - patching
   - emulation
   - tooling
-  last_reviewed: '2026-11-24'
+  last_reviewed: '2026-11-25'
   url: https://github.com/cfu288/EPM2Mod
   kind: mod
   camera_ids:
   - camera.epm2
   contribution_home: https://github.com/cfu288/EPM2Mod/issues
-  status_summary: The latest release is the final v2026.11.20, after five release candidates. It includes continuous
-    focus peaking in MF and applies saved film simulations on startup. Spot metering at the AF point is camera-tested
-    by the owner on the main branch but is not in a release yet. A separate Panasonic aperture-ring probe is a developer debug
-    build. The project calls the firmware unofficial and at the user's own risk.
+  status_summary: The latest final release is v2026.11.20. On some bodies its cold start takes about 10 s (GitHub issue 6,
+    since rc.3). Pre-release v2026.11.25-rc.1 carries the project's fix, cold-start-fix, and adds spot metering at the
+    AF target. The owner's camera run of the fix passed, but the owner's bodies never showed the slow start; a
+    contributor's own build of the same change started at once on an affected body. A separate Panasonic aperture-ring
+    probe is a developer debug build. The project calls the firmware unofficial and at the user's own risk.
   related_projects:
   - project.om-emu
   - project.caduceus-ep7
@@ -66,7 +71,7 @@ records:
   - label: Panasonic aperture-ring debug build
     url: https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20-pana-ring-probe.1
   - label: Install guide
-    url: https://github.com/cfu288/EPM2Mod/blob/475486f4d581d090162ea9f733fb31e05bc6e08a/docs/user/install.md
+    url: https://github.com/cfu288/EPM2Mod/blob/3b6827892ed4f031a72acb7fec4496aaf9a29348/docs/user/install.md
   - label: Feasibility and limits
     url: https://github.com/cfu288/EPM2Mod/blob/f8f173d8b53d4370f85505cdec7be2b52d1ec830/docs/dev/feasibility.md
   - label: Landscape of Olympus mods
@@ -96,7 +101,7 @@ records:
     source_ref: source.epm2.feasibility
   - name: Focus peaking
     summary: From rc.3, focus peaking stays visible in normal live view in MF with any lens. MF Assist also shows
-      peaking when the focus ring turns.
+      peaking when the focus ring turns. 2026.11.25-rc.1 moves part of it so that cold starts are no longer slow.
     camera_ids: *id001
     status: beta
     since: v2026.11.20-rc.3
@@ -112,9 +117,9 @@ records:
       the selected AF target, as on the E-M5 II. Off by default; faces are ignored.
     camera_ids:
     - camera.epm2
-    status: testing
-    since: null
-    source_ref: source.epm2.feasibility
+    status: beta
+    since: v2026.11.25-rc.1
+    source_ref: source.epm2.v20261125-rc1
   - name: Debug Log
     summary: A Custom Menu J row, Off by default, that writes EPM2LOG.BIN to the card for developers.
     camera_ids: *id001
@@ -122,6 +127,32 @@ records:
     since: null
     source_ref: source.epm2.install
   releases:
+  - tag: v2026.11.25-rc.1
+    title: EPM2Mod 2026.11.25-rc.1
+    date: '2026-11-25'
+    url: https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.25-rc.1
+    prerelease: true
+    camera_ids:
+    - camera.epm2
+    highlights:
+    - Fixes the slow cold start of rc.3 to v2026.11.20 (GitHub issue 6) by moving the peaking code that live view reaches
+      at start-up into early-loaded space (build cold-start-fix).
+    - Adds spot metering at the touched AF point or the selected AF target, Off by default.
+    - The project's hook check now reads the built bytes, so it catches the jump that caused the slow start.
+    warning: Unofficial pre-release for the Olympus PEN E-PM2. The owner's test bodies never showed the slow start.
+    source_ref: source.epm2.v20261125-rc1
+  - tag: v2026.11.20-rc.6
+    title: EPM2Mod 2026.11.20-rc.6
+    date: '2026-11-23'
+    url: https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20-rc.6
+    prerelease: true
+    camera_ids:
+    - camera.epm2
+    highlights:
+    - Project-site changes (a Look Pack section and likes for films) and release tooling for named camera-tested builds.
+    - Lists the same firmware digest as v2026.11.20, so it has the same slow cold start.
+    warning: Unofficial pre-release for the Olympus PEN E-PM2.
+    source_ref: source.epm2.rc6
   - tag: v2026.11.20
     title: EPM2Mod 2026.11.20
     date: '2026-11-23'
@@ -137,7 +168,8 @@ records:
     - The final release of the 2026.11.20 installer, with the films, interval shooting, level gauge, MF focus peaking,
       Lowest S/S Setting and Debug Log of the release candidates.
     - A Mac disk image, or a zip for Windows and Linux, opens a page that writes the card.
-    warning: Unofficial firmware, only for the Olympus PEN E-PM2.
+    warning: Unofficial firmware, only for the Olympus PEN E-PM2. On some bodies a cold start after about a minute off
+      takes about 10 s (GitHub issue 6); the fix is in 2026.11.25-rc.1.
     source_ref: source.epm2.v20261120
   - tag: v2026.11.20-rc.5
     title: EPM2Mod 2026.11.20-rc.5

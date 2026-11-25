@@ -19,6 +19,8 @@ records:
     driven by the booted camera. Take FENYKL.BIN and FENYKL.TST off the card first. Other card loaders have their own
     rules for update cards.
   consequence: Plugin code runs while the body firmware is written; the effect has not been characterised.
+  symptoms:
+  - symptom.recovery-at-risk
   observations:
   - method: static-analysis
     source_ref: source.fenykl.sdk
@@ -45,6 +47,8 @@ records:
     keeps running. Check for the cable before each write batch, keep no file open, and stay off the card until
     power-off even after the cable is pulled, because the camera keeps its FAT state from before the session.
   consequence: Two FAT writers on one card; fenykl reports a plugin that overwrote its own log this way.
+  symptoms:
+  - symptom.wrong-output
   observations:
   - method: static-analysis
     source_ref: source.fenykl.sdk
@@ -71,6 +75,9 @@ records:
   note: On the E-M10 Mark II the kicker PER_WDT runs at priority 55, the level fenykl's loader task also uses. Wait
     with a task sleep or a queue, semaphore or flag wait in every task a payload creates.
   consequence: A watchdog reset; with a card payload that crashes at start, possibly on every boot.
+  symptoms:
+  - symptom.restart-in-use
+  - symptom.start-failure
   observations:
   - method: static-analysis
     source_ref: source.fenykl.sdk
@@ -98,6 +105,8 @@ records:
     patched. For an entry another core may run, keep the patched bytes in one aligned 8-byte line, patch while no
     other core can be inside it, and pass that core's calls through.
   consequence: A core with a stale line runs old code, or a half-written jump if the patched bytes span two lines.
+  symptoms:
+  - symptom.restart-in-use
   observations:
   - method: static-analysis
     source_ref: source.fenykl.sdk

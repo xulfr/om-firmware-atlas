@@ -16,7 +16,7 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 
 </div>
 
-**Type:** mod · **Camera details:** [OM-5](#for-om5), [OM-5 Mark II](#for-om5-ii), [OM-3](#for-om3), [PEN E-P7](#for-ep7), [PEN-F](#for-pen-f) · **Latest release:** [dbv0.4.5](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.5), 23 Nov 2026 · **Maintained by** [azqeurio](https://github.com/azqeurio)
+**Type:** mod · **Camera details:** [OM-5](#for-om5), [OM-5 Mark II](#for-om5-ii), [OM-3](#for-om3), [PEN E-P7](#for-ep7), [PEN-F](#for-pen-f), [OM-D E-M1 Mark III](#for-em1-iii) · **Latest release:** [dbv0.4.6](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.6), 25 Nov 2026 · **Maintained by** [azqeurio](https://github.com/azqeurio)
 { .facts }
 
 ## Cameras
@@ -30,7 +30,7 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 **For this camera:** Beta patches include Panasonic aperture rings, Korean menus and Hybrid Shutter. The Mark II-based port’s boot fix has only simulator and emulator results in the release notes.
 { .card-for }
 
-**Get it:** [dbv0.4.5](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.5), 23 Nov 2026. See the release notes for this model.
+**Get it:** [dbv0.4.6](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.6), 25 Nov 2026. See the release notes for this model.
 { .card-get }
 
 [Mods and installation](../cameras/om5.md) · [Test results](../research/om5.md#evidence)
@@ -46,7 +46,7 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 **For this camera:** Korean menus and Hybrid Shutter, both beta.
 { .card-for }
 
-**Get it:** [dbv0.4.4b](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.4b), 22 Nov 2026. See the release notes for this model.
+**Get it:** [dbv0.4.6](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.6), 25 Nov 2026. See the release notes for this model.
 { .card-get }
 
 [Mods and installation](../cameras/om5-ii.md) · [Test results](../research/om5-ii.md#evidence)
@@ -75,10 +75,10 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 
 [Before you install: risks and recovery](../../docs/before-you-install.md)
 
-**For this camera:** Listed for this camera: Hybrid Shutter (beta).
+**For this camera:** Listed for this camera: Quasi-LUT and DBLink (beta), Hybrid Shutter (beta).
 { .card-for }
 
-**Get it:** [dbv0.4.4b](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.4b), 22 Nov 2026. See the release notes for this model.
+**Get it:** [dbv0.4.6](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.6), 25 Nov 2026. See the release notes for this model.
 { .card-get }
 
 [Mods and installation](../cameras/ep7.md) · [Test results](../research/ep7.md#evidence)
@@ -99,6 +99,22 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 
 </div>
 
+<div class="model-panel" markdown="1">
+
+### OM-D E-M1 Mark III { #for-em1-iii }
+
+[Before you install: risks and recovery](../../docs/before-you-install.md)
+
+**For this camera:** v0.4.6 lists Quasi-LUT and most of a new user interface for this body, both beta. The notes give no test result.
+{ .card-for }
+
+**Get it:** [dbv0.4.6](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.6), 25 Nov 2026. See the release notes for this model.
+{ .card-get }
+
+[Mods and installation](../cameras/em1-iii.md) · [Test results](../research/em1-iii.md#evidence)
+
+</div>
+
 
 ## About
 
@@ -111,6 +127,8 @@ The author owns only some of the supported bodies and says the patch can't be gu
 The v0.4.2 beta notes list Hybrid Shutter for the OM-3 and OM-5 Mark II, and changes to the separate OM-5 build based on Mark II firmware. v0.4.3 extends Hybrid Shutter to S and M mode and lists it for nine bodies, fixes Quasi-LUT conversion, grain and the OM-3 indicator, and lists the OM-5 and OM-5 Mark II builds as not working.
 
 The maintainer reports power-cycle persistence for Hybrid Shutter and Quasi-LUT in v0.4.3b, then a simulated OM-5 boot fix in v0.4.4 and follow-up fixes in v0.4.4b.
+
+v0.4.6 adds Quasi-LUT to the OM-5, OM-5 Mark II, the Mark II-based OM-5, E-M1X, E-M1 Mark III and E-P7. The Korean notes say most of the new user interface is ported to the E-M1 Mark III; the English notes leave out "most".
 
 ## Features
 
@@ -147,9 +165,33 @@ Korean language support on several bodies.
 **Quasi-LUT and DBLink** <span class="pill pill-beta">Beta</span>
 { .feature-head }
 
-Quasi-LUT with DBLink transfer. On OM-3, v0.4.3b adds power-cycle persistence for the on/off state and selected slot.
+Quasi-LUT with DBLink transfer. On OM-3, v0.4.3b adds power-cycle persistence for the on/off state and selected slot. v0.4.6 lists it for the OM-5, OM-5 Mark II, the Mark II-based OM-5, E-M1X, E-M1 Mark III and E-P7.
 
-[OM-3](../cameras/om3.md) · since dbv0.4.1
+[OM-3](../cameras/om3.md), [OM-5](../cameras/om5.md), [OM-5 Mark II](../cameras/om5-ii.md), [OM-D E-M1 Mark III](../cameras/em1-iii.md), [PEN E-P7](../cameras/ep7.md) · since dbv0.4.1
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
+**Focus stacking with any lens** <span class="pill pill-beta">Beta</span>
+{ .feature-head }
+
+v0.4.6 removes the lens restriction on in-camera focus stacking on the bodies that support it. The notes do not list those bodies.
+
+since dbv0.4.6
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
+**New user interface on the E-M1 Mark III** <span class="pill pill-beta">Beta</span>
+{ .feature-head }
+
+The Korean notes say most of a new user interface is ported to the E-M1 Mark III; the English notes call it a new UI port. No list of screens is given.
+
+[OM-D E-M1 Mark III](../cameras/em1-iii.md) · since dbv0.4.6
 { .card-meta }
 
 </div>
@@ -196,6 +238,28 @@ Switches to the electronic shutter on overexposure in P or A mode and, since v0.
 </div>
 
 ## Releases
+
+<div class="release-item" markdown="1">
+
+**[db firmware v0.4.6 beta](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.6)** · 25 Nov 2026
+{ .release-head }
+
+- Lists Quasi-LUT for the OM-5, OM-5 Mark II, the Mark II-based OM-5, E-M1X, E-M1 Mark III and E-P7.
+- Ports most of a new user interface to the E-M1 Mark III, in the Korean notes' words.
+- Removes the lens restriction on focus stacking on bodies that support it.
+
+OM-5 · [Report your result](https://github.com/xulfr/om-firmware-atlas/issues/new?template=camera-report.yml&target=OM+SYSTEM+OM-5+%C2%B7+stock+firmware%3A+&package=db+firmware+%2F+om-c-firmware+%C2%B7+dbv0.4.6)
+
+OM-5 Mark II · [Report your result](https://github.com/xulfr/om-firmware-atlas/issues/new?template=camera-report.yml&target=OM+SYSTEM+OM-5+Mark+II+%C2%B7+stock+firmware%3A+&package=db+firmware+%2F+om-c-firmware+%C2%B7+dbv0.4.6)
+
+OM-D E-M1 Mark III · [Report your result](https://github.com/xulfr/om-firmware-atlas/issues/new?template=camera-report.yml&target=Olympus+OM-D+E-M1+Mark+III+%C2%B7+stock+firmware%3A+&package=db+firmware+%2F+om-c-firmware+%C2%B7+dbv0.4.6)
+
+PEN E-P7 · [Report your result](https://github.com/xulfr/om-firmware-atlas/issues/new?template=camera-report.yml&target=Olympus+PEN+E-P7+%C2%B7+stock+firmware%3A+&package=db+firmware+%2F+om-c-firmware+%C2%B7+dbv0.4.6)
+
+Upstream calls this a beta. The notes give no test result, on a camera or in simulation, for these changes.
+{ .release-warning }
+
+</div>
 
 <div class="release-item" markdown="1">
 
@@ -441,7 +505,7 @@ None catalogued. These links do not assign ownership or imply identical implemen
 
 ## Research notes
 
-The latest reviewed release is v0.4.5 beta, which reports an OI Share connection fix for the Mark II-based OM-5 port. The README says the maintainer tests on real OM-1, OM-5 Mark II and E-M10 bodies only; other models are checked in offline simulation. The release notes add no physical-camera result.
+The latest reviewed release is v0.4.6 beta, which lists Quasi-LUT on six more bodies, most of a new user interface ported to the E-M1 Mark III, and focus stacking with any lens on bodies that support it. The README says the maintainer tests on real OM-1, OM-5 Mark II and E-M10 bodies only; other models are checked in offline simulation. The release notes add no physical-camera result.
 
 ## Sources and record
 
@@ -453,6 +517,7 @@ The latest reviewed release is v0.4.5 beta, which reports an OI Share connection
 - [db firmware v0.4.4 beta](../sources/db.release044.md)
 - [db firmware v0.4.3b beta](../sources/db.release043b.md)
 - [db firmware v0.4.5 beta](../sources/db.release045.md)
+- [db firmware v0.4.6 beta](../sources/db.release046.md)
 - [db firmware README for v0.4.5](../sources/db.readme.md)
 
-[Canonical record](../../records/projects/db-firmware.yaml) · Substantively reviewed: 2026-11-24.
+[Canonical record](../../records/projects/db-firmware.yaml) · Substantively reviewed: 2026-11-25.

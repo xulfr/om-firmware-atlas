@@ -13,6 +13,8 @@ Pack and checksum into a buffer before the lock and only copy inside it. That a 
 
 > **What happens:** A rare, timing-dependent freeze; one test build failed once on the camera.
 
+**Symptoms:** [Freezes until the battery is pulled](index.md#freeze)
+
 ## Observations
 
 - **Emulator** ([Caduceus for OM-3](../projects/caduceus-om3.md)): OM-Emu counted 212,851 instructions masked per save; packing first cut it to 10,062. Source: [OM-3 research notebook](../sources/om3.notes.md).

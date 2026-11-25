@@ -18,6 +18,8 @@ records:
   note: Pack and checksum into a buffer before the lock and only copy inside it. That a missed interrupt froze the
     camera is the project's inference.
   consequence: A rare, timing-dependent freeze; one test build failed once on the camera.
+  symptoms:
+  - symptom.freeze
   observations:
   - method: emulator
     source_ref: source.om3.notes
@@ -45,6 +47,8 @@ records:
   note: Every picture the camera has shown points into the heap (0xa2...). OM-Emu draws from either address, so
     no emulator test catches this.
   consequence: The rest of the camera menu is blank.
+  symptoms:
+  - symptom.wrong-output
   observations:
   - method: physical-camera
     source_ref: source.om3.notes

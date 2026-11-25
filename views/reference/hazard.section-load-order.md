@@ -7,11 +7,13 @@ Sections load one after another; a hook calling a later section can run before i
 **Category:** hazard · <span class="pill pill-released">Camera-confirmed</span>
 { .facts }
 
-**Build:** [ep7 firmware 1.1, build 1100](../firmware/ep7-1100.md), [om3 firmware 1.1, build 1100](../firmware/om3-1100.md), [E-M5 Mark III firmware 1.7, build 1700](../firmware/em5-iii-1700.md), [E-M10 Mark II firmware 1.4, build 1400](../firmware/em10-ii-1400.md) · **Cameras:** [Olympus PEN E-P7](../cameras/ep7.md), [OM SYSTEM OM-3](../cameras/om3.md), [Olympus OM-D E-M5 Mark III](../cameras/em5-iii.md), [Olympus OM-D E-M10 Mark II](../cameras/em10-ii.md)
+**Build:** [ep7 firmware 1.1, build 1100](../firmware/ep7-1100.md), [om3 firmware 1.1, build 1100](../firmware/om3-1100.md), [E-M5 Mark III firmware 1.7, build 1700](../firmware/em5-iii-1700.md), [E-M10 Mark II firmware 1.4, build 1400](../firmware/em10-ii-1400.md), [E-PM2 firmware 1.6, build 1600](../firmware/epm2-1600.md) · **Cameras:** [Olympus PEN E-P7](../cameras/ep7.md), [OM SYSTEM OM-3](../cameras/om3.md), [Olympus OM-D E-M5 Mark III](../cameras/em5-iii.md), [Olympus OM-D E-M10 Mark II](../cameras/em10-ii.md), [Olympus PEN E-PM2](../cameras/epm2.md)
 
 Put code a hook calls in the hook's own section or one loaded earlier, or guard the jump with the section's ready bit. Load order differs by body: the E-P7 guide gives 1, 7, 2, 3, 4, 5, 6, 8, 9; the OM-3 notes give 1 to 10 in order; the E-M5 III notes give 1, 7, 2, 3, 4, 5, 6, 8, 9, 10. On the E-M5 III sections become ready in number order whatever the read order, and an access monitor covers sections not yet ready; check the ready order, not the read order.
 
-> **What happens:** A bootloop reported once on the OM-3 port; intermittent dead-at-power-on and reset loops on E-M5 III test builds.
+> **What happens:** A bootloop reported once on the OM-3 port; intermittent dead-at-power-on and reset loops on E-M5 III test builds; cold starts of about 10 s on some E-PM2 bodies.
+
+**Symptoms:** [Fails to start, restarts or loops at power-on](index.md#start-failure); [Starts slowly](index.md#slow-start)
 
 ## Observations
 
@@ -21,6 +23,8 @@ Put code a hook calls in the hook's own section or one loaded earlier, or guard 
 - **Physical camera** ([Oly Firmware Notes and Mods (E-M5 Mark III)](../projects/em5-iii-notes.md)): E-M5 III test builds with an early hook into a later section failed to boot intermittently; guarding the jump on the ready bit gave 10 good boots out of 10. Source: [E-M5 III boot and section loading](../sources/em5n.boot.md).
 - **Physical camera** ([Oly Firmware Notes and Mods (E-M5 Mark III)](../projects/em5-iii-notes.md)): Boot-time menu hooks in section 2 jumping into the space after section 7 (read early, ready last) boot-looped; the same code after section 3 behind a ready-bit guard boots. Source: [Saved mod settings and native menu rows on the E-M5 III](../sources/em5n.saved-settings.md).
 - **Static analysis** ([fenykl](../projects/fenykl.md)): E-M10 Mark II 1.4: boot0 and boot1 load at reset, sec1 in Usr0, sec2 in Usr1, sec4 to sec6 in Usr4; fenykl marks each function with its section and calls it only after that load. Source: [fenykl firmware symbol table for E-M10 Mark II 1.4](../sources/fenykl.fwapi.md).
+- **Static analysis** ([EPM2Mod](../projects/epm2mod.md)): E-PM2 1.6: a peaking hook in the kernel range jumped into segment 2. Live view reaches it during the quick start, before the segment-2 copy ends. Source: [EPM2Mod slow cold start investigation](../sources/epm2.slow-boot.md).
+- **Physical camera** ([EPM2Mod](../projects/epm2mod.md)): On a body with about 10 s cold starts, a contributor's build with that code moved into segment 1 started at once after 60 s off. The project's fix build passed on the owner's bodies, which never showed the fault. Source: [EPM2Mod slow cold start investigation](../sources/epm2.slow-boot.md).
 
 **[Full detail upstream](https://github.com/cakelesscoder/caduceus-ep7/blob/0cb1dbcc50595cd87f56648810762ffbbb8e17f3/docs/FIRMWARE_GUIDE.md)**
 
@@ -31,5 +35,6 @@ Put code a hook calls in the hook's own section or one loaded earlier, or guard 
 - [E-M5 III boot and section loading](../sources/em5n.boot.md)
 - [Saved mod settings and native menu rows on the E-M5 III](../sources/em5n.saved-settings.md)
 - [fenykl firmware symbol table for E-M10 Mark II 1.4](../sources/fenykl.fwapi.md)
+- [EPM2Mod slow cold start investigation](../sources/epm2.slow-boot.md)
 
-[Canonical record](../../records/reference/hazards.yaml) · Substantively reviewed: 2026-11-21.
+[Canonical record](../../records/reference/hazards.yaml) · Substantively reviewed: 2026-11-25.

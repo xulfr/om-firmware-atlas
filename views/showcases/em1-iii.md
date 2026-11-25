@@ -5,3 +5,5 @@
 [Mods and installation](../cameras/em1-iii.md)
 
 - [E-M1 Mark III Mod Builder](../cameras/em1-iii.md#em1-iii-mod-builder){ #em1-iii-mod-builder }
+
+- [db firmware / om-c-firmware](../cameras/em1-iii.md#db-firmware){ #db-firmware }

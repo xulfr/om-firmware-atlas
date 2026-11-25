@@ -7,7 +7,6 @@ Independent projects by members of the community, each with its own home, mainta
 ## Open research questions
 
 - [Caduceus for E-P7](caduceus-ep7.md) · [E-M10 IV target needs physical-camera evidence](https://github.com/cakelesscoder/caduceus-ep7/issues/21)
-- [E-M1 Mark III Mod Builder](em1-iii-mod-builder.md) · [Multiple Exposure shows no preview between frames 2–3 and 3–4; the 3- and 4-frame result itself is correct. Test 1.746 changes the overlay refresh to every shot but the last; awaiting a camera result](https://github.com/dfeldt91-blip/E-M1-Miii/blob/ae16f3d2836e7273164c7cd3497237117c8b9ff9/docs/FINDINGS.md)
 - [om10mi-mods](om10mi-mods.md) · [The reporter confirmed immediate freeze and automatic restart during single-shot JPEG + RAW while trying looks, with no reset of User Hue. The exact look and build remain unspecified](https://github.com/Meghnus/om10mi-mods/issues/4)
 
 ## Camera modifications
@@ -96,23 +95,6 @@ Mod
 
 <div class="project-card" markdown="1">
 
-[om10mi-mods](om10mi-mods.md){ .card-title }
-
-Film looks, a colour wheel, colour editors and a longer video limit for the original OM-D E-M10.
-
-Film looks · Per-sector colour editor · Per-look colour editor
-{ .card-features }
-
-For: OM-D E-M10 (Mark I)
-{ .card-cameras }
-
-Latest: v94, 24 Nov 2026
-{ .card-meta }
-
-</div>
-
-<div class="project-card" markdown="1">
-
 [db firmware / om-c-firmware](db-firmware.md){ .card-title }
 
 Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to new burst rates.
@@ -120,10 +102,10 @@ Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to
 Panasonic aperture rings · Korean menus · Quasi-LUT and DBLink
 { .card-features }
 
-For: OM-5, OM-5 Mark II, OM-3, PEN E-P7, PEN-F
+For: OM-5, OM-5 Mark II, OM-3, PEN E-P7, PEN-F, OM-D E-M1 Mark III
 { .card-cameras }
 
-Latest: dbv0.4.5, 23 Nov 2026
+Latest: dbv0.4.6, 25 Nov 2026
 { .card-meta }
 
 </div>
@@ -140,7 +122,24 @@ Film simulations · Interval shooting · Level gauge
 For: PEN E-PM2
 { .card-cameras }
 
-Latest: v2026.11.20, 23 Nov 2026
+Latest: v2026.11.25-rc.1 (pre-release), 25 Nov 2026
+{ .card-meta }
+
+</div>
+
+<div class="project-card" markdown="1">
+
+[om10mi-mods](om10mi-mods.md){ .card-title }
+
+Film looks, a colour wheel, colour editors and a longer video limit for the original OM-D E-M10.
+
+Film looks · Per-sector colour editor · Per-look colour editor
+{ .card-features }
+
+For: OM-D E-M10 (Mark I)
+{ .card-cameras }
+
+Latest: v94, 24 Nov 2026
 { .card-meta }
 
 </div>

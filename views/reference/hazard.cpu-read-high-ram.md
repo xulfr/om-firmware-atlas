@@ -13,6 +13,8 @@ CPU reads of the 0xc4000000 frame block rebooted the camera.
 
 > **What happens:** Camera reboot.
 
+**Symptoms:** [Restarts or crashes when a feature runs](index.md#restart-in-use)
+
 ## Observations
 
 - **Physical camera** ([Oly Firmware Notes and Mods (E-M5 Mark III)](../projects/em5-iii-notes.md)): An E-M5 III build that read the 0xc4000000 block with the CPU rebooted. Source: [Gotchas](../sources/em5n.gotchas.md).

@@ -480,6 +480,25 @@ def recent_findings(catalogue, origin):
     return "\n".join(lines)
 
 
+def symptom_title(catalogue, symptom_id):
+    return catalogue.taxonomy["symptoms"][symptom_id]["title"]
+
+
+def symptom_index(catalogue, path, hazards, ref):
+    """Hazards grouped by what the camera shows, across every body, so a reader can start from a symptom."""
+    records = catalogue.records
+    text = ("## Diagnose by symptom\n\nKnown causes of each symptom, on any body. A cause recorded for one camera is a "
+            "lead to check on another, not a diagnosis: addresses and results never transfer between builds.\n\n")
+    for symptom in catalogue.taxonomy.get("symptoms", {}):
+        rows = [r for r in hazards if symptom in r.get("symptoms", [])]
+        if not rows:
+            continue
+        text += f'<a id="{slug(symptom)}"></a>\n**{cell(symptom_title(catalogue, symptom))}**\n\n'
+        text += "".join(f"- {ref(path, r['id'])}: {', '.join(short_name(records[c]['title']) for c in r['camera_ids'])} "
+                        f"({REFERENCE_STATUS[reference_status(records, r)][0].lower()})\n" for r in rows) + "\n"
+    return text
+
+
 def trait_title(catalogue, row):
     """Display name of a platform trait or native feature."""
     if row["category"] == "platform":
@@ -753,6 +772,9 @@ def render(catalogue):
             text += f"\n{row['note']}\n"
             if row.get("consequence"):
                 text += f"\n> **What happens:** {row['consequence']}\n"
+            if row.get("symptoms"):
+                text += ("\n**Symptoms:** " + "; ".join(f"[{cell(symptom_title(catalogue, s))}]({link(path, 'views/reference/index.md')}#{slug(s)})"
+                                                      for s in row["symptoms"]) + "\n")
             text += "\n## Observations\n\n"
             for item in row["observations"]:
                 who = f" ({ref(path, item['project_id'])})" if item.get("project_id") else ""
@@ -799,7 +821,7 @@ def render(catalogue):
             outputs[path] = text + camera_updates(catalogue, path)
             continue
         if kind == "reference":
-            text += ("[Firmware builds](../firmware/index.md) · [Known hazards](#trouble-spots) · "
+            text += ("[Firmware builds](../firmware/index.md) · [Known hazards](#trouble-spots) · [Diagnose by symptom](#diagnose-by-symptom) · "
                      "[Stock features](#built-in-features-by-build) · [Platform comparison](#platform-by-build)\n\n")
             rows = catalogue.of_type("reference")
             hazards = [r for r in rows if r["category"] == "hazard"]
@@ -808,6 +830,7 @@ def render(catalogue):
                 for row in hazards:
                     text += f"| {ref(path, row['id'])} | {', '.join(short_name(records[c]['title']) for c in row['camera_ids'])} | {REFERENCE_STATUS[reference_status(records, row)][0]} |\n"
                 text += "\n"
+                text += symptom_index(catalogue, path, hazards, ref)
             for category, heading, intro in (
                     ("native-feature", "Built-in features by build", "What each stock firmware contains, before any project changes it. Absent means checked and not found; a blank cell means nobody has recorded it."),
                     ("platform", "Platform by build", "Hardware and layout facts per stock firmware build.")):

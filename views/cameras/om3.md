@@ -68,7 +68,7 @@ Upstream calls this a beta. The notes provide no physical-camera results for the
 <details class="mod-details" markdown="1"><summary>Features and examples</summary>
 
 - **Korean menus.** Korean language support on several bodies.
-- **Quasi-LUT and DBLink.** Quasi-LUT with DBLink transfer. On OM-3, v0.4.3b adds power-cycle persistence for the on/off state and selected slot.
+- **Quasi-LUT and DBLink.** Quasi-LUT with DBLink transfer. On OM-3, v0.4.3b adds power-cycle persistence for the on/off state and selected slot. v0.4.6 lists it for the OM-5, OM-5 Mark II, the Mark II-based OM-5, E-M1X, E-M1 Mark III and E-P7.
 - **Hybrid Shutter.** Switches to the electronic shutter on overexposure in P or A mode and, since v0.4.3, below the slowest mechanical speed in S or M mode. In v0.4.3b the project adds retention of the selected mode across power cycles.
 
 </details>

@@ -354,6 +354,13 @@ class Catalogue:
                 errors.append(f"{node_id}: a hazard states a rule; put addresses in their own per-build entries.")
             if not row.get("consequence"):
                 errors.append(f"{node_id}: a hazard needs its observed or expected consequence.")
+            if not row.get("symptoms"):
+                errors.append(f"{node_id}: a hazard needs the symptoms it shows on the camera; choose from taxonomy/topics.yaml symptoms.")
+            for symptom in row.get("symptoms", []):
+                if symptom not in self.taxonomy.get("symptoms", {}):
+                    errors.append(f"{node_id}: unknown symptom {symptom}; choose from taxonomy/topics.yaml symptoms.")
+        if row["category"] != "hazard" and "symptoms" in row:
+            errors.append(f"{node_id}: symptoms belong to hazard entries.")
         if row["category"] not in TRAIT_CATEGORIES and any(field in row for field in TRAIT_FIELDS):
             errors.append(f"{node_id}: trait, feature_id, presence and value belong to platform and native-feature entries.")
         repos = set()

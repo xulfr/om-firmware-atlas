@@ -13,6 +13,8 @@ Change ARM power only at an Idle or Standby state change. Keep image buffers out
 
 > **What happens:** Camera reset.
 
+**Symptoms:** [Restarts or crashes when a feature runs](index.md#restart-in-use)
+
 ## Observations
 
 - **Physical camera** ([Oly Firmware Notes and Mods (E-M5 Mark III)](../projects/em5-iii-notes.md)): On the E-M5 III both a start in a shooting state and a stop in a shot hook reset the camera; start and stop at Idle were safe. Source: [Gotchas](../sources/em5n.gotchas.md).

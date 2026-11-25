@@ -13,6 +13,8 @@ On the E-M10 Mark II the kicker PER_WDT runs at priority 55, the level fenykl's 
 
 > **What happens:** A watchdog reset; with a card payload that crashes at start, possibly on every boot.
 
+**Symptoms:** [Restarts or crashes when a feature runs](index.md#restart-in-use); [Fails to start, restarts or loops at power-on](index.md#start-failure)
+
 ## Observations
 
 - **Static analysis** ([fenykl](../projects/fenykl.md)): The payload rules name PER_WDT and its priority and forbid busy loops in tasks that outrank it. Source: [fenykl plugin SDK](../sources/fenykl.sdk.md).

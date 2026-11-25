@@ -13,6 +13,8 @@ Keep runtime state in heap or .bss, not in the loaded program image. On the E-P7
 
 > **What happens:** Camera restart on first use; one OM-5 Mark II build then looped on every start until restored.
 
+**Symptoms:** [Restarts or crashes when a feature runs](index.md#restart-in-use); [Fails to start, restarts or loops at power-on](index.md#start-failure)
+
 ## Observations
 
 - **Static analysis** ([Caduceus for E-P7](../projects/caduceus-ep7.md)): A sweep of 32,217 absolute stores found none into the loaded image. Source: [E-P7 firmware guide](../sources/ep7.guide.md).
