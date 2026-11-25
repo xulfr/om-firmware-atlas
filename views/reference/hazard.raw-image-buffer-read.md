@@ -13,6 +13,8 @@ Large buffers can cross a window boundary, so map each piece and restore the pre
 
 > **What happens:** Camera crash about one second after the shot.
 
+**Symptoms:** [Restarts or crashes when a feature runs](index.md#restart-in-use)
+
 ## Observations
 
 - **Physical camera** ([Caduceus for E-P7](../projects/caduceus-ep7.md)): Reading a buffer directly through its descriptor address crashed the camera about a second after the shot. Source: [E-P7 firmware guide](../sources/ep7.guide.md).

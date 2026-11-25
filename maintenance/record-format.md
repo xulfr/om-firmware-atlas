@@ -10,7 +10,7 @@ Collections in `records/<type>/` contain `schema_version: 1` and a non-empty `re
 | capability | Camera, firmware/project/build, feature ID, availability, implementation basis, evidence/contradiction refs and limits |
 | evidence | Target/build, method/provenance, identity strength, separate expected and reported/observed hashes, result, procedure/coverage, dates, completeness and assumptions |
 | source | URL, source kind, repository/revision where relevant, locator, retrieval/check date, publication scope and reuse note |
-| reference | Category, cameras, firmware builds, optional address (one build only), or for platform/native-feature entries a taxonomy trait or feature, value and presence (one build only), short note, consequence for hazards, observations with method and pinned source, conflicts and an upstream detail link. See the [reference policy](reference-policy.md) |
+| reference | Category, cameras, firmware builds, optional address (one build only), or for platform/native-feature entries a taxonomy trait or feature, value and presence (one build only), short note, consequence and taxonomy `symptoms` for hazards, observations with method and pinned source, conflicts and an upstream detail link. See the [reference policy](reference-policy.md) |
 | community | URL/platform, audience/scope, listing basis, access, project links and precise link-check state/date |
 
 Use `null` for an unknown nullable field, not an invented value. A null firmware hash still permits an honest discovery entry but cannot support byte-exact work. Referenced firmware and evidence must match the capability's camera/project/build. Shared method does not authorise transferring a result.

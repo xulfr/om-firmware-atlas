@@ -13,6 +13,8 @@ Patch code should never write into the logical flash range. This is an inference
 
 > **What happens:** Expected risk of bricking the camera; not observed.
 
+**Symptoms:** [Firmware update or recovery at risk](index.md#recovery-at-risk)
+
 ## Observations
 
 - **Static analysis** ([Caduceus for E-P7](../projects/caduceus-ep7.md)): Marked as an inference with brick risk in the E-P7 firmware guide. Source: [E-P7 firmware guide](../sources/ep7.guide.md).

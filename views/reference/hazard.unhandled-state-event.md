@@ -13,6 +13,8 @@ Route events an added state does not need to a stock no-op handler.
 
 > **What happens:** Lost frames in fast series and a white photo at fast shutter speeds; slow series hid the problem.
 
+**Symptoms:** [Wrong picture, screen or card file](index.md#wrong-output)
+
 ## Observations
 
 - **Physical camera** ([Oly Firmware Notes and Mods (E-M5 Mark III)](../projects/em5-iii-notes.md)): On the E-M5 III, release events without a handler in a ported Live ND state lost frames at 1/125 s; no-op handlers fixed it. Source: [Live ND port layers](../sources/em5n.port-layers.md).

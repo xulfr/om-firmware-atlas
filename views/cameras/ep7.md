@@ -53,20 +53,21 @@ Eight Standard 1.2 looks, rendered by the Control Panel's preview. The preview a
 
 ## db firmware / om-c-firmware { #db-firmware }
 
-Hybrid Shutter.
+Quasi-LUT and DBLink, Hybrid Shutter.
 
-**dbv0.4.4b**
+**dbv0.4.6**
 { .release-scope }
 
 No camera test recorded for this release.
 
-Upstream calls this a beta. The notes provide no physical-camera results for the claimed fixes.
+Upstream calls this a beta. The notes give no test result, on a camera or in simulation, for these changes.
 { .release-warning }
 
-[Read release notes](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.4b)
+[Read release notes](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.6)
 
 <details class="mod-details" markdown="1"><summary>Features and examples</summary>
 
+- **Quasi-LUT and DBLink.** Quasi-LUT with DBLink transfer. On OM-3, v0.4.3b adds power-cycle persistence for the on/off state and selected slot. v0.4.6 lists it for the OM-5, OM-5 Mark II, the Mark II-based OM-5, E-M1X, E-M1 Mark III and E-P7.
 - **Hybrid Shutter.** Switches to the electronic shutter on overexposure in P or A mode and, since v0.4.3, below the slowest mechanical speed in S or M mode. In v0.4.3b the project adds retention of the selected mode across power cycles.
 
 </details>

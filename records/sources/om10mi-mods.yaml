@@ -3,17 +3,17 @@ records:
 - type: source
   id: source.om10mi.readme
   title: 'om10mi-mods overview'
-  summary: 'Features of version 94, the colour wheel, the optional look pack builder, test status per version, known changes and limitations, credits and licences.'
+  summary: 'Features of version 94, the colour wheel, the optional look pack builder and its in-browser firmware build, test status per version, known changes and limitations, credits and licences.'
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-24'
-  url: https://github.com/Meghnus/om10mi-mods/blob/c8d72448b8a2981cc995b70230e1619f1a89d39f/README.md
+  last_reviewed: '2026-11-25'
+  url: https://github.com/Meghnus/om10mi-mods/blob/c1f31d44bd5fc4b8e468ea0fa0d266d776ffd33d/README.md
   source_kind: github-file
   upstream_repo: Meghnus/om10mi-mods
-  revision: c8d72448b8a2981cc995b70230e1619f1a89d39f
+  revision: c1f31d44bd5fc4b8e468ea0fa0d266d776ffd33d
   locator: README.md
-  retrieved_on: '2026-11-24'
-  last_checked: '2026-11-24'
+  retrieved_on: '2026-11-25'
+  last_checked: '2026-11-25'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -54,14 +54,14 @@ records:
   summary: Version history through 94, the known limits of 94 and the User Hue reset on each look's own page.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-24'
-  url: https://github.com/Meghnus/om10mi-mods/blob/c8d72448b8a2981cc995b70230e1619f1a89d39f/CHANGELOG.md
+  last_reviewed: '2026-11-25'
+  url: https://github.com/Meghnus/om10mi-mods/blob/c1f31d44bd5fc4b8e468ea0fa0d266d776ffd33d/CHANGELOG.md
   source_kind: github-file
   upstream_repo: Meghnus/om10mi-mods
-  revision: c8d72448b8a2981cc995b70230e1619f1a89d39f
+  revision: c1f31d44bd5fc4b8e468ea0fa0d266d776ffd33d
   locator: CHANGELOG.md
-  retrieved_on: '2026-11-24'
-  last_checked: '2026-11-24'
+  retrieved_on: '2026-11-25'
+  last_checked: '2026-11-25'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source

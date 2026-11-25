@@ -259,7 +259,7 @@ class AtlasTests(unittest.TestCase):
         self.assertIn("[Ghidra MN103", research)
         self.assertNotIn("[Ghidra MN103", showcase)
         self.assertNotIn("v0.2.0-alpha1", showcase)
-        self.assertIn("dbv0.4.5", showcase)
+        self.assertIn("dbv0.4.6", showcase)
         self.assertIn("No camera test recorded for this release.", showcase)
         self.assertIn("## In development", showcase)
         self.assertIn("Read release notes", showcase)
@@ -319,11 +319,12 @@ class AtlasTests(unittest.TestCase):
         project = copy.deepcopy(self.catalogue.records["project.db-firmware"])
         release = latest_release(project)
         historical = next(r for r in project["releases"] if r["tag"] == "dbv0.4.3")
-        om5_only = next(r for r in project["releases"] if r["tag"] == "dbv0.4.5")
+        newest = next(r for r in project["releases"] if r["tag"] == "dbv0.4.6")
         shared = next(r for r in project["releases"] if r["tag"] == "dbv0.4.4b")
-        self.assertIs(release, om5_only)
-        self.assertIs(latest_release(project, "camera.om5"), om5_only)
-        self.assertIs(latest_release(project, "camera.om5-ii"), shared)
+        self.assertIs(release, newest)
+        self.assertIs(latest_release(project, "camera.om5"), newest)
+        self.assertIs(latest_release(project, "camera.om5-ii"), newest)
+        self.assertIs(latest_release(project, "camera.om3"), shared)
         for camera in ("camera.om5", "camera.om5-ii"):
             self.assertIsNone(release_limit(latest_release(project, camera), camera))
             self.assertIn("does not work", release_limit(historical, camera))
@@ -434,6 +435,25 @@ class AtlasTests(unittest.TestCase):
         self.assertEqual(reference_status(records, self.reference()), "camera-confirmed")
         hazard["conflicts"] = [{"source_ref": "source.om3.devnotes", "summary": "A different load order."}]
         self.assertEqual(reference_status(records, hazard), "disputed")
+
+    def test_hazard_needs_known_symptoms(self):
+        hazard = self.catalogue.records["reference.hazard.section-load-order"]
+        hazard["symptoms"] = ["symptom.not-in-taxonomy"]
+        self.assertTrue(any("unknown symptom symptom.not-in-taxonomy" in e for e in self.catalogue.validate()))
+        del hazard["symptoms"]
+        self.assertTrue(any("a hazard needs the symptoms" in e for e in self.catalogue.validate()))
+        self.reference()["symptoms"] = ["symptom.freeze"]
+        self.assertTrue(any("symptoms belong to hazard entries" in e for e in self.catalogue.validate()))
+
+    def test_reference_index_groups_hazards_by_symptom_across_bodies(self):
+        output = render(self.catalogue)["views/reference/index.md"]
+        section = output.split("## Diagnose by symptom", 1)[1].split("\n## ", 1)[0]
+        slow = section.split('<a id="slow-start"></a>', 1)[1].split("<a id=", 1)[0]
+        self.assertIn("hazard.section-load-order.md", slow)
+        self.assertIn("PEN E-PM2", slow)
+        self.assertNotIn("hazard.word-alignment.md", slow)
+        page = render(self.catalogue)["views/reference/hazard.section-load-order.md"]
+        self.assertIn("(index.md#slow-start)", page)
 
     def test_platform_entry_needs_known_trait_and_value(self):
         row = self.reference("reference.em5-iii-1700.main-cpu")

@@ -4,7 +4,7 @@
 
 Compact, sourced facts that projects and agents reuse: named addresses for one exact firmware build, platform facts and built-in features per build, and known trouble spots. Each entry links the upstream section that holds the full explanation; derivations, disassembly and code stay there. Status is worked out from the observations: single source, corroborated by independent projects, camera-confirmed, or disputed.
 
-[Firmware builds](../firmware/index.md) · [Known hazards](#trouble-spots) · [Stock features](#built-in-features-by-build) · [Platform comparison](#platform-by-build)
+[Firmware builds](../firmware/index.md) · [Known hazards](#trouble-spots) · [Diagnose by symptom](#diagnose-by-symptom) · [Stock features](#built-in-features-by-build) · [Platform comparison](#platform-by-build)
 
 ## Trouble spots
 
@@ -13,14 +13,17 @@ Compact, sourced facts that projects and agents reuse: named addresses for one e
 | [Start or stop the ARM co-processor only between shots](hazard.arm-power-mid-shot.md) | OM-D E-M5 Mark III | Camera-confirmed |
 | [Write card files with 8.3 names from cached heap buffers](hazard.card-file-names.md) | OM-D E-M5 Mark III | Camera-confirmed |
 | [Stop card writes once a USB cable has been seen](hazard.card-writes-under-usb-storage.md) | OM-D E-M10 Mark II | Single source |
+| [Check hook targets in the built image, not in each patch's own bytes](hazard.check-built-image.md) | PEN E-PM2 | Single source |
 | [Keep CPU reads of image memory below 0xc0000000](hazard.cpu-read-high-ram.md) | OM-D E-M5 Mark III | Camera-confirmed |
 | [Check image-engine records against the bridge's limits](hazard.engine-record-refused.md) | OM-D E-M5 Mark III | Camera-confirmed |
 | [Take section bounds from the loader, not from 0xFF runs](hazard.ff-is-not-free.md) | OM-3, OM-5 Mark II, PEN-F | Camera-confirmed |
+| [A hook must work on every path through the routine it patches](hazard.hook-early-out-paths.md) | OM-D E-M1 Mark III | Camera-confirmed |
+| [Test start-up changes after a long power-off, not a quick restart](hazard.kept-ram-hides-cold-start.md) | PEN E-PM2 | Camera-confirmed |
 | [Never write to the logical flash range](hazard.logical-flash-writes.md) | PEN E-P7, OM-D E-M5 Mark III | Corroborated |
 | [Point OSD picture descriptors into the heap](hazard.osd-pictures-in-heap.md) | OM-3 | Camera-confirmed |
 | [Never CPU-read an image buffer through its raw descriptor address](hazard.raw-image-buffer-read.md) | PEN E-P7 | Camera-confirmed |
 | [Gate on section initialisation, not on the load request](hazard.ready-not-requested.md) | OM-5 Mark II, OM-3 | Disputed |
-| [Only call code in a section that has already loaded](hazard.section-load-order.md) | PEN E-P7, OM-3, OM-D E-M5 Mark III, OM-D E-M10 Mark II | Camera-confirmed |
+| [Only call code in a section that has already loaded](hazard.section-load-order.md) | PEN E-P7, OM-3, OM-D E-M5 Mark III, OM-D E-M10 Mark II, PEN E-PM2 | Camera-confirmed |
 | [Keep work done with interrupts masked short](hazard.short-masked-windows.md) | OM-3 | Corroborated |
 | [Block, never spin, at or above the watchdog task's priority](hazard.spin-starves-watchdog.md) | OM-D E-M10 Mark II | Single source |
 | [A code patch refreshes only the patching core's I-cache](hazard.stale-icache-other-cores.md) | OM-D E-M10 Mark II | Single source |
@@ -30,6 +33,62 @@ Compact, sourced facts that projects and agents reuse: named addresses for one e
 | [Leave the compressed section holding the card updater stock](hazard.updater-section-stock.md) | OM-5 Mark II | Single source |
 | [Remove a card-loaded payload before a PC firmware update](hazard.usb-update-with-card-payload.md) | OM-D E-M10 Mark II | Single source |
 | [Align structures with 32-bit fields to four bytes](hazard.word-alignment.md) | PEN-F | Camera-confirmed |
+
+## Diagnose by symptom
+
+Known causes of each symptom, on any body. A cause recorded for one camera is a lead to check on another, not a diagnosis: addresses and results never transfer between builds.
+
+<a id="start-failure"></a>
+**Fails to start, restarts or loops at power-on**
+
+- [Check hook targets in the built image, not in each patch's own bytes](hazard.check-built-image.md): PEN E-PM2 (single source)
+- [Take section bounds from the loader, not from 0xFF runs](hazard.ff-is-not-free.md): OM-3, OM-5 Mark II, PEN-F (camera-confirmed)
+- [Test start-up changes after a long power-off, not a quick restart](hazard.kept-ram-hides-cold-start.md): PEN E-PM2 (camera-confirmed)
+- [Gate on section initialisation, not on the load request](hazard.ready-not-requested.md): OM-5 Mark II, OM-3 (disputed)
+- [Only call code in a section that has already loaded](hazard.section-load-order.md): PEN E-P7, OM-3, OM-D E-M5 Mark III, OM-D E-M10 Mark II, PEN E-PM2 (camera-confirmed)
+- [Block, never spin, at or above the watchdog task's priority](hazard.spin-starves-watchdog.md): OM-D E-M10 Mark II (single source)
+- [Keep patch state out of the loaded firmware image](hazard.state-in-loaded-image.md): PEN E-P7, OM-5 Mark II (camera-confirmed)
+
+<a id="slow-start"></a>
+**Starts slowly**
+
+- [Check hook targets in the built image, not in each patch's own bytes](hazard.check-built-image.md): PEN E-PM2 (single source)
+- [Test start-up changes after a long power-off, not a quick restart](hazard.kept-ram-hides-cold-start.md): PEN E-PM2 (camera-confirmed)
+- [Only call code in a section that has already loaded](hazard.section-load-order.md): PEN E-P7, OM-3, OM-D E-M5 Mark III, OM-D E-M10 Mark II, PEN E-PM2 (camera-confirmed)
+
+<a id="restart-in-use"></a>
+**Restarts or crashes when a feature runs**
+
+- [Start or stop the ARM co-processor only between shots](hazard.arm-power-mid-shot.md): OM-D E-M5 Mark III (camera-confirmed)
+- [Keep CPU reads of image memory below 0xc0000000](hazard.cpu-read-high-ram.md): OM-D E-M5 Mark III (camera-confirmed)
+- [A hook must work on every path through the routine it patches](hazard.hook-early-out-paths.md): OM-D E-M1 Mark III (camera-confirmed)
+- [Never CPU-read an image buffer through its raw descriptor address](hazard.raw-image-buffer-read.md): PEN E-P7 (camera-confirmed)
+- [Block, never spin, at or above the watchdog task's priority](hazard.spin-starves-watchdog.md): OM-D E-M10 Mark II (single source)
+- [A code patch refreshes only the patching core's I-cache](hazard.stale-icache-other-cores.md): OM-D E-M10 Mark II (single source)
+- [Keep patch state out of the loaded firmware image](hazard.state-in-loaded-image.md): PEN E-P7, OM-5 Mark II (camera-confirmed)
+- [Align structures with 32-bit fields to four bytes](hazard.word-alignment.md): PEN-F (camera-confirmed)
+
+<a id="freeze"></a>
+**Freezes until the battery is pulled**
+
+- [Check image-engine records against the bridge's limits](hazard.engine-record-refused.md): OM-D E-M5 Mark III (camera-confirmed)
+- [Keep work done with interrupts masked short](hazard.short-masked-windows.md): OM-3 (corroborated)
+- [A hung task does not trigger the watchdog](hazard.task-hang-no-reset.md): OM-D E-M5 Mark III (camera-confirmed)
+
+<a id="wrong-output"></a>
+**Wrong picture, screen or card file**
+
+- [Write card files with 8.3 names from cached heap buffers](hazard.card-file-names.md): OM-D E-M5 Mark III (camera-confirmed)
+- [Stop card writes once a USB cable has been seen](hazard.card-writes-under-usb-storage.md): OM-D E-M10 Mark II (single source)
+- [Point OSD picture descriptors into the heap](hazard.osd-pictures-in-heap.md): OM-3 (camera-confirmed)
+- [Give added shooting states a handler for every event they can receive](hazard.unhandled-state-event.md): OM-D E-M5 Mark III (camera-confirmed)
+
+<a id="recovery-at-risk"></a>
+**Firmware update or recovery at risk**
+
+- [Never write to the logical flash range](hazard.logical-flash-writes.md): PEN E-P7, OM-D E-M5 Mark III (corroborated)
+- [Leave the compressed section holding the card updater stock](hazard.updater-section-stock.md): OM-5 Mark II (single source)
+- [Remove a card-loaded payload before a PC firmware update](hazard.usb-update-with-card-payload.md): OM-D E-M10 Mark II (single source)
 
 ## Built-in features by build
 

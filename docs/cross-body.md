@@ -7,6 +7,7 @@ Compare firmware across models, find shared tools and read research methods.
 [**Guides** <span>Platform, patching, emulation and firmware analysis.</span>](../knowledge/README.md)
 [**Projects and tools** <span>Repositories, emulators and active investigations.</span>](../views/projects/index.md)
 [**Technical reference** <span>Platform comparisons and shared pitfalls.</span>](../views/reference/index.md)
+[**Diagnose by symptom** <span>Known causes of a restart, slow start or freeze, on any body.</span>](../views/reference/index.md#diagnose-by-symptom)
 
 </div>
 
@@ -32,6 +33,8 @@ A feature name alone cannot establish that a release touches only later code, or
 
 - **Requested and ready are different states.** Calling a section too early can reach code before it is initialised. The reference preserves differing interpretations of the readiness signal. [Start-up observations](../views/reference/hazard.ready-not-requested.md).
 - **Apparently empty space may be used later.** Firmware can overwrite a patch's working data as sections load. Check the build-specific observations and project development notes. [Loaded-image hazard](../views/reference/hazard.state-in-loaded-image.md) · [Shared trouble spots](../views/reference/index.md#trouble-spots).
+- **A quick restart is not a cold start.** RAM kept across a short power-off can still hold code that a fresh start has not loaded yet. On the E-PM2 this hid a hook into a late segment that made cold starts take about 10 s, and the emulator could not show it either. Test start-up changes after a long power-off. [Cold-start hazard](../views/reference/hazard.kept-ram-hides-cold-start.md) · [Check the built image](../views/reference/hazard.check-built-image.md).
+- **A hook runs on every path through its routine.** On the E-M1 Mark III, HDR takes an early exit from the sharpening routine that skips the setup a Sharpness hook relied on, and the camera rebooted. [Early-exit hazard](../views/reference/hazard.hook-early-out-paths.md).
 - **A passing check has a scope.** On the original OM-5, one tester reported an unusable start followed by restoration of official 1.2 from the card. Retain both outcomes when investigating later builds. [Failed start](../views/evidence/om5-prealpha1-boot.md) · [Recovery report](../views/evidence/om5-prealpha1-restore.md) · [Validation methods](../knowledge/methods/patching.md).
 
 ## Architecture by hardware family

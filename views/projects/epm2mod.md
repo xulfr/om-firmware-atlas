@@ -10,8 +10,7 @@ Film simulations, interval shooting, focus peaking and a level gauge for the PEN
 
 <div class="cta-row" markdown="1">
 
-[Read the install guide](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20){ .btn .btn-primary }
-[Project home](https://github.com/cfu288/EPM2Mod){ .btn .btn-ghost }
+[Project home](https://github.com/cfu288/EPM2Mod){ .btn .btn-primary }
 [Ask or report issues](https://github.com/cfu288/EPM2Mod/issues){ .btn .btn-ghost }
 [Film simulation comparison](https://cfu288.github.io/EPM2Mod/films){ .btn .btn-ghost }
 [Panasonic aperture-ring debug build](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20-pana-ring-probe.1){ .btn .btn-ghost }
@@ -20,7 +19,7 @@ Film simulations, interval shooting, focus peaking and a level gauge for the PEN
 
 </div>
 
-**Type:** mod · **Camera details:** [PEN E-PM2](#for-epm2) · **Latest release:** [v2026.11.20](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20), 23 Nov 2026 · **Maintained by** [cfu288](https://github.com/cfu288)
+**Type:** mod · **Camera details:** [PEN E-PM2](#for-epm2) · **Latest release:** [v2026.11.25-rc.1 (pre-release)](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.25-rc.1), 25 Nov 2026 · **Maintained by** [cfu288](https://github.com/cfu288)
 { .facts }
 
 ## Cameras
@@ -34,7 +33,7 @@ Film simulations, interval shooting, focus peaking and a level gauge for the PEN
 **For this camera:** 7 features, including Film simulations, Interval shooting and Level gauge.
 { .card-for }
 
-**Get it:** [v2026.11.20](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20), 23 Nov 2026
+**Get it:** [v2026.11.25-rc.1 (pre-release)](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.25-rc.1), 25 Nov 2026. See the release notes for this model.
 { .card-get }
 
 [Mods and installation](../cameras/epm2.md) · [Test results](../research/epm2.md#evidence)
@@ -102,7 +101,7 @@ The firmware's own gauge as an LV-Info view, with calibration and the histogram 
 **Focus peaking** <span class="pill pill-beta">Beta</span>
 { .feature-head }
 
-From rc.3, focus peaking stays visible in normal live view in MF with any lens. MF Assist also shows peaking when the focus ring turns.
+From rc.3, focus peaking stays visible in normal live view in MF with any lens. MF Assist also shows peaking when the focus ring turns. 2026.11.25-rc.1 moves part of it so that cold starts are no longer slow.
 
 [PEN E-PM2](../cameras/epm2.md) · since v2026.11.20-rc.3
 { .card-meta }
@@ -123,12 +122,12 @@ In P and A, the shutter speed at which ISO Auto starts to rise; a copy of the PE
 
 <div class="feature-card" markdown="1">
 
-**Spot metering at the AF point** <span class="pill pill-testing">Testing</span>
+**Spot metering at the AF point** <span class="pill pill-beta">Beta</span>
 { .feature-head }
 
 Custom Menu E › Spot Metering moves Spot, Spot Hilight and Spot Shadow metering to a touched point or the selected AF target, as on the E-M5 II. Off by default; faces are ignored.
 
-[PEN E-PM2](../cameras/epm2.md)
+[PEN E-PM2](../cameras/epm2.md) · since v2026.11.25-rc.1
 { .card-meta }
 
 </div>
@@ -151,6 +150,37 @@ A Custom Menu J row, Off by default, that writes EPM2LOG.BIN to the card for dev
 
 <div class="release-item" markdown="1">
 
+**[EPM2Mod 2026.11.25-rc.1](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.25-rc.1)** <span class="pill pill-alpha">Pre-release</span> · 25 Nov 2026
+{ .release-head }
+
+- Fixes the slow cold start of rc.3 to v2026.11.20 (GitHub issue 6) by moving the peaking code that live view reaches at start-up into early-loaded space (build cold-start-fix).
+- Adds spot metering at the touched AF point or the selected AF target, Off by default.
+- The project's hook check now reads the built bytes, so it catches the jump that caused the slow start.
+
+PEN E-PM2 · [Report your result](https://github.com/xulfr/om-firmware-atlas/issues/new?template=camera-report.yml&target=Olympus+PEN+E-PM2+%C2%B7+stock+firmware%3A+&package=EPM2Mod+%C2%B7+v2026.11.25-rc.1)
+
+Unofficial pre-release for the Olympus PEN E-PM2. The owner's test bodies never showed the slow start.
+{ .release-warning }
+
+</div>
+
+<div class="release-item" markdown="1">
+
+**[EPM2Mod 2026.11.20-rc.6](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20-rc.6)** <span class="pill pill-alpha">Pre-release</span> · 23 Nov 2026
+{ .release-head }
+
+- Project-site changes (a Look Pack section and likes for films) and release tooling for named camera-tested builds.
+- Lists the same firmware digest as v2026.11.20, so it has the same slow cold start.
+
+PEN E-PM2 · [Report your result](https://github.com/xulfr/om-firmware-atlas/issues/new?template=camera-report.yml&target=Olympus+PEN+E-PM2+%C2%B7+stock+firmware%3A+&package=EPM2Mod+%C2%B7+v2026.11.20-rc.6)
+
+Unofficial pre-release for the Olympus PEN E-PM2.
+{ .release-warning }
+
+</div>
+
+<div class="release-item" markdown="1">
+
 **[EPM2Mod 2026.11.20](https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20)** · 23 Nov 2026
 { .release-head }
 
@@ -159,7 +189,7 @@ A Custom Menu J row, Off by default, that writes EPM2LOG.BIN to the card for dev
 
 PEN E-PM2 · [Report your result](https://github.com/xulfr/om-firmware-atlas/issues/new?template=camera-report.yml&target=Olympus+PEN+E-PM2+%C2%B7+stock+firmware%3A+&package=EPM2Mod+%C2%B7+v2026.11.20)
 
-Unofficial firmware, only for the Olympus PEN E-PM2.
+Unofficial firmware, only for the Olympus PEN E-PM2. On some bodies a cold start after about a minute off takes about 10 s (GitHub issue 6); the fix is in 2026.11.25-rc.1.
 { .release-warning }
 
 </div>
@@ -263,7 +293,7 @@ Unofficial and for the E-PM2 only; installing is at your own risk.
 
 ## Research notes
 
-The latest release is the final v2026.11.20, after five release candidates. It includes continuous focus peaking in MF and applies saved film simulations on startup. Spot metering at the AF point is camera-tested by the owner on the main branch but is not in a release yet. A separate Panasonic aperture-ring probe is a developer debug build. The project calls the firmware unofficial and at the user's own risk.
+The latest final release is v2026.11.20. On some bodies its cold start takes about 10 s (GitHub issue 6, since rc.3). Pre-release v2026.11.25-rc.1 carries the project's fix, cold-start-fix, and adds spot metering at the AF target. The owner's camera run of the fix passed, but the owner's bodies never showed the slow start; a contributor's own build of the same change started at once on an affected body. A separate Panasonic aperture-ring probe is a developer debug build. The project calls the firmware unofficial and at the user's own risk.
 
 ## Sources and record
 
@@ -279,9 +309,13 @@ The latest release is the final v2026.11.20, after five release candidates. It i
 - [EPM2Mod releases](../sources/epm2.releases.md)
 - [EPM2Mod 2026.11.20](../sources/epm2.v20261120.md)
 - [EPM2Mod 2026.11.20-rc.5](../sources/epm2.rc5.md)
+- [EPM2Mod 2026.11.20-rc.6](../sources/epm2.rc6.md)
+- [EPM2Mod 2026.11.25-rc.1](../sources/epm2.v20261125-rc1.md)
+- [EPM2Mod slow cold start investigation](../sources/epm2.slow-boot.md)
+- [E-PM2 cold-start-fix camera log](../sources/epm2.camera-log-cold-start-fix.md)
 - [EPM2Mod 2026.11.20-rc.4](../sources/epm2.rc4.md)
 - [EPM2Mod 2026.11.20-rc.3](../sources/epm2.rc3.md)
 - [EPM2Mod 2026.11.20-rc.2](../sources/epm2.rc2.md)
 - [EPM2Mod 2026.11.20-pana-ring-probe.1](../sources/epm2.pana-ring-probe.md)
 
-[Canonical record](../../records/projects/epm2mod.yaml) · Substantively reviewed: 2026-11-24.
+[Canonical record](../../records/projects/epm2mod.yaml) · Substantively reviewed: 2026-11-25.

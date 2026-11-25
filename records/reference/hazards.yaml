@@ -20,6 +20,9 @@ records:
   note: Keep runtime state in heap or .bss, not in the loaded program image. On the E-P7 a sweep of every
     absolute store found none into the image.
   consequence: Camera restart on first use; one OM-5 Mark II build then looped on every start until restored.
+  symptoms:
+  - symptom.restart-in-use
+  - symptom.start-failure
   observations:
   - method: static-analysis
     source_ref: source.ep7.guide
@@ -58,6 +61,8 @@ records:
   note: 'MN103 needs natural alignment for word and halfword access. Strings may need two-byte alignment;
     structures with u32 fields need four. Check linked addresses explicitly: emulators may not.'
   consequence: Camera restart on entering COLOR, while the emulator of the time accepted the reads.
+  symptoms:
+  - symptom.restart-in-use
   observations:
   - method: physical-camera
     source_ref: source.fishcu.validation
@@ -76,28 +81,34 @@ records:
   - source.em5n.boot
   - source.em5n.saved-settings
   - source.fenykl.fwapi
+  - source.epm2.slow-boot
   topics:
   - patching
   - platform
-  last_reviewed: '2026-11-21'
+  last_reviewed: '2026-11-25'
   category: hazard
   camera_ids:
   - camera.ep7
   - camera.om3
   - camera.em5-iii
   - camera.em10-ii
+  - camera.epm2
   firmware_ids:
   - firmware.ep7-1100
   - firmware.om3-1100
   - firmware.em5-iii-1700
   - firmware.em10-ii-1400
+  - firmware.epm2-1600
   note: 'Put code a hook calls in the hook''s own section or one loaded earlier, or guard the jump with the
     section''s ready bit. Load order differs by body: the E-P7 guide gives 1, 7, 2, 3, 4, 5, 6, 8, 9; the
     OM-3 notes give 1 to 10 in order; the E-M5 III notes give 1, 7, 2, 3, 4, 5, 6, 8, 9, 10.
     On the E-M5 III sections become ready in number order whatever the read order, and an access monitor
     covers sections not yet ready; check the ready order, not the read order.'
-  consequence: A bootloop reported once on the OM-3 port; intermittent dead-at-power-on and reset loops on
-    E-M5 III test builds.
+  consequence: A bootloop reported once on the OM-3 port; intermittent dead-at-power-on and reset loops on E-M5
+    III test builds; cold starts of about 10 s on some E-PM2 bodies.
+  symptoms:
+  - symptom.start-failure
+  - symptom.slow-start
   observations:
   - method: static-analysis
     source_ref: source.ep7.guide
@@ -128,6 +139,16 @@ records:
     project_id: project.fenykl
     summary: 'E-M10 Mark II 1.4: boot0 and boot1 load at reset, sec1 in Usr0, sec2 in Usr1, sec4 to sec6 in Usr4;
       fenykl marks each function with its section and calls it only after that load.'
+  - method: static-analysis
+    source_ref: source.epm2.slow-boot
+    project_id: project.epm2mod
+    summary: 'E-PM2 1.6: a peaking hook in the kernel range jumped into segment 2. Live view reaches it during the quick
+      start, before the segment-2 copy ends.'
+  - method: physical-camera
+    source_ref: source.epm2.slow-boot
+    project_id: project.epm2mod
+    summary: On a body with about 10 s cold starts, a contributor's build with that code moved into segment 1 started at
+      once after 60 s off. The project's fix build passed on the owner's bodies, which never showed the fault.
   conflicts: []
   upstream_detail: https://github.com/cakelesscoder/caduceus-ep7/blob/0cb1dbcc50595cd87f56648810762ffbbb8e17f3/docs/FIRMWARE_GUIDE.md
 - type: reference
@@ -148,6 +169,8 @@ records:
   note: Large buffers can cross a window boundary, so map each piece and restore the previous window mode
     before unlocking.
   consequence: Camera crash about one second after the shot.
+  symptoms:
+  - symptom.restart-in-use
   observations:
   - method: physical-camera
     source_ref: source.ep7.guide
@@ -177,6 +200,8 @@ records:
   note: Patch code should never write into the logical flash range. This is an inference from the memory
     map, not an observed failure.
   consequence: Expected risk of bricking the camera; not observed.
+  symptoms:
+  - symptom.recovery-at-risk
   observations:
   - method: static-analysis
     source_ref: source.ep7.guide
@@ -189,3 +214,35 @@ records:
       data windows; program and boot areas are written only by updates.
   conflicts: []
   upstream_detail: https://github.com/cakelesscoder/caduceus-ep7/blob/0cb1dbcc50595cd87f56648810762ffbbb8e17f3/docs/FIRMWARE_GUIDE.md
+- type: reference
+  id: reference.hazard.hook-early-out-paths
+  title: A hook must work on every path through the routine it patches
+  summary: A special job can skip the setup a hook relies on. The E-M1 III Sharpness hook restarted the camera with HDR.
+  source_refs:
+  - source.em1m3.sharp-off
+  - source.em1m3.mods
+  topics:
+  - patching
+  last_reviewed: '2026-11-25'
+  category: hazard
+  camera_ids:
+  - camera.em1-iii
+  firmware_ids:
+  - firmware.em1-iii-1600
+  note: In E-M1 III 1.6 the sharpening routine has an early exit for special jobs, which HDR takes after the shutter
+    release. That exit skips setting a stack slot that the linear Sharpness stub read. The fix returns at once when
+    there is no gain to scale. Check each caller and early exit of a hooked routine, not only the normal path.
+  consequence: Camera reboot whenever HDR fires, at any Sharpness value.
+  symptoms:
+  - symptom.restart-in-use
+  observations:
+  - method: static-analysis
+    source_ref: source.em1m3.sharp-off
+    project_id: project.em1-iii-mod-builder
+    summary: The patch tool's notes trace the reboot to the early-out path, which leaves the slot the stub read unset.
+  - method: physical-camera
+    source_ref: source.em1m3.mods
+    project_id: project.em1-iii-mod-builder
+    summary: The author's mod list of 2026-11-24 says the HDR reboot is fixed and camera-tested.
+  conflicts: []
+  upstream_detail: https://github.com/dfeldt91-blip/E-M1-Miii/blob/64ebb28d23e4d5aa11d3350774aa9c76a137fea0/tools/patch_sharp_off.py

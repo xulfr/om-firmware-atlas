@@ -35,17 +35,17 @@ records:
 - type: source
   id: source.epm2.install
   title: 'EPM2Mod pinned build'
-  summary: 'The pinned build films-twelve-off, its feature set, the camera-test date and the stock and build SHA-256s.'
+  summary: 'The pinned build cold-start-fix, its feature set, the camera-test date and the stock and build SHA-256s.'
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-24'
-  url: https://github.com/cfu288/EPM2Mod/blob/ccbad1a4637a3fa17d1fbedc2db3923513c0314d/docs/user/install.md
+  last_reviewed: '2026-11-25'
+  url: https://github.com/cfu288/EPM2Mod/blob/3b6827892ed4f031a72acb7fec4496aaf9a29348/docs/user/install.md
   source_kind: github-file
   upstream_repo: cfu288/EPM2Mod
-  revision: ccbad1a4637a3fa17d1fbedc2db3923513c0314d
+  revision: 3b6827892ed4f031a72acb7fec4496aaf9a29348
   locator: docs/user/install.md
-  retrieved_on: '2026-11-24'
-  last_checked: '2026-11-24'
+  retrieved_on: '2026-11-25'
+  last_checked: '2026-11-25'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -115,18 +115,18 @@ records:
 - type: source
   id: source.epm2.releases
   title: EPM2Mod releases
-  summary: Installer release candidates through v2026.11.20-rc.5 and the final v2026.11.20.
+  summary: Installer releases through the final v2026.11.20 and the pre-releases v2026.11.20-rc.6 and v2026.11.25-rc.1.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-24'
+  last_reviewed: '2026-11-25'
   url: https://github.com/cfu288/EPM2Mod/releases
   source_kind: github-release
   upstream_repo: cfu288/EPM2Mod
-  revision: v2026.11.20
-  locator: Release listing through v2026.11.20
-  retrieved_on: '2026-11-24'
-  last_checked: '2026-11-24'
-  published_on: '2026-11-23'
+  revision: v2026.11.25-rc.1
+  locator: Release listing through v2026.11.25-rc.1
+  retrieved_on: '2026-11-25'
+  last_checked: '2026-11-25'
+  published_on: '2026-11-25'
   publication: public
   reuse_note: Attributed summary of mutable release notes; no code, firmware or executables imported.
 - type: source
@@ -285,3 +285,69 @@ records:
   published_on: '2026-11-23'
   publication: public
   reuse_note: Attributed summary of the maintainer’s release notes.
+- type: source
+  id: source.epm2.v20261125-rc1
+  title: EPM2Mod 2026.11.25-rc.1
+  summary: Pre-release with the cold-start fix (peaking-mf-2), spot metering at the AF target and a stricter hook check.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-25'
+  url: https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.25-rc.1
+  source_kind: github-release
+  upstream_repo: cfu288/EPM2Mod
+  revision: v2026.11.25-rc.1
+  locator: GitHub release notes for v2026.11.25-rc.1
+  retrieved_on: '2026-11-25'
+  last_checked: '2026-11-25'
+  published_on: '2026-11-25'
+  publication: public
+  reuse_note: Attributed summary of the maintainer’s release notes.
+- type: source
+  id: source.epm2.rc6
+  title: EPM2Mod 2026.11.20-rc.6
+  summary: Pre-release with project-site changes and release tooling for named camera-tested builds; the firmware digest of v2026.11.20.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-25'
+  url: https://github.com/cfu288/EPM2Mod/releases/tag/v2026.11.20-rc.6
+  source_kind: github-release
+  upstream_repo: cfu288/EPM2Mod
+  revision: v2026.11.20-rc.6
+  locator: GitHub release notes for v2026.11.20-rc.6
+  retrieved_on: '2026-11-25'
+  last_checked: '2026-11-25'
+  published_on: '2026-11-23'
+  publication: public
+  reuse_note: Attributed summary of the maintainer’s release notes.
+- type: source
+  id: source.epm2.slow-boot
+  title: EPM2Mod slow cold start investigation
+  summary: Issue #6: why cold starts took about 10 s, the hypotheses with V/I/U labels, the hookcheck gap, the audit and the fix.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-25'
+  url: https://github.com/cfu288/EPM2Mod/blob/3b6827892ed4f031a72acb7fec4496aaf9a29348/experiments/2026-11-24-slow-boot/NOTES.md
+  source_kind: github-file
+  upstream_repo: cfu288/EPM2Mod
+  revision: 3b6827892ed4f031a72acb7fec4496aaf9a29348
+  locator: experiments/2026-11-24-slow-boot/NOTES.md
+  retrieved_on: '2026-11-25'
+  last_checked: '2026-11-25'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.epm2.camera-log-cold-start-fix
+  title: E-PM2 cold-start-fix camera log
+  summary: Checks before the flash and the owner's camera result for the cold-start-fix build on 25 November.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-25'
+  url: https://github.com/cfu288/EPM2Mod/blob/3b6827892ed4f031a72acb7fec4496aaf9a29348/docs/camera-log/2026-11-25-cold-start-fix.md
+  source_kind: github-file
+  upstream_repo: cfu288/EPM2Mod
+  revision: 3b6827892ed4f031a72acb7fec4496aaf9a29348
+  locator: docs/camera-log/2026-11-25-cold-start-fix.md
+  retrieved_on: '2026-11-25'
+  last_checked: '2026-11-25'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.

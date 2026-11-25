@@ -17,5 +17,6 @@ records:
   - E139
   project_ids:
   - project.em1-iii-mod-builder
+  - project.db-firmware
   - project.om-emu
   coverage: discovery-only

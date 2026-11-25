@@ -8,8 +8,8 @@ Firmware mod for the original OM-D E-M10 with 18 film looks, a colour wheel, per
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [om10mi-mods.yaml](../../../records/projects/om10mi-mods.yaml) | Project scope, related work and contribution destination | 10,059 | ~2,515 |
-| [om10mi-mods.yaml](../../../records/sources/om10mi-mods.yaml) | Find the relevant source/observation ID; use bounded reads | 9,434 | ~2,359 |
+| [om10mi-mods.yaml](../../../records/projects/om10mi-mods.yaml) | Project scope, related work and contribution destination | 10,193 | ~2,549 |
+| [om10mi-mods.yaml](../../../records/sources/om10mi-mods.yaml) | Find the relevant source/observation ID; use bounded reads | 9,468 | ~2,367 |
 | [om10mi-mods.yaml](../../../records/evidence/om10mi-mods.yaml) | Find the relevant source/observation ID; use bounded reads | 7,605 | ~1,902 |
 
 Follow only relevant camera/topic routes. Upstream policies apply to work there; Atlas does not assign ownership across projects.

@@ -13,6 +13,7 @@ E139 · Stock firmware 1.6 · build 1600
 ## Projects and repositories
 
 - [E-M1 Mark III Mod Builder](../projects/em1-iii-mod-builder.md#for-em1-iii) · [Repository or project home](https://github.com/dfeldt91-blip/E-M1-Miii)
+- [db firmware / om-c-firmware](../projects/db-firmware.md#for-em1-iii) · [Repository or project home](https://github.com/azqeurio/om-c-firmware)
 - [OM-Emu](../projects/om-emu.md#for-em1-iii) · [Repository or project home](https://github.com/flatpanda/om-emu)
 
 ## Claims and test evidence { #evidence }
@@ -24,6 +25,10 @@ No feature-level assertion is catalogued yet. This is a coverage gap, not a find
 ### E-M1 Mark III firmware 1.6, build 1600
 
 [File identity, platform and stock features](../firmware/em1-iii-1600.md)
+
+### Build-specific reference
+
+- [A hook must work on every path through the routine it patches](../reference/hazard.hook-early-out-paths.md)
 
 [Community and discussion](../../docs/community.md){ #talk }
 

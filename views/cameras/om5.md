@@ -21,21 +21,21 @@ Model E144
 
 Beta patches include Panasonic aperture rings, Korean menus and Hybrid Shutter. The Mark II-based port’s boot fix has only simulator and emulator results in the release notes.
 
-**dbv0.4.5**
+**dbv0.4.6**
 { .release-scope }
 
 No camera test recorded for this release.
 
-Upstream calls this a beta. The notes list one bug fix and no physical-camera result; the maintainer does not own an original OM-5.
+Upstream calls this a beta. The notes give no test result, on a camera or in simulation, for these changes.
 { .release-warning }
 
-[Read release notes](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.5)
+[Read release notes](https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.6)
 
 <details class="mod-details" markdown="1"><summary>Features and examples</summary>
 
 - **Panasonic aperture rings.** The aperture ring on Panasonic lenses that have one controls the aperture.
 - **Korean menus.** Korean language support on several bodies.
-- **Hybrid Shutter.** Switches to the electronic shutter on overexposure in P or A mode and, since v0.4.3, below the slowest mechanical speed in S or M mode. In v0.4.3b the project adds retention of the selected mode across power cycles.
+- **Quasi-LUT and DBLink.** Quasi-LUT with DBLink transfer. On OM-3, v0.4.3b adds power-cycle persistence for the on/off state and selected slot. v0.4.6 lists it for the OM-5, OM-5 Mark II, the Mark II-based OM-5, E-M1X, E-M1 Mark III and E-P7.
 
 </details>
 

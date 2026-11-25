@@ -23,7 +23,7 @@ records:
   - capture
   - patching
   - interfaces
-  last_reviewed: '2026-11-24'
+  last_reviewed: '2026-11-25'
   url: https://github.com/Meghnus/om10mi-mods
   kind: mod
   camera_ids:
@@ -123,8 +123,9 @@ records:
     capability_id: capability.em10-v87-colour-wheel
   - name: Look pack builder
     summary: An optional PC tool and browser pages replace looks from a .cube or .xmp file, rename them and reorder
-      the Picture Mode list, working on the image the user built. A look is a fitted approximation of the LUT;
-      hiding looks is refused because it is not proven on a camera.
+      the Picture Mode list, working on the image the user built. Since 2026-11-25 the browser page can also build the
+      card file itself from the owner's official firmware, without uploading it. A look is a fitted approximation of
+      the LUT; hiding looks is refused because it is not proven on a camera.
     camera_ids: *id001
     status: released
     since: v94

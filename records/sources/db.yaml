@@ -21,18 +21,18 @@ records:
 - type: source
   id: source.db.releases
   title: db firmware releases
-  summary: Beta release notes through v0.4.5, in Korean and English.
+  summary: Beta release notes through v0.4.6, in Korean and English.
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-24'
+  last_reviewed: '2026-11-25'
   url: https://github.com/azqeurio/om-c-firmware/releases
   source_kind: github-release
   upstream_repo: azqeurio/om-c-firmware
-  revision: dbv0.4.5
-  locator: Release listing through dbv0.4.5
-  retrieved_on: '2026-11-24'
-  last_checked: '2026-11-24'
-  published_on: '2026-11-23'
+  revision: dbv0.4.6
+  locator: Release listing through dbv0.4.6
+  retrieved_on: '2026-11-25'
+  last_checked: '2026-11-25'
+  published_on: '2026-11-25'
   publication: public
   reuse_note: Attributed summary of mutable release notes; no code, firmware or executables imported.
 - type: source
@@ -125,6 +125,23 @@ records:
   publication: public
   reuse_note: Attributed summary of the maintainer’s release notes.
   content_sha256: 6e27cad37d7fad967f0cdb29f27bf4ddf038724472d3a19698d39ecbf8fa5517
+- type: source
+  id: source.db.release046
+  title: db firmware v0.4.6 beta
+  summary: Quasi-LUT on six more bodies, most of the new UI on the E-M1 Mark III, and focus stacking with any lens.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-25'
+  url: https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.6
+  source_kind: github-release
+  upstream_repo: azqeurio/om-c-firmware
+  revision: dbv0.4.6
+  locator: GitHub release notes for dbv0.4.6, English and Korean sections
+  retrieved_on: '2026-11-25'
+  last_checked: '2026-11-25'
+  published_on: '2026-11-25'
+  publication: public
+  reuse_note: Attributed summary of the maintainer’s release notes.
 - type: source
   id: source.db.release045
   title: db firmware v0.4.5 beta

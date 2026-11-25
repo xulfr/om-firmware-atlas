@@ -13,6 +13,8 @@ Use the descriptor table and end selector, then check references, initialiser co
 
 > **What happens:** Calls into unloaded bytes run leftover RAM.
 
+**Symptoms:** [Fails to start, restarts or loops at power-on](index.md#start-failure)
+
 ## Observations
 
 - **Static analysis** ([Olympus firmware research](../projects/oly-fw-analysis.md)): Large FF runs in OM-3 1100 are mostly outside the loads. Source: [Finding space for added code](../sources/fishcu.code-space.md).

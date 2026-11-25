@@ -13,6 +13,8 @@ After a write through the uncached alias, write the D-cache back and invalidate 
 
 > **What happens:** A core with a stale line runs old code, or a half-written jump if the patched bytes span two lines.
 
+**Symptoms:** [Restarts or crashes when a feature runs](index.md#restart-in-use)
+
 ## Observations
 
 - **Static analysis** ([fenykl](../projects/fenykl.md)): No cross-core publication protocol found in the E-M10 Mark II 1.4 firmware; the hook rules follow from it. Source: [fenykl plugin SDK](../sources/fenykl.sdk.md).

@@ -13,6 +13,8 @@ Preserve the stored span at main-payload offset 0xc9d7e0, and preferably section
 
 > **What happens:** If section 7 fails to load, the card updater may not run to restore stock.
 
+**Symptoms:** [Firmware update or recovery at risk](index.md#recovery-at-risk)
+
 ## Observations
 
 - **Static analysis** ([Caduceus for OM-5](../projects/caduceus-om5.md)): FIRMUP_CLI is inside section 7; the builder can preserve the stored spans. Source: [OM-5 Mark II stock section 7](../sources/om5.section7.md).

@@ -32,6 +32,7 @@ Individual observations from physical cameras, emulators and code inspection, wi
 
 ## PEN E-PM2
 
+- [E-PM2 cold-start-fix owner camera test](epm2-cold-start-fix.md) · Camera test · reported working · 25 Nov 2026
 - [E-PM2 peaking-mf owner camera test](epm2-peaking-mf.md) · Camera test · reported working · 21 Nov 2026
 - [E-PM2 films-twelve-off: owner camera test](epm2-films-twelve-off.md) · Camera test · reported working · 21 Nov 2026
 - [E-PM2 films-look-exif: owner camera test](epm2-films-look-exif.md) · Camera test · reported working · 20 Nov 2026

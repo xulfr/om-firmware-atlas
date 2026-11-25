@@ -4,14 +4,14 @@
 
 Version history through 94, the known limits of 94 and the User Hue reset on each look's own page.
 
-**[Open original source](https://github.com/Meghnus/om10mi-mods/blob/c8d72448b8a2981cc995b70230e1619f1a89d39f/CHANGELOG.md)**
+**[Open original source](https://github.com/Meghnus/om10mi-mods/blob/c1f31d44bd5fc4b8e468ea0fa0d266d776ffd33d/CHANGELOG.md)**
 
 **Kind:** github file. **Locator:** CHANGELOG.md.
 
-**Revision / release:** `c8d72448b8a2981cc995b70230e1619f1a89d39f`. **Retrieved:** 2026-11-24. **Last source check:** 2026-11-24.
+**Revision / release:** `c1f31d44bd5fc4b8e468ea0fa0d266d776ffd33d`. **Retrieved:** 2026-11-25. **Last source check:** 2026-11-25.
 
 **Publication:** public. Linked and synthesised; upstream material retains its own terms.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/om10mi-mods.yaml) · Substantively reviewed: 2026-11-24.
+[Canonical record](../../records/sources/om10mi-mods.yaml) · Substantively reviewed: 2026-11-25.

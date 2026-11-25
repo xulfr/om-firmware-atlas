@@ -4,11 +4,11 @@
 
 Release-centred controls, localisation and other modifications.
 
-[Contribution home](https://github.com/azqeurio/om-c-firmware/issues). The latest reviewed release is v0.4.5 beta, which reports an OI Share connection fix for the Mark II-based OM-5 port. The README says the maintainer tests on real OM-1, OM-5 Mark II and E-M10 bodies only; other models are checked in offline simulation. The release notes add no physical-camera result.
+[Contribution home](https://github.com/azqeurio/om-c-firmware/issues). The latest reviewed release is v0.4.6 beta, which lists Quasi-LUT on six more bodies, most of a new user interface ported to the E-M1 Mark III, and focus stacking with any lens on bodies that support it. The README says the maintainer tests on real OM-1, OM-5 Mark II and E-M10 bodies only; other models are checked in offline simulation. The release notes add no physical-camera result.
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [db-firmware.yaml](../../../records/projects/db-firmware.yaml) | Project scope, related work and contribution destination | 11,755 | ~2,939 |
-| [db.yaml](../../../records/sources/db.yaml) | Find the relevant source/observation ID; use bounded reads | 6,309 | ~1,578 |
+| [db-firmware.yaml](../../../records/projects/db-firmware.yaml) | Project scope, related work and contribution destination | 13,777 | ~3,445 |
+| [db.yaml](../../../records/sources/db.yaml) | Find the relevant source/observation ID; use bounded reads | 6,976 | ~1,744 |
 
 Follow only relevant camera/topic routes. Upstream policies apply to work there; Atlas does not assign ownership across projects.

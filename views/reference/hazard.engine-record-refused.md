@@ -13,6 +13,8 @@ Read the bridge checks (capacity, frame counts) for every change made to a job r
 
 > **What happens:** Camera hang the next time anything uses the image processor, until the battery is pulled.
 
+**Symptoms:** [Freezes until the battery is pulled](index.md#freeze)
+
 ## Observations
 
 - **Physical camera** ([Oly Firmware Notes and Mods (E-M5 Mark III)](../projects/em5-iii-notes.md)): A record over the bridge's capacity hung an E-M5 III until a battery pull. Source: [E-M5 III image engine (technical notes)](../sources/em5n.image-engine.md).

@@ -15,15 +15,17 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [db firmware v0.4.4 beta](db.release044.md) | The maintainer reports a simulated and emulated fix for the OM-5 port’s black screen on boot. |
 | [db firmware v0.4.4b beta](db.release044b.md) | The maintainer reports Hybrid Shutter startup, OM-5 port, Quasi-LUT and E-P7 1.1 fixes. |
 | [db firmware v0.4.5 beta](db.release045.md) | The maintainer reports a fix for OI Share connections on the Mark II-based OM-5 port. |
-| [db firmware releases](db.releases.md) | Beta release notes through v0.4.5, in Korean and English. |
+| [db firmware v0.4.6 beta](db.release046.md) | Quasi-LUT on six more bodies, most of the new UI on the E-M1 Mark III, and focus stacking with any lens. |
+| [db firmware releases](db.releases.md) | Beta release notes through v0.4.6, in Korean and English. |
 | [Author's note on project status](em1m3.author-note.md) | The author asked on 2026-11-20 that the Atlas record the project as inactive but open to continue, functional, with one known preview issue. Historical: the README of 2026-11-21 says the project continues. |
-| [E-M1 III mod builder guide](em1m3.builder.md) | What the builder does, the mod list with the owner's camera status per mod, install steps and credits. |
-| [E-M1 III firmware findings](em1m3.findings.md) | Research notes behind the mods, including Multiple Exposure frame counts tried on the camera and the overlay fix in test 1.746. |
-| [E-M1 III mod pack](em1m3.mods.md) | The builder's 21 mods on the main branch after mod-builder-1.19, with descriptions and camera notes, and the SHA-256 it requires of stock 1.6. |
+| [E-M1 III mod builder guide](em1m3.builder.md) | What the builder does, the mod list with the owner's camera status per mod, and install steps. |
+| [E-M1 III firmware findings](em1m3.findings.md) | Research notes behind the mods. The Multiple Exposure section was removed with that mod on 2026-11-24. |
+| [E-M1 III mod pack](em1m3.mods.md) | The builder's 19 mods on the main branch on 2026-11-24, with plainer titles and descriptions and the SHA-256 it requires of stock 1.6. The per-mod camera notes are now empty; the builder README keeps the camera status table. |
 | [E-M1 III mod pack at builder 1.19](em1m3.mods119.md) | Monochrome II, the author’s camera report for its profile and labels, and the Shade effect mitigation awaiting a camera retest. |
 | [E-M1 III repository status note](em1m3.readme.md) | The author states the project continues, now worked on locally, and that the newest version adds Fill Flash to handheld High Res. Replaces the 2026-11-20 inactive note. |
 | [E-M1 III Mod Builder mod-builder-1.19](em1m3.release119.md) | Packaged builder for E-M1 Mark III firmware 1.6, with Windows and macOS assets. |
 | [E-M1 III Mod Builder releases](em1m3.releases.md) | Mac and Windows builder releases through mod-builder-1.19. |
+| [E-M1 III linear Sharpness patch tool](em1m3.sharp-off.md) | The patch tool's notes on the linear Sharpness hook, including the HDR early-out path that made the first version restart the camera. |
 | [AF subject, face and eye detection](em5n.af-detect.md) | Subject detection across bodies and why it needs OM-1-class hardware. |
 | [E-M5 III boot and section loading](em5n.boot.md) | Load base, always-ready range, section order, ready bits and boot guards. |
 | [E-M5 III vector GPU (c3d) reference](em5n.c3d-gpu.md) | Reference for the c3d task, the OpenVG/EGL library, draw kinds, renderer interface and command lists. |
@@ -89,11 +91,12 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [Caduceus E-P7 releases](ep7.releases.md) | Beta release notes from v0.31b to v0.35. |
 | [Caduceus v0.35 (beta)](ep7.v035.md) | More dial functions, an M-mode dial for manual lenses, and fixes for the Shortcut-button wheel and Movie Extras rows. |
 | [films-look-exif camera log](epm2.camera-log.md) | Owner camera result for the pinned build on 2026-11-20, with the emulator checks run before the flash. |
+| [E-PM2 cold-start-fix camera log](epm2.camera-log-cold-start-fix.md) | Checks before the flash and the owner's camera result for the cold-start-fix build on 25 November. |
 | [E-PM2 peaking-mf camera log](epm2.camera-log-peaking-mf.md) | Owner test of the first peaking-mf candidate and the rebuilt, pinned firmware on 21 November. |
 | [films-twelve-off camera log](epm2.camera-log-twelve-off.md) | Owner camera result for the films-twelve-off build on 2026-11-21, the checks not done and the emulator checks run before the flash. |
 | [E-PM2 feasibility and real limits](epm2.feasibility.md) | Measured limits, resources, recovery record and what is feasible, each labelled verified, inferred or unknown. |
 | [E-PM2 firmware format](epm2.format.md) | OE container fields, scrambling, checksum and the v1.6 blocks with their runtime base. |
-| [EPM2Mod pinned build](epm2.install.md) | The pinned build films-twelve-off, its feature set, the camera-test date and the stock and build SHA-256s. |
+| [EPM2Mod pinned build](epm2.install.md) | The pinned build cold-start-fix, its feature set, the camera-test date and the stock and build SHA-256s. |
 | [EPM2Mod install and restore for peaking-mf](epm2.install-peaking-mf.md) | Pinned peaking-mf firmware identity, startup look loading, focus peaking and the stock restore reset. |
 | [Olympus custom firmware landscape](epm2.landscape.md) | Known projects by camera, and why EPM2Mod is not a fork of the newer-body mods. |
 | [Olympus generations for modding](epm2.model-matrix.md) | Generations, firmware codes, layouts and processors across 32 surveyed update files, with labelled certainty. |
@@ -102,9 +105,12 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [EPM2Mod 2026.11.20-rc.3](epm2.rc3.md) | Ships continuous focus peaking in MF and applies stored looks before the first shot. |
 | [EPM2Mod 2026.11.20-rc.4](epm2.rc4.md) | Adds a signed and notarised macOS installer and resets settings on stock restore. |
 | [EPM2Mod 2026.11.20-rc.5](epm2.rc5.md) | Corrects the dark Tri-X look and expands the online film comparison. |
+| [EPM2Mod 2026.11.20-rc.6](epm2.rc6.md) | Pre-release with project-site changes and release tooling for named camera-tested builds; the firmware digest of v2026.11.20. |
 | [EPM2Mod overview](epm2.readme.md) | Features, install routes, the landscape of other projects and the AI-assistance note. |
-| [EPM2Mod releases](epm2.releases.md) | Installer release candidates through v2026.11.20-rc.5 and the final v2026.11.20. |
+| [EPM2Mod releases](epm2.releases.md) | Installer releases through the final v2026.11.20 and the pre-releases v2026.11.20-rc.6 and v2026.11.25-rc.1. |
+| [EPM2Mod slow cold start investigation](epm2.slow-boot.md) | Issue |
 | [EPM2Mod 2026.11.20](epm2.v20261120.md) | Final release of the 2026.11.20 installer, with its firmware digest and the features of the films-twelve-off build. |
+| [EPM2Mod 2026.11.25-rc.1](epm2.v20261125-rc1.md) | Pre-release with the cold-start fix (peaking-mf-2), spot metering at the AF target and a stricter hook check. |
 | [fenykl contrast client](fenykl.afc.md) | The own contrast-AF client of the focus meter: what it reads, its state machine and the camera run. |
 | [fenykl update-file container code](fenykl.container-code.md) | Block header layout, type and model signatures, scrambling and the checksum rule of Olympus .BIN files. |
 | [fenykl stock-image unpack tests](fenykl.container-tests.md) | Pins the unpacked blocks of the stock E-M10 Mark II 1.4 file: names, sizes and digests. |
@@ -144,7 +150,7 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [Freezes and reboots with filters (issue 4)](om10mi.issue-4.md) | The reporter describes freezes and automatic restarts while taking single-shot JPEG + RAW with looks. Exact look and build unspecified. |
 | [om10mi look file, version 1 (draft)](om10mi.lookfile.md) | Draft JSON look format for external editors: 18 look slots, name limits and parameters; builder side not finished. |
 | [om10mi-mods notice](om10mi.notice.md) | What the repository does and does not contain, licences and the references the look data is fitted to. |
-| [om10mi-mods overview](om10mi.readme.md) | Features of version 94, the colour wheel, the optional look pack builder, test status per version, known changes and limitations, credits and licences. |
+| [om10mi-mods overview](om10mi.readme.md) | Features of version 94, the colour wheel, the optional look pack builder and its in-browser firmware build, test status per version, known changes and limitations, credits and licences. |
 | [om10mi-mods releases](om10mi.releases.md) | Four releases: v94 (2026-11-24), v88 (2026-11-23, pre-release, superseded), v87 (2026-11-21) and v56 (2026-11-10); each has a Windows exe and a Python zip with SHA-256s, and the stock and result SHA-1s. |
 | [OM-3 v0.40 grain crash report](om3.atlas-grain-report.md) | A user reports a crash at shutter release with Film Grain enabled and loss of the last photo. |
 | [Caduceus OM-3 developer notes](om3.devnotes.md) | Addresses, hooks and test history for the OM-3 1.1 port, with camera-proven sites marked. |

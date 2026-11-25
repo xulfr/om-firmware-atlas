@@ -13,13 +13,14 @@ An entry is a fact that more than one project or agent is likely to need, and th
 | `function`, `hook-site`, `data`, `table` | A named stock function, hook site or table at one address in one build |
 | `free-space` | An unused range that patches can claim, with its start and end |
 | `layout` | A base or offset needed to translate between address spaces |
-| `hazard` | A trouble spot: a rule such as "keep patch state out of the loaded image", with its consequence |
+| `hazard` | A trouble spot: a rule such as "keep patch state out of the loaded image", with its consequence and the `symptoms` it shows on the camera |
 | `platform` | One hardware or layout fact about one build, keyed by a `trait` from the taxonomy, with a short `value`: "Image processor generation: TruePic VIII" |
 | `native-feature` | Whether the stock build contains a feature, keyed by a taxonomy `feature_id`, with a `presence` (native, dormant, partial, strings-only or absent) and an optional short `value`: "Live ND: native, ND2 to ND16" |
 
 Each entry:
 
 - names **exactly one firmware build** when it has an address **(checked)**. Addresses never transfer between builds or bodies; make a separate entry per build. A hazard can span builds, but has no address of its own **(checked)**.
+- for a `hazard`, lists one or more `symptoms` from `taxonomy/topics.yaml` **(checked)**: what an owner or tester sees, such as a slow start or a freeze. The reference index groups hazards by symptom across bodies, so a fault seen on one camera leads to causes recorded on others.
 - for `platform` and `native-feature`, names exactly one firmware build, no address, and a known trait or feature **(checked)**. One entry per build and trait or feature **(checked)**. These describe the stock firmware only; what a project adds is a capability, not a native feature.
 - records **how it was established** in one or more observations: static analysis, emulator or physical camera, each from a **pinned source** (a commit, release tag or content digest) **(checked)**.
 - links the **upstream section** that explains it, in one of the cited sources' repositories **(checked)**.

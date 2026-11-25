@@ -2,16 +2,16 @@
 
 # E-M1 III mod builder guide
 
-What the builder does, the mod list with the owner's camera status per mod, install steps and credits.
+What the builder does, the mod list with the owner's camera status per mod, and install steps.
 
-**[Open original source](https://github.com/dfeldt91-blip/E-M1-Miii/blob/ae16f3d2836e7273164c7cd3497237117c8b9ff9/builder/README.md)**
+**[Open original source](https://github.com/dfeldt91-blip/E-M1-Miii/blob/64ebb28d23e4d5aa11d3350774aa9c76a137fea0/builder/README.md)**
 
 **Kind:** github file. **Locator:** builder/README.md.
 
-**Revision / release:** `ae16f3d2836e7273164c7cd3497237117c8b9ff9`. **Retrieved:** 2026-11-21. **Last source check:** 2026-11-21.
+**Revision / release:** `64ebb28d23e4d5aa11d3350774aa9c76a137fea0`. **Retrieved:** 2026-11-25. **Last source check:** 2026-11-25.
 
 **Publication:** public. Linked and synthesised; upstream material retains its own terms.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/em1-iii-mod-builder.yaml) · Substantively reviewed: 2026-11-21.
+[Canonical record](../../records/sources/em1-iii-mod-builder.yaml) · Substantively reviewed: 2026-11-25.

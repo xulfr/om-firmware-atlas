@@ -21,6 +21,8 @@ records:
   note: 'Test the word the firmware''s own wait uses: OM-5 Mark II 0xa26e2694, not 0xa26e2698; OM-3 0xa32de58c,
     not 0xa32de590, which the loader sets whatever the copy returned.'
   consequence: Hooks reached early in boot may call code or data that is not initialised yet.
+  symptoms:
+  - symptom.start-failure
   observations:
   - method: static-analysis
     source_ref: source.om5.startup-fix
@@ -58,6 +60,8 @@ records:
   note: Use the descriptor table and end selector, then check references, initialiser counts and runtime ownership.
     Emulators that map the whole file can hide the error.
   consequence: Calls into unloaded bytes run leftover RAM.
+  symptoms:
+  - symptom.start-failure
   observations:
   - method: static-analysis
     source_ref: source.fishcu.code-space
@@ -90,6 +94,8 @@ records:
   note: 'Preserve the stored span at main-payload offset 0xc9d7e0, and preferably section 6 too. This is the project''s
     inference: no failure has been traced to it.'
   consequence: If section 7 fails to load, the card updater may not run to restore stock.
+  symptoms:
+  - symptom.recovery-at-risk
   observations:
   - method: static-analysis
     source_ref: source.om5.section7
@@ -97,3 +103,69 @@ records:
     summary: FIRMUP_CLI is inside section 7; the builder can preserve the stored spans.
   conflicts: []
   upstream_detail: https://github.com/xulfr/caduceus-om5/blob/a72851a4ada5eab8eed02f7a06afd7f9297bbe81/research/OM5II-STOCK-SECTION7.md#build-boundary
+- type: reference
+  id: reference.hazard.kept-ram-hides-cold-start
+  title: Test start-up changes after a long power-off, not a quick restart
+  summary: RAM kept across a short power-off can still hold code a start has not loaded yet, which hides load-order faults.
+  source_refs:
+  - source.epm2.slow-boot
+  topics:
+  - patching
+  - emulation
+  last_reviewed: '2026-11-25'
+  category: hazard
+  camera_ids:
+  - camera.epm2
+  firmware_ids:
+  - firmware.epm2-1600
+  note: On the E-PM2 a start within about 30 s of power-off still found segment 2 in RAM from the last start; after
+    45 to 60 s off it had decayed. The project's test sheets now include starts after 2 minutes off and with the
+    battery out. Its emulator could not show the fault, because it has no live view and copies segments in about 1 ms.
+  consequence: Slow or failed cold starts that quick restarts and the emulator never show. On the E-PM2, about 10 s
+    until the camera can shoot, inferred to pass through a hidden restart.
+  symptoms:
+  - symptom.slow-start
+  - symptom.start-failure
+  observations:
+  - method: physical-camera
+    source_ref: source.epm2.slow-boot
+    project_id: project.epm2mod
+    summary: The reporter and a contributor saw slow starts after 45 to 60 s off and fast ones after 10 s off. The
+      owner's timed starts all kept RAM, even after more than 60 s off, and took about 2 s.
+  - method: emulator
+    source_ref: source.epm2.slow-boot
+    project_id: project.epm2mod
+    summary: Boots with RAM zeroed, filled with 0xFF, random or kept from an earlier run all started normally, stock
+      and modded alike.
+  conflicts: []
+  upstream_detail: https://github.com/cfu288/EPM2Mod/blob/3b6827892ed4f031a72acb7fec4496aaf9a29348/experiments/2026-11-24-slow-boot/NOTES.md
+- type: reference
+  id: reference.hazard.check-built-image
+  title: Check hook targets in the built image, not in each patch's own bytes
+  summary: When two patches write the same site, a per-patch check reads the wrong bytes and can miss the jump that ships.
+  source_refs:
+  - source.epm2.slow-boot
+  topics:
+  - patching
+  - tooling
+  last_reviewed: '2026-11-25'
+  category: hazard
+  camera_ids:
+  - camera.epm2
+  firmware_ids:
+  - firmware.epm2-1600
+  note: EPM2Mod's hook check decoded each patch on its own, so a later patch's jump from early-loaded code into
+    segment 2 was reported as the earlier patch's jump. The check now decodes the built bytes of every change in
+    early-loaded space, with overlapping changes as one run, and lists stock pointers that a change rewrites.
+  consequence: A jump into late-loaded code passed the check and shipped from rc.3 to v2026.11.20 on the E-PM2.
+  symptoms:
+  - symptom.slow-start
+  - symptom.start-failure
+  observations:
+  - method: static-analysis
+    source_ref: source.epm2.slow-boot
+    project_id: project.epm2mod
+    summary: The rebuilt check finds that jump as the one failure of the pinned spot-af-2 build. Its audit lists 187
+      transfers out of patched early-loaded code, 88 of them into segments 2 or 3.
+  conflicts: []
+  upstream_detail: https://github.com/cfu288/EPM2Mod/blob/3b6827892ed4f031a72acb7fec4496aaf9a29348/experiments/2026-11-24-slow-boot/NOTES.md

@@ -4,26 +4,36 @@
 
 Exact-build facts only: never apply an address to another build or body. Status: camera-confirmed > corroborated > single source; disputed entries list their conflict. Follow Detail for the explanation.
 
+## Trouble spots
+
+| Rule | Status | Detail |
+|---|---|---|
+| Check hook targets in the built image, not in each patch's own bytes | single-source | [d1] |
+| Test start-up changes after a long power-off, not a quick restart | camera-confirmed | [d1] |
+| Only call code in a section that has already loaded | camera-confirmed | [d2] |
+
 ## firmware.epm2-1600: platform and built-in features
 
 | Fact | Value | Status | Detail |
 |---|---|---|---|
-| Image processor generation | TruePic VI | single-source | [d1] |
-| Main CPU | MN103, two cores, uITRON | single-source | [d2] |
-| ARM co-processor | None | single-source | [d1] |
-| Update file magic | OE 10 10 | single-source | [d3] |
-| Firmware blocks | 4, plus an image-stabiliser tail | single-source | [d4] |
-| Main program compression | None | single-source | [d1] |
+| Image processor generation | TruePic VI | single-source | [d3] |
+| Main CPU | MN103, two cores, uITRON | single-source | [d4] |
+| ARM co-processor | None | single-source | [d3] |
+| Update file magic | OE 10 10 | single-source | [d5] |
+| Firmware blocks | 4, plus an image-stabiliser tail | single-source | [d6] |
+| Main program compression | None | single-source | [d3] |
 
 ## firmware.epm2-1600
 
 | Name | Space | Address | Kind | Status | Detail |
 |---|---|---|---|---|---|
-| Main CPU base, E-PM2 1.6 | runtime-cached | `0x7e421020` | layout | camera-confirmed | [d4] |
+| Main CPU base, E-PM2 1.6 | runtime-cached | `0x7e421020` | layout | camera-confirmed | [d6] |
 
-[d1]: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/reference/model-matrix.md#1-the-generations
-[d2]: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/dev/feasibility.md#what-the-body-has
-[d3]: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/reference/firmware-format.md#oe-block
-[d4]: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/reference/firmware-format.md#e-pm2-v16-blocks
+[d1]: https://github.com/cfu288/EPM2Mod/blob/3b6827892ed4f031a72acb7fec4496aaf9a29348/experiments/2026-11-24-slow-boot/NOTES.md
+[d2]: https://github.com/cakelesscoder/caduceus-ep7/blob/0cb1dbcc50595cd87f56648810762ffbbb8e17f3/docs/FIRMWARE_GUIDE.md
+[d3]: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/reference/model-matrix.md#1-the-generations
+[d4]: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/dev/feasibility.md#what-the-body-has
+[d5]: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/reference/firmware-format.md#oe-block
+[d6]: https://github.com/cfu288/EPM2Mod/blob/09b982771e2809e2ee73076b25c41d9c5c5ad905/docs/reference/firmware-format.md#e-pm2-v16-blocks
 
-Records: [epm2-1600.yaml](../../../records/reference/epm2-1600.yaml).
+Records: [epm2-1600.yaml](../../../records/reference/epm2-1600.yaml), [hazards-sections.yaml](../../../records/reference/hazards-sections.yaml), [hazards.yaml](../../../records/reference/hazards.yaml).

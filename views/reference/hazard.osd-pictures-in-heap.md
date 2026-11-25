@@ -13,6 +13,8 @@ Every picture the camera has shown points into the heap (0xa2...). OM-Emu draws 
 
 > **What happens:** The rest of the camera menu is blank.
 
+**Symptoms:** [Wrong picture, screen or card file](index.md#wrong-output)
+
 ## Observations
 
 - **Physical camera** ([Caduceus for OM-3](../projects/caduceus-om3.md)): A test build with a descriptor at 0x60f9... blanked the menu; heap descriptors work. Source: [OM-3 research notebook](../sources/om3.notes.md).

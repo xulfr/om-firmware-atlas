@@ -18,6 +18,8 @@ records:
   note: Read the bridge checks (capacity, frame counts) for every change made to a job record before submitting
     it.
   consequence: Camera hang the next time anything uses the image processor, until the battery is pulled.
+  symptoms:
+  - symptom.freeze
   observations:
   - method: physical-camera
     source_ref: source.em5n.image-engine
@@ -40,6 +42,8 @@ records:
   firmware_ids: *id002
   note: Route events an added state does not need to a stock no-op handler.
   consequence: Lost frames in fast series and a white photo at fast shutter speeds; slow series hid the problem.
+  symptoms:
+  - symptom.wrong-output
   observations:
   - method: physical-camera
     source_ref: source.em5n.port-layers
@@ -64,6 +68,8 @@ records:
   note: Change ARM power only at an Idle or Standby state change. Keep image buffers out of ARM Linux RAM, which
     is reloaded at every start.
   consequence: Camera reset.
+  symptoms:
+  - symptom.restart-in-use
   observations:
   - method: physical-camera
     source_ref: source.em5n.gotchas
@@ -87,6 +93,8 @@ records:
   firmware_ids: *id002
   note: 0xc0000000 to 0xc2aa0000 is ARM Linux RAM. Read frames above it through the image engine, not the CPU.
   consequence: Camera reboot.
+  symptoms:
+  - symptom.restart-in-use
   observations:
   - method: physical-camera
     source_ref: source.em5n.gotchas
@@ -108,6 +116,8 @@ records:
   firmware_ids: *id002
   note: Firmware paths are 8.3 only. Write from a cached heap buffer, and only from task context.
   consequence: Empty (0-byte) log files.
+  symptoms:
+  - symptom.wrong-output
   observations:
   - method: physical-camera
     source_ref: source.em5n.gotchas
@@ -131,6 +141,8 @@ records:
   note: Faults reset the camera in about a second, but a task waiting forever does not. Plan for a battery pull
     in any test that could block a task.
   consequence: Frozen camera that needs a battery pull.
+  symptoms:
+  - symptom.freeze
   observations:
   - method: static-analysis
     source_ref: source.em5n.boot

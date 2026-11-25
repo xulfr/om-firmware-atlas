@@ -2,16 +2,16 @@
 
 # om10mi-mods overview
 
-Features of version 94, the colour wheel, the optional look pack builder, test status per version, known changes and limitations, credits and licences.
+Features of version 94, the colour wheel, the optional look pack builder and its in-browser firmware build, test status per version, known changes and limitations, credits and licences.
 
-**[Open original source](https://github.com/Meghnus/om10mi-mods/blob/c8d72448b8a2981cc995b70230e1619f1a89d39f/README.md)**
+**[Open original source](https://github.com/Meghnus/om10mi-mods/blob/c1f31d44bd5fc4b8e468ea0fa0d266d776ffd33d/README.md)**
 
 **Kind:** github file. **Locator:** README.md.
 
-**Revision / release:** `c8d72448b8a2981cc995b70230e1619f1a89d39f`. **Retrieved:** 2026-11-24. **Last source check:** 2026-11-24.
+**Revision / release:** `c1f31d44bd5fc4b8e468ea0fa0d266d776ffd33d`. **Retrieved:** 2026-11-25. **Last source check:** 2026-11-25.
 
 **Publication:** public. Linked and synthesised; upstream material retains its own terms.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/om10mi-mods.yaml) · Substantively reviewed: 2026-11-24.
+[Canonical record](../../records/sources/om10mi-mods.yaml) · Substantively reviewed: 2026-11-25.

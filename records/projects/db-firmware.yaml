@@ -13,12 +13,13 @@ records:
   - source.db.release044
   - source.db.release043b
   - source.db.release045
+  - source.db.release046
   - source.db.readme
   topics:
   - capture
   - colour
   - patching
-  last_reviewed: '2026-11-24'
+  last_reviewed: '2026-11-25'
   url: https://github.com/azqeurio/om-c-firmware
   kind: mod
   camera_ids:
@@ -27,9 +28,10 @@ records:
   - camera.om3
   - camera.ep7
   - camera.pen-f
+  - camera.em1-iii
   contribution_home: https://github.com/azqeurio/om-c-firmware/issues
-  status_summary: The latest reviewed release is v0.4.5 beta, which reports an OI Share connection fix for the Mark
-    II-based OM-5 port. The README says the maintainer tests on real OM-1, OM-5 Mark II and E-M10 bodies only; other
+  status_summary: The latest reviewed release is v0.4.6 beta, which lists Quasi-LUT on six more bodies, most of a
+    new user interface ported to the E-M1 Mark III, and focus stacking with any lens on bodies that support it. The README says the maintainer tests on real OM-1, OM-5 Mark II and E-M10 bodies only; other
     models are checked in offline simulation. The release notes add no physical-camera result.
   related_projects: []
   tagline: Feature patches across many OM SYSTEM and Olympus bodies, from aperture rings to new burst
@@ -41,6 +43,8 @@ records:
     note: "Korean menus and Hybrid Shutter, both beta."
   - camera_id: camera.pen-f
     note: "No PEN-F feature is catalogued."
+  - camera_id: camera.em1-iii
+    note: "v0.4.6 lists Quasi-LUT and most of a new user interface for this body, both beta. The notes give no test result."
   description:
   - db firmware (om-c-firmware) by azqeurio publishes beta firmware patches for a wide range of bodies,
     including the OM-1, OM-1 Mark II, OM-3, OM-5, OM-5 Mark II, E-M1 Mark III, E-M5 Mark III and PEN-F.
@@ -55,6 +59,8 @@ records:
     bodies, fixes Quasi-LUT conversion, grain and the OM-3 indicator, and lists the OM-5 and OM-5 Mark II builds
     as not working.
   - The maintainer reports power-cycle persistence for Hybrid Shutter and Quasi-LUT in v0.4.3b, then a simulated OM-5 boot fix in v0.4.4 and follow-up fixes in v0.4.4b.
+  - v0.4.6 adds Quasi-LUT to the OM-5, OM-5 Mark II, the Mark II-based OM-5, E-M1X, E-M1 Mark III and E-P7. The Korean
+    notes say most of the new user interface is ported to the E-M1 Mark III; the English notes leave out "most".
   maintainers:
   - label: azqeurio
     url: https://github.com/azqeurio
@@ -80,12 +86,32 @@ records:
     since: null
     source_ref: source.db.releases
   - name: Quasi-LUT and DBLink
-    summary: Quasi-LUT with DBLink transfer. On OM-3, v0.4.3b adds power-cycle persistence for the on/off state and selected slot.
+    summary: Quasi-LUT with DBLink transfer. On OM-3, v0.4.3b adds power-cycle persistence for the on/off state and
+      selected slot. v0.4.6 lists it for the OM-5, OM-5 Mark II, the Mark II-based OM-5, E-M1X, E-M1 Mark III and E-P7.
     camera_ids:
     - camera.om3
+    - camera.om5
+    - camera.om5-ii
+    - camera.em1-iii
+    - camera.ep7
     status: beta
     since: dbv0.4.1
-    source_ref: source.db.release043b
+    source_ref: source.db.release046
+  - name: Focus stacking with any lens
+    summary: v0.4.6 removes the lens restriction on in-camera focus stacking on the bodies that support it. The notes do
+      not list those bodies.
+    camera_ids: []
+    status: beta
+    since: dbv0.4.6
+    source_ref: source.db.release046
+  - name: New user interface on the E-M1 Mark III
+    summary: The Korean notes say most of a new user interface is ported to the E-M1 Mark III; the English
+      notes call it a new UI port. No list of screens is given.
+    camera_ids:
+    - camera.em1-iii
+    status: beta
+    since: dbv0.4.6
+    source_ref: source.db.release046
   - name: OM-1 Mark II features on the OM-1
     summary: A port of OM-1 Mark II firmware to the OM-1, without ND128 or the larger buffer.
     camera_ids: []
@@ -116,6 +142,22 @@ records:
     since: dbv0.4.2
     source_ref: source.db.release043b
   releases:
+  - tag: dbv0.4.6
+    title: db firmware v0.4.6 beta
+    date: '2026-11-25'
+    url: https://github.com/azqeurio/om-c-firmware/releases/tag/dbv0.4.6
+    prerelease: false
+    camera_ids:
+    - camera.om5
+    - camera.om5-ii
+    - camera.em1-iii
+    - camera.ep7
+    highlights:
+    - Lists Quasi-LUT for the OM-5, OM-5 Mark II, the Mark II-based OM-5, E-M1X, E-M1 Mark III and E-P7.
+    - Ports most of a new user interface to the E-M1 Mark III, in the Korean notes' words.
+    - Removes the lens restriction on focus stacking on bodies that support it.
+    warning: Upstream calls this a beta. The notes give no test result, on a camera or in simulation, for these changes.
+    source_ref: source.db.release046
   - tag: dbv0.4.5
     title: db firmware v0.4.5 beta
     date: '2026-11-23'

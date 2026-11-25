@@ -127,7 +127,7 @@ PEN-F-style wheel in Color Creator at the ART dial; mark one or more of 12 secto
 **Look pack builder** <span class="pill pill-released">Available</span>
 { .feature-head }
 
-An optional PC tool and browser pages replace looks from a .cube or .xmp file, rename them and reorder the Picture Mode list, working on the image the user built. A look is a fitted approximation of the LUT; hiding looks is refused because it is not proven on a camera.
+An optional PC tool and browser pages replace looks from a .cube or .xmp file, rename them and reorder the Picture Mode list, working on the image the user built. Since 2026-11-25 the browser page can also build the card file itself from the owner's official firmware, without uploading it. A look is a fitted approximation of the LUT; hiding looks is refused because it is not proven on a camera.
 
 [OM-D E-M10 (Mark I)](../cameras/em10.md) · since v94
 { .card-meta }
@@ -231,4 +231,4 @@ Version 94 is the single current build for the original E-M10 on firmware 1.4. I
 - [om10mi-mods colour wheel guide](../sources/om10mi.color-wheel.md)
 - [om10mi-mods development and testing method](../sources/om10mi.development.md)
 
-[Canonical record](../../records/projects/om10mi-mods.yaml) · Substantively reviewed: 2026-11-24.
+[Canonical record](../../records/projects/om10mi-mods.yaml) · Substantively reviewed: 2026-11-25.

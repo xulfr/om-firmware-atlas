@@ -13,6 +13,8 @@ Plugging the cable into a running E-M10 Mark II switches it to USB in place, wit
 
 > **What happens:** Two FAT writers on one card; fenykl reports a plugin that overwrote its own log this way.
 
+**Symptoms:** [Wrong picture, screen or card file](index.md#wrong-output)
+
 ## Observations
 
 - **Static analysis** ([fenykl](../projects/fenykl.md)): The PC's requests share the file server task with plugin file calls and no camera-side unmount was found; the gate itself has not yet run on the camera. Source: [fenykl plugin SDK](../sources/fenykl.sdk.md).

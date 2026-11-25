@@ -13,6 +13,8 @@ On the E-M10 Mark II the OK-held card update starts before the loader and is not
 
 > **What happens:** Plugin code runs while the body firmware is written; the effect has not been characterised.
 
+**Symptoms:** [Firmware update or recovery at risk](index.md#recovery-at-risk)
+
 ## Observations
 
 - **Static analysis** ([fenykl](../projects/fenykl.md)): The SDK forbids a USB/PC update with FENYKL.BIN on the card because the payload would run while flash is written. Source: [fenykl plugin SDK](../sources/fenykl.sdk.md).
