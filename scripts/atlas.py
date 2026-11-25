@@ -11,6 +11,7 @@ import shutil
 import subprocess
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -146,7 +147,21 @@ def get_remote(url, json_response=False):
         return json.loads(payload) if json_response else response.status
 
 
+GITHUB_FILE_PATH = re.compile(r"^https://github\.com/[^/]+/[^/]+/blob/[0-9a-f]{40}/([^?#]+)$")
+GITHUB_RELEASE_TAG = re.compile(r"/releases/tag/([^/?#]+)$")
+GITHUB_THREAD = re.compile(r"/(?:issues|pull)/(\d+)/?(?:#issuecomment-(\d+))?$")
+# States that put a source on the weekly update queue. Matching or unchanged states do not.
+CHANGED_STATES = ("upstream-advanced", "file-changed", "file-missing", "new-release", "release-missing",
+                  "text-changed", "thread-updated")
+
+
 def inspect_remote(source, fetcher=get_remote, cache=None):
+    """Compare one source with upstream without changing it.
+
+    A file source compares the pinned file with the same path at the head of its tracked branch (the default
+    branch unless tracked_ref names a branch, or a tag for pinned release notes), so commits elsewhere in the repository do not queue it. A release
+    source for one tag compares that release's notes with the reviewed digest; a releases-listing source
+    compares the newest release. An issue or pull-request thread reports activity after the last check."""
     cache = cache if cache is not None else {}
 
     def fetch(url, as_json=True):
@@ -154,17 +169,46 @@ def inspect_remote(source, fetcher=get_remote, cache=None):
             cache[url] = fetcher(url, json_response=as_json)
         return cache[url]
 
+    def fetch_optional(url):
+        try:
+            return fetch(url)
+        except urllib.error.HTTPError as exc:
+            if exc.code == 404:
+                return None
+            raise
+
     try:
         repo = source.get("upstream_repo")
         kind = source["source_kind"]
+        api = f"https://api.github.com/repos/{repo}"
         if kind == "github-file":
-            data = fetch(f"https://api.github.com/repos/{repo}/commits?per_page=1")
-            head = data[0]["sha"]
-            return dict(state="revision-match" if head == source["revision"] else "upstream-advanced", observed_revision=head,
-                        note="Repository-head comparison only; inspect the scoped file before changing assertions.")
+            ref = source.get("tracked_ref")
+            branch = f"&sha={urllib.parse.quote(ref, safe='')}" if ref else ""
+            head = fetch(f"{api}/commits?per_page=1{branch}")[0]["sha"]
+            if head == source["revision"]:
+                return dict(state="revision-match", observed_revision=head, note="The pinned commit is the head of the tracked branch.")
+            path = GITHUB_FILE_PATH.match(source["url"]).group(1)
+            pinned = fetch(f"{api}/contents/{path}?ref={source['revision']}")
+            current = fetch_optional(f"{api}/contents/{path}?ref={head}")
+            if current is None:
+                return dict(state="file-missing", observed_revision=head,
+                            note=f"{path} is not at the head of the tracked branch; it may have moved or been removed.")
+            state = "file-unchanged" if current["sha"] == pinned["sha"] else "file-changed"
+            return dict(state=state, observed_revision=head,
+                        note="Compared the pinned file with the same path at the branch head; inspect it before changing assertions.")
         if kind == "github-release":
+            tag = GITHUB_RELEASE_TAG.search(source["url"])
+            if tag:
+                data = fetch_optional(f"{api}/releases/tags/{tag.group(1)}")
+                if data is None:
+                    return dict(state="release-missing", note="This release is no longer published upstream.")
+                digest = hashlib.sha256((data.get("body") or "").encode()).hexdigest()
+                state = ("text-untracked" if not source.get("content_sha256")
+                         else "unchanged" if digest == source["content_sha256"] else "text-changed")
+                return dict(state=state, observed_revision=data["tag_name"], content_sha256=digest,
+                            note="Compared this release's own notes; newer releases are reported per project.")
             # Newest release including pre-releases, so test versions are noticed too.
-            listing = fetch(f"https://api.github.com/repos/{repo}/releases?per_page=1")
+            listing = fetch(f"{api}/releases?per_page=1")
             if not listing:
                 return dict(state="no-releases", note="The repository lists no releases.")
             data = listing[0]
@@ -174,11 +218,17 @@ def inspect_remote(source, fetcher=get_remote, cache=None):
             return dict(state=state, observed_revision=data["tag_name"], content_sha256=digest,
                         note="No source record or substantive review date was modified.")
         if kind == "github-comment":
-            comment = source["url"].split("issuecomment-", 1)[1]
-            data = fetch(f"https://api.github.com/repos/{repo}/issues/comments/{comment}")
-            digest = hashlib.sha256((data.get("body") or "").encode()).hexdigest()
-            state = "text-untracked" if not source.get("content_sha256") else "unchanged" if digest == source["content_sha256"] else "text-changed"
-            return dict(state=state, content_sha256=digest, note="Comment text may change; record a reviewed baseline to compare it.")
+            thread = GITHUB_THREAD.search(source["url"])
+            if thread and thread.group(2):
+                data = fetch(f"{api}/issues/comments/{thread.group(2)}")
+                digest = hashlib.sha256((data.get("body") or "").encode()).hexdigest()
+                state = "text-untracked" if not source.get("content_sha256") else "unchanged" if digest == source["content_sha256"] else "text-changed"
+                return dict(state=state, content_sha256=digest, note="Comment text may change; record a reviewed baseline to compare it.")
+            data = fetch(f"{api}/issues/{thread.group(1)}")
+            updated = (data.get("updated_at") or "")[:10]
+            state = "thread-updated" if updated > source["last_checked"] else "thread-quiet"
+            return dict(state=state, observed_updated=updated, comments=data.get("comments"),
+                        note="Thread activity after the last check; read the new comments before changing assertions.")
         status = fetch(source["url"], False)
         return dict(state="reachable", http_status=status, note="Reachability only; activity and content were not validated.")
     except (urllib.error.URLError, TimeoutError, OSError, ValueError, KeyError, IndexError, AttributeError, TypeError) as exc:
@@ -241,7 +291,7 @@ def update_queue(report):
     lines = [f"Weekly source and release check, {report['checked_on']}. Generated by `python scripts/atlas.py queue`; "
              "nothing in the Atlas has been changed.", ""]
     releases = [p for p in report.get("projects", []) if p["state"] == "release-not-catalogued"]
-    changed = [s for s in report["sources"] if s["state"] in ("upstream-advanced", "new-release", "text-changed")]
+    changed = [s for s in report["sources"] if s["state"] in CHANGED_STATES]
     failed = [s for s in report["sources"] if s["state"] == "check-failed"] + \
              [p for p in report.get("projects", []) if p["state"] == "check-failed"]
     due = [s for s in report["sources"] if s.get("review_due")]

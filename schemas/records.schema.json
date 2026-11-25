@@ -152,7 +152,8 @@
           "locator": {"$ref": "#/$defs/text"}, "retrieved_on": {"$ref": "#/$defs/date"},
           "last_checked": {"$ref": "#/$defs/date"}, "published_on": {"type": ["string", "null"], "format": "date"},
           "publication": {"enum": ["public", "authorised-summary"]}, "reuse_note": {"$ref": "#/$defs/text"},
-          "content_sha256": {"$ref": "#/$defs/hash"}
+          "content_sha256": {"$ref": "#/$defs/hash"},
+          "tracked_ref": {"type": "string", "pattern": "^[A-Za-z0-9._/-]+$"}
         }}
       ], "unevaluatedProperties": false
     },

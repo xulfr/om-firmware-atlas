@@ -17,7 +17,7 @@ Use `null` for an unknown nullable field, not an invented value. A null firmware
 
 Physical evidence marked `complete` requires target/build, package hash from the report or observation, steps and explicit test date. `quality: partial` preserves a useful but incomplete account. `identity_level: release-label-only` cannot carry a reported package digest. Keep a manifest's expected digest in `expected_package_sha256`.
 
-Repository file sources use the same full commit in `revision` and `/blob/<commit>/` URL. Release descriptions and comments are mutable; a reviewed body digest can provide a baseline for future checks. The freshness checker reports missing baselines rather than claiming unchanged content.
+Repository file sources use the same full commit in `revision` and `/blob/<commit>/` URL. A file source that follows a side branch, or release notes pinned at a tag, names that branch or tag in `tracked_ref`, so freshness checks compare with it rather than the default branch. Release descriptions and comments are mutable; a reviewed body digest can provide a baseline for future checks. The freshness checker reports missing baselines rather than claiming unchanged content.
 
 ## Project showcase fields
 

@@ -145,9 +145,10 @@ Every Monday at 06:17 UTC, GitHub runs the Atlas workflow on a schedule.
 **What it does automatically:**
 
 - Runs `python scripts/atlas.py freshness --fetch`, which compares each source with its current upstream state without running any upstream code. It reports one of several states for each source, for example:
-    - `upstream-advanced`: a repository has new commits
-    - `new-release`: a project has a newer release, including test versions
-    - `text-changed`: a release note or comment differs from its recorded fingerprint
+    - `file-changed`: a pinned repository file differs at the head of its branch (the default branch, or the branch or tag the source names in `tracked_ref`); `file-unchanged` means the repository moved but that file did not, and `file-missing` that it moved or was removed
+    - `new-release`: the releases page lists a newer release, including test versions
+    - `text-changed`: the notes of the pinned release, or a comment, differ from the recorded fingerprint; `release-missing` means that release is no longer published
+    - `thread-updated`: an issue or pull-request thread has had activity since the last check
     - `reachable`: a non-GitHub link answered
     - `check-failed`: the check could not complete
 - Compares each project's newest GitHub release with the releases on its showcase page, and flags any that aren't listed yet.
