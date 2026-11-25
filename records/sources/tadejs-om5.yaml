@@ -12,6 +12,7 @@ records:
   upstream_repo: tadejs/caduceus-om5
   revision: d8fd0ccfb06557d2b63be84a46f3ab5ad6eae066
   locator: 'docs/PORT_OM5.md on branch om5-port'
+  tracked_ref: om5-port
   retrieved_on: '2026-11-20'
   last_checked: '2026-11-20'
   publication: public
@@ -28,6 +29,7 @@ records:
   upstream_repo: tadejs/caduceus-om5
   revision: d8fd0ccfb06557d2b63be84a46f3ab5ad6eae066
   locator: 'WORKLOG.md on branch om5-port: the OM-5 C1–C5 and COLOR back end entries'
+  tracked_ref: om5-port
   retrieved_on: '2026-11-20'
   last_checked: '2026-11-20'
   publication: public
