@@ -129,6 +129,7 @@ records:
   upstream_repo: dfeldt91-blip/E-M1-Miii
   revision: ba87b5f4358b6ee518cf133676d69698db6ef83e
   locator: builder/mods.json at mod-builder-1.19, mono_slots
+  tracked_ref: mod-builder-1.19
   retrieved_on: '2026-11-22'
   last_checked: '2026-11-22'
   publication: public

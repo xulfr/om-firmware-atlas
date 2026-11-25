@@ -9,6 +9,6 @@ Mod builder for E-M1 III firmware 1.6; after a short pause the author reports th
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
 | [em1-iii-mod-builder.yaml](../../../records/projects/em1-iii-mod-builder.yaml) | Project scope, related work and contribution destination | 11,839 | ~2,960 |
-| [em1-iii-mod-builder.yaml](../../../records/sources/em1-iii-mod-builder.yaml) | Find the relevant source/observation ID; use bounded reads | 5,887 | ~1,472 |
+| [em1-iii-mod-builder.yaml](../../../records/sources/em1-iii-mod-builder.yaml) | Find the relevant source/observation ID; use bounded reads | 5,919 | ~1,480 |
 
 Follow only relevant camera/topic routes. Upstream policies apply to work there; Atlas does not assign ownership across projects.

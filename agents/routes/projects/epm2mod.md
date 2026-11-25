@@ -9,7 +9,7 @@ Firmware mod for the 2012 PEN E-PM2 with film simulations, interval shooting, le
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
 | [epm2mod.yaml](../../../records/projects/epm2mod.yaml) | Project scope, related work and contribution destination | 9,344 | ~2,336 |
-| [epm2mod.yaml](../../../records/sources/epm2mod.yaml) | Find the relevant source/observation ID; use bounded reads | 11,769 | ~2,943 |
+| [epm2mod.yaml](../../../records/sources/epm2mod.yaml) | Find the relevant source/observation ID; use bounded reads | 11,796 | ~2,949 |
 | [epm2mod.yaml](../../../records/evidence/epm2mod.yaml) | Find the relevant source/observation ID; use bounded reads | 5,215 | ~1,304 |
 
 Follow only relevant camera/topic routes. Upstream policies apply to work there; Atlas does not assign ownership across projects.

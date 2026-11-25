@@ -396,8 +396,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/em1-iii-mod-builder.yaml": {
-      "approx_tokens": 1472,
-      "bytes": 5887,
+      "approx_tokens": 1480,
+      "bytes": 5919,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/em5-iii-notes-drawing.yaml": {
@@ -426,8 +426,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/epm2mod.yaml": {
-      "approx_tokens": 2943,
-      "bytes": 11769,
+      "approx_tokens": 2949,
+      "bytes": 11796,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/fenykl.yaml": {
