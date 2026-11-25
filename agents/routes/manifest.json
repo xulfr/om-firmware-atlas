@@ -456,8 +456,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/om3.yaml": {
-      "approx_tokens": 4292,
-      "bytes": 17167,
+      "approx_tokens": 4320,
+      "bytes": 17280,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/om5.yaml": {
@@ -471,8 +471,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/tadejs-om5.yaml": {
-      "approx_tokens": 523,
-      "bytes": 2090,
+      "approx_tokens": 535,
+      "bytes": 2138,
       "method": "ceil(utf8-bytes/4)"
     }
   },

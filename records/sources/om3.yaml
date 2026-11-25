@@ -143,6 +143,7 @@ records:
   upstream_repo: androidfanman/caduceus-om3
   revision: a2551d07eb540e2defdaa2e8387e3826a36229e8
   locator: releases/v0.40-alpha/NOTES.md
+  tracked_ref: v0.40-alpha
   retrieved_on: '2026-11-18'
   last_checked: '2026-11-18'
   publication: public
@@ -286,6 +287,7 @@ records:
   upstream_repo: androidfanman/caduceus-om3
   revision: 42ec22c6ca5fa9e5b1b5ec7460e4a4ae6309c1f5
   locator: releases/v0.40.3-beta2/NOTES.md (tag v0.40.3-beta2)
+  tracked_ref: v0.40.3-beta2
   retrieved_on: '2026-11-21'
   last_checked: '2026-11-21'
   publication: public
@@ -302,6 +304,7 @@ records:
   upstream_repo: androidfanman/caduceus-om3
   revision: ceb6d17ea83a465c49704eb82a1ae83cbbe91b46
   locator: releases/v0.40.3-beta/NOTES.md (tag v0.40.3-beta)
+  tracked_ref: v0.40.3-beta
   retrieved_on: '2026-11-21'
   last_checked: '2026-11-21'
   publication: public
@@ -318,6 +321,7 @@ records:
   upstream_repo: androidfanman/caduceus-om3
   revision: 5a74a6074a96488dbf2ce03e13a370586a93ff6d
   locator: releases/v0.40.3-beta3/NOTES.md (tag v0.40.3-beta3)
+  tracked_ref: v0.40.3-beta3
   retrieved_on: '2026-11-21'
   last_checked: '2026-11-21'
   publication: public

@@ -190,6 +190,8 @@ class Catalogue:
                 revision = row.get("revision") or ""
                 if not re.fullmatch(r"[0-9a-f]{40}", revision) or f"/blob/{revision}/" not in row.get("url", ""):
                     errors.append(f"{node_id}: pin github-file URL and revision to the same full 40-character commit.")
+            if row["type"] == "source" and row.get("tracked_ref") and row.get("source_kind") != "github-file":
+                errors.append(f"{node_id}: tracked_ref names the branch or tag a github-file source follows; other kinds do not use it.")
             if row["type"] == "reference":
                 errors.extend(self.reference_errors(node_id, row, check_ref))
             if row["type"] == "project":

@@ -1,6 +1,7 @@
 """Regression cases for scope, evidence integrity, routing and freshness."""
 import copy
 import datetime as dt
+import hashlib
 import json
 import sys
 import tempfile
@@ -125,12 +126,70 @@ class AtlasTests(unittest.TestCase):
         self.assertTrue(all(row["state"] == "check-failed" for row in report["sources"]))
         self.assertEqual(before, self.catalogue.records)
 
+    @staticmethod
+    def fake_github(routes):
+        """Answer GitHub API URLs by substring; anything else is a 404, as the API reports it."""
+        seen = []
+
+        def fetch(url, json_response=False):
+            seen.append(url)
+            for fragment, answer in routes.items():
+                if fragment in url:
+                    return answer
+            raise urllib.error.HTTPError(url, 404, "Not Found", None, None)
+        fetch.seen = seen
+        return fetch
+
     def test_repo_advance_is_not_claim_promotion(self):
         source = self.catalogue.records["source.om5.readme"]
         reviewed = source["last_reviewed"]
-        result = inspect_remote(source, lambda *args, **kwargs: [{"sha": "f" * 40}])
-        self.assertEqual(result["state"], "upstream-advanced")
+        result = inspect_remote(source, self.fake_github({
+            "/commits?": [{"sha": "f" * 40}], f"ref={source['revision']}": {"sha": "a" * 40}, "ref=" + "f" * 40: {"sha": "b" * 40}}))
+        self.assertEqual(result["state"], "file-changed")
         self.assertEqual(source["last_reviewed"], reviewed)
+
+    def test_file_source_is_queued_only_when_its_own_file_changes(self):
+        source = self.catalogue.records["source.om5.readme"]
+        path = source["url"].split(f"/blob/{source['revision']}/", 1)[1]
+        moved = {"/commits?": [{"sha": "f" * 40}], f"/contents/{path}?ref={source['revision']}": {"sha": "a" * 40}}
+        same = inspect_remote(source, self.fake_github(dict(moved, **{"ref=" + "f" * 40: {"sha": "a" * 40}})))
+        self.assertEqual(same["state"], "file-unchanged")
+        self.assertEqual(inspect_remote(source, self.fake_github(moved))["state"], "file-missing")
+        report = {"checked_on": "2026-11-25", "sources": [dict(id=source["id"], url=source["url"], review_due=False, **same)]}
+        self.assertNotIn(source["id"], update_queue(report))
+        report["sources"][0]["state"] = "file-changed"
+        self.assertIn(source["id"], update_queue(report))
+
+    def test_branch_source_compares_with_its_tracked_branch(self):
+        source = self.catalogue.records["source.tom5.port"]
+        self.assertEqual(source["tracked_ref"], "om5-port")
+        fetch = self.fake_github({"/commits?per_page=1&sha=om5-port": [{"sha": source["revision"]}]})
+        self.assertEqual(inspect_remote(source, fetch)["state"], "revision-match")
+        row = copy.deepcopy(source)
+        row["source_kind"] = "web-page"
+        self.catalogue.records[row["id"]] = row
+        self.assertTrue(any("tracked_ref" in error for error in self.catalogue.validate()))
+
+    def test_pinned_release_is_checked_against_its_own_notes(self):
+        source = copy.deepcopy(self.catalogue.records["source.db.release041"])
+        body = "Reviewed notes"
+        source["content_sha256"] = hashlib.sha256(body.encode()).hexdigest()
+        newer = {"/releases?per_page=1": [{"tag_name": "dbv9.9", "body": "later"}]}
+        own = dict(newer, **{"/releases/tags/dbv0.4.1": {"tag_name": "dbv0.4.1", "body": body}})
+        self.assertEqual(inspect_remote(source, self.fake_github(own))["state"], "unchanged")
+        own["/releases/tags/dbv0.4.1"] = {"tag_name": "dbv0.4.1", "body": body + " edited"}
+        self.assertEqual(inspect_remote(source, self.fake_github(own))["state"], "text-changed")
+        self.assertEqual(inspect_remote(source, self.fake_github(newer))["state"], "release-missing")
+        listing = self.catalogue.records["source.db.releases"]
+        self.assertEqual(inspect_remote(listing, self.fake_github(newer))["state"], "new-release")
+
+    def test_issue_thread_source_reports_activity_instead_of_failing(self):
+        source = self.catalogue.records["source.om10mi.issue-1"]
+        self.assertNotIn("issuecomment-", source["url"])
+        later = self.fake_github({"/issues/1": {"updated_at": "2099-01-01T00:00:00Z", "comments": 9}})
+        self.assertEqual(inspect_remote(source, later)["state"], "thread-updated")
+        quiet = self.fake_github({"/issues/1": {"updated_at": source["last_checked"] + "T00:00:00Z", "comments": 3}})
+        self.assertEqual(inspect_remote(source, quiet)["state"], "thread-quiet")
 
     def test_source_schema_rejects_unknown_fields(self):
         schema = json.loads((ROOT / "schemas/records.schema.json").read_text())
