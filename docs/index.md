@@ -35,6 +35,8 @@ Platform notes, technical reference, emulators and test evidence for people buil
 
 </section>
 
+<!-- atlas:spotlight -->
+
 <section class="home-showcase" markdown="1">
 
 ## What people have built

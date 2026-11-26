@@ -86,7 +86,7 @@ As the project describes them. Status is the project's own; linked evidence is t
 <div class="feature-card" markdown="1">
 
 **On-camera look editor (HSLFX)** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-on-camera-look-editor-hslfx }
 
 Film, Saturation, Hue, Light and Effects pages on the camera's own colour wheel; changed looks are marked with *.
 
@@ -98,7 +98,7 @@ Film, Saturation, Hue, Light and Effects pages on the camera's own colour wheel;
 <div class="feature-card" markdown="1">
 
 **29 film simulations** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-29-film-simulations }
 
 Velvia, Classic Chrome, Kodachrome, Portra, Ektar, CineStill, Vision3, Polaroid, Cross Process and more, one per Colour Profile slot.
 
@@ -110,7 +110,7 @@ Velvia, Classic Chrome, Kodachrome, Portra, Ektar, CineStill, Vision3, Polaroid,
 <div class="feature-card" markdown="1">
 
 **Colour mix and base curve** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-colour-mix-and-base-curve }
 
 A per-look 3×3 colour matrix applied by the camera's image hardware, plus a choice of the camera's base tone curves.
 
@@ -122,7 +122,7 @@ A per-look 3×3 colour matrix applied by the camera's image hardware, plus a cho
 <div class="feature-card" markdown="1">
 
 **Split toning** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-split-toning }
 
 Tint shadows and highlights separately in 12 colours, in live view and photos.
 
@@ -134,7 +134,7 @@ Tint shadows and highlights separately in 12 colours, in live view and photos.
 <div class="feature-card" markdown="1">
 
 **Film grain** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-film-grain }
 
 Film-like grain on colour photos, Off to High per profile.
 
@@ -146,7 +146,7 @@ Film-like grain on colour photos, Off to High per profile.
 <div class="feature-card" markdown="1">
 
 **Tinted halation** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-tinted-halation }
 
 A red-orange glow around bright lights, as on CineStill film.
 
@@ -158,7 +158,7 @@ A red-orange glow around bright lights, as on CineStill film.
 <div class="feature-card" markdown="1">
 
 **Tone per look** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-tone-per-look }
 
 Each look carries its own tone curve, with new Blacks and Whites controls.
 
@@ -170,7 +170,7 @@ Each look carries its own tone curve, with new Blacks and Whites controls.
 <div class="feature-card" markdown="1">
 
 **Mono film presets** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-mono-film-presets }
 
 Pan F, Acros, T-Max, Tri-X, HP5, Delta 3200, sepia, selenium and cyanotype for the Monochrome Profiles.
 
@@ -182,7 +182,7 @@ Pan F, Acros, T-Max, Tri-X, HP5, Delta 3200, sepia, selenium and cyanotype for t
 <div class="feature-card" markdown="1">
 
 **True log video** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-true-log-video }
 
 A log curve hidden in the firmware, switched on with the Muted movie picture mode.
 
@@ -194,7 +194,7 @@ A log curve hidden in the firmware, switched on with the Muted movie picture mod
 <div class="feature-card" markdown="1">
 
 **XPan 65:24 and 21:9 stills** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-xpan-65-24-and-21-9-stills }
 
 Panorama and Wide aspect ratios with matching live view, playback and frame lines.
 
@@ -206,7 +206,7 @@ Panorama and Wide aspect ratios with matching live view, playback and frame line
 <div class="feature-card" markdown="1">
 
 **Live ND** <span class="pill pill-alpha">Alpha</span>
-{ .feature-head }
+{ .feature-head #feature-live-nd }
 
 ND3 and ND4 in Multiple Exposure: frames averaged at normal brightness.
 
@@ -218,7 +218,7 @@ ND3 and ND4 in Multiple Exposure: frames averaged at normal brightness.
 <div class="feature-card" markdown="1">
 
 **More button functions** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-more-button-functions }
 
 More choices for REC and Fn, and the right and down arrow keys in Button Function.
 
@@ -230,7 +230,7 @@ More choices for REC and Fn, and the right and down arrow keys in Button Functio
 <div class="feature-card" markdown="1">
 
 **More dial functions** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-more-dial-functions }
 
 Custom Menu B › Dial Function can put ISO or flash compensation on the front dial in P, A, S and M; the rear dial keeps its job.
 
@@ -242,7 +242,7 @@ Custom Menu B › Dial Function can put ISO or flash compensation on the front d
 <div class="feature-card" markdown="1">
 
 **M-mode dial for manual lenses** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-m-mode-dial-for-manual-lenses }
 
 In M with a lens without contacts, the free dial sets ISO or exposure compensation. Ported from phocean's omsystem-ep7.
 
@@ -254,7 +254,7 @@ In M with a lens without contacts, the free dial sets ISO or exposure compensati
 <div class="feature-card" markdown="1">
 
 **Longer video recording** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-longer-video-recording }
 
 The 29-minute and 2-hour caps raised to 9 hours; file and heat limits still apply.
 
@@ -266,7 +266,7 @@ The 29-minute and 2-hour caps raised to 9 hours; file and heat limits still appl
 <div class="feature-card" markdown="1">
 
 **Selectable 4K bitrate** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-selectable-4k-bitrate }
 
 150, 100 or 60 Mbit/s for 4K movie slots.
 
@@ -278,7 +278,7 @@ The 29-minute and 2-hour caps raised to 9 hours; file and heat limits still appl
 <div class="feature-card" markdown="1">
 
 **Japanese and Chinese labels** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-japanese-and-chinese-labels }
 
 Caduceus's own labels in Japanese or Simplified Chinese when the camera uses that language.
 
@@ -290,7 +290,7 @@ Caduceus's own labels in Japanese or Simplified Chinese when the camera uses tha
 <div class="feature-card" markdown="1">
 
 **Lens vignette correction off per look** <span class="pill pill-testing">Testing</span>
-{ .feature-head }
+{ .feature-head #feature-lens-vignette-correction-off-per-look }
 
 Natural corners per look. The firmware setting is confirmed; its effect on photos is not yet, and reports are wanted.
 
@@ -302,7 +302,7 @@ Natural corners per look. The firmware setting is confirmed; its effect on photo
 <div class="feature-card" markdown="1">
 
 **Caduceus Control Panel** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-caduceus-control-panel }
 
 Make, preview and share looks in your browser, and export them for the camera or as RapidRAW presets.
 

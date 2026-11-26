@@ -2,16 +2,16 @@
 
 # EPM2Mod pinned build
 
-The pinned build cold-start-fix, its feature set, the camera-test date and the stock and build SHA-256s.
+The pinned build film-tables-fix (cold-start-fix before 2026-11-25), its feature set, the camera-test date and the stock and as-tested build SHA-256s.
 
-**[Open original source](https://github.com/cfu288/EPM2Mod/blob/3b6827892ed4f031a72acb7fec4496aaf9a29348/docs/user/install.md)**
+**[Open original source](https://github.com/cfu288/EPM2Mod/blob/e1ef5acc1962d89d2f0d3c4b622e5f675c76320f/docs/user/install.md)**
 
 **Kind:** github file. **Locator:** docs/user/install.md.
 
-**Revision / release:** `3b6827892ed4f031a72acb7fec4496aaf9a29348`. **Retrieved:** 2026-11-25. **Last source check:** 2026-11-25.
+**Revision / release:** `e1ef5acc1962d89d2f0d3c4b622e5f675c76320f`. **Retrieved:** 2026-11-26. **Last source check:** 2026-11-26.
 
 **Publication:** public. Linked and synthesised; upstream material retains its own terms.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/epm2mod.yaml) · Substantively reviewed: 2026-11-25.
+[Canonical record](../../records/sources/epm2mod.yaml) · Substantively reviewed: 2026-11-26.

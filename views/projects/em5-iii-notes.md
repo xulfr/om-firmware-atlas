@@ -86,7 +86,7 @@ As the project describes them. Status is the project's own; linked evidence is t
 <div class="feature-card" markdown="1">
 
 **Focus stacking with any lens** <span class="pill pill-research">Research</span>
-{ .feature-head }
+{ .feature-head #feature-focus-stacking-with-any-lens }
 
 A two-byte change to the lens check lets any lens that passes the lens-type check use in-camera focus stacking.
 
@@ -98,7 +98,7 @@ A two-byte change to the lens check lets any lens that passes the lens-type chec
 <div class="feature-card" markdown="1">
 
 **Live ND (port from the OM-5)** <span class="pill pill-research">Research</span>
-{ .feature-head }
+{ .feature-head #feature-live-nd-port-from-the-om-5 }
 
 A full Live ND shot from one press, ND2 to ND16, merged by the OM-5's image-engine job 11, with a Noise Reduction dark pass at low ISO, in test builds on one camera. Builds are not published. The research closed on 2026-11-24 with the feature working.
 
@@ -110,7 +110,7 @@ A full Live ND shot from one press, ND2 to ND16, merged by the OM-5's image-engi
 <div class="feature-card" markdown="1">
 
 **Live ND live-view simulation (port from the OM-5)** <span class="pill pill-research">Research</span>
-{ .feature-head }
+{ .feature-head #feature-live-nd-live-view-simulation-port-from-the-om-5 }
 
 Live view shows the Live ND blur, averaged over up to 240 frames by the OM-5's job 12, with restarts on shutter changes and movement, in test builds. Research closed on 2026-11-24.
 
@@ -122,7 +122,7 @@ Live view shows the Live ND blur, averaged over up to 240 frames by the OM-5's j
 <div class="feature-card" markdown="1">
 
 **Color / Monochrome Profile editor** <span class="pill pill-research">Research</span>
-{ .feature-head }
+{ .feature-head #feature-color-monochrome-profile-editor }
 
 The hidden Color and Monochrome Profile modes made selectable, with an on-camera editor (E-M1 III wheel routines relocated, a side bar of rows, a per-profile tone curve with the live histogram, hue, saturation and lightness per colour) whose edits show in live view and photos, in test builds. A free five-point tone curve works in the emulator and is still being finished on the camera.
 
@@ -134,7 +134,7 @@ The hidden Color and Monochrome Profile modes made selectable, with an on-camera
 <div class="feature-card" markdown="1">
 
 **Drawing your own graphics (GUI layers)** <span class="pill pill-research">Research</span>
-{ .feature-head }
+{ .feature-head #feature-drawing-your-own-graphics-gui-layers }
 
 How to draw boxes, curves, pictures, camera-font text, see-through palettes and animation on the GUI layers with the camera's own calls; checked in the om-emu emulator, with the osdlab script.
 
@@ -146,7 +146,7 @@ How to draw boxes, curves, pictures, camera-font text, see-through palettes and 
 <div class="feature-card" markdown="1">
 
 **Drawing with the vector GPU (c3d / OpenVG)** <span class="pill pill-research">Research</span>
-{ .feature-head }
+{ .feature-head #feature-drawing-with-the-vector-gpu-c3d-openvg }
 
 The camera's OpenVG library and c3d driver mapped; own renderers written in C run in om-emu, which now shows the GPU layer through our patches and a JavaScript OpenVG stand-in. Not run on a camera yet.
 
@@ -158,7 +158,7 @@ The camera's OpenVG library and c3d driver mapped; own renderers written in C ru
 <div class="feature-card" markdown="1">
 
 **Card mods** <span class="pill pill-research">Research</span>
-{ .feature-head }
+{ .feature-head #feature-card-mods }
 
 The firmware is flashed once with a small loader; after that, features are files on the SD card, checked before they run, each with an On/Off row on a Custom Menu page. Holding OK at power-on skips them. In test builds on one camera; the loader is not released.
 
@@ -170,7 +170,7 @@ The firmware is flashed once with a small loader; after that, features are files
 <div class="feature-card" markdown="1">
 
 **Display view assists** <span class="pill pill-research">Research</span>
-{ .feature-head }
+{ .feature-head #feature-display-view-assists }
 
 View assists through the display controller's gamma, a red night view and an RGB clipping view, work as card mods on the camera; zebras need a driver hook. The 422 controller registers are mapped.
 
@@ -182,7 +182,7 @@ View assists through the display controller's gamma, a red night view and an RGB
 <div class="feature-card" markdown="1">
 
 **Image-stabiliser controller** <span class="pill pill-research">Research</span>
-{ .feature-head }
+{ .feature-head #feature-image-stabiliser-controller }
 
 The stabiliser runs on a separate chip with two MN10300-family cores; its program, command handlers, servo and gyro rates are read from the update file, with the OM-5 version compared.
 
@@ -194,7 +194,7 @@ The stabiliser runs on a separate chip with two MN10300-family cores; its progra
 <div class="feature-card" markdown="1">
 
 **USB webcam (parked)** <span class="pill pill-research">Research</span>
-{ .feature-head }
+{ .feature-head #feature-usb-webcam-parked }
 
 Test builds enumerate as a UVC webcam and stream a generated picture; live view over USB failed, so the work is parked.
 
@@ -206,7 +206,7 @@ Test builds enumerate as a UVC webcam and stream a generated picture; live view 
 <div class="feature-card" markdown="1">
 
 **Handheld High Res (port from the OM-5)** <span class="pill pill-research">Research</span>
-{ .feature-head }
+{ .feature-head #feature-handheld-high-res-port-from-the-om-5 }
 
 How the OM-5 takes a hand-held High Res shot and how far a port to the E-M5 III got. Its four image-engine programs load and the helper processor starts on the camera. Whether they compose a correct picture was not proven when the research closed on 2026-11-24.
 
@@ -218,7 +218,7 @@ How the OM-5 takes a hand-held High Res shot and how far a port to the E-M5 III 
 <div class="feature-card" markdown="1">
 
 **Power and watchdog block** <span class="pill pill-research">Research</span>
-{ .feature-head }
+{ .feature-head #feature-power-and-watchdog-block }
 
 The always-on part of the main chip that handles power-on causes, wake inputs, alarms, the watchdog and the clock, mapped register by register with its keys. The OM-5 drives the same block the same way. The E-M1 III and OM-1 add a separate power processor.
 
@@ -230,7 +230,7 @@ The always-on part of the main chip that handles power-on causes, wake inputs, a
 <div class="feature-card" markdown="1">
 
 **Debug serial port** <span class="pill pill-research">Research</span>
-{ .feature-head }
+{ .feature-head #feature-debug-serial-port }
 
 The UART the system shell and every putc use, its setup, and how the ARM serial ports are routed to the card-slot and debug pads.
 
@@ -242,7 +242,7 @@ The UART the system shell and every putc use, its setup, and how the ARM serial 
 <div class="feature-card" markdown="1">
 
 **Settings map E-M5 III and OM-5** <span class="pill pill-research">Research</span>
-{ .feature-head }
+{ .feature-head #feature-settings-map-e-m5-iii-and-om-5 }
 
 Both cameras' saved settings compared one by one, with how settings could be converted in either direction. Read from both firmware files, not tried on a camera.
 
@@ -254,7 +254,7 @@ Both cameras' saved settings compared one by one, with how settings could be con
 <div class="feature-card" markdown="1">
 
 **E-M5 III, OM-5 and OM-5 II hardware compared** <span class="pill pill-research">Research</span>
-{ .feature-head }
+{ .feature-head #feature-e-m5-iii-om-5-and-om-5-ii-hardware-compared }
 
 What the three bodies share and where they differ, read from their firmware, with a report on one driver-move bug of our own and the check that now catches it.
 
@@ -266,7 +266,7 @@ What the three bodies share and where they differ, read from their firmware, wit
 <div class="feature-card" markdown="1">
 
 **Open gate video** <span class="pill pill-research">Research</span>
-{ .feature-head }
+{ .feature-head #feature-open-gate-video }
 
 Whether the sensor, image pipeline, encoder and stabiliser could record video from the whole 4:3 sensor. Research from the firmware, nothing built. The OM-5 shares every table described.
 
@@ -278,7 +278,7 @@ Whether the sensor, image pipeline, encoder and stabiliser could record video fr
 <div class="feature-card" markdown="1">
 
 **Live RGB histogram** <span class="pill pill-research">Research</span>
-{ .feature-head }
+{ .feature-head #feature-live-rgb-histogram }
 
 How the stock live and playback histograms are measured, and what a live red, green and blue histogram needs. The OM-5 has the same histogram code. An experiment on the E-M5 III showed the three curves on the camera but does not yet run cleanly beside the stock drawing.
 
@@ -290,7 +290,7 @@ How the stock live and playback histograms are measured, and what a live red, gr
 <div class="feature-card" markdown="1">
 
 **Failure patterns** <span class="pill pill-research">Research</span>
-{ .feature-head }
+{ .feature-head #feature-failure-patterns }
 
 The ways a changed firmware has failed on an E-M5 III, each with its symptom, cause and the check that catches it before flashing.
 
@@ -302,7 +302,7 @@ The ways a changed firmware has failed on an E-M5 III, each with its symptom, ca
 <div class="feature-card" markdown="1">
 
 **Firmware and hardware notes** <span class="pill pill-research">Research</span>
-{ .feature-head }
+{ .feature-head #feature-firmware-and-hardware-notes }
 
 Tagged, dated pages on the container, boot, recovery, CPU, memory map, image engine, ARM side, display, stabiliser, settings and menus.
 
@@ -314,7 +314,7 @@ Tagged, dated pages on the container, boot, recovery, CPU, memory map, image eng
 <div class="feature-card" markdown="1">
 
 **Firmware modification techniques** <span class="pill pill-research">Research</span>
-{ .feature-head }
+{ .feature-head #feature-firmware-modification-techniques }
 
 Twenty-one techniques from the E-M5 III 1.7 work, each with its method, pitfalls and a per-camera checked-on table that credits other projects' results.
 
@@ -326,7 +326,7 @@ Twenty-one techniques from the E-M5 III 1.7 work, each with its method, pitfalls
 <div class="feature-card" markdown="1">
 
 **Firmware process guides** <span class="pill pill-research">Research</span>
-{ .feature-head }
+{ .feature-head #feature-firmware-process-guides }
 
 Walk through E-M5 III 1.7 boot, button input, shooting, live view, updates and frame pools, with links into the reference notes.
 

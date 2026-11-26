@@ -18,7 +18,7 @@ from pathlib import Path
 import yaml
 
 from atlas_core import Catalogue, LINK_RE, REPO, cost, markdown_links, read_yaml, routing_checks
-from atlas_generate import atlas_counts, camera_finder, camera_research_path, generated_diff, people_markdown, recent_findings, render, showcase, view_path, write_generated
+from atlas_generate import atlas_counts, camera_finder, camera_research_path, generated_diff, people_markdown, recent_findings, render, showcase, spotlight, view_path, write_generated
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -88,6 +88,8 @@ def stage_site(catalogue, revision=None, timestamp=None):
             text = text.replace("<!-- atlas:research-finder -->", camera_finder(catalogue, origin, research=True))
         if "<!-- atlas:recent-findings -->" in text:
             text = text.replace("<!-- atlas:recent-findings -->", recent_findings(catalogue, origin))
+        if "<!-- atlas:spotlight -->" in text:
+            text = text.replace("<!-- atlas:spotlight -->", spotlight(catalogue, origin, publication_day))
         if "<!-- atlas:showcase -->" in text:
             text = text.replace("<!-- atlas:showcase -->", showcase(catalogue, origin))
         if "<!-- atlas:counts -->" in text:

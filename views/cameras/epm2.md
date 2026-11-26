@@ -24,7 +24,7 @@ Film simulations, Interval shooting, Level gauge.
 **v2026.11.25-rc.1 (pre-release)**
 { .release-scope }
 
-No camera test recorded for this release. See the camera report for [cold-start-fix](../evidence/epm2-cold-start-fix.md).
+No camera test recorded for this release. See the camera report for [film-tables-fix](../evidence/epm2-film-tables-fix.md).
 
 Unofficial pre-release for the Olympus PEN E-PM2. The owner's test bodies never showed the slow start.
 { .release-warning }

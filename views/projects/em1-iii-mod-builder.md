@@ -61,7 +61,7 @@ As the project describes them. Status is the project's own; linked evidence is t
 <div class="feature-card" markdown="1">
 
 **Panorama 65:24** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-panorama-65-24 }
 
 Replaces the 7:6 aspect with 65:24 in the menu, live-view frame, AF areas and raw frame. Worked on the camera (1.5 build).
 
@@ -73,7 +73,7 @@ Replaces the 7:6 aspect with 65:24 in the menu, live-view frame, AF areas and ra
 <div class="feature-card" markdown="1">
 
 **Multiple Exposure with 3 and 4 frames** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-multiple-exposure-with-3-and-4-frames }
 
 Creates 3- and 4-frame multiple exposures correctly; the live preview is missing between frames 2–3 and 3–4. Worked on the camera (1.5 build). Removed from the main branch on 2026-11-24; still in mod-builder-1.19.
 
@@ -85,7 +85,7 @@ Creates 3- and 4-frame multiple exposures correctly; the live preview is missing
 <div class="feature-card" markdown="1">
 
 **Focus stacking with any lens** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-focus-stacking-with-any-lens }
 
 Removes the lens check for in-camera focus stacking. Worked on the camera (1.5 build).
 
@@ -97,7 +97,7 @@ Removes the lens check for in-camera focus stacking. Worked on the camera (1.5 b
 <div class="feature-card" markdown="1">
 
 **Key Line II in black and white** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-key-line-ii-in-black-and-white }
 
 Key Line II gets grey toning instead of colour. Worked on the camera (1.5 build).
 
@@ -109,7 +109,7 @@ Key Line II gets grey toning instead of colour. Worked on the camera (1.5 build)
 <div class="feature-card" markdown="1">
 
 **More arrow-key functions** <span class="pill pill-testing">Testing</span>
-{ .feature-head }
+{ .feature-head #feature-more-arrow-key-functions }
 
 The arrow keys can take 25 functions for stills and 15 for movies. Not tested on the camera.
 
@@ -121,7 +121,7 @@ The arrow keys can take 25 functions for stills and 15 for movies. Not tested on
 <div class="feature-card" markdown="1">
 
 **Picture Mode on a custom button** <span class="pill pill-testing">Testing</span>
-{ .feature-head }
+{ .feature-head #feature-picture-mode-on-a-custom-button }
 
 Adds Picture Mode to the custom-button picker. The mod list of 2026-11-22 had the button cycle i-Enhance to Custom and a five-profile version working in test 1.755; the rewritten list of 2026-11-24 says it cycles through Art Filters and has no camera note. On the main branch, not in a release yet.
 
@@ -133,7 +133,7 @@ Adds Picture Mode to the custom-button picker. The mod list of 2026-11-22 had th
 <div class="feature-card" markdown="1">
 
 **Flash in handheld High Res** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-flash-in-handheld-high-res }
 
 Flash in handheld High Res Shot, with Fill In and Manual flash for every flash type (tripod and handheld). Flash worked on the camera (1.5 build); Fill In plus Manual for all flash types is test 1.745. The 1.18 notes say fully manual flash does not work in handheld High Res.
 
@@ -145,7 +145,7 @@ Flash in handheld High Res Shot, with Fill In and Manual flash for every flash t
 <div class="feature-card" markdown="1">
 
 **Art filters in High Res** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-art-filters-in-high-res }
 
 Art filters and e-Portrait with High Res Shot; colour and tone only, not the effect pass. Worked on the camera (1.5 build).
 
@@ -157,7 +157,7 @@ Art filters and e-Portrait with High Res Shot; colour and tone only, not the eff
 <div class="feature-card" markdown="1">
 
 **Super Control Panel menu cell** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-super-control-panel-menu-cell }
 
 The bottom-right Super Control Panel cell opens the main menu. Worked on the camera (1.6 test build 1.679).
 
@@ -169,7 +169,7 @@ The bottom-right Super Control Panel cell opens the main menu. Worked on the cam
 <div class="feature-card" markdown="1">
 
 **Sharpness as a linear scale** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-sharpness-as-a-linear-scale }
 
 Sharpness −2 is off and +2 is the stock +2 strength, in even steps. Worked on the camera (test build 1.680). On the main branch after 1.19, a fix for a restart when HDR fires, which the mod list calls camera-tested.
 
@@ -181,7 +181,7 @@ Sharpness −2 is off and +2 is the stock +2 strength, in even steps. Worked on 
 <div class="feature-card" markdown="1">
 
 **Custom Modes in video** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-custom-modes-in-video }
 
 Assign to Custom Mode works with the dial on movie, and that C slot opens in video. Worked on the camera (test build 1.681).
 
@@ -193,7 +193,7 @@ Assign to Custom Mode works with the dial on movie, and that C slot opens in vid
 <div class="feature-card" markdown="1">
 
 **Underscore in Edit Filename** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-underscore-in-edit-filename }
 
 Edit Filename also offers an underscore after Z. Worked on the camera (test build 1.700).
 
@@ -205,7 +205,7 @@ Edit Filename also offers an underscore after Z. Worked on the camera (test buil
 <div class="feature-card" markdown="1">
 
 **ISO-Auto down to ISO 64** <span class="pill pill-testing">Testing</span>
-{ .feature-head }
+{ .feature-head #feature-iso-auto-down-to-iso-64 }
 
 ISO-Auto can choose ISO 64; in P, A and S with ISO-Auto Default 200. M reached 64 on the camera (1.706); the P/A/S version was in test builds 1.708 and 1.709.
 
@@ -217,7 +217,7 @@ ISO-Auto can choose ISO 64; in P, A and S with ISO-Auto Default 200. M reached 6
 <div class="feature-card" markdown="1">
 
 **Movie recording limit 9 hours** <span class="pill pill-testing">Testing</span>
-{ .feature-head }
+{ .feature-head #feature-movie-recording-limit-9-hours }
 
 The 29-minute and 2-hour limits raised to 9 hours; file size, battery and heat still stop recording. Built into test 1.709; no camera result stated.
 
@@ -229,7 +229,7 @@ The 29-minute and 2-hour limits raised to 9 hours; file size, battery and heat s
 <div class="feature-card" markdown="1">
 
 **More Gradation tone curves** <span class="pill pill-testing">Testing</span>
-{ .feature-head }
+{ .feature-head #feature-more-gradation-tone-curves }
 
 Gradation gets 19 more curves after Low Key. The art-curve version worked on the camera; the designed set was in test build 1.741.
 
@@ -241,7 +241,7 @@ Gradation gets 19 more curves after Low Key. The art-curve version worked on the
 <div class="feature-card" markdown="1">
 
 **White Frame art effect** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-white-frame-art-effect }
 
 The Frame art effect becomes a plain white border, with a width setting. Worked on the camera (test build 1.664).
 
@@ -253,7 +253,7 @@ The Frame art effect becomes a plain white border, with a width setting. Worked 
 <div class="feature-card" markdown="1">
 
 **White frame in Panorama** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-white-frame-in-panorama }
 
 White-border Frame masks for Panorama, where stock has none and froze. Worked on the camera (test build 1.665). On the main branch after 1.19 it is part of the White Frame mod.
 
@@ -265,7 +265,7 @@ White-border Frame masks for Panorama, where stock has none and froze. Worked on
 <div class="feature-card" markdown="1">
 
 **XPAN icons for Panorama** <span class="pill pill-testing">Testing</span>
-{ .feature-head }
+{ .feature-head #feature-xpan-icons-for-panorama }
 
 XPAN icons in the Super Control Panel option lists; the main cell still showed a 17:9 label on the camera (1.666).
 
@@ -277,7 +277,7 @@ XPAN icons in the Super Control Panel option lists; the main cell still showed a
 <div class="feature-card" markdown="1">
 
 **Film looks in Custom** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-film-looks-in-custom }
 
 Custom becomes a film-look mode with six of Caduceus's film recipes picked in the builder. Worked on the camera (test build 1.691). Removed from the main branch on 2026-11-24, with its Caduceus credit; still in mod-builder-1.19.
 
@@ -289,7 +289,7 @@ Custom becomes a film-look mode with six of Caduceus's film recipes picked in th
 <div class="feature-card" markdown="1">
 
 **Owner name in the main menu** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-owner-name-in-the-main-menu }
 
 The Shooting Menu 1 title shows your own text, up to 36 characters. Worked on the camera (test build 1.701); an @ does not display.
 
@@ -301,7 +301,7 @@ The Shooting Menu 1 title shows your own text, up to 36 characters. Worked on th
 <div class="feature-card" markdown="1">
 
 **Monochrome II** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-monochrome-ii }
 
 Replaces i-Finish with a separate monochrome profile. The author reports the profile and labels worked in test 1.7.7.8.
 

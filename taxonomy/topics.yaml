@@ -45,6 +45,7 @@ features:
   feature.capture.hhhr: {title: Handheld High Res Shot, topic: capture}
   feature.capture.starry-sky-af: {title: Starry Sky AF, topic: capture}
   feature.capture.subject-detect: {title: AI subject detection AF, topic: capture}
+  feature.capture.film-roll: {title: Film-roll shooting (fixed length, no review until rewind), topic: capture}
 traits:
   trait.image-processor: {title: Image processor generation, topic: platform}
   trait.main-cpu: {title: Main CPU, topic: platform}

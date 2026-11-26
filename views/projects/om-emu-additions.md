@@ -48,7 +48,7 @@ As the project describes them. Status is the project's own; linked evidence is t
 <div class="feature-card" markdown="1">
 
 **Screen drawing** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-screen-drawing }
 
 GPU picture layer, live-view stand-in picture, bitmaps without a colour table, display register write log.
 
@@ -57,7 +57,7 @@ GPU picture layer, live-view stand-in picture, bitmaps without a colour table, d
 <div class="feature-card" markdown="1">
 
 **Start-up and memory checks** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-start-up-and-memory-checks }
 
 Section first-touch monitor, cache model, heap fill, and a monitor that fails any write into always-loaded code.
 
@@ -66,7 +66,7 @@ Section first-touch monitor, cache model, heap fill, and a monitor that fails an
 <div class="feature-card" markdown="1">
 
 **Kernel and bus checks** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-kernel-and-bus-checks }
 
 Blocking calls made from interrupt context, and a serial bus tap that fails a message with no device address.
 
@@ -75,7 +75,7 @@ Blocking calls made from interrupt context, and a serial bus tap that fails a me
 <div class="feature-card" markdown="1">
 
 **Second and third processor cores** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-second-and-third-processor-cores }
 
 Starts CPU 1 and CPU 2 natively beside the main core.
 

@@ -27,6 +27,18 @@ E147 · Stock firmware 1.1 · build 1100
 
 **No camera test recorded**
 
+Claim · [OM-3 Film Rolls from the card, v0.41-beta2 and beta3](../capabilities/om3-film-rolls.md)
+
+Project and build · [Caduceus for OM-3](../projects/caduceus-om3.md#for-om3) / v0.41-beta2 (fr9 with FILMROLL.BIN of test 39); v0.41-beta3 (fix116-1)
+
+Availability · published release
+
+</div>
+
+<div class="evidence-entry" markdown="1">
+
+**No camera test recorded**
+
 Claim · [OM-3 HSL editor](../capabilities/om3-hsl.md)
 
 Project and build · [Caduceus for OM-3](../projects/caduceus-om3.md#for-om3) / v0.30.3

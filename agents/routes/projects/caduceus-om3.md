@@ -4,12 +4,12 @@
 
 OM-3 looks, colour editing, persistence and research.
 
-[Contribution home](https://github.com/androidfanman/caduceus-om3/issues). The project's current stable release is v0.40.3 for OM-3 firmware 1.1, camera-tested by the maintainer as v0.40.3-beta4. The newest test release, v0.41-beta, redesigns the Picture Mode colour, tone and split-toning pages and writes a new photo code (om3.2) that older readers need updating for.
+[Contribution home](https://github.com/androidfanman/caduceus-om3/issues). The project's current stable release is v0.40.3 for OM-3 firmware 1.1, camera-tested by the maintainer as v0.40.3-beta4. The newest test release, v0.41-beta3, carries v0.41-beta2's Film Rolls (24, 36 or 72 exposures at a fixed film and ISO, no review until the rewind, turned on by a folder on the card) and fixes custom mode C5. Both write photo code om3.2, which older readers need updating for. On 2026-11-25 the owner made the port photo-only.
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [caduceus-om3.yaml](../../../records/projects/caduceus-om3.yaml) | Project scope, related work and contribution destination | 23,521 | ~5,881 |
-| [om3.yaml](../../../records/sources/om3.yaml) | Find the relevant source/observation ID; use bounded reads | 17,280 | ~4,320 |
+| [caduceus-om3.yaml](../../../records/projects/caduceus-om3.yaml) | Project scope, related work and contribution destination | 26,977 | ~6,745 |
+| [om3.yaml](../../../records/sources/om3.yaml) | Find the relevant source/observation ID; use bounded reads | 20,896 | ~5,224 |
 | [caduceus-om3-emu.yaml](../../../records/evidence/caduceus-om3-emu.yaml) | Find the relevant source/observation ID; use bounded reads | 2,183 | ~546 |
 
 Follow only relevant camera/topic routes. Upstream policies apply to work there; Atlas does not assign ownership across projects.

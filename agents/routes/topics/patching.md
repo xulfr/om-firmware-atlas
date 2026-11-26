@@ -6,6 +6,6 @@ Existing build methods, bounded changes and evidence limits.
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [patching.md](../../../knowledge/methods/patching.md) | Reuse existing builders and keep container correctness distinct from runtime evidence. Load when: choosing a patch workflow; interpreting a validation result; deciding where mod code lives | 3,804 | ~951 |
+| [patching.md](../../../knowledge/methods/patching.md) | Reuse existing builders and keep container correctness distinct from runtime evidence. Load when: choosing a patch workflow; interpreting a validation result; deciding where mod code lives | 4,762 | ~1,191 |
 
 Load declared guide dependencies first; at most three guides along a dependency path. A scoped upstream claim is not a community-wide rule.

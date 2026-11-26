@@ -22,6 +22,7 @@ Exact ID: `camera.om3`. Codes: E147. [Human status view](../../../views/cameras/
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
+| [om3-film-rolls.yaml](../../../records/capabilities/om3/om3-film-rolls.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 1,759 | ~440 |
 | [om3-hsl.yaml](../../../records/capabilities/om3/om3-hsl.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 736 | ~184 |
 
 Compact technical reference for this camera: [reference shard](../reference/om3.md).

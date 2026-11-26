@@ -59,7 +59,7 @@ As the project describes them. Status is the project's own; linked evidence is t
 <div class="feature-card" markdown="1">
 
 **Card-loaded plugins** <span class="pill pill-testing">Testing</span>
-{ .feature-head }
+{ .feature-head #feature-card-loaded-plugins }
 
 A one-time loader patch runs FENYKL.BIN from the card on power-switch and battery-connect boots. Without a valid file the camera runs as stock; OK held at power-on runs no payload.
 
@@ -71,7 +71,7 @@ A one-time loader patch runs FENYKL.BIN from the card on power-switch and batter
 <div class="feature-card" markdown="1">
 
 **Settings tab L in the Custom menu** <span class="pill pill-testing">Testing</span>
-{ .feature-head }
+{ .feature-head #feature-settings-tab-l-in-the-custom-menu }
 
 A native twelfth Custom menu tab, drawn and edited by the stock menu code; values are saved to the card two seconds after a change.
 
@@ -83,7 +83,7 @@ A native twelfth Custom menu tab, drawn and edited by the stock menu code; value
 <div class="feature-card" markdown="1">
 
 **Pre-capture** <span class="pill pill-testing">Testing</span>
-{ .feature-head }
+{ .feature-head #feature-pre-capture }
 
 A half press in silent sequential H starts the burst and keeps the latest 6 frames; the full press records them. Needs flash off, long-exposure NR off and S-AF or MF.
 
@@ -95,7 +95,7 @@ A half press in silent sequential H starts the burst and keeps the latest 6 fram
 <div class="feature-card" markdown="1">
 
 **Focus distance, depth of field and focus meter** <span class="pill pill-testing">Testing</span>
-{ .feature-head }
+{ .feature-head #feature-focus-distance-depth-of-field-and-focus-meter }
 
 The focus distance and depth of field the camera writes to EXIF, and a contrast bar, on the live-view INFO screens, also in MF.
 
@@ -107,7 +107,7 @@ The focus distance and depth of field the camera writes to EXIF, and a contrast 
 <div class="feature-card" markdown="1">
 
 **Battery percentage** <span class="pill pill-testing">Testing</span>
-{ .feature-head }
+{ .feature-head #feature-battery-percentage }
 
 An estimated percentage replaces the stock battery icon on the INFO screens.
 
@@ -119,7 +119,7 @@ An estimated percentage replaces the stock battery icon on the INFO screens.
 <div class="feature-card" markdown="1">
 
 **R/B swap** <span class="pill pill-testing">Testing</span>
-{ .feature-head }
+{ .feature-head #feature-r-b-swap }
 
 Swaps the red and blue channels, for infrared photography.
 
@@ -131,7 +131,7 @@ Swaps the red and blue channels, for infrared photography.
 <div class="feature-card" markdown="1">
 
 **Screenshot button** <span class="pill pill-testing">Testing</span>
-{ .feature-head }
+{ .feature-head #feature-screenshot-button }
 
 A Button Function entry for Fn1, Fn2, Fn3, REC or L-Fn that saves the live view as SHOTnnnn.PPM to the card root.
 
@@ -143,7 +143,7 @@ A Button Function entry for Fn1, Fn2, Fn3, REC or L-Fn that saves the live view 
 <div class="feature-card" markdown="1">
 
 **Wi-Fi dev monitor** <span class="pill pill-testing">Testing</span>
-{ .feature-head }
+{ .feature-head #feature-wi-fi-dev-monitor }
 
 An opt-in plugin that opens the camera's access point for memory reads and writes, small test programs, card files and screen capture from a PC.
 

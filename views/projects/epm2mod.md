@@ -63,7 +63,7 @@ As the project describes them. Status is the project's own; linked evidence is t
 <div class="feature-card" markdown="1">
 
 **Film simulations** <span class="pill pill-beta">Beta</span>
-{ .feature-head }
+{ .feature-head #feature-film-simulations }
 
 Up to 12 of 32 film simulations in the ART entries, loaded from a card file with Load Looks; kept after power-off. For photos and live view; the photo records the film's name.
 
@@ -75,7 +75,7 @@ Up to 12 of 32 film simulations in the ART entries, loaded from a card file with
 <div class="feature-card" markdown="1">
 
 **Interval shooting** <span class="pill pill-beta">Beta</span>
-{ .feature-head }
+{ .feature-head #feature-interval-shooting }
 
 Time Lapse Settings with up to 240 frames.
 
@@ -87,7 +87,7 @@ Time Lapse Settings with up to 240 frames.
 <div class="feature-card" markdown="1">
 
 **Level gauge** <span class="pill pill-beta">Beta</span>
-{ .feature-head }
+{ .feature-head #feature-level-gauge }
 
 The firmware's own gauge as an LV-Info view, with calibration and the histogram screen's shooting information. Three data edits, no new code.
 
@@ -99,7 +99,7 @@ The firmware's own gauge as an LV-Info view, with calibration and the histogram 
 <div class="feature-card" markdown="1">
 
 **Focus peaking** <span class="pill pill-beta">Beta</span>
-{ .feature-head }
+{ .feature-head #feature-focus-peaking }
 
 From rc.3, focus peaking stays visible in normal live view in MF with any lens. MF Assist also shows peaking when the focus ring turns. 2026.11.25-rc.1 moves part of it so that cold starts are no longer slow.
 
@@ -111,7 +111,7 @@ From rc.3, focus peaking stays visible in normal live view in MF with any lens. 
 <div class="feature-card" markdown="1">
 
 **Lowest S/S Setting for ISO Auto** <span class="pill pill-beta">Beta</span>
-{ .feature-head }
+{ .feature-head #feature-lowest-s-s-setting-for-iso-auto }
 
 In P and A, the shutter speed at which ISO Auto starts to rise; a copy of the PEN-F 3.1's logic.
 
@@ -123,7 +123,7 @@ In P and A, the shutter speed at which ISO Auto starts to rise; a copy of the PE
 <div class="feature-card" markdown="1">
 
 **Spot metering at the AF point** <span class="pill pill-beta">Beta</span>
-{ .feature-head }
+{ .feature-head #feature-spot-metering-at-the-af-point }
 
 Custom Menu E › Spot Metering moves Spot, Spot Hilight and Spot Shadow metering to a touched point or the selected AF target, as on the E-M5 II. Off by default; faces are ignored.
 
@@ -135,7 +135,7 @@ Custom Menu E › Spot Metering moves Spot, Spot Hilight and Spot Shadow meterin
 <div class="feature-card" markdown="1">
 
 **Debug Log** <span class="pill pill-beta">Beta</span>
-{ .feature-head }
+{ .feature-head #feature-debug-log }
 
 A Custom Menu J row, Off by default, that writes EPM2LOG.BIN to the card for developers.
 
@@ -293,7 +293,7 @@ Unofficial and for the E-PM2 only; installing is at your own risk.
 
 ## Research notes
 
-The latest final release is v2026.11.20. On some bodies its cold start takes about 10 s (GitHub issue 6, since rc.3). Pre-release v2026.11.25-rc.1 carries the project's fix, cold-start-fix, and adds spot metering at the AF target. The owner's camera run of the fix passed, but the owner's bodies never showed the slow start; a contributor's own build of the same change started at once on an affected body. A separate Panasonic aperture-ring probe is a developer debug build. The project calls the firmware unofficial and at the user's own risk.
+The latest final release is v2026.11.20. On some bodies its cold start takes about 10 s (GitHub issue 6, since rc.3). Pre-release v2026.11.25-rc.1 carries the project's fix, cold-start-fix, and adds spot metering at the AF target. The owner's camera run of the fix passed, but the owner's bodies never showed the slow start; a contributor's own build of the same change started at once on an affected body. Since then the project has pinned film-tables-fix, which also moves five film simulations' tables out of late-loaded code; the owner reports it camera-tested on 25 November, and no release carries it yet. A separate Panasonic aperture-ring probe is a developer debug build. The project calls the firmware unofficial and at the user's own risk.
 
 ## Sources and record
 
@@ -313,9 +313,11 @@ The latest final release is v2026.11.20. On some bodies its cold start takes abo
 - [EPM2Mod 2026.11.25-rc.1](../sources/epm2.v20261125-rc1.md)
 - [EPM2Mod slow cold start investigation](../sources/epm2.slow-boot.md)
 - [E-PM2 cold-start-fix camera log](../sources/epm2.camera-log-cold-start-fix.md)
+- [E-PM2 film-tables-fix camera log](../sources/epm2.camera-log-film-tables-fix.md)
+- [E-PM2 load order, space and open risks](../sources/epm2.load-order.md)
 - [EPM2Mod 2026.11.20-rc.4](../sources/epm2.rc4.md)
 - [EPM2Mod 2026.11.20-rc.3](../sources/epm2.rc3.md)
 - [EPM2Mod 2026.11.20-rc.2](../sources/epm2.rc2.md)
 - [EPM2Mod 2026.11.20-pana-ring-probe.1](../sources/epm2.pana-ring-probe.md)
 
-[Canonical record](../../records/projects/epm2mod.yaml) · Substantively reviewed: 2026-11-25.
+[Canonical record](../../records/projects/epm2mod.yaml) · Substantively reviewed: 2026-11-26.

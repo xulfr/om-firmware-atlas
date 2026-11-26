@@ -1,0 +1,33 @@
+schema_version: 1
+records:
+- type: capability
+  id: capability.om3-film-rolls
+  title: OM-3 Film Rolls from the card, v0.41-beta2 and beta3
+  summary: A roll of 24, 36 or 72 exposures fixes film and ISO, counts down, hides review until rewind and logs to the card; the maintainer reports camera tests.
+  source_refs:
+  - source.om3.v041-beta2
+  - source.om3.v041-beta3
+  - source.om3.film-rolls-using
+  - source.om3.film-rolls-roadmap
+  topics:
+  - capture
+  - patching
+  last_reviewed: '2026-11-26'
+  camera_id: camera.om3
+  firmware_id: firmware.om3-1100
+  project_id: project.caduceus-om3
+  mod_build: v0.41-beta2 (fr9 with FILMROLL.BIN of test 39); v0.41-beta3 (fix116-1)
+  feature_id: feature.capture.film-roll
+  assertion: With the release's FILMROLL folder in OM3MOD, a roll picked on Picture Mode's film row keeps its film and
+    ISO, counts the frames left, keeps Playback and Image Review off and stops bursts at the last frame, locks the
+    shutter at the end, winds back with the rear dial and is listed in OM3MOD/FILMROLL/ROLLS.TXT. Without the folder
+    the flashed hooks run as stock.
+  availability: published-release
+  implementation: reported
+  evidence_refs: []
+  contradicting_refs: []
+  limitations:
+  - Maintainer-reported camera tests on the owner's OM-3 (fr9, test 39, fix116-1); no independent report or package-level camera log has been imported.
+  - FILMROLL.BIN is built for one firmware build; beta2's file is not loaded by beta3, so card and firmware must match.
+  - A "not developed" screen in Playback froze the camera on leaving Playback and was dropped; Playback does nothing during a roll instead.
+  - The design document lists little space left in the flashed firmware's patch sections and a full release still to come.

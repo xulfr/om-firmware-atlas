@@ -139,7 +139,7 @@ As the project describes them. Status is the project's own; linked evidence is t
 <div class="feature-card" markdown="1">
 
 **Panasonic aperture rings** <span class="pill pill-beta">Beta</span>
-{ .feature-head }
+{ .feature-head #feature-panasonic-aperture-rings }
 
 The aperture ring on Panasonic lenses that have one controls the aperture.
 
@@ -151,7 +151,7 @@ The aperture ring on Panasonic lenses that have one controls the aperture.
 <div class="feature-card" markdown="1">
 
 **Korean menus** <span class="pill pill-beta">Beta</span>
-{ .feature-head }
+{ .feature-head #feature-korean-menus }
 
 Korean language support on several bodies.
 
@@ -163,7 +163,7 @@ Korean language support on several bodies.
 <div class="feature-card" markdown="1">
 
 **Quasi-LUT and DBLink** <span class="pill pill-beta">Beta</span>
-{ .feature-head }
+{ .feature-head #feature-quasi-lut-and-dblink }
 
 Quasi-LUT with DBLink transfer. On OM-3, v0.4.3b adds power-cycle persistence for the on/off state and selected slot. v0.4.6 lists it for the OM-5, OM-5 Mark II, the Mark II-based OM-5, E-M1X, E-M1 Mark III and E-P7.
 
@@ -175,7 +175,7 @@ Quasi-LUT with DBLink transfer. On OM-3, v0.4.3b adds power-cycle persistence fo
 <div class="feature-card" markdown="1">
 
 **Focus stacking with any lens** <span class="pill pill-beta">Beta</span>
-{ .feature-head }
+{ .feature-head #feature-focus-stacking-with-any-lens }
 
 v0.4.6 removes the lens restriction on in-camera focus stacking on the bodies that support it. The notes do not list those bodies.
 
@@ -187,7 +187,7 @@ since dbv0.4.6
 <div class="feature-card" markdown="1">
 
 **New user interface on the E-M1 Mark III** <span class="pill pill-beta">Beta</span>
-{ .feature-head }
+{ .feature-head #feature-new-user-interface-on-the-e-m1-mark-iii }
 
 The Korean notes say most of a new user interface is ported to the E-M1 Mark III; the English notes call it a new UI port. No list of screens is given.
 
@@ -199,7 +199,7 @@ The Korean notes say most of a new user interface is ported to the E-M1 Mark III
 <div class="feature-card" markdown="1">
 
 **OM-1 Mark II features on the OM-1** <span class="pill pill-beta">Beta</span>
-{ .feature-head }
+{ .feature-head #feature-om-1-mark-ii-features-on-the-om-1 }
 
 A port of OM-1 Mark II firmware to the OM-1, without ND128 or the larger buffer.
 
@@ -208,7 +208,7 @@ A port of OM-1 Mark II firmware to the OM-1, without ND128 or the larger buffer.
 <div class="feature-card" markdown="1">
 
 **12.5 and 16.7 fps bursts** <span class="pill pill-beta">Beta</span>
-{ .feature-head }
+{ .feature-head #feature-12-5-and-16-7-fps-bursts }
 
 Extra burst rates on the OM-1 with the SH2 shutter mode.
 
@@ -217,7 +217,7 @@ Extra burst rates on the OM-1 with the SH2 shutter mode.
 <div class="feature-card" markdown="1">
 
 **5 GHz hotspot and shutter sound** <span class="pill pill-beta">Beta</span>
-{ .feature-head }
+{ .feature-head #feature-5-ghz-hotspot-and-shutter-sound }
 
 A 5 GHz Wi-Fi hotspot, and the electronic shutter sound through the speaker.
 
@@ -226,7 +226,7 @@ A 5 GHz Wi-Fi hotspot, and the electronic shutter sound through the speaker.
 <div class="feature-card" markdown="1">
 
 **Hybrid Shutter** <span class="pill pill-beta">Beta</span>
-{ .feature-head }
+{ .feature-head #feature-hybrid-shutter }
 
 Switches to the electronic shutter on overexposure in P or A mode and, since v0.4.3, below the slowest mechanical speed in S or M mode. In v0.4.3b the project adds retention of the selected mode across power cycles.
 

@@ -2,16 +2,16 @@
 
 # Caduceus OM-3 roadmap
 
-Planned, testing, parked and fixed work as the owner describes it.
+Planned, done and not-planned work as the owner describes it, including the 2026-11-25 decision that the OM-3 port stays photo-only.
 
-**[Open original source](https://github.com/androidfanman/caduceus-om3/blob/d14f4e3dcc77a22385b3c7d36d65189c000dd175/ROADMAP.md)**
+**[Open original source](https://github.com/androidfanman/caduceus-om3/blob/b189b954e70ed0f8c26be6db03c8841f247b7f51/ROADMAP.md)**
 
-**Kind:** github file. **Locator:** ROADMAP.md: colour profiles, bugs, lenses and focus.
+**Kind:** github file. **Locator:** ROADMAP.md: colour profiles, lenses, buttons and "Video: not planned".
 
-**Revision / release:** `d14f4e3dcc77a22385b3c7d36d65189c000dd175`. **Retrieved:** 2026-11-25. **Last source check:** 2026-11-25.
+**Revision / release:** `b189b954e70ed0f8c26be6db03c8841f247b7f51`. **Retrieved:** 2026-11-26. **Last source check:** 2026-11-26.
 
 **Publication:** public. Attributed summary; statuses are the owner's own.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/om3.yaml) · Substantively reviewed: 2026-11-25.
+[Canonical record](../../records/sources/om3.yaml) · Substantively reviewed: 2026-11-26.

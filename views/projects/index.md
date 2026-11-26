@@ -20,15 +20,15 @@ Independent projects by members of the community, each with its own home, mainta
 
 [Caduceus for OM-3](caduceus-om3.md){ .card-title }
 
-Film looks and a full colour editor, built into the OM SYSTEM OM-3.
+Film looks, a full colour editor and film rolls, built into the OM SYSTEM OM-3.
 
-Your films in Picture Mode · 20 film simulations · Colour editor on the camera
+Film Rolls · Your films in Picture Mode · 20 film simulations
 { .card-features }
 
 For: OM-3
 { .card-cameras }
 
-Latest: v0.41-beta (pre-release), 24 Nov 2026
+Latest: v0.41-beta3 (pre-release), 26 Nov 2026
 { .card-meta }
 
 </div>

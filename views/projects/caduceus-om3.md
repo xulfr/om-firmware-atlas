@@ -2,7 +2,7 @@
 
 # Caduceus for OM-3
 
-Film looks and a full colour editor, built into the OM SYSTEM OM-3.
+Film looks, a full colour editor and film rolls, built into the OM SYSTEM OM-3.
 
 
 **[Before you install](../../docs/before-you-install.md)** · Unofficial firmware can stop your camera from starting. Recovery is not guaranteed.
@@ -10,7 +10,7 @@ Film looks and a full colour editor, built into the OM SYSTEM OM-3.
 
 <div class="cta-row" markdown="1">
 
-[Read the install guide](https://github.com/androidfanman/caduceus-om3/blob/27f155364d6b445ee72f647793e91e0cfad1b23f/releases/v0.41-beta/NOTES.md){ .btn .btn-primary }
+[Read the install guide](https://github.com/androidfanman/caduceus-om3/blob/c038fa6491d13f21908d3f06fe097b35fac553dc/releases/v0.41-beta3/NOTES.md){ .btn .btn-primary }
 [Project home](https://github.com/androidfanman/caduceus-om3){ .btn .btn-ghost }
 [Ask or report issues](https://github.com/androidfanman/caduceus-om3/issues){ .btn .btn-ghost }
 [Tour](https://androidfanman.github.io/caduceus-om3/){ .btn .btn-ghost }
@@ -20,7 +20,7 @@ Film looks and a full colour editor, built into the OM SYSTEM OM-3.
 
 </div>
 
-**Type:** mod · **Camera details:** [OM-3](#for-om3) · **Latest release:** [v0.41-beta (pre-release)](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.41-beta), 24 Nov 2026 · **Maintained by** [androidfanman](https://github.com/androidfanman)
+**Type:** mod · **Camera details:** [OM-3](#for-om3) · **Latest release:** [v0.41-beta3 (pre-release)](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.41-beta3), 26 Nov 2026 · **Maintained by** [androidfanman](https://github.com/androidfanman)
 { .facts }
 
 ## Cameras
@@ -31,10 +31,10 @@ Film looks and a full colour editor, built into the OM SYSTEM OM-3.
 
 [Before you install: risks and recovery](../../docs/before-you-install.md)
 
-**For this camera:** 17 features, including Your films in Picture Mode, 20 film simulations and Colour editor on the camera.
+**For this camera:** 18 features, including Film Rolls, Your films in Picture Mode and 20 film simulations.
 { .card-for }
 
-**Get it:** [v0.41-beta (pre-release)](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.41-beta), 24 Nov 2026 · [Install guide](https://github.com/androidfanman/caduceus-om3/blob/27f155364d6b445ee72f647793e91e0cfad1b23f/releases/v0.41-beta/NOTES.md)
+**Get it:** [v0.41-beta3 (pre-release)](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.41-beta3), 26 Nov 2026 · [Install guide](https://github.com/androidfanman/caduceus-om3/blob/c038fa6491d13f21908d3f06fe097b35fac553dc/releases/v0.41-beta3/NOTES.md)
 { .card-get }
 
 [Mods and installation](../cameras/om3.md) · [Test results](../research/om3.md#evidence)
@@ -54,13 +54,16 @@ Caduceus for OM-3 adds 20 film simulations and a colour editor to the OM-3's own
 
 Looks are made and shared in LookLab, a browser tool that previews a film on sample photos or your own and saves one file for the card. Since v0.29 the films and your changes live in the camera's own memory, so any card works, or none at all.
 
+Film Rolls, new in the v0.41-beta2 test version, makes the camera shoot like a roll of film: pick a film and 24, 36 or 72 exposures, and the roll keeps that film and its ISO, counts down the frames and hides your photos until you wind it back. It lives in a folder on the card; without the folder the camera behaves as usual.
+
 It is open source, for the OM-3 on firmware 1.1 only, and grew out of Caduceus for the E-P7. The project calls it experimental: it can crash or freeze the camera, and the launcher keeps a restore file so you can go back to OM's firmware.
 
 ### What it's working towards
 
 - Make Color Profile mode the best JPEG maker of any camera. The owner now lists the colour profiles as complete.
-- Video comes next in the owner's order of work; films in video and 10-bit beyond Log and HLG are listed as requests.
-- Panasonic aperture-ring support is listed as requested; until mid-November the roadmap had it as planned.
+- Photos only. On 2026-11-25 the owner closed the video requests (films in video, 10-bit, H.265, open gate) as not planned; video keeps working as stock, and a change that breaks it is still treated as a bug.
+- Film Rolls is a test feature; the owner's roadmap lists a full release, a frame tag in Playback after the rewind and, later, your own film shelf from the card.
+- Panasonic aperture-ring and lens stabilisation support were marked not planned on 2026-11-25; until mid-November the roadmap had the aperture ring as planned.
 
 ## Features
 
@@ -70,8 +73,20 @@ As the project describes them. Status is the project's own; linked evidence is t
 
 <div class="feature-card" markdown="1">
 
+**Film Rolls** <span class="pill pill-testing">Testing</span>
+{ .feature-head #feature-film-rolls }
+
+Load a roll of 24, 36 or 72 exposures on Picture Mode's film row. The roll fixes the film and ISO (the film's box speed, at least 200), counts the frames left, keeps Playback and Image Review closed until you wind it back, locks the shutter at the end and logs every roll on the card.
+
+[OM-3](../cameras/om3.md) · since v0.41-beta2 · [Evidence](../capabilities/om3-film-rolls.md)
+{ .card-meta }
+
+</div>
+
+<div class="feature-card" markdown="1">
+
 **Your films in Picture Mode** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-your-films-in-picture-mode }
 
 FILM 1–20 appear after COLOR 1–4, with their names on the title, quick menu, shooting screen and viewfinder.
 
@@ -83,7 +98,7 @@ FILM 1–20 appear after COLOR 1–4, with their names on the title, quick menu,
 <div class="feature-card" markdown="1">
 
 **20 film simulations** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-20-film-simulations }
 
 Looks inspired by Portra, Gold, Ektar, Ektachrome, Kodachrome, CineStill 800T, Velvia, Provia, Superia and more, made only from the camera's own settings.
 
@@ -95,7 +110,7 @@ Looks inspired by Portra, Gold, Ektar, Ektachrome, Kodachrome, CineStill 800T, V
 <div class="feature-card" markdown="1">
 
 **Colour editor on the camera** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-colour-editor-on-the-camera }
 
 Hue and luminance for each of 12 colours next to the camera's saturation, with Color Mix and RGB curves since v0.30.
 
@@ -107,7 +122,7 @@ Hue and luminance for each of 12 colours next to the camera's saturation, with C
 <div class="feature-card" markdown="1">
 
 **Split toning** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-split-toning }
 
 Tint shadows and highlights separately in 12 colours, with a Tone Balance row. Shows in live view.
 
@@ -119,7 +134,7 @@ Tint shadows and highlights separately in 12 colours, with a Tone Balance row. S
 <div class="feature-card" markdown="1">
 
 **Film grain** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-film-grain }
 
 Colour grain made by the camera's image processor, as fast as a photo without grain.
 
@@ -131,7 +146,7 @@ Colour grain made by the camera's image processor, as fast as a photo without gr
 <div class="feature-card" markdown="1">
 
 **Glow, clarity and halation** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-glow-clarity-and-halation }
 
 A Glow / Clarity row, and halation: a red glow around bright lights, strength 0–5.
 
@@ -143,7 +158,7 @@ A Glow / Clarity row, and halation: a red glow around bright lights, strength 0�
 <div class="feature-card" markdown="1">
 
 **Changes kept per film** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-changes-kept-per-film }
 
 Edits stay with each film over power off. A * marks what changed; hold OK to reset.
 
@@ -155,7 +170,7 @@ Edits stay with each film over power off. A * marks what changed; hold OK to res
 <div class="feature-card" markdown="1">
 
 **Films stored in the camera** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-films-stored-in-the-camera }
 
 Films, your changes and the Extras settings live in the camera's memory, so any card works, or none.
 
@@ -167,7 +182,7 @@ Films, your changes and the Extras settings live in the camera's memory, so any 
 <div class="feature-card" markdown="1">
 
 **White balance per film** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-white-balance-per-film }
 
 Each film and COLOR remembers its white balance mode and Kelvin. From v0.40.1, film compensation shows in the Super Control Panel and edits there are saved with the film.
 
@@ -179,7 +194,7 @@ Each film and COLOR remembers its white balance mode and Kelvin. From v0.40.1, f
 <div class="feature-card" markdown="1">
 
 **Buttons and Creative Dial** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-buttons-and-creative-dial }
 
 All four arrow keys in Button Function; each Creative Dial position set to CRT, ART, COLOR or MONO, with its own film.
 
@@ -191,7 +206,7 @@ All four arrow keys in Button Function; each Creative Dial position set to CRT, 
 <div class="feature-card" markdown="1">
 
 **Film recipe in every photo** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-film-recipe-in-every-photo }
 
 Each JPEG records its film and recipe in EXIF, so LookLab can open the film from a photo.
 
@@ -203,9 +218,9 @@ Each JPEG records its film and recipe in EXIF, so LookLab can open the film from
 <div class="feature-card" markdown="1">
 
 **LookLab** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-looklab }
 
-Edit films in your browser and preview one film on up to 12 of your own photos at once. LookLab can open a card’s curves with its look file, read a recipe JSON, save your own film sims and keep your photos for the next visit. Everything stays in the browser.
+Edit films in your browser and preview one film on up to 12 of your own photos at once. LookLab can open a card’s curves with its look file, read a recipe JSON, save your own film sims and keep your photos for the next visit. Since 2026-11-26 it can give each film its own Film Rolls canister name, colour and roll ISO. Everything stays in the browser.
 
 [OM-3](../cameras/om3.md)
 { .card-meta }
@@ -214,8 +229,8 @@ Edit films in your browser and preview one film on up to 12 of your own photos a
 
 <div class="feature-card" markdown="1">
 
-**Films from your LUTs and Lightroom presets** <span class="pill pill-testing">Testing</span>
-{ .feature-head }
+**Films from your LUTs and Lightroom presets** <span class="pill pill-released">Available</span>
+{ .feature-head #feature-films-from-your-luts-and-lightroom-presets }
 
 LookLab finds the camera settings closest to a .cube LUT or a Lightroom preset, with a match score.
 
@@ -227,7 +242,7 @@ LookLab finds the camera settings closest to a .cube LUT or a Lightroom preset, 
 <div class="feature-card" markdown="1">
 
 **Focus stacking with more lenses** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-focus-stacking-with-more-lenses }
 
 Extends in-camera focus stacking to more lenses, including the M.Zuiko 17mm F1.8 II.
 
@@ -239,7 +254,7 @@ Extends in-camera focus stacking to more lenses, including the M.Zuiko 17mm F1.8
 <div class="feature-card" markdown="1">
 
 **Crop modes** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-crop-modes }
 
 XPan, 21:9 and 5:4 for JPEGs. RAW retains the full sensor with crop metadata.
 
@@ -251,7 +266,7 @@ XPan, 21:9 and 5:4 for JPEGs. RAW retains the full sensor with crop metadata.
 <div class="feature-card" markdown="1">
 
 **Photo borders and film grain** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-photo-borders-and-film-grain }
 
 Black or white JPEG borders and adjustable film grain with Fine, Medium and Coarse sizes. v0.40.2 reduces colour banding and red–green speckle.
 
@@ -263,7 +278,7 @@ Black or white JPEG borders and adjustable film grain with Fine, Medium and Coar
 <div class="feature-card" markdown="1">
 
 **Shooting screen information** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-shooting-screen-information }
 
 Choose which of 17 items appear on the rear screen in Information 1, 2 and 3.
 
@@ -308,6 +323,39 @@ Halation at strength 5 on a sample photo. *Caduceus for OM-3 tour; photo by Bler
 </div>
 
 ## Releases
+
+<div class="release-item" markdown="1">
+
+**[Caduceus for OM-3 v0.41-beta3 (test version)](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.41-beta3)** <span class="pill pill-alpha">Pre-release</span> · 26 Nov 2026
+{ .release-head }
+
+- Custom mode C5 brings back its own films at every dial turn, follows Save Settings Hold, and gets Color Mix and the RGB curves (#116,
+- Film Rolls users need this version's own FILMROLL.BIN; beta2's is not loaded.
+- The maintainer reports a camera test on an OM-3 on 26 November as build fix116-1.
+
+OM-3 · [Report your result](https://github.com/xulfr/om-firmware-atlas/issues/new?template=camera-report.yml&target=OM+SYSTEM+OM-3+%C2%B7+stock+firmware%3A+&package=Caduceus+for+OM-3+%C2%B7+v0.41-beta3)
+
+Test release. Upstream keeps v0.40.3 as its current version; roll back by making v0.41-beta2 (with its FILMROLL.BIN) or v0.40.3.
+{ .release-warning }
+
+</div>
+
+<div class="release-item" markdown="1">
+
+**[Caduceus for OM-3 v0.41-beta2 (test version)](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.41-beta2)** <span class="pill pill-alpha">Pre-release</span> · 26 Nov 2026
+{ .release-head }
+
+- Film Rolls: shoot 24, 36 or 72 exposures at a fixed film and ISO, with no review until the rewind. Turned on by copying the release's FILMROLL folder into OM3MOD.
+- XPan, 21:9 and 5:4 no longer fall back to 16:9 after a half-press during start-up (#105).
+- Remaining Movie Time is its own screen-info row; if you had hidden Remaining Files, untick the new row too.
+- The maintainer reports camera testing on an OM-3 on 26 November as builds fr9 and test 39.
+
+OM-3 · [Report your result](https://github.com/xulfr/om-firmware-atlas/issues/new?template=camera-report.yml&target=OM+SYSTEM+OM-3+%C2%B7+stock+firmware%3A+&package=Caduceus+for+OM-3+%C2%B7+v0.41-beta2)
+
+Test release; v0.41-beta3 followed the same day with fixes. Upstream keeps v0.40.3 as its current version.
+{ .release-warning }
+
+</div>
 
 <div class="release-item" markdown="1">
 
@@ -669,7 +717,7 @@ OM-3 · [Report your result](https://github.com/xulfr/om-firmware-atlas/issues/n
 
 ## Research notes
 
-The project's current stable release is v0.40.3 for OM-3 firmware 1.1, camera-tested by the maintainer as v0.40.3-beta4. The newest test release, v0.41-beta, redesigns the Picture Mode colour, tone and split-toning pages and writes a new photo code (om3.2) that older readers need updating for.
+The project's current stable release is v0.40.3 for OM-3 firmware 1.1, camera-tested by the maintainer as v0.40.3-beta4. The newest test release, v0.41-beta3, carries v0.41-beta2's Film Rolls (24, 36 or 72 exposures at a fixed film and ISO, no review until the rewind, turned on by a folder on the card) and fixes custom mode C5. Both write photo code om3.2, which older readers need updating for. On 2026-11-25 the owner made the port photo-only.
 
 ## Sources and record
 
@@ -694,5 +742,9 @@ The project's current stable release is v0.40.3 for OM-3 firmware 1.1, camera-te
 - [Caduceus for OM-3 v0.40.3](../sources/om3.v0403.md)
 - [Caduceus for OM-3 v0.41-alpha (test version)](../sources/om3.v041-alpha.md)
 - [Caduceus for OM-3 v0.41-beta (test version)](../sources/om3.v041-beta.md)
+- [Caduceus for OM-3 v0.41-beta2 (test version)](../sources/om3.v041-beta2.md)
+- [Caduceus for OM-3 v0.41-beta3 (test version)](../sources/om3.v041-beta3.md)
+- [Caduceus OM-3 user guide, Film Rolls](../sources/om3.film-rolls-using.md)
+- [Caduceus OM-3 Film Rolls on the SD card, roadmap and lab status](../sources/om3.film-rolls-roadmap.md)
 
-[Canonical record](../../records/projects/caduceus-om3.yaml) · Substantively reviewed: 2026-11-24.
+[Canonical record](../../records/projects/caduceus-om3.yaml) · Substantively reviewed: 2026-11-26.

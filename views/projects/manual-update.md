@@ -60,7 +60,7 @@ As the project describes them. Status is the project's own; linked evidence is t
 <div class="feature-card" markdown="1">
 
 **SD card firmware update** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-sd-card-firmware-update }
 
 File names and steps for installing an official update with the camera's hold-OK card update.
 

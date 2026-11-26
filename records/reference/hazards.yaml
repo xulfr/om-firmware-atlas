@@ -82,10 +82,11 @@ records:
   - source.em5n.saved-settings
   - source.fenykl.fwapi
   - source.epm2.slow-boot
+  - source.epm2.load-order
   topics:
   - patching
   - platform
-  last_reviewed: '2026-11-25'
+  last_reviewed: '2026-11-26'
   category: hazard
   camera_ids:
   - camera.ep7
@@ -149,6 +150,11 @@ records:
     project_id: project.epm2mod
     summary: On a body with about 10 s cold starts, a contributor's build with that code moved into segment 1 started at
       once after 60 s off. The project's fix build passed on the owner's bodies, which never showed the fault.
+  - method: emulator
+    source_ref: source.epm2.load-order
+    project_id: project.epm2mod
+    summary: 'E-PM2 1.6: five film simulations'' jump tables also led into segment 2. With it not copied, cold-start-fix
+      faulted in 50 of 210 harness cases and film-tables-fix in none.'
   conflicts: []
   upstream_detail: https://github.com/cakelesscoder/caduceus-ep7/blob/0cb1dbcc50595cd87f56648810762ffbbb8e17f3/docs/FIRMWARE_GUIDE.md
 - type: reference
