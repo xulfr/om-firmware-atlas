@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from atlas_core import Catalogue
-from atlas_generate import generated_diff, camera_updates, latest_release, release_limit, render
+from atlas_generate import generated_diff, camera_updates, latest_release, release_limit, render, spotlight
 from atlas import freshness, inspect_remote, review_notice, update_queue
 from atlas_core import reference_status
 
@@ -235,6 +235,27 @@ class AtlasTests(unittest.TestCase):
         self.assertNotIn("Card-loaded core and modules", caduceus)
         self.assertNotIn("picture-mode-look.png", pages["views/cameras/om5.md"])
         self.assertIn("partial report", pages["views/research/om5-ii.md"])
+
+    def test_spotlight_shows_a_feature_only_until_its_date(self):
+        project = self.catalogue.records["project.caduceus-om3"]
+        for feature in project["features"]:
+            feature.pop("spotlight_until", None)
+        feature = project["features"][0]
+        release = latest_release(project, feature["camera_ids"][0])
+        self.assertEqual(spotlight(self.catalogue, "docs/index.md", dt.date(2026, 12, 1)), "")
+        feature["spotlight_until"] = "2026-12-01"
+        band = spotlight(self.catalogue, "docs/index.md", dt.date(2026, 12, 1))
+        self.assertIn(feature["name"], band)
+        self.assertIn("#feature-", band)
+        if release and release.get("warning"):
+            self.assertIn(release["warning"], band)
+        self.assertEqual(spotlight(self.catalogue, "docs/index.md", dt.date(2026, 12, 2)), "")
+
+    def test_spotlight_cannot_outlive_the_review_that_set_it(self):
+        project = self.catalogue.records["project.caduceus-om3"]
+        reviewed = dt.date.fromisoformat(str(project["last_reviewed"]))
+        project["features"][0]["spotlight_until"] = (reviewed + dt.timedelta(days=60)).isoformat()
+        self.assertTrue(any("spotlight_until" in e for e in self.catalogue.validate()))
 
     def test_new_upstream_release_is_queued_not_applied(self):
         before = copy.deepcopy(self.catalogue.records)

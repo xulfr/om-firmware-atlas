@@ -25,6 +25,7 @@ Put code a hook calls in the hook's own section or one loaded earlier, or guard 
 - **Static analysis** ([fenykl](../projects/fenykl.md)): E-M10 Mark II 1.4: boot0 and boot1 load at reset, sec1 in Usr0, sec2 in Usr1, sec4 to sec6 in Usr4; fenykl marks each function with its section and calls it only after that load. Source: [fenykl firmware symbol table for E-M10 Mark II 1.4](../sources/fenykl.fwapi.md).
 - **Static analysis** ([EPM2Mod](../projects/epm2mod.md)): E-PM2 1.6: a peaking hook in the kernel range jumped into segment 2. Live view reaches it during the quick start, before the segment-2 copy ends. Source: [EPM2Mod slow cold start investigation](../sources/epm2.slow-boot.md).
 - **Physical camera** ([EPM2Mod](../projects/epm2mod.md)): On a body with about 10 s cold starts, a contributor's build with that code moved into segment 1 started at once after 60 s off. The project's fix build passed on the owner's bodies, which never showed the fault. Source: [EPM2Mod slow cold start investigation](../sources/epm2.slow-boot.md).
+- **Emulator** ([EPM2Mod](../projects/epm2mod.md)): E-PM2 1.6: five film simulations' jump tables also led into segment 2. With it not copied, cold-start-fix faulted in 50 of 210 harness cases and film-tables-fix in none. Source: [E-PM2 load order, space and open risks](../sources/epm2.load-order.md).
 
 **[Full detail upstream](https://github.com/cakelesscoder/caduceus-ep7/blob/0cb1dbcc50595cd87f56648810762ffbbb8e17f3/docs/FIRMWARE_GUIDE.md)**
 
@@ -36,5 +37,6 @@ Put code a hook calls in the hook's own section or one loaded earlier, or guard 
 - [Saved mod settings and native menu rows on the E-M5 III](../sources/em5n.saved-settings.md)
 - [fenykl firmware symbol table for E-M10 Mark II 1.4](../sources/fenykl.fwapi.md)
 - [EPM2Mod slow cold start investigation](../sources/epm2.slow-boot.md)
+- [E-PM2 load order, space and open risks](../sources/epm2.load-order.md)
 
-[Canonical record](../../records/reference/hazards.yaml) · Substantively reviewed: 2026-11-25.
+[Canonical record](../../records/reference/hazards.yaml) · Substantively reviewed: 2026-11-26.

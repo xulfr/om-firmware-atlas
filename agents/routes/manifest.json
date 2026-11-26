@@ -16,8 +16,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "knowledge/methods/patching.md": {
-      "approx_tokens": 951,
-      "bytes": 3804,
+      "approx_tokens": 1191,
+      "bytes": 4762,
       "method": "ceil(utf8-bytes/4)"
     },
     "knowledge/platform/identity.md": {
@@ -135,6 +135,11 @@
       "bytes": 982,
       "method": "ceil(utf8-bytes/4)"
     },
+    "records/capabilities/om3/om3-film-rolls.yaml": {
+      "approx_tokens": 440,
+      "bytes": 1759,
+      "method": "ceil(utf8-bytes/4)"
+    },
     "records/capabilities/om3/om3-hsl.yaml": {
       "approx_tokens": 184,
       "bytes": 736,
@@ -236,8 +241,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/evidence/epm2mod.yaml": {
-      "approx_tokens": 1715,
-      "bytes": 6857,
+      "approx_tokens": 2165,
+      "bytes": 8660,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/evidence/fenykl.yaml": {
@@ -311,8 +316,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/caduceus-om3.yaml": {
-      "approx_tokens": 5881,
-      "bytes": 23521,
+      "approx_tokens": 6745,
+      "bytes": 26977,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/caduceus-om5-tadejs.yaml": {
@@ -346,8 +351,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/epm2mod.yaml": {
-      "approx_tokens": 2779,
-      "bytes": 11116,
+      "approx_tokens": 2850,
+      "bytes": 11399,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/projects/fenykl.yaml": {
@@ -426,8 +431,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/epm2mod.yaml": {
-      "approx_tokens": 3654,
-      "bytes": 14614,
+      "approx_tokens": 4061,
+      "bytes": 16243,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/fenykl.yaml": {
@@ -456,8 +461,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/om3.yaml": {
-      "approx_tokens": 4320,
-      "bytes": 17280,
+      "approx_tokens": 5224,
+      "bytes": 20896,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/om5.yaml": {

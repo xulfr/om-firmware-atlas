@@ -64,7 +64,7 @@ As the project describes them. Status is the project's own; linked evidence is t
 <div class="feature-card" markdown="1">
 
 **Card-loaded core and modules** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-card-loaded-core-and-modules }
 
 A one-time loader patch starts OMKIT\CORE.BIN from the card on every power-on. Updates are file copies; no card, or OK held at power-on, gives a stock camera.
 
@@ -76,7 +76,7 @@ A one-time loader patch starts OMKIT\CORE.BIN from the card on every power-on. U
 <div class="feature-card" markdown="1">
 
 **Creative profiles (CREATPRF)** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-creative-profiles-creatprf }
 
 Three colour and three monochrome profiles in the picture mode strip, edited in the camera's own column (12-sector saturation, tone curve, filter, toning, grain); applied to stills, live view and video.
 
@@ -88,7 +88,7 @@ Three colour and three monochrome profiles in the picture mode strip, edited in 
 <div class="feature-card" markdown="1">
 
 **Film look (FILMLOOK)** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-film-look-filmlook }
 
 One picture mode, i-Enhance by default, becomes a film look; the dials step through .ISP presets on the card, 32 bundled, with a tone curve per preset and grain on stills.
 
@@ -100,7 +100,7 @@ One picture mode, i-Enhance by default, becomes a film look; the dials step thro
 <div class="feature-card" markdown="1">
 
 **Module SDK** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-module-sdk }
 
 A public API table, headers and an example module HELLO for writing modules that load from the card.
 
@@ -112,7 +112,7 @@ A public API table, headers and an example module HELLO for writing modules that
 <div class="feature-card" markdown="1">
 
 **Preset programs** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-preset-programs }
 
 ISP player, ISP fitter (.cube look to preset) and ISP neurofit (preset from RAW files and film scans, driven by an AI agent), run on a computer.
 

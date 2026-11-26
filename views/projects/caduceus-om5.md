@@ -84,7 +84,7 @@ As the project describes them. Status is the project's own; linked evidence is t
 <div class="feature-card" markdown="1">
 
 **Color Profiles 1–3 and Monochrome Profiles 1–3** <span class="pill pill-alpha">Alpha</span>
-{ .feature-head }
+{ .feature-head #feature-color-profiles-1-3-and-monochrome-profiles-1-3 }
 
 Six hidden Picture Mode slots restored after Color Creator.
 
@@ -96,7 +96,7 @@ Six hidden Picture Mode slots restored after Color Creator.
 <div class="feature-card" markdown="1">
 
 **Custom looks** <span class="pill pill-alpha">Alpha</span>
-{ .feature-head }
+{ .feature-head #feature-custom-looks }
 
 Up to ten looks from LookLab in one LOOKS.BIN; the trash button steps through them and the look's name is shown.
 
@@ -108,7 +108,7 @@ Up to ten looks from LookLab in one LOOKS.BIN; the trash button steps through th
 <div class="feature-card" markdown="1">
 
 **Colour editor** <span class="pill pill-alpha">Alpha</span>
-{ .feature-head }
+{ .feature-head #feature-colour-editor }
 
 Hue, saturation and lightness for 12 colours, with a tone curve, Sharpness, Contrast and Shading.
 
@@ -120,7 +120,7 @@ Hue, saturation and lightness for 12 colours, with a tone curve, Sharpness, Cont
 <div class="feature-card" markdown="1">
 
 **White balance per profile** <span class="pill pill-testing">Testing</span>
-{ .feature-head }
+{ .feature-head #feature-white-balance-per-profile }
 
 The mode, Kelvin and shift are kept for each Color Profile. Not yet checked on a camera.
 
@@ -132,7 +132,7 @@ The mode, Kelvin and shift are kept for each Color Profile. Not yet checked on a
 <div class="feature-card" markdown="1">
 
 **Monochrome Profiles** <span class="pill pill-alpha">Alpha</span>
-{ .feature-head }
+{ .feature-head #feature-monochrome-profiles }
 
 Colour filter, toning, grain and tone, with the filter graphic restored in alpha12.
 
@@ -144,7 +144,7 @@ Colour filter, toning, grain and tone, with the filter graphic restored in alpha
 <div class="feature-card" markdown="1">
 
 **Live ND32 and ND64** <span class="pill pill-alpha">Alpha</span>
-{ .feature-head }
+{ .feature-head #feature-live-nd32-and-nd64 }
 
 Two stronger Live ND settings after ND16.
 
@@ -156,7 +156,7 @@ Two stronger Live ND settings after ND16.
 <div class="feature-card" markdown="1">
 
 **Black and White tone controls** <span class="pill pill-alpha">Alpha</span>
-{ .feature-head }
+{ .feature-head #feature-black-and-white-tone-controls }
 
 Per-profile Black and White (−7..+7) on the tone-curve page of Color Profiles 1–3; INFO steps Hi/Sh, Black/White and Mid. Live view updates without a half-press. Covered by the overall owner report.
 
@@ -168,7 +168,7 @@ Per-profile Black and White (−7..+7) on the tone-curve page of Color Profiles 
 <div class="feature-card" markdown="1">
 
 **Split toning on the colour wheel** <span class="pill pill-alpha">Alpha</span>
-{ .feature-head }
+{ .feature-head #feature-split-toning-on-the-colour-wheel }
 
 Shadow, Midtone and Highlight Tint for Color Profiles 1–3, each one of 12 colours; INFO switches the wheel between HSL and Tint. Covered by the overall owner report.
 
@@ -180,7 +180,7 @@ Shadow, Midtone and Highlight Tint for Color Profiles 1–3, each one of 12 colo
 <div class="feature-card" markdown="1">
 
 **Film Grain for Color Profiles** <span class="pill pill-research">Research</span>
-{ .feature-head }
+{ .feature-head #feature-film-grain-for-color-profiles }
 
 Removed before v0.2.0-alpha1. A development build showed no grain on the camera at any level; the stock grain pass is monochrome-only, so colour grain needs image-pipeline work on an experiment branch.
 

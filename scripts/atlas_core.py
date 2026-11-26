@@ -11,6 +11,9 @@ from pathlib import Path
 import yaml
 from jsonschema import Draft202012Validator, FormatChecker
 
+# A homepage highlight lasts at most this long after the review that set it (decision 0009).
+SPOTLIGHT_MAX_DAYS = 31
+
 KINDS = {"camera": "cameras", "firmware": "firmware", "project": "projects",
          "capability": "capabilities", "evidence": "evidence", "source": "sources",
          "community": "community", "reference": "reference"}
@@ -216,6 +219,15 @@ class Catalogue:
                             check_ref(node_id, f"{label} capability_id", feature["capability_id"], "capability")
                         elif capability["project_id"] != node_id:
                             errors.append(f"{node_id}: {label} links {capability['id']}, which belongs to another project.")
+                    if feature.get("spotlight_until"):
+                        try:
+                            until = dt.date.fromisoformat(feature["spotlight_until"])
+                            reviewed = dt.date.fromisoformat(str(row["last_reviewed"]))
+                        except ValueError:
+                            errors.append(f"{node_id}: {label} spotlight_until is not a calendar date.")
+                        else:
+                            if not reviewed <= until <= reviewed + dt.timedelta(days=SPOTLIGHT_MAX_DAYS):
+                                errors.append(f"{node_id}: {label} spotlight_until must fall within {SPOTLIGHT_MAX_DAYS} days after the project's last_reviewed.")
                 dates = [release["date"] for release in row.get("releases", [])]
                 if dates != sorted(dates, reverse=True):
                     errors.append(f"{node_id}: list releases newest first.")

@@ -110,7 +110,7 @@ As the project describes them. Status is the project's own; linked evidence is t
 <div class="feature-card" markdown="1">
 
 **PEN-F HSL** <span class="pill pill-alpha">Alpha</span>
-{ .feature-head }
+{ .feature-head #feature-pen-f-hsl }
 
 Hue and lightness added to the 12-colour saturation editor in COLOR1–3, from −7 to +7 since the 17 October alpha.
 
@@ -122,7 +122,7 @@ Hue and lightness added to the 12-colour saturation editor in COLOR1–3, from �
 <div class="feature-card" markdown="1">
 
 **Firmware toolkit** <span class="pill pill-research">Research</span>
-{ .feature-head }
+{ .feature-head #feature-firmware-toolkit }
 
 A component decoder, checksum checks, disassembly helpers and an MN103 instruction emulator.
 
@@ -131,7 +131,7 @@ A component decoder, checksum checks, disassembly helpers and an MN103 instructi
 <div class="feature-card" markdown="1">
 
 **Findings by topic** <span class="pill pill-research">Research</span>
-{ .feature-head }
+{ .feature-head #feature-findings-by-topic }
 
 Notes on update files, start-up, settings and image processing, each tied to a model and firmware build.
 

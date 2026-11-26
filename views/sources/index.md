@@ -92,13 +92,15 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [Caduceus v0.35 (beta)](ep7.v035.md) | More dial functions, an M-mode dial for manual lenses, and fixes for the Shortcut-button wheel and Movie Extras rows. |
 | [films-look-exif camera log](epm2.camera-log.md) | Owner camera result for the pinned build on 2026-11-20, with the emulator checks run before the flash. |
 | [E-PM2 cold-start-fix camera log](epm2.camera-log-cold-start-fix.md) | Checks before the flash and the owner's camera result for the cold-start-fix build on 25 November. |
+| [E-PM2 film-tables-fix camera log](epm2.camera-log-film-tables-fix.md) | Checks before the flash, the function-harness result with segments 2 and 3 not copied, and the owner's camera result for the film-tables-fix build on 25 November. |
 | [E-PM2 peaking-mf camera log](epm2.camera-log-peaking-mf.md) | Owner test of the first peaking-mf candidate and the rebuilt, pinned firmware on 21 November. |
 | [films-twelve-off camera log](epm2.camera-log-twelve-off.md) | Owner camera result for the films-twelve-off build on 2026-11-21, the checks not done and the emulator checks run before the flash. |
 | [E-PM2 feasibility and real limits](epm2.feasibility.md) | Measured limits, resources, recovery record and what is feasible, each labelled verified, inferred or unknown. |
 | [E-PM2 firmware format](epm2.format.md) | OE container fields, scrambling, checksum and the v1.6 blocks with their runtime base. |
-| [EPM2Mod pinned build](epm2.install.md) | The pinned build cold-start-fix, its feature set, the camera-test date and the stock and build SHA-256s. |
+| [EPM2Mod pinned build](epm2.install.md) | The pinned build film-tables-fix (cold-start-fix before 2026-11-25), its feature set, the camera-test date and the stock and as-tested build SHA-256s. |
 | [EPM2Mod install and restore for peaking-mf](epm2.install-peaking-mf.md) | Pinned peaking-mf firmware identity, startup look loading, focus peaking and the stock restore reset. |
 | [Olympus custom firmware landscape](epm2.landscape.md) | Known projects by camera, and why EPM2Mod is not a fork of the newer-body mods. |
+| [E-PM2 load order, space and open risks](epm2.load-order.md) | How the E-PM2 1.6 firmware is copied to RAM in segments, the rule for patch code that follows, free space per region and the transfers from early- to late-loaded code still accepted, as of film-tables-fix. |
 | [Olympus generations for modding](epm2.model-matrix.md) | Generations, firmware codes, layouts and processors across 32 surveyed update files, with labelled certainty. |
 | [EPM2Mod 2026.11.20-pana-ring-probe.1](epm2.pana-ring-probe.md) | Developer debug build for the Panasonic aperture-ring investigation. |
 | [EPM2Mod 2026.11.20-rc.2](epm2.rc2.md) | Ships films-twelve-off and adds a film-file-only choice to the installer. |
@@ -154,14 +156,16 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [om10mi-mods releases](om10mi.releases.md) | Four releases: v94 (2026-11-24), v88 (2026-11-23, pre-release, superseded), v87 (2026-11-21) and v56 (2026-11-10); each has a Windows exe and a Python zip with SHA-256s, and the stock and result SHA-1s. |
 | [OM-3 v0.40 grain crash report](om3.atlas-grain-report.md) | A user reports a crash at shutter release with Film Grain enabled and loss of the last photo. |
 | [Caduceus OM-3 developer notes](om3.devnotes.md) | Addresses, hooks and test history for the OM-3 1.1 port, with camera-proven sites marked. |
+| [Caduceus OM-3 Film Rolls on the SD card, roadmap and lab status](om3.film-rolls-roadmap.md) | The flash-once design (thin flashed sockets, code and hooks in a card file), the maintainer's camera-test log up to fr9 and test 39, open items and the space left in the flashed firmware. |
+| [Caduceus OM-3 user guide, Film Rolls](om3.film-rolls-using.md) | How Film Rolls is turned on, loaded, shot, ended and wound back, and what the roll log records, as of v0.41-beta3. |
 | [OM-3 card formats](om3.formats.md) | OM3P layout and release-specific semantics, including the v0.40 border and film grain fields. |
 | [OM-3 LookLab](om3.looklab.md) | OM-3-only editor, sharing schema and export targets. |
-| [LookLab import and preview updates](om3.looklab-current.md) | Upstream changelog for multi-photo previews, opening card curves or a recipe JSON, saved film sims, kept photos and reading photo code om3.2. |
+| [LookLab import and preview updates](om3.looklab-current.md) | Upstream changelog for LookLab's multi-photo previews, card curves and recipe JSON, saved film sims, kept photos, photo code om3.2 and the Film Rolls export of 2026-11-26. |
 | [OM-3 research notebook](om3.notes.md) | Caduceus OM-3 lab notebook: camera, emulator and static findings per issue. |
 | [Caduceus OM-3 overview](om3.readme.md) | Current stable release, camera scope, features and owner installation guidance. |
 | [Caduceus OM-3 releases](om3.releases.md) | Release notes through test version v0.41-beta. The project lists v0.40.3 as the current stable release. |
 | [OM-3 research index](om3.research.md) | Research entry points, release tests and the shooting-screen investigation. |
-| [Caduceus OM-3 roadmap](om3.roadmap.md) | Planned, testing, parked and fixed work as the owner describes it. |
+| [Caduceus OM-3 roadmap](om3.roadmap.md) | Planned, done and not-planned work as the owner describes it, including the 2026-11-25 decision that the OM-3 port stays photo-only. |
 | [OM-3 v0.40-alpha release notes](om3.v040.md) | Release notes for the v0.40-alpha test version, read at its tag. |
 | [Caduceus for OM-3 v0.40-beta (test version)](om3.v040-beta.md) | Restores crop at startup, draws crop-edge framelines and adds black JPEG borders. |
 | [Caduceus for OM-3 v0.40-beta2 (test version)](om3.v040-beta2.md) | Adds separate rear-screen toggles for subject detection, the exposure level meter and image aspect. |
@@ -176,6 +180,8 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [Caduceus for OM-3 v0.40.3-beta4 (test version)](om3.v0403-beta4.md) | The maintainer reports that test build w1 keeps film and stock white-balance compensation separate on the OM-3. |
 | [Caduceus for OM-3 v0.41-alpha (test version)](om3.v041-alpha.md) | Early test version with new Picture Mode pages; the maintainer reports camera testing on an OM-3 as build p4. |
 | [Caduceus for OM-3 v0.41-beta (test version)](om3.v041-beta.md) | Test version that tidies the v0.41-alpha pages and adds photo code om3.2; the maintainer reports camera testing on an OM-3 as builds a2 to a6 and pc3. |
+| [Caduceus for OM-3 v0.41-beta2 (test version)](om3.v041-beta2.md) | Test version that adds Film Rolls from the SD card, keeps XPan at start-up (#105) and splits Remaining Movie Time into its own screen-info row; the maintainer reports camera testing as builds fr9 and test 39. |
+| [Caduceus for OM-3 v0.41-beta3 (test version)](om3.v041-beta3.md) | Test version that fixes custom mode C5 keeping its own films, Hold, curves and Film Rolls (#116, |
 | [Mark II alpha12 report](om5.alpha12.md) | Expected digest and an explicitly incomplete owner report. |
 | [OM-5 Mark II brick-risk review](om5.brick-risk.md) | E148 1.1 recovery route, hook map and incident record for the HSL/WB build. |
 | [OM-5 strict builder](om5.builder.md) | Declarative patch scope, bounds and recorded hashes. |

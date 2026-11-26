@@ -80,7 +80,8 @@
               "name": {"$ref": "#/$defs/text"}, "summary": {"$ref": "#/$defs/text"}, "camera_ids": {"$ref": "#/$defs/ids"},
               "status": {"enum": ["released", "beta", "alpha", "testing", "in-development", "planned", "research"]},
               "since": {"type": ["string", "null"]}, "source_ref": {"type": "string"},
-              "capability_id": {"type": ["string", "null"]}
+              "capability_id": {"type": ["string", "null"]},
+              "spotlight_until": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"}
             }}},
           "releases": {"type": "array", "items": {"type": "object", "additionalProperties": false,
             "required": ["tag", "title", "date", "url", "prerelease", "camera_ids", "highlights", "source_ref"], "properties": {

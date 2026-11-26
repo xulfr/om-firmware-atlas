@@ -443,6 +443,64 @@ def showcase(catalogue, origin):
     return text + "</div>\n"
 
 
+def feature_anchor(feature):
+    """Stable in-page anchor for a project feature card, so other pages can link to one feature."""
+    return "feature-" + "-".join("".join(c if c.isalnum() else " " for c in feature["name"].lower()).split())
+
+
+SPOTLIGHT_LIMIT = 2
+
+
+def spotlight_items(catalogue, today):
+    """Features a reviewed record asks to highlight on the homepage, until their own end date.
+
+    The end date is required, so a highlight can never outlive the review that set it; the
+    newest `since` release comes first."""
+    items = []
+    for project in catalogue.of_type("project"):
+        releases = {r["tag"]: r for r in project.get("releases", [])}
+        for feature in project.get("features", []):
+            until = feature.get("spotlight_until")
+            if until and today.isoformat() <= until:
+                items.append((project, feature, releases.get(feature.get("since"))))
+    items.sort(key=lambda item: ((item[2] or {}).get("date", ""), item[0]["title"], item[1]["name"]), reverse=True)
+    return items[:SPOTLIGHT_LIMIT]
+
+
+def spotlight(catalogue, origin, today):
+    """Homepage band for new features; empty when nothing is highlighted, so the page needs no edit.
+
+    The scope names the release that introduced the feature; the notes link and warning come from
+    the newest release for the feature's camera, which is what a reader would install today."""
+    items = spotlight_items(catalogue, today)
+    if not items:
+        return ""
+    records = catalogue.records
+    text = '<section class="home-spotlight" markdown="1">\n\n'
+    for project, feature, introduced in items:
+        cameras = ", ".join(cell(short_name(records[c]["title"])) for c in feature["camera_ids"])
+        current = latest_release(project, feature["camera_ids"][0]) if feature["camera_ids"] else latest_release(project)
+        page = link(origin, view_path(project))
+        text += '<div class="spotlight-card" markdown="1">\n\n'
+        scope = [f"New in {cell(project['title'])}", cameras]
+        if introduced:
+            scope.append("since " + cell(introduced["tag"]))
+        text += " · ".join(s for s in scope if s) + "\n{ .spotlight-scope }\n\n"
+        text += f"## {cell(feature['name'])} {pill(feature['status'])}\n\n{feature['summary']}\n\n"
+        text += f"[About this feature]({page}#{feature_anchor(feature)}){{ .btn .btn-primary }}\n\n"
+        more = []
+        if current:
+            more.append(f"[{cell(current['tag'])} release notes]({current['url']})")
+        if feature.get("capability_id"):
+            more.append(f"[What has been tested]({link(origin, view_path(records[feature['capability_id']]))})")
+        if more:
+            text += " · ".join(more) + "\n{ .spotlight-links }\n\n"
+        if current and current.get("warning"):
+            text += f"{current['warning']}\n{{ .release-warning }}\n\n"
+        text += "</div>\n\n"
+    return text + "</section>\n"
+
+
 def atlas_counts(catalogue):
     """Headline counts for the homepage, from the same records as every other page."""
     tests = [row for row in catalogue.of_type("evidence") if row["method"] == "physical-camera"]
@@ -685,7 +743,7 @@ def render(catalogue):
                 text += '<div class="feature-grid" markdown="1">\n\n'
                 for feature in row["features"]:
                     text += '<div class="feature-card" markdown="1">\n\n'
-                    text += f"**{cell(feature['name'])}** {pill(feature['status'])}\n{{ .feature-head }}\n\n{feature['summary']}\n\n"
+                    text += f"**{cell(feature['name'])}** {pill(feature['status'])}\n{{ .feature-head #{feature_anchor(feature)} }}\n\n{feature['summary']}\n\n"
                     meta = []
                     if feature["camera_ids"]:
                         meta.append(", ".join(f"[{cell(short_name(records[c]['title']))}]({link(path, view_path(records[c]))})" for c in feature["camera_ids"]))

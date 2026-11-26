@@ -145,3 +145,38 @@ records:
   - A contributor's own build of the same change started at once on an affected body; that build is not published.
   - One owner; not reproduced by the Atlas.
   assumptions: []
+- type: evidence
+  id: evidence.epm2-film-tables-fix
+  title: E-PM2 film-tables-fix owner camera test
+  summary: The owner reports five film simulations working in P and ART with the film tables moved out of late-loaded code; the early-start fault it removes is shown by the harness only.
+  source_refs:
+  - source.epm2.camera-log-film-tables-fix
+  - source.epm2.load-order
+  topics:
+  - patching
+  last_reviewed: '2026-11-26'
+  camera_id: camera.epm2
+  firmware_id: firmware.epm2-1600
+  project_id: project.epm2mod
+  mod_build: film-tables-fix
+  method: physical-camera
+  provenance: maintainer-summary
+  identity_level: reported-hash
+  package_sha256: e029facb38569880c0cec4c16b0f295ca2a96214ed75900fe00585f6b0cedd28
+  expected_package_sha256: e029facb38569880c0cec4c16b0f295ca2a96214ed75900fe00585f6b0cedd28
+  outcome: reported-pass
+  quality: partial
+  reported_on: '2026-11-25'
+  tested_on: '2026-11-25'
+  procedure: Before the flash, free-space, op, hook, film, boot and update-path checks passed, and the three film
+    functions ran in a harness with segments 2 and 3 not copied (210 of 210 cases without a fault, where cold-start-fix
+    faults in 50). The owner then used Grainy Film, Gentle Sepia, Dramatic Tone, Key Line and Watercolor in P and ART.
+  coverage:
+  - The five film simulations looked as expected in P and ART; the debug log shows their film codes in the colour stage,
+    five captures, one MF Assist peaking run and sessions ending normally.
+  limitations:
+  - Starts after 2 minutes off were not repeated for this build; the owner's body never showed the slow start.
+  - A release of this build carries the release day on the Firmware screen and so has another SHA-256; the hash here
+    is the build as tested.
+  - One owner; not reproduced by the Atlas.
+  assumptions: []

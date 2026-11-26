@@ -35,17 +35,17 @@ records:
 - type: source
   id: source.epm2.install
   title: 'EPM2Mod pinned build'
-  summary: 'The pinned build cold-start-fix, its feature set, the camera-test date and the stock and build SHA-256s.'
+  summary: 'The pinned build film-tables-fix (cold-start-fix before 2026-11-25), its feature set, the camera-test date and the stock and as-tested build SHA-256s.'
   source_refs: []
   topics: []
-  last_reviewed: '2026-11-25'
-  url: https://github.com/cfu288/EPM2Mod/blob/3b6827892ed4f031a72acb7fec4496aaf9a29348/docs/user/install.md
+  last_reviewed: '2026-11-26'
+  url: https://github.com/cfu288/EPM2Mod/blob/e1ef5acc1962d89d2f0d3c4b622e5f675c76320f/docs/user/install.md
   source_kind: github-file
   upstream_repo: cfu288/EPM2Mod
-  revision: 3b6827892ed4f031a72acb7fec4496aaf9a29348
+  revision: e1ef5acc1962d89d2f0d3c4b622e5f675c76320f
   locator: docs/user/install.md
-  retrieved_on: '2026-11-25'
-  last_checked: '2026-11-25'
+  retrieved_on: '2026-11-26'
+  last_checked: '2026-11-26'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
 - type: source
@@ -351,3 +351,35 @@ records:
   last_checked: '2026-11-25'
   publication: public
   reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.epm2.camera-log-film-tables-fix
+  title: E-PM2 film-tables-fix camera log
+  summary: Checks before the flash, the function-harness result with segments 2 and 3 not copied, and the owner's camera result for the film-tables-fix build on 25 November.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-26'
+  url: https://github.com/cfu288/EPM2Mod/blob/e1ef5acc1962d89d2f0d3c4b622e5f675c76320f/docs/camera-log/2026-11-25-film-tables-fix.md
+  source_kind: github-file
+  upstream_repo: cfu288/EPM2Mod
+  revision: e1ef5acc1962d89d2f0d3c4b622e5f675c76320f
+  locator: docs/camera-log/2026-11-25-film-tables-fix.md
+  retrieved_on: '2026-11-26'
+  last_checked: '2026-11-26'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.epm2.load-order
+  title: E-PM2 load order, space and open risks
+  summary: How the E-PM2 1.6 firmware is copied to RAM in segments, the rule for patch code that follows, free space per region and the transfers from early- to late-loaded code still accepted, as of film-tables-fix.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-26'
+  url: https://github.com/cfu288/EPM2Mod/blob/e1ef5acc1962d89d2f0d3c4b622e5f675c76320f/docs/dev/load-order.md
+  source_kind: github-file
+  upstream_repo: cfu288/EPM2Mod
+  revision: e1ef5acc1962d89d2f0d3c4b622e5f675c76320f
+  locator: docs/dev/load-order.md
+  retrieved_on: '2026-11-26'
+  last_checked: '2026-11-26'
+  publication: public
+  reuse_note: Linked and synthesised; labels V, I and U are the project's own.

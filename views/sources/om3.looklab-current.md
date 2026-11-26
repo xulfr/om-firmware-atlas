@@ -2,16 +2,16 @@
 
 # LookLab import and preview updates
 
-Upstream changelog for multi-photo previews, opening card curves or a recipe JSON, saved film sims, kept photos and reading photo code om3.2.
+Upstream changelog for LookLab's multi-photo previews, card curves and recipe JSON, saved film sims, kept photos, photo code om3.2 and the Film Rolls export of 2026-11-26.
 
-**[Open original source](https://github.com/androidfanman/caduceus-om3/blob/d14f4e3dcc77a22385b3c7d36d65189c000dd175/CHANGELOG.md)**
+**[Open original source](https://github.com/androidfanman/caduceus-om3/blob/b189b954e70ed0f8c26be6db03c8841f247b7f51/CHANGELOG.md)**
 
 **Kind:** github file. **Locator:** CHANGELOG.md.
 
-**Revision / release:** `d14f4e3dcc77a22385b3c7d36d65189c000dd175`. **Retrieved:** 2026-11-24. **Last source check:** 2026-11-24.
+**Revision / release:** `b189b954e70ed0f8c26be6db03c8841f247b7f51`. **Retrieved:** 2026-11-26. **Last source check:** 2026-11-26.
 
 **Publication:** public. Linked and synthesised; upstream material retains its own terms.
 
 ## Sources and record
 
-[Canonical record](../../records/sources/om3.yaml) · Substantively reviewed: 2026-11-24.
+[Canonical record](../../records/sources/om3.yaml) · Substantively reviewed: 2026-11-26.

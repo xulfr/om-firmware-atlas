@@ -60,7 +60,7 @@ As the project describes them. Status is the project's own; linked evidence is t
 <div class="feature-card" markdown="1">
 
 **Camera test ladder C1–C5** <span class="pill pill-testing">Testing</span>
-{ .feature-head }
+{ .feature-head #feature-camera-test-ladder-c1-c5 }
 
 SD updater, re-encoded LZ4 parts, a patched label, a half-press hook and a card read, each passed on the owner's OM-5 with normal shooting, playback and menus.
 
@@ -72,7 +72,7 @@ SD updater, re-encoded LZ4 parts, a patched label, a half-press hook and a card 
 <div class="feature-card" markdown="1">
 
 **COLOR 1–3 back end** <span class="pill pill-in-development">In development</span>
-{ .feature-head }
+{ .feature-head #feature-color-1-3-back-end }
 
 For a COLOR profile, the capture path reads that profile's 12 saturation values. Emulator only; no Picture Mode entry exists yet.
 
@@ -84,7 +84,7 @@ For a COLOR profile, the capture path reads that profile's 12 saturation values.
 <div class="feature-card" markdown="1">
 
 **LCD tint fix** <span class="pill pill-research">Research</span>
-{ .feature-head }
+{ .feature-head #feature-lcd-tint-fix }
 
 Panel table analysed; paused because the owner sees no pink cast on the OM-5 screen. Nothing built.
 

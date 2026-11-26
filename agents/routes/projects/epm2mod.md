@@ -4,12 +4,12 @@
 
 Firmware mod for the 2012 PEN E-PM2 with film simulations, interval shooting, level gauge and focus peaking.
 
-[Contribution home](https://github.com/cfu288/EPM2Mod/issues). The latest final release is v2026.11.20. On some bodies its cold start takes about 10 s (GitHub issue 6, since rc.3). Pre-release v2026.11.25-rc.1 carries the project's fix, cold-start-fix, and adds spot metering at the AF target. The owner's camera run of the fix passed, but the owner's bodies never showed the slow start; a contributor's own build of the same change started at once on an affected body. A separate Panasonic aperture-ring probe is a developer debug build. The project calls the firmware unofficial and at the user's own risk.
+[Contribution home](https://github.com/cfu288/EPM2Mod/issues). The latest final release is v2026.11.20. On some bodies its cold start takes about 10 s (GitHub issue 6, since rc.3). Pre-release v2026.11.25-rc.1 carries the project's fix, cold-start-fix, and adds spot metering at the AF target. The owner's camera run of the fix passed, but the owner's bodies never showed the slow start; a contributor's own build of the same change started at once on an affected body. Since then the project has pinned film-tables-fix, which also moves five film simulations' tables out of late-loaded code; the owner reports it camera-tested on 25 November, and no release carries it yet. A separate Panasonic aperture-ring probe is a developer debug build. The project calls the firmware unofficial and at the user's own risk.
 
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [epm2mod.yaml](../../../records/projects/epm2mod.yaml) | Project scope, related work and contribution destination | 11,116 | ~2,779 |
-| [epm2mod.yaml](../../../records/sources/epm2mod.yaml) | Find the relevant source/observation ID; use bounded reads | 14,614 | ~3,654 |
-| [epm2mod.yaml](../../../records/evidence/epm2mod.yaml) | Find the relevant source/observation ID; use bounded reads | 6,857 | ~1,715 |
+| [epm2mod.yaml](../../../records/projects/epm2mod.yaml) | Project scope, related work and contribution destination | 11,399 | ~2,850 |
+| [epm2mod.yaml](../../../records/sources/epm2mod.yaml) | Find the relevant source/observation ID; use bounded reads | 16,243 | ~4,061 |
+| [epm2mod.yaml](../../../records/evidence/epm2mod.yaml) | Find the relevant source/observation ID; use bounded reads | 8,660 | ~2,165 |
 
 Follow only relevant camera/topic routes. Upstream policies apply to work there; Atlas does not assign ownership across projects.

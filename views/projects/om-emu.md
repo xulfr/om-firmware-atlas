@@ -161,7 +161,7 @@ As the project describes them. Status is the project's own; linked evidence is t
 <div class="feature-card" markdown="1">
 
 **Browser player** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-browser-player }
 
 Start-up to the shooting screen, menus, Super Control Panel, shutter and playback, from the official firmware file.
 
@@ -173,7 +173,7 @@ Start-up to the shooting screen, menus, Super Control Panel, shutter and playbac
 <div class="feature-card" markdown="1">
 
 **Patch overlays** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-patch-overlays }
 
 Run firmware with byte patches applied in memory and checked against the stock blocks.
 
@@ -182,7 +182,7 @@ Run firmware with byte patches applied in memory and checked against the stock b
 <div class="feature-card" markdown="1">
 
 **Caduceus release checks** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-caduceus-release-checks }
 
 Caduceus releases run in the lab against pinned observations before they go on a camera.
 
@@ -194,7 +194,7 @@ Caduceus releases run in the lab against pinned observations before they go on a
 <div class="feature-card" markdown="1">
 
 **Scripted sessions and debug API** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-scripted-sessions-and-debug-api }
 
 Headless sessions, traces, breakpoints and calls into firmware functions for research.
 
@@ -203,7 +203,7 @@ Headless sessions, traces, breakpoints and calls into firmware functions for res
 <div class="feature-card" markdown="1">
 
 **Native card file system** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-native-card-file-system }
 
 The upstream model check covers mounting and formatting the card, remaining-shot counts, and the firmware’s own file-writing task.
 

@@ -232,6 +232,18 @@ E-M10 IV target needs physical-camera evidence. [View the testing request](https
 
 <div class="release-item" markdown="1">
 
+**OM-3**
+{ .release-model }
+
+[Caduceus for OM-3](../projects/caduceus-om3.md) · [v0.41-beta3](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.41-beta3) · 26 Nov 2026 <span class="pill pill-alpha">Pre-release</span>
+{ .release-head }
+
+Custom mode C5 brings back its own films at every dial turn, follows Save Settings Hold, and gets Color Mix and the RGB curves (#116,
+
+</div>
+
+<div class="release-item" markdown="1">
+
 **OM-5, OM-5 Mark II, OM-D E-M1 Mark III, PEN E-P7**
 { .release-model }
 
@@ -263,18 +275,6 @@ Fixes the slow cold start of rc.3 to v2026.11.20 (GitHub issue 6) by moving the 
 { .release-head }
 
 The RAW Data Edit Custom1 and Custom2 Sector, Hue, Sat and Light rows now change the developed picture.
-
-</div>
-
-<div class="release-item" markdown="1">
-
-**OM-3**
-{ .release-model }
-
-[Caduceus for OM-3](../projects/caduceus-om3.md) · [v0.41-beta](https://github.com/androidfanman/caduceus-om3/releases/tag/v0.41-beta) · 24 Nov 2026 <span class="pill pill-alpha">Pre-release</span>
-{ .release-head }
-
-INFO hints on the colour wheel's H / S / L bar and the Split toning bar; Balance shows only its bar.
 
 </div>
 

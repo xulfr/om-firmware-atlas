@@ -40,6 +40,7 @@ Results belong to the named project and package. Emulator output does not establ
 ### Other observations
 
 - **Camera test · reported working** · [E-PM2 cold-start-fix owner camera test](../evidence/epm2-cold-start-fix.md)
+- **Camera test · reported working** · [E-PM2 film-tables-fix owner camera test](../evidence/epm2-film-tables-fix.md)
 - **Camera test · reported working** · [E-PM2 films-twelve-off: owner camera test](../evidence/epm2-films-twelve-off.md)
 - **Camera test · reported working** · [E-PM2 peaking-mf owner camera test](../evidence/epm2-peaking-mf.md)
 

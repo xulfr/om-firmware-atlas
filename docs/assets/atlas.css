@@ -705,3 +705,12 @@ kbd {
   .showcase-card:hover, .showcase-card:hover .showcase-image img { transform: none; }
 }
 .home-prose > section.home-showcase { margin-top: clamp(1rem, 3vw, 2rem); }
+/* Homepage spotlight: a reviewed, time-limited highlight of a new feature (decision 0009). */
+.home-prose > section.home-spotlight { margin-top: clamp(1rem, 3vw, 2rem); display: grid; gap: 1rem; }
+.spotlight-card { position: relative; padding: clamp(1.2rem, 3vw, 2rem); border: 1px solid var(--accent-line); border-radius: 18px; background: linear-gradient(135deg, var(--accent-soft), transparent 70%), var(--panel); }
+.prose .spotlight-card p.spotlight-scope { margin: 0 0 .5rem; font: 500 .76rem/1.4 var(--mono); letter-spacing: .02em; color: var(--accent); }
+.prose .spotlight-card h2 { border: 0; padding: 0; margin: 0 0 .6rem; font-size: clamp(1.5rem, 3vw, 2.1rem); letter-spacing: -.03em; }
+.prose .spotlight-card h2 .pill { vertical-align: 6px; }
+.prose .spotlight-card p { max-width: 62ch; }
+.prose .spotlight-card p.spotlight-links { margin-top: .2rem; color: var(--muted); font-size: .92rem; }
+.prose .spotlight-card p.release-warning { margin-bottom: 0; }

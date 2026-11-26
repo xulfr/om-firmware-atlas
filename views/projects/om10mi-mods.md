@@ -65,7 +65,7 @@ As the project describes them. Status is the project's own; linked evidence is t
 <div class="feature-card" markdown="1">
 
 **Film looks** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-film-looks }
 
 18 looks in Picture Mode, the SCP menu, Live View and RAW Data Edit, including Portra 400, Kodachrome 64, Ektar 100 and Gold 200, each with its own icon since 87; Contrast, Sharpness, Highlight, Shadow and Gradation act on them.
 
@@ -77,7 +77,7 @@ As the project describes them. Status is the project's own; linked evidence is t
 <div class="feature-card" markdown="1">
 
 **Per-sector colour editor** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-per-sector-colour-editor }
 
 Hue, Saturation and Lightness for 12 named colour sectors, also per bank in RAW Data Edit.
 
@@ -89,7 +89,7 @@ Hue, Saturation and Lightness for 12 named colour sectors, also per bank in RAW 
 <div class="feature-card" markdown="1">
 
 **Per-look colour editor** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-per-look-colour-editor }
 
 Each colour look has its own User Hue page (Picture Mode, highlight the look, right arrow) with Sector, Hue, Sector Sat and Lightness; it moved there from the Custom page in 88.
 
@@ -101,7 +101,7 @@ Each colour look has its own User Hue page (Picture Mode, highlight the look, ri
 <div class="feature-card" markdown="1">
 
 **59:50 video limit** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-59-50-video-limit }
 
 Recording limit raised from 29:59 to 59:50; one file is still capped at 4 GB, so high bit rates can stop earlier. Recording past 30 minutes is not yet confirmed.
 
@@ -113,7 +113,7 @@ Recording limit raised from 29:59 to 59:50; one file is still capped at 4 GB, so
 <div class="feature-card" markdown="1">
 
 **Colour wheel** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-colour-wheel }
 
 PEN-F-style wheel in Color Creator at the ART dial; mark one or more of 12 sectors and set Hue, Saturation and Lightness from -7 to +7 with a live preview that matches the JPEG; kept after power-off. Since 94 it is roughly centred in the viewfinder and white balance can be set inside Color Creator. The ART dial no longer reaches the stock art filters.
 
@@ -125,7 +125,7 @@ PEN-F-style wheel in Color Creator at the ART dial; mark one or more of 12 secto
 <div class="feature-card" markdown="1">
 
 **Look pack builder** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-look-pack-builder }
 
 An optional PC tool and browser pages replace looks from a .cube or .xmp file, rename them and reorder the Picture Mode list, working on the image the user built. Since 2026-11-25 the browser page can also build the card file itself from the owner's official firmware, without uploading it. A look is a fitted approximation of the LUT; hiding looks is refused because it is not proven on a camera.
 

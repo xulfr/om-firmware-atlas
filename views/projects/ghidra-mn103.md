@@ -105,7 +105,7 @@ As the project describes them. Status is the project's own; linked evidence is t
 <div class="feature-card" markdown="1">
 
 **MN103 disassembly and decompiler** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-mn103-disassembly-and-decompiler }
 
 SLEIGH module with call-frame, loop and calling-convention support, plus helper scripts.
 
@@ -117,7 +117,7 @@ SLEIGH module with call-frame, loop and calling-convention support, plus helper 
 <div class="feature-card" markdown="1">
 
 **Pointer-register calling convention** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-pointer-register-calling-convention }
 
 The optional ptrregs compiler spec places typed pointer arguments in the MN103 address registers. Upstream CI checks argument placement. The maintainer reports the same final decompilation check counts with Ghidra 11.4.2 and 12.2. A script switches an open program between the two specs without reimporting.
 
@@ -129,7 +129,7 @@ The optional ptrregs compiler spec places typed pointer arguments in the MN103 a
 <div class="feature-card" markdown="1">
 
 **Firmware sections and register names** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-firmware-sections-and-register-names }
 
 The import splits the main block into the boot part and sections 1 to 10, read from the firmware's own section table, and adds the uncached view. It names the power block, debug serial port, lock bits, doorbells, pads and shared memory, and the 422 display controller registers from the firmware's own name table.
 
@@ -141,7 +141,7 @@ The import splits the main block into the boot part and sections 1 to 10, read f
 <div class="feature-card" markdown="1">
 
 **Import for other bodies** <span class="pill pill-released">Available</span>
-{ .feature-head }
+{ .feature-head #feature-import-for-other-bodies }
 
 Imports a main block image from any body at the shared base address, with a program name. Bodies with compressed sections, such as the OM-5, need the expanded image. Sections and display controller names were also checked on the OM-5 II 1.1.
 
