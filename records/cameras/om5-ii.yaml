@@ -23,4 +23,5 @@ records:
   - project.om-emu
   - project.ghidra-mn103
   - project.omkit
+  - project.om5-ii-jp-english
   coverage: initial-review

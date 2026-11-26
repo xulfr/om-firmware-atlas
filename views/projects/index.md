@@ -288,6 +288,23 @@ Emulator
 
 <div class="project-card" markdown="1">
 
+[OM-5 Mark II JP English research](om5-ii-jp-english.md){ .card-title }
+
+English menus on a Japanese-market OM-5 Mark II, by changing only its language resources.
+
+English menus in the Japanese slot
+{ .card-features }
+
+For: OM-5 Mark II
+{ .card-cameras }
+
+Research
+{ .card-meta }
+
+</div>
+
+<div class="project-card" markdown="1">
+
 [Historical manual update research](manual-update.md){ .card-title }
 
 How to install official OM SYSTEM firmware from an SD card.

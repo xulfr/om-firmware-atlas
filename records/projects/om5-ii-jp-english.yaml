@@ -1,0 +1,69 @@
+schema_version: 1
+records:
+- type: project
+  id: project.om5-ii-jp-english
+  title: OM-5 Mark II JP English research
+  summary: English menus on Japanese-market bodies by a resource-only change.
+  source_refs:
+  - source.jpen.readme
+  - source.jpen.design
+  - source.jpen.validation
+  - source.jpen.hardware
+  - source.jpen.atlas-issue
+  topics:
+  - interfaces
+  - platform
+  - patching
+  last_reviewed: '2026-11-26'
+  url: https://github.com/aabramovsky/om5-ii-jp-english-research
+  kind: research
+  camera_ids:
+  - camera.om5-ii
+  contribution_home: https://github.com/aabramovsky/om5-ii-jp-english-research/issues
+  status_summary: One owner reports a normal boot and English menus on a Japanese-market OM-5 Mark II on official 1.1
+    after installing the resource-only r01 on 26 November 2026, with only partial follow-up checks. The repository
+    reproduces the bytes offline from a separately supplied stock file whose digest matches the Atlas's 1.1 record.
+    Full UI coverage, long-term reliability and recovery after a damaged resource are unverified. Native E148 only; it
+    makes no claim for the original OM-5 (E144) or ports.
+  related_projects:
+  - project.omkit
+  - project.caduceus-om5
+  - project.db-firmware
+  - project.om-emu
+  tagline: English menus on a Japanese-market OM-5 Mark II, by changing only its language resources.
+  description:
+  - Japanese-market OM-5 Mark II bodies show their menus in Japanese. This research found that the official 1.1 update
+    already contains the English text, and builds a replacement for the language component only (component 0101). The
+    Japanese language slot is pointed at an English-based table, keeping the original Japanese font. No program code
+    and no region setting is changed.
+  - English has no text for 39 messages the Japanese firmware shows; the researchers wrote their own translations for
+    those, which are not official. The table fits within the firmware's own string buffer, though that does not prove
+    every line fits every screen.
+  - The repository holds Python code, tests and exact hashes to rebuild the file offline from your own copy of the
+    stock 1.1 update, and no firmware. The research was carried out with AI agents and the camera steps by the owner.
+    It is experimental; even a resource-only update erases and rewrites a 12 MiB range, and recovery after a damaged
+    resource is unknown.
+  maintainers:
+  - label: aabramovsky
+    url: https://github.com/aabramovsky
+  links:
+  - label: Design
+    url: https://github.com/aabramovsky/om5-ii-jp-english-research/blob/2ee2d5964b60f03fede1cb75dfe0e78719856804/docs/design.md
+  - label: Validation and limits
+    url: https://github.com/aabramovsky/om5-ii-jp-english-research/blob/2ee2d5964b60f03fede1cb75dfe0e78719856804/docs/validation.md
+  - label: One-camera report
+    url: https://github.com/aabramovsky/om5-ii-jp-english-research/blob/2ee2d5964b60f03fede1cb75dfe0e78719856804/docs/hardware-result.md
+  features:
+  - name: English menus in the Japanese slot
+    summary: The Japanese language setting shows English text, with 39 research translations where English had none
+      and the original Japanese font kept. Language labels may still show the Japanese slot in places.
+    camera_ids:
+    - camera.om5-ii
+    status: research
+    since: null
+    source_ref: source.jpen.design
+    capability_id: capability.om5-ii-jp-english-r01
+  camera_notes:
+  - camera_id: camera.om5-ii
+    note: Research for Japanese-market bodies on official 1.1 only, with one owner's report. There is no release; the
+      repository rebuilds the file from your own stock update, and its report lists the steps and stop conditions.

@@ -1,0 +1,31 @@
+schema_version: 1
+records:
+- type: capability
+  id: capability.om5-ii-jp-english-r01
+  title: OM-5 Mark II 1.1 English in the Japanese slot, resource-only r01
+  summary: Replacing only component 0101 points the Japanese slot at English text; one owner reports English menus on a Japanese-market body.
+  source_refs:
+  - source.jpen.design
+  - source.jpen.validation
+  - source.jpen.hardware
+  topics:
+  - interfaces
+  - platform
+  last_reviewed: '2026-11-26'
+  camera_id: camera.om5-ii
+  firmware_id: firmware.om5-ii-1100
+  project_id: project.om5-ii-jp-english
+  mod_build: r01 resource-only (82aebb31…)
+  feature_id: feature.ui.language
+  assertion: On a native OM-5 Mark II on official 1.1, a component-0101-only update whose Japanese string descriptor
+    selects an English-based table gives English menus in the Japanese language slot, with no code or region change.
+  availability: research
+  implementation: reported
+  evidence_refs:
+  - evidence.om5-ii-jp-english-r01
+  contradicting_refs: []
+  limitations:
+  - One owner-reported camera; the checked subset of functions was not recorded and every menu item has not been checked.
+  - The 39 gap translations are the researchers' own, not OMDS text; their wording and layout need review.
+  - Recovery after a damaged 0101 resource and the SD updater's availability then are unknown.
+  - Not for the original OM-5 (E144), OM-5 ports or any other build; the input must match the exact stock digest.

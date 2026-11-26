@@ -21,12 +21,14 @@ Exact ID: `camera.om5`. Codes: E144. [Human status view](../../../views/cameras/
 - [Historical manual update research](../projects/manual-update.md): Historical SD update procedure and model naming.
 - [Ghidra MN103 processor module](../projects/ghidra-mn103.md): Ghidra disassembly and decompiler support for MN10300, AM33 and AM33-2.
 
+Build-scoped capability assertions; follow evidence IDs only as needed.
+
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [om5-db-aperture.yaml](../../../records/capabilities/om5/om5-db-aperture.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 802 | ~201 |
-| [om5-prealpha1-recovery.yaml](../../../records/capabilities/om5/om5-prealpha1-recovery.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 750 | ~188 |
-| [om5-prealpha1-start.yaml](../../../records/capabilities/om5/om5-prealpha1-start.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 743 | ~186 |
-| [om5-tadejs-ladder-start.yaml](../../../records/capabilities/om5/om5-tadejs-ladder-start.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 1,067 | ~267 |
+| [om5-db-aperture.yaml](../../../records/capabilities/om5/om5-db-aperture.yaml) | Capabilities | 802 | ~201 |
+| [om5-prealpha1-recovery.yaml](../../../records/capabilities/om5/om5-prealpha1-recovery.yaml) | Capabilities | 750 | ~188 |
+| [om5-prealpha1-start.yaml](../../../records/capabilities/om5/om5-prealpha1-start.yaml) | Capabilities | 743 | ~186 |
+| [om5-tadejs-ladder-start.yaml](../../../records/capabilities/om5/om5-tadejs-ladder-start.yaml) | Capabilities | 1,067 | ~267 |
 
 Compact technical reference for this camera: [reference shard](../reference/om5.md).
 

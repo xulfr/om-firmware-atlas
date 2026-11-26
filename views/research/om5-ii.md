@@ -17,6 +17,7 @@ E148 · Stock firmware 1.1 · build 1100
 - [OM-Emu](../projects/om-emu.md#for-om5-ii) · [Repository or project home](https://github.com/flatpanda/om-emu)
 - [Ghidra MN103 processor module](../projects/ghidra-mn103.md#for-om5-ii) · [Repository or project home](https://github.com/nsud-dev/ghidra-mn103)
 - [OMKit](../projects/omkit.md#for-om5-ii) · [Repository or project home](https://github.com/necrostaz/omkit)
+- [OM-5 Mark II JP English research](../projects/om5-ii-jp-english.md#for-om5-ii) · [Repository or project home](https://github.com/aabramovsky/om5-ii-jp-english-research)
 
 ## Claims and test evidence { #evidence }
 
@@ -58,6 +59,21 @@ Claim · [Mark II alpha12 overall report](../capabilities/om5-ii-alpha12-overall
 Project and build · [Caduceus for OM-5](../projects/caduceus-om5.md#for-om5-ii) / v0.1.0-alpha12
 
 Availability · published release
+
+</div>
+
+<div class="evidence-entry" markdown="1">
+
+**Camera test · reported working** · [OM-5 Mark II JP English r01: one owner's camera](../evidence/om5-ii-jp-english-r01.md)
+
+partial report · reported hash
+{ .observation-meta }
+
+Claim · [OM-5 Mark II 1.1 English in the Japanese slot, resource-only r01](../capabilities/om5-ii-jp-english-r01.md)
+
+Project and build · [OM-5 Mark II JP English research](../projects/om5-ii-jp-english.md#for-om5-ii) / r01 resource-only (82aebb31…)
+
+Availability · research
 
 </div>
 

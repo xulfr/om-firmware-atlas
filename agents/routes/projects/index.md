@@ -22,4 +22,5 @@ Open only the matching route.
 | [OM-Emu](om-emu.md) | Firmware lab, model ports, traces and patch overlays. |
 | [om-emu additions (patch set)](om-emu-additions.md) | Eleven patches for the om-emu emulator that add screen layers and pre-flash crash checks. |
 | [om10mi-mods](om10mi-mods.md) | Firmware mod for the original OM-D E-M10 with 18 film looks, a colour wheel, per-colour and per-look colour editors, an optional look pack builder and a 59:50 video limit. |
+| [OM-5 Mark II JP English research](om5-ii-jp-english.md) | English menus on Japanese-market bodies by a resource-only change. |
 | [OMKit](omkit.md) | Loader flashed once; core and modules then run from the SD card. |

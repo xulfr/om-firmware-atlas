@@ -19,9 +19,11 @@ Exact ID: `camera.ep7`. Codes: E142. [Human status view](../../../views/cameras/
 - [OM-Emu](../projects/om-emu.md): Firmware lab, model ports, traces and patch overlays.
 - [Ghidra MN103 processor module](../projects/ghidra-mn103.md): Ghidra disassembly and decompiler support for MN10300, AM33 and AM33-2.
 
+Build-scoped capability assertions; follow evidence IDs only as needed.
+
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [ep7-hsl.yaml](../../../records/capabilities/ep7/ep7-hsl.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 673 | ~169 |
+| [ep7-hsl.yaml](../../../records/capabilities/ep7/ep7-hsl.yaml) | Capabilities | 673 | ~169 |
 
 Compact technical reference for this camera: [reference shard](../reference/ep7.md).
 
