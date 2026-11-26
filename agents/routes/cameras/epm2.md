@@ -15,9 +15,11 @@ Exact ID: `camera.epm2`. Codes: E101. [Human status view](../../../views/cameras
 
 - [EPM2Mod](../projects/epm2mod.md): Firmware mod for the 2012 PEN E-PM2 with film simulations, interval shooting, level gauge and focus peaking.
 
+Build-scoped capability assertions; follow evidence IDs only as needed.
+
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [epm2-films-look-exif.yaml](../../../records/capabilities/epm2/epm2-films-look-exif.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 982 | ~246 |
+| [epm2-films-look-exif.yaml](../../../records/capabilities/epm2/epm2-films-look-exif.yaml) | Capabilities | 982 | ~246 |
 
 Compact technical reference for this camera: [reference shard](../reference/epm2.md).
 

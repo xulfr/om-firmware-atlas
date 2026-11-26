@@ -140,6 +140,11 @@ Every source the Atlas cites, with its revision and when it was last checked.
 | [OM-3 downstream experiment](fork.readme.md) | Experimental changes intended to contribute upstream. |
 | [Ghidra MN103 pointer-register compiler spec](gmn103.ptrregs.md) | Optional ptrregs spec, expanded validation and supported Ghidra versions. |
 | [Ghidra MN103 module README](gmn103.readme.md) | Installation, import for several bodies, scripts (sections, register names), decompiler checks and calling-convention validation. |
+| [Atlas source issue 45, E148 1.1 English in the Japanese slot](jpen.atlas-issue.md) | The researcher's submission to the Atlas, publication context and the scope of the camera result. |
+| [OM-5 Mark II JP English r01 design](jpen.design.md) | Component 0101's resource records on E148 1.1, the English-based table and the eight-byte descriptor change that points the Japanese slot at it. |
+| [OM-5 Mark II JP English one-camera report](jpen.hardware.md) | One owner's installation of r01 on a Japanese-market OM-5 Mark II on 1.1 on 26 November 2026, with the steps, stop conditions and an evidence table. |
+| [OM-5 Mark II JP English research overview](jpen.readme.md) | What the resource-only r01 changes, its exact hashes, the installation account and the evidence limits. |
+| [OM-5 Mark II JP English validation and limits](jpen.validation.md) | Offline tests, earlier AI-assisted reviews, om-emu string lookups and updater findings, and what remains unverified, including recovery after a damaged resource. |
 | [Historical manual updates](manual.readme.md) | SD update research and explicitly obsolete static download links. |
 | [om10mi-mods changes](om10mi.changelog.md) | Version history through 94, the known limits of 94 and the User Hue reset on each look's own page. |
 | [om10mi-mods colour wheel guide](om10mi.color-wheel.md) | Colour wheel in Color Creator at the ART dial (since 87): controls, value ranges, mode guide, the moved art filters, the version 94 viewfinder centring and known limits. |

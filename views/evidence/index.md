@@ -55,6 +55,7 @@ Individual observations from physical cameras, emulators and code inspection, wi
 
 ## OM-5 Mark II
 
+- [OM-5 Mark II JP English r01: one owner's camera](om5-ii-jp-english-r01.md) · Camera test · reported working · 26 Nov 2026
 - [Mark II v0.2.0-alpha1: overall owner report](om5-ii-v020-alpha1-owner.md) · Camera test · reported working · 20 Nov 2026
 - [OM-5 Mark II OMKit loader patch: developers' camera](om5-ii-omkit-loader.md) · Camera test · reported working · 20 Nov 2026
 - [Mark II dev package 0565540a: flash failure, then intermittent boot loop](om5-ii-dev0565-boot.md) · Camera test · reported failure · 20 Nov 2026

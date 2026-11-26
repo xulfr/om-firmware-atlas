@@ -20,10 +20,12 @@ Exact ID: `camera.om3`. Codes: E147. [Human status view](../../../views/cameras/
 - [OM-3 downstream experiments](../projects/camera-stuff.md): Downstream experiments intended to send fixes upstream.
 - [Historical manual update research](../projects/manual-update.md): Historical SD update procedure and model naming.
 
+Build-scoped capability assertions; follow evidence IDs only as needed.
+
 | Read when relevant | Scope / purpose | Bytes | Approx. tokens |
 |---|---|---:|---:|
-| [om3-film-rolls.yaml](../../../records/capabilities/om3/om3-film-rolls.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 1,759 | ~440 |
-| [om3-hsl.yaml](../../../records/capabilities/om3/om3-hsl.yaml) | Build-scoped capability assertions; follow evidence IDs only as needed | 736 | ~184 |
+| [om3-film-rolls.yaml](../../../records/capabilities/om3/om3-film-rolls.yaml) | Capabilities | 1,759 | ~440 |
+| [om3-hsl.yaml](../../../records/capabilities/om3/om3-hsl.yaml) | Capabilities | 736 | ~184 |
 
 Compact technical reference for this camera: [reference shard](../reference/om3.md).
 

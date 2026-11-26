@@ -987,9 +987,10 @@ def render(catalogue):
             text += f"- [{project['title']}]({link(path, 'agents/routes/projects/' + slug(node_id) + '.md')}): {project['summary']}\n"
         files = sorted({catalogue.paths[r["id"]] for r in catalogue.of_type("capability") if r["camera_id"] == camera["id"]})
         if files:
-            text += "\n" + route_table()
+            # The purpose is the same for every capability file, so state it once rather than on each row.
+            text += "\nBuild-scoped capability assertions; follow evidence IDs only as needed.\n\n" + route_table()
             for file in files:
-                text += reading_row(path, file, "Build-scoped capability assertions; follow evidence IDs only as needed")
+                text += reading_row(path, file, "Capabilities")
         if any(camera["id"] in r["camera_ids"] for r in catalogue.of_type("reference")):
             text += f"\nCompact technical reference for this camera: [reference shard](../reference/{slug(camera['id'])}.md).\n"
         text += "\nThen choose the [task topic](../topics/index.md). Read exact upstream sections only as needed. Do not transfer test results between models or packages.\n"

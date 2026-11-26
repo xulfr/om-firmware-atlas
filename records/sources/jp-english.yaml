@@ -1,0 +1,84 @@
+schema_version: 1
+records:
+- type: source
+  id: source.jpen.readme
+  title: OM-5 Mark II JP English research overview
+  summary: What the resource-only r01 changes, its exact hashes, the installation account and the evidence limits.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-26'
+  url: https://github.com/aabramovsky/om5-ii-jp-english-research/blob/2ee2d5964b60f03fede1cb75dfe0e78719856804/README.md
+  source_kind: github-file
+  upstream_repo: aabramovsky/om5-ii-jp-english-research
+  revision: 2ee2d5964b60f03fede1cb75dfe0e78719856804
+  locator: README.md
+  retrieved_on: '2026-11-26'
+  last_checked: '2026-11-26'
+  publication: public
+  reuse_note: Linked and synthesised; Apache-2.0 upstream. The repository holds no firmware, vendor string tables or fonts.
+- type: source
+  id: source.jpen.design
+  title: OM-5 Mark II JP English r01 design
+  summary: Component 0101's resource records on E148 1.1, the English-based table and the eight-byte descriptor change that points the Japanese slot at it.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-26'
+  url: https://github.com/aabramovsky/om5-ii-jp-english-research/blob/2ee2d5964b60f03fede1cb75dfe0e78719856804/docs/design.md
+  source_kind: github-file
+  upstream_repo: aabramovsky/om5-ii-jp-english-research
+  revision: 2ee2d5964b60f03fede1cb75dfe0e78719856804
+  locator: docs/design.md
+  retrieved_on: '2026-11-26'
+  last_checked: '2026-11-26'
+  publication: public
+  reuse_note: Linked and synthesised; offsets stay upstream except one table address.
+- type: source
+  id: source.jpen.validation
+  title: OM-5 Mark II JP English validation and limits
+  summary: Offline tests, earlier AI-assisted reviews, om-emu string lookups and updater findings, and what remains unverified, including recovery after a damaged resource.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-26'
+  url: https://github.com/aabramovsky/om5-ii-jp-english-research/blob/2ee2d5964b60f03fede1cb75dfe0e78719856804/docs/validation.md
+  source_kind: github-file
+  upstream_repo: aabramovsky/om5-ii-jp-english-research
+  revision: 2ee2d5964b60f03fede1cb75dfe0e78719856804
+  locator: docs/validation.md
+  retrieved_on: '2026-11-26'
+  last_checked: '2026-11-26'
+  publication: public
+  reuse_note: Linked and synthesised; upstream material retains its own terms.
+- type: source
+  id: source.jpen.hardware
+  title: OM-5 Mark II JP English one-camera report
+  summary: One owner's installation of r01 on a Japanese-market OM-5 Mark II on 1.1 on 26 November 2026, with the steps, stop conditions and an evidence table.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-26'
+  url: https://github.com/aabramovsky/om5-ii-jp-english-research/blob/2ee2d5964b60f03fede1cb75dfe0e78719856804/docs/hardware-result.md
+  source_kind: github-file
+  upstream_repo: aabramovsky/om5-ii-jp-english-research
+  revision: 2ee2d5964b60f03fede1cb75dfe0e78719856804
+  locator: docs/hardware-result.md
+  retrieved_on: '2026-11-26'
+  last_checked: '2026-11-26'
+  published_on: '2026-11-26'
+  publication: public
+  reuse_note: Owner report, summarised; device identifiers are omitted upstream.
+- type: source
+  id: source.jpen.atlas-issue
+  title: Atlas source issue 45, E148 1.1 English in the Japanese slot
+  summary: The researcher's submission to the Atlas, publication context and the scope of the camera result.
+  source_refs: []
+  topics: []
+  last_reviewed: '2026-11-26'
+  url: https://github.com/xulfr/om-firmware-atlas/issues/45
+  source_kind: github-comment
+  upstream_repo: xulfr/om-firmware-atlas
+  revision: null
+  locator: Issue 45 opening post, 2026-11-26
+  retrieved_on: '2026-11-26'
+  last_checked: '2026-11-26'
+  published_on: '2026-11-26'
+  publication: public
+  reuse_note: Public submission by the researcher for reuse; summarised.

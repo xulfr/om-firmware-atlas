@@ -1,0 +1,40 @@
+schema_version: 1
+records:
+- type: evidence
+  id: evidence.om5-ii-jp-english-r01
+  title: 'OM-5 Mark II JP English r01: one owner''s camera'
+  summary: A Japanese-market OM-5 Mark II on official 1.1 booted normally with English menus after the resource-only r01; follow-up checks were partial.
+  source_refs:
+  - source.jpen.hardware
+  - source.jpen.readme
+  topics:
+  - interfaces
+  last_reviewed: '2026-11-26'
+  camera_id: camera.om5-ii
+  firmware_id: firmware.om5-ii-1100
+  project_id: project.om5-ii-jp-english
+  mod_build: r01 resource-only (82aebb31…)
+  method: physical-camera
+  provenance: firsthand-tester-report
+  identity_level: reported-hash
+  package_sha256: 82aebb31264c29ce64921f8cecdc8a431a780df6d281d14b5706a2f85dc602fc
+  expected_package_sha256: 82aebb31264c29ce64921f8cecdc8a431a780df6d281d14b5706a2f85dc602fc
+  outcome: reported-pass
+  quality: partial
+  reported_on: '2026-11-26'
+  tested_on: '2026-11-26'
+  procedure: After an official update from 1.0 to 1.1 through OI.Share and a baseline check, the 12,582,912-byte r01
+    file was copied as DCOLYMP/E1489999.BIN, its hash checked on the card after reconnecting, and installed once with
+    OK held at power-on; OK stayed held through the lamp's steady and blinking phases. The camera was then started
+    normally without the card.
+  coverage:
+  - Normal boot and English menus after the update card was removed.
+  - A partial functional check found no issue; the owner later said the camera works overall.
+  limitations:
+  - The checked subset is not recorded; the requested checklist (capture, video, playback, AF/IBIS, EVF, every menu and
+    help, sleep and power cycles) was not completed.
+  - No screen recording, flash readback or factory-data comparison; the bytes OI.Share installed were not hashed.
+  - OK was held longer than needed while waiting for guidance; no minimum hold time is established.
+  - One body; not reproduced by the Atlas.
+  assumptions:
+  - The stock input matches the Atlas's 1.1 container digest, as the project's profile states.

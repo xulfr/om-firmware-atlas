@@ -81,8 +81,8 @@
       "method": "ceil(utf8-bytes/4)"
     },
     "records/cameras/om5-ii.yaml": {
-      "approx_tokens": 139,
-      "bytes": 554,
+      "approx_tokens": 146,
+      "bytes": 584,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/cameras/om5.yaml": {
@@ -158,6 +158,11 @@
     "records/capabilities/om5-ii/om5-ii-alpha12-overall.yaml": {
       "approx_tokens": 187,
       "bytes": 747,
+      "method": "ceil(utf8-bytes/4)"
+    },
+    "records/capabilities/om5-ii/om5-ii-jp-english-r01.yaml": {
+      "approx_tokens": 365,
+      "bytes": 1457,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/capabilities/om5-ii/om5-ii-omkit-loader.yaml": {
@@ -253,6 +258,11 @@
     "records/evidence/om10mi-mods.yaml": {
       "approx_tokens": 1902,
       "bytes": 7605,
+      "method": "ceil(utf8-bytes/4)"
+    },
+    "records/evidence/om5-ii-jp-english.yaml": {
+      "approx_tokens": 510,
+      "bytes": 2040,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/evidence/omkit.yaml": {
@@ -390,6 +400,11 @@
       "bytes": 10193,
       "method": "ceil(utf8-bytes/4)"
     },
+    "records/projects/om5-ii-jp-english.yaml": {
+      "approx_tokens": 920,
+      "bytes": 3680,
+      "method": "ceil(utf8-bytes/4)"
+    },
     "records/projects/omkit.yaml": {
       "approx_tokens": 1496,
       "bytes": 5981,
@@ -448,6 +463,11 @@
     "records/sources/fork.yaml": {
       "approx_tokens": 159,
       "bytes": 636,
+      "method": "ceil(utf8-bytes/4)"
+    },
+    "records/sources/jp-english.yaml": {
+      "approx_tokens": 948,
+      "bytes": 3789,
       "method": "ceil(utf8-bytes/4)"
     },
     "records/sources/manual.yaml": {
